@@ -11,18 +11,17 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.ynwRelativePath"
+    "onCommand:ynw.relavePath"
   ],
   "main": "./extension",
   "contributes": {
     "commands": [{
-      "command": "extension.ynwRelativePath",
+      "command": "ynw.relavePath",
       "title": "ynw relative path"
     }],
-    "menu": {
+    "menus": {
       "explorer/context": [{
-        "when": "resourceLangId == javascript",
-        "command": "extension.ynwRelativePath",
+        "command": "ynw.relavePath",
         "group": "ynw"
       }]
     }

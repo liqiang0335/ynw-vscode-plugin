@@ -1,15 +1,23 @@
 const vscode = require("vscode");
 
-function activate(context) {
-  console.log('Congratulations, your extension "ynw" is now active!');
+/**
+ * activate
+ */
+exports.activate = function(context) {
   let disposable = vscode.commands.registerCommand(
-    "extension.ynwRelativePath",
+    "ynw.relavePath",
     function() {
+      const terminal = vscode.window.createTerminal("Helos");
+      terminal.sendText("ls");
+      terminal.show();
+
       vscode.window.showInformationMessage("Hello World!");
     }
   );
   context.subscriptions.push(disposable);
-}
-exports.activate = activate;
-function deactivate() {}
-exports.deactivate = deactivate;
+};
+
+/**
+ * deactivate
+ */
+exports.deactivate = function() {};
