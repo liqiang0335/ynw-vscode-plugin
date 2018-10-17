@@ -9,7 +9,6 @@ exports.activate = function(context) {
   const registerCallback = function(URI) {
     const activeDocument = vscode.window.activeTextEditor.document;
     if (!activeDocument) {
-      vscode.window.showInformationMessage("No Open Document");
       return;
     }
     let selectFilePath = URI.fsPath;
@@ -17,16 +16,18 @@ exports.activate = function(context) {
 
     let relativePath = path
       .relative(activeFilePath, selectFilePath)
-      .replace(/^\.\.\\/, "")
-      .replace(/\.[a-z]+$/, "") //remove ext
-      .replace(/\\/g, "/"); //replace sep
+      .replace(/\\+/g, "/") //replace sep
+      .replace(/^\.\.\//, "");
+
+    //remove extension for some file type
+    if (/\.(jsx?|vue|json)$/.test(relativePath)) {
+      relativePath = relativePath.replace(/\.[a-z]+$/, "");
+    }
 
     if (!relativePath.startsWith(".")) {
       relativePath = "./" + relativePath;
     }
-
     copy(relativePath);
-    vscode.window.showInformationMessage("OK");
   };
 
   let disposable = vscode.commands.registerCommand(

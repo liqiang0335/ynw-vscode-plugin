@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "some tool for ynw ",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "liqiang0335",
   "engines": {
     "vscode": "^1.28.0"
@@ -15,19 +15,15 @@
   ],
   "main": "./extension",
   "contributes": {
-    "commands": [
-      {
-        "command": "ynw.relavePath",
-        "title": "ynw relative path"
-      }
-    ],
+    "commands": [{
+      "command": "ynw.relavePath",
+      "title": "Relative Path for Active"
+    }],
     "menus": {
-      "explorer/context": [
-        {
-          "command": "ynw.relavePath",
-          "group": "ynw"
-        }
-      ]
+      "explorer/context": [{
+        "command": "ynw.relavePath",
+        "group": "ynw"
+      }]
     }
   },
   "scripts": {
