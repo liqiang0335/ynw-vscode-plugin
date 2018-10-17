@@ -1,0 +1,42 @@
+{
+  "name": "ynw",
+  "displayName": "ynw",
+  "description": "some tool for ynw ",
+  "version": "0.0.1",
+  "publisher": "liqiang0335",
+  "engines": {
+    "vscode": "^1.28.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.ynwRelativePath"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [{
+      "command": "extension.ynwRelativePath",
+      "title": "ynw relative path"
+    }],
+    "menu": {
+      "explorer/context": [{
+        "when": "resourceLangId == javascript",
+        "command": "extension.ynwRelativePath",
+        "group": "ynw"
+      }]
+    }
+
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.21",
+    "eslint": "^4.11.0",
+    "@types/node": "^8.10.25",
+    "@types/mocha": "^2.2.42"
+  }
+}
