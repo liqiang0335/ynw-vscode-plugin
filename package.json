@@ -1,8 +1,8 @@
 {
   "name": "ynw",
   "displayName": "ynw",
-  "description": "some tool for ynw ",
-  "version": "0.0.2",
+  "description": "Some Tool for YNW ",
+  "version": "0.0.3",
   "publisher": "liqiang0335",
   "engines": {
     "vscode": "^1.28.0"
@@ -11,17 +11,41 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:ynw.relavePath"
+    "onCommand:ynw.relavePath",
+    "onCommand:ynw.webpackBuild.dev",
+    "onCommand:ynw.webpackBuild.hot",
+    "onCommand:ynw.webpackBuild.pro"
   ],
-  "main": "./extension",
+  "main": "./src/extension",
   "contributes": {
     "commands": [{
       "command": "ynw.relavePath",
       "title": "Relative Path for Active"
+    }, {
+      "command": "ynw.webpackBuild.dev",
+      "title": "Ynw Build This - Dev"
+    }, {
+      "command": "ynw.webpackBuild.hot",
+      "title": "Ynw Build This - Hot"
+    }, {
+      "command": "ynw.webpackBuild.pro",
+      "title": "Ynw Build This - Pro"
     }],
     "menus": {
       "explorer/context": [{
         "command": "ynw.relavePath",
+        "group": "ynw"
+      }, {
+        "command": "ynw.webpackBuild.dev",
+        "when": "resourceExtname == .js",
+        "group": "ynw"
+      }, {
+        "command": "ynw.webpackBuild.hot",
+        "when": "resourceExtname == .js",
+        "group": "ynw"
+      }, {
+        "command": "ynw.webpackBuild.pro",
+        "when": "resourceExtname == .js",
         "group": "ynw"
       }]
     }
