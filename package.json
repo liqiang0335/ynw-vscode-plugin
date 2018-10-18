@@ -19,35 +19,43 @@
   "main": "./src/extension",
   "contributes": {
     "commands": [{
-      "command": "ynw.relavePath",
-      "title": "Relative Path for Active"
-    }, {
-      "command": "ynw.webpackBuild.dev",
-      "title": "Ynw Build This - Dev"
-    }, {
-      "command": "ynw.webpackBuild.hot",
-      "title": "Ynw Build This - Hot"
-    }, {
-      "command": "ynw.webpackBuild.pro",
-      "title": "Ynw Build This - Pro"
-    }],
+        "command": "ynw.relavePath",
+        "title": "Relative Path for Active"
+      },
+      {
+        "command": "ynw.webpackBuild.dev",
+        "title": "Ynw Build This - Dev"
+      },
+      {
+        "command": "ynw.webpackBuild.hot",
+        "title": "Ynw Build This - Hot"
+      },
+      {
+        "command": "ynw.webpackBuild.pro",
+        "title": "Ynw Build This - Pro"
+      }
+    ],
     "menus": {
       "explorer/context": [{
-        "command": "ynw.relavePath",
-        "group": "ynw"
-      }, {
-        "command": "ynw.webpackBuild.dev",
-        "when": "resourceExtname == .js",
-        "group": "ynw"
-      }, {
-        "command": "ynw.webpackBuild.hot",
-        "when": "resourceExtname == .js",
-        "group": "ynw"
-      }, {
-        "command": "ynw.webpackBuild.pro",
-        "when": "resourceExtname == .js",
-        "group": "ynw"
-      }]
+          "command": "ynw.relavePath",
+          "group": "ynw"
+        },
+        {
+          "command": "ynw.webpackBuild.dev",
+          "when": "resourceExtname == .js",
+          "group": "ynw"
+        },
+        {
+          "command": "ynw.webpackBuild.hot",
+          "when": "resourceExtname == .js",
+          "group": "ynw"
+        },
+        {
+          "command": "ynw.webpackBuild.pro",
+          "when": "resourceExtname == .js",
+          "group": "ynw"
+        }
+      ]
     }
   },
   "scripts": {
