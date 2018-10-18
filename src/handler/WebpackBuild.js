@@ -9,7 +9,7 @@ const exec = (cmd, name) => {
 
 module.exports = function(URI, env) {
   const relative = vscode.workspace.asRelativePath(URI);
-  const dirname = path.dirname(relative).match(/\w+$/);
+  const dirname = path.dirname(relative).match(/\w+$/) || ["app"];
   const entry = relative.replace(/\\+/g, "/").replace(/\.[a-z]+$/, "");
   const key = dirname[0];
   exec(`ynw build=${key} entry=${entry} env=${env}`, key);
