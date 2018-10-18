@@ -1,6 +1,7 @@
 const vscode = require("vscode");
 const RelativePathHandler = require("./handler/RelativePath");
 const WebpackBuildHandler = require("./handler/WebpackBuild");
+const ImportModule = require("./handler/ImportModule");
 
 /**
  * activate
@@ -23,6 +24,9 @@ exports.activate = function(context) {
     vscode.commands.registerCommand("ynw.webpackBuild.pro", uri =>
       WebpackBuildHandler(uri, "pro")
     )
+  );
+  context.subscriptions.push(
+    vscode.commands.registerCommand("ynw.importModule", ImportModule)
   );
 };
 

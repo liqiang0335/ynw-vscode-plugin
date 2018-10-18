@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW ",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -22,10 +22,10 @@
   "icon": "icon.png",
   "keywords": [
     "ynw",
-    "relative path",
-    "webpack"
+    "relative path"
   ],
   "activationEvents": [
+    "onCommand:ynw.importModule",
     "onCommand:ynw.relavePath",
     "onCommand:ynw.webpackBuild.dev",
     "onCommand:ynw.webpackBuild.hot",
@@ -34,8 +34,12 @@
   "main": "./src/extension",
   "contributes": {
     "commands": [{
+        "command": "ynw.importModule",
+        "title": "Import This Module"
+      },
+      {
         "command": "ynw.relavePath",
-        "title": "Relative Path for Active"
+        "title": "Copy Relative for Active"
       },
       {
         "command": "ynw.webpackBuild.dev",
@@ -52,23 +56,28 @@
     ],
     "menus": {
       "explorer/context": [{
-          "command": "ynw.relavePath",
-          "group": "ynw"
+          "command": "ynw.importModule",
+          "when": "resourceExtname == .js",
+          "group": "ynw@1"
         },
         {
           "command": "ynw.webpackBuild.dev",
           "when": "resourceExtname == .js",
-          "group": "ynw"
+          "group": "ynw@2"
         },
         {
           "command": "ynw.webpackBuild.hot",
           "when": "resourceExtname == .js",
-          "group": "ynw"
+          "group": "ynw@3"
         },
         {
           "command": "ynw.webpackBuild.pro",
           "when": "resourceExtname == .js",
-          "group": "ynw"
+          "group": "ynw@4"
+        },
+        {
+          "command": "ynw.relavePath",
+          "group": "ynw@5"
         }
       ]
     }
