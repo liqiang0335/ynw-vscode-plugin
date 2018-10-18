@@ -2,8 +2,17 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW ",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "liqiang0335",
+  "author": "liqiang0335 <liqiang0335@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/liqiang0335/ynw-vscode-plugin/issues",
+    "email": "liqiang0335@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liqiang0335/ynw-vscode-plugin.git"
+  },
   "engines": {
     "vscode": "^1.28.0"
   },
@@ -23,8 +32,7 @@
   ],
   "main": "./src/extension",
   "contributes": {
-    "commands": [
-      {
+    "commands": [{
         "command": "ynw.relavePath",
         "title": "Relative Path for Active"
       },
@@ -42,8 +50,7 @@
       }
     ],
     "menus": {
-      "explorer/context": [
-        {
+      "explorer/context": [{
           "command": "ynw.relavePath",
           "group": "ynw"
         },
