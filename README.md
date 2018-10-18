@@ -1,8 +1,8 @@
 # YNW
 
-包含以下功能
+Features:
 
-- `copy relative path for active` : 复制**相对当前打开文档**的路径到剪贴板(用户快速导入)
-- `Ynw Build This - Dev` 开发模式构建
-- `Ynw Build This - Hot` 热更新模式构建
-- `Ynw Build This - pro` 生产环境构建
+- `Relative Path for Active` : Copy the path relative to the currently open document to clipboard
+- `Ynw Build This - Dev` Use `ynw-cli` package selected files with development mode
+- `Ynw Build This - Hot` Use `ynw-cli` package selected files with production mode
+- `Ynw Build This - pro` Use `ynw-cli` package selected files with hot/replace mode

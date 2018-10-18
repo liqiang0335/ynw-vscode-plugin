@@ -10,6 +10,11 @@
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "ynw",
+    "relative path",
+    "webpack"
+  ],
   "activationEvents": [
     "onCommand:ynw.relavePath",
     "onCommand:ynw.webpackBuild.dev",
@@ -18,7 +23,8 @@
   ],
   "main": "./src/extension",
   "contributes": {
-    "commands": [{
+    "commands": [
+      {
         "command": "ynw.relavePath",
         "title": "Relative Path for Active"
       },
@@ -36,7 +42,8 @@
       }
     ],
     "menus": {
-      "explorer/context": [{
+      "explorer/context": [
+        {
           "command": "ynw.relavePath",
           "group": "ynw"
         },
