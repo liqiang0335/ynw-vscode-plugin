@@ -35,7 +35,7 @@
   "contributes": {
     "commands": [{
         "command": "ynw.importModule",
-        "title": "Import This Module"
+        "title": "Import this module"
       },
       {
         "command": "ynw.relavePath",
@@ -43,21 +43,20 @@
       },
       {
         "command": "ynw.webpackBuild.dev",
-        "title": "Ynw Build This - Dev"
+        "title": "Ynw Build this - Dev"
       },
       {
         "command": "ynw.webpackBuild.hot",
-        "title": "Ynw Build This - Hot"
+        "title": "Ynw Build this - Hot"
       },
       {
         "command": "ynw.webpackBuild.pro",
-        "title": "Ynw Build This - Pro"
+        "title": "Ynw Build this - Pro"
       }
     ],
     "menus": {
       "explorer/context": [{
           "command": "ynw.importModule",
-          "when": "resourceExtname == .js",
           "group": "ynw@1"
         },
         {
