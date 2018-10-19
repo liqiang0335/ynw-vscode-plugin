@@ -2,13 +2,13 @@
 
 ## 2018.10.19
 
-- 0.0.7 : add `import this module` to explorer context menu
+- 0.0.7 : 添加"导入当前模块"
 
 ## 2018.10.18
 
-- 0.0.5 : add terminal name
-- 0.0.3 : add `ynw build this` to explorer context menu
+- 0.0.5 : Bug Fixed: 终端添加名称
+- 0.0.3 : 添加`ynw build this`到右键菜单
 
 ## 2018.10.17
 
-- 0.0.2 : add `relative path` Copy the path relative to the currently open document to clipboard
+- 0.0.2 : 添加[复制相对路径]功能
