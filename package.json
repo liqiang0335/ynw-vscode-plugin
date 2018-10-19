@@ -1,8 +1,8 @@
 {
   "name": "ynw",
   "displayName": "ynw",
-  "description": "Some Tool for YNW ",
-  "version": "0.0.7",
+  "description": "Some Tool for YNW",
+  "version": "0.0.8",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -22,7 +22,8 @@
   "icon": "icon.jpg",
   "keywords": [
     "ynw",
-    "relative path"
+    "relative path",
+    "import"
   ],
   "activationEvents": [
     "onCommand:ynw.importModule",
