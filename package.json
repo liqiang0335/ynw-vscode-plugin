@@ -34,7 +34,8 @@
   ],
   "main": "./src/extension",
   "contributes": {
-    "commands": [{
+    "commands": [
+      {
         "command": "ynw.importModule",
         "title": "Import this module"
       },
@@ -56,7 +57,8 @@
       }
     ],
     "menus": {
-      "explorer/context": [{
+      "explorer/context": [
+        {
           "command": "ynw.importModule",
           "group": "ynw@1"
         },
