@@ -1,4 +1,6 @@
 const path = require("path");
+const fs = require("fs");
+const util = require("util");
 /**
  * Get Relative Path for active
  */
@@ -18,3 +20,7 @@ exports.getRelativePath = function(selectFilePath, activeFilePath) {
   }
   return relativePath;
 };
+
+exports.stat = util.promisify(fs.stat);
+exports.writeFile = util.promisify(fs.writeFile);
+exports.exists = util.promisify(fs.exists);
