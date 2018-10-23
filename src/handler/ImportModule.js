@@ -8,7 +8,11 @@ module.exports = function(URI) {
   if (!activeDocument) return;
   const relativePath = getRelativePath(URI.fsPath, activeDocument.uri.fsPath);
   const basename = path.basename(relativePath);
-  const content = `import ${basename} from "${relativePath}";\n`;
+  const ext = path.extname(basename);
+  let content = `import ${basename} from "${relativePath}";\n`;
+  if (/s?css/.test(ext)) {
+    content = `import "${relativePath}";\n`;
+  }
   copy(content);
   //insert to open document
   vscode.window.activeTextEditor.edit(editBuilder => {
