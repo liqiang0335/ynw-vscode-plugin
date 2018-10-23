@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -76,8 +76,7 @@
         ]
       }
     },
-    "commands": [
-      {
+    "commands": [{
         "command": "ynw.importModule",
         "title": "Import this module"
       },
@@ -103,8 +102,7 @@
       }
     ],
     "menus": {
-      "explorer/context": [
-        {
+      "explorer/context": [{
           "command": "ynw.importModule",
           "when": "config.ynw.showImportModuleMenu",
           "group": "ynw-a@1"
