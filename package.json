@@ -76,7 +76,8 @@
         ]
       }
     },
-    "commands": [{
+    "commands": [
+      {
         "command": "ynw.importModule",
         "title": "Import this module"
       },
@@ -102,35 +103,36 @@
       }
     ],
     "menus": {
-      "explorer/context": [{
+      "explorer/context": [
+        {
           "command": "ynw.importModule",
           "when": "config.ynw.showImportModuleMenu",
-          "group": "ynw@1"
+          "group": "ynw-a@1"
         },
         {
           "command": "ynw.createSameNameFile",
           "when": "config.ynw.createSameNameFile",
-          "group": "ynw@2"
-        },
-        {
-          "command": "ynw.webpackBuild.dev",
-          "when": "resourceExtname == .js",
-          "group": "ynw@3"
-        },
-        {
-          "command": "ynw.webpackBuild.hot",
-          "when": "resourceExtname == .js",
-          "group": "ynw@4"
-        },
-        {
-          "command": "ynw.webpackBuild.pro",
-          "when": "resourceExtname == .js",
-          "group": "ynw@5"
+          "group": "ynw-a@2"
         },
         {
           "command": "ynw.relavePath",
           "when": "config.ynw.showCopyRelativePathMenu",
-          "group": "ynw@6"
+          "group": "ynw-a@3"
+        },
+        {
+          "command": "ynw.webpackBuild.dev",
+          "when": "resourceExtname == .js",
+          "group": "ynw-b@1"
+        },
+        {
+          "command": "ynw.webpackBuild.hot",
+          "when": "resourceExtname == .js",
+          "group": "ynw-b@2"
+        },
+        {
+          "command": "ynw.webpackBuild.pro",
+          "when": "resourceExtname == .js",
+          "group": "ynw-b@3"
         }
       ]
     }
