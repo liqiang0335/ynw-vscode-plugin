@@ -26,6 +26,7 @@
     "import"
   ],
   "activationEvents": [
+    "onCommand:ynw.fileFactory",
     "onCommand:ynw.createSameNameFile",
     "onCommand:ynw.importModule",
     "onCommand:ynw.relavePath",
@@ -37,25 +38,30 @@
   "contributes": {
     "configuration": {
       "type": "object",
-      "title": "Ynw configration",
+      "title": "Ynw配置文件",
       "properties": {
+        "ynw.showFileFactory": {
+          "description": "加工文件",
+          "type": "boolean",
+          "default": false
+        },
         "ynw.showImportModuleMenu": {
-          "description": "enable in explorer/menu",
+          "description": "导入模块",
           "type": "boolean",
           "default": false
         },
         "ynw.showCopyRelativePathMenu": {
-          "description": "enable in explorer/menu",
+          "description": "复制相对路径",
           "type": "boolean",
           "default": false
         },
         "ynw.createSameNameFile": {
-          "description": "enable in explorer/menu",
+          "description": "创建同名文件",
           "type": "boolean",
           "default": false
         },
         "ynw.styleFileType": {
-          "description": "file extension",
+          "description": "创建同名样式文件的类型",
           "type": "string",
           "default": "scss",
           "enum": [
@@ -66,7 +72,7 @@
         }
       },
       "ynw.createStyleFileType": {
-        "description": "style file extension",
+        "description": "创建同名样式文件的类型",
         "type": "string",
         "default": "scss",
         "enum": [
@@ -77,6 +83,9 @@
       }
     },
     "commands": [{
+        "command": "ynw.fileFactory",
+        "title": "加工文件"
+      }, {
         "command": "ynw.importModule",
         "title": "导入模块"
       },
@@ -118,19 +127,24 @@
           "group": "ynw-a@3"
         },
         {
+          "command": "ynw.fileFactory",
+          "when": "config.ynw.showFileFactory",
+          "group": "ynw-b@1"
+        },
+        {
           "command": "ynw.webpackBuild.dev",
           "when": "resourceExtname == .js",
-          "group": "ynw-b@1"
+          "group": "ynw-c@1"
         },
         {
           "command": "ynw.webpackBuild.hot",
           "when": "resourceExtname == .js",
-          "group": "ynw-b@2"
+          "group": "ynw-c@2"
         },
         {
           "command": "ynw.webpackBuild.pro",
           "when": "resourceExtname == .js",
-          "group": "ynw-b@3"
+          "group": "ynw-c@3"
         }
       ]
     },
