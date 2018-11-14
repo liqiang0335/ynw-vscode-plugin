@@ -1,0 +1,23 @@
+{
+  "Vue Single File Component": {
+    "prefix": "vbase",
+    "body": [
+      "<template>",
+      "\t<div class=\"\">",
+      "",
+      "\t</div>",
+      "</template>",
+      "",
+      "<script>",
+      "\texport default {",
+      "\t\t${0}",
+      "\t}",
+      "</script>",
+      "",
+      "<style scoped lang=\"scss\">",
+      "",
+      "</style>"
+    ],
+    "description": "VUE 基础代码"
+  }
+}
