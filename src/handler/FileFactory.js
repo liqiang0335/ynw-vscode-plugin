@@ -4,21 +4,23 @@ const util = require("./util");
 
 const exec = (cmd, name) => {
   const terminal = vscode.window.createTerminal({ name });
-  terminal.show(true);
   terminal.sendText(cmd);
+  terminal.show(true);
 };
 
-module.exports = async function() {
-  const { window, workspace } = vscode;
-  const document = window.activeTextEditor.document;
+module.exports = async function(URI) {
+  const { workspace } = vscode;
   const cwd = workspace.workspaceFolders[0].uri.path;
-  const { fileName } = document;
-  const ext = path.extname(fileName).replace(".", "");
+  const selectPath = URI.path;
+  const ext = path.extname(selectPath).replace(".", "");
   const handlerName = `ynw-${ext}-factory.js`;
   const handlerPath = path.join(cwd, handlerName);
   const exist = await util.exists(handlerPath);
+  console.log(handlerName);
+  console.log(handlerPath);
+  console.log(exist);
   if (exist) {
-    const cmd = `node ${handlerName} ${fileName}`;
+    const cmd = `node ${handlerName} ${selectPath}`;
     exec(cmd, "ynw-process");
   }
 };
