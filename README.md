@@ -13,3 +13,11 @@ Features:
   - 如果选中的是 js 文件, 则创建同名的样式文件
   - 如果选中的是文件夹, 则创建同名的 js 文件
 - `Copy Relative for Active` : 复制相对路径到剪贴板(相对当前打开的文档)
+
+## Snippets
+
+### Vue
+
+- vbase : template 基础模板代码
+- vdata
+- vmethods
