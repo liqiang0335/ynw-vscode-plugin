@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -78,27 +78,27 @@
     },
     "commands": [{
         "command": "ynw.importModule",
-        "title": "Import this module"
+        "title": "导入模块"
       },
       {
         "command": "ynw.createSameNameFile",
-        "title": "Create Same Name File"
+        "title": "创建同名文件"
       },
       {
         "command": "ynw.relavePath",
-        "title": "Copy Relative for Active"
+        "title": "复制相对路径"
       },
       {
         "command": "ynw.webpackBuild.dev",
-        "title": "Ynw Build this - Dev"
+        "title": "ynw-cli --> 开发环境"
       },
       {
         "command": "ynw.webpackBuild.hot",
-        "title": "Ynw Build this - Hot"
+        "title": "ynw-cli --> 热更新模式"
       },
       {
         "command": "ynw.webpackBuild.pro",
-        "title": "Ynw Build this - Pro"
+        "title": "ynw-cli --> 生产环境"
       }
     ],
     "menus": {

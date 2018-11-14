@@ -8,17 +8,17 @@
     ],
     "description": "VUE循环语句"
   },
-  "Vue v-model Directive": {
+  "Vue v-model": {
     "prefix": "vmodel",
     "body": ["<input v-model=\"${1:data}\" type=\"text\" />"],
-    "description": "VUE文本输入"
+    "description": "Vue 文本输入"
   },
   "Vue v-model Number Directive": {
     "prefix": "vmodel-num",
     "body": [
       "<input v-model.number=\"${1:numData}\" type=\"number\" step=\"1\" />"
     ],
-    "description": "VUE指令"
+    "description": "Vue 指令"
   },
   "Vue v-on Shortcut Directive": {
     "prefix": "von",
@@ -83,10 +83,5 @@
       "</transition>"
     ],
     "description": "transition component js hooks"
-  },
-  "Vue Nuxt Routing Link": {
-    "prefix": "vnuxtl",
-    "body": ["<nuxt-link to=\"/${1:page}\">${1:page}</nuxt-link>"],
-    "description": "nuxt routing link"
   }
 }
