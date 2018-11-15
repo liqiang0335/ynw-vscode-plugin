@@ -82,8 +82,7 @@
         ]
       }
     },
-    "commands": [
-      {
+    "commands": [{
         "command": "ynw.fileFactory",
         "title": "加工文件"
       },
@@ -112,38 +111,33 @@
         "title": "ynw-cli --> 生产环境"
       }
     ],
-    "keybindings": [
-      {
-        "command": "ynw.fileFactory",
-        "key": "ctrl+y ctrl+c"
-      }
-    ],
+    "keybindings": [{
+      "command": "ynw.fileFactory",
+      "key": "ctrl+y ctrl+c"
+    }],
     "menus": {
-      "editor/context": [
-        {
-          "command": "ynw.fileFactory"
-        }
-      ],
-      "explorer/context": [
-        {
+      "editor/context": [{
+        "command": "ynw.fileFactory"
+      }],
+      "explorer/context": [{
           "command": "ynw.importModule",
           "when": "config.ynw.showImportModuleMenu",
-          "group": "ynw-a@1"
+          "group": "ynw-b@1"
         },
         {
           "command": "ynw.createSameNameFile",
           "when": "config.ynw.createSameNameFile",
-          "group": "ynw-a@2"
+          "group": "ynw-b@2"
         },
         {
           "command": "ynw.relavePath",
           "when": "config.ynw.showCopyRelativePathMenu",
-          "group": "ynw-a@3"
+          "group": "ynw-b@3"
         },
         {
           "command": "ynw.fileFactory",
           "when": "config.ynw.showFileFactory",
-          "group": "ynw-b@1"
+          "group": "ynw-a@1"
         },
         {
           "command": "ynw.webpackBuild.dev",
@@ -162,8 +156,7 @@
         }
       ]
     },
-    "snippets": [
-      {
+    "snippets": [{
         "language": "vue",
         "path": "./snippets/vue.json"
       },
