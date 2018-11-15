@@ -11,16 +11,23 @@ const exec = (cmd, name) => {
 module.exports = async function(URI) {
   const { workspace } = vscode;
   const cwd = workspace.workspaceFolders[0].uri.path;
-  const selectPath = URI.path;
+  const selectPath = URI.fsPath;
   const ext = path.extname(selectPath).replace(".", "");
   const handlerName = `ynw-${ext}-factory.js`;
-  const handlerPath = path.join(cwd, handlerName);
+  const handlerPath = path
+    .join(cwd, handlerName)
+    .replace(/\\+/g, "\\\\")
+    .replace(/^\\+/, "");
   const exist = await util.exists(handlerPath);
-  console.log(handlerName);
-  console.log(handlerPath);
-  console.log(exist);
+
+  // console.log("cwd", cwd);
+  // console.log("selectPath", selectPath);
+  // console.log("handlerName", handlerName);
+  // console.log("handlerPath", handlerPath);
+  // console.log("exist", exist);
+
   if (exist) {
-    const cmd = `node ${handlerName} ${selectPath}`;
+    const cmd = `node ${handlerName} ${util.toWinPath(selectPath)}`;
     exec(cmd, "ynw-process");
   }
 };
