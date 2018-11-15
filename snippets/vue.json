@@ -3,7 +3,7 @@
     "prefix": "vbase",
     "body": [
       "<template>",
-      "\t<div class=\"\">",
+      "\t<div class=\"component\">",
       "",
       "\t</div>",
       "</template>",
@@ -15,7 +15,9 @@
       "</script>",
       "",
       "<style scoped lang=\"scss\">",
-      "",
+      "\t.component {",
+      "\t\t",
+      "}",
       "</style>"
     ],
     "description": "VUE 基础代码"
