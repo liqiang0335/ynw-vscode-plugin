@@ -82,10 +82,12 @@
         ]
       }
     },
-    "commands": [{
+    "commands": [
+      {
         "command": "ynw.fileFactory",
         "title": "加工文件"
-      }, {
+      },
+      {
         "command": "ynw.importModule",
         "title": "导入模块"
       },
@@ -110,8 +112,20 @@
         "title": "ynw-cli --> 生产环境"
       }
     ],
+    "keybindings": [
+      {
+        "command": "ynw.fileFactory",
+        "key": "ctrl+y ctrl+c"
+      }
+    ],
     "menus": {
-      "explorer/context": [{
+      "editor/context": [
+        {
+          "command": "ynw.fileFactory"
+        }
+      ],
+      "explorer/context": [
+        {
           "command": "ynw.importModule",
           "when": "config.ynw.showImportModuleMenu",
           "group": "ynw-a@1"
@@ -148,7 +162,8 @@
         }
       ]
     },
-    "snippets": [{
+    "snippets": [
+      {
         "language": "vue",
         "path": "./snippets/vue.json"
       },
