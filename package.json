@@ -121,22 +121,22 @@
       "explorer/context": [{
           "command": "ynw.importModule",
           "when": "config.ynw.showImportModuleMenu",
-          "group": "ynw-b@1"
+          "group": "ynw-a@1"
         },
         {
           "command": "ynw.createSameNameFile",
           "when": "config.ynw.createSameNameFile",
-          "group": "ynw-b@2"
+          "group": "ynw-a@2"
         },
         {
           "command": "ynw.relavePath",
           "when": "config.ynw.showCopyRelativePathMenu",
-          "group": "ynw-b@3"
+          "group": "ynw-a@3"
         },
         {
           "command": "ynw.fileFactory",
           "when": "config.ynw.showFileFactory",
-          "group": "ynw-a@1"
+          "group": "ynw-b@1"
         },
         {
           "command": "ynw.webpackBuild.dev",
