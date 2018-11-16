@@ -3,7 +3,9 @@ const path = require("path");
 const utils = require("./util");
 
 module.exports = async function(URI) {
-  const filePath = URI.fsPath;
+  const filePath = URI
+    ? URI.fsPath
+    : vscode.window.activeTextEditor.document.fileName;
   const stat = await utils.stat(filePath);
   const fileType = stat.isDirectory() ? "dir" : "file";
 

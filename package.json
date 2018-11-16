@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -20,11 +20,7 @@
     "Other"
   ],
   "icon": "icon.jpg",
-  "keywords": [
-    "ynw",
-    "relative path",
-    "import"
-  ],
+  "keywords": ["ynw"],
   "activationEvents": [
     "onCommand:ynw.fileFactory",
     "onCommand:ynw.createSameNameFile",
@@ -84,15 +80,15 @@
     },
     "commands": [{
         "command": "ynw.fileFactory",
-        "title": "加工文件"
+        "title": "文件加工"
       },
       {
         "command": "ynw.importModule",
-        "title": "导入模块"
+        "title": "导入选中模块"
       },
       {
         "command": "ynw.createSameNameFile",
-        "title": "创建同名文件"
+        "title": "新建同名文件"
       },
       {
         "command": "ynw.relavePath",
@@ -100,20 +96,23 @@
       },
       {
         "command": "ynw.webpackBuild.dev",
-        "title": "ynw-cli --> 开发环境"
+        "title": "ynw-cli >> 开发环境"
       },
       {
         "command": "ynw.webpackBuild.hot",
-        "title": "ynw-cli --> 热更新模式"
+        "title": "ynw-cli >> 热更新模式"
       },
       {
         "command": "ynw.webpackBuild.pro",
-        "title": "ynw-cli --> 生产环境"
+        "title": "ynw-cli >> 生产环境"
       }
     ],
     "keybindings": [{
       "command": "ynw.fileFactory",
       "key": "ctrl+y ctrl+c"
+    }, {
+      "command": "ynw.createSameNameFile",
+      "key": "ctrl+y ctrl+n"
     }],
     "menus": {
       "editor/context": [{

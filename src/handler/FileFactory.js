@@ -9,9 +9,11 @@ const exec = (cmd, name) => {
 };
 
 module.exports = async function(URI) {
-  const { workspace } = vscode;
+  const { workspace, window } = vscode;
+  const selectPath = URI
+    ? URI.fsPath
+    : window.activeTextEditor.document.fileName;
   const cwd = workspace.workspaceFolders[0].uri.path;
-  const selectPath = URI.fsPath;
   const ext = path.extname(selectPath).replace(".", "");
   const handlerName = `ynw-${ext}-factory.js`;
   const handlerPath = path
@@ -19,12 +21,6 @@ module.exports = async function(URI) {
     .replace(/\\+/g, "\\\\")
     .replace(/^\\+/, "");
   const exist = await util.exists(handlerPath);
-
-  // console.log("cwd", cwd);
-  // console.log("selectPath", selectPath);
-  // console.log("handlerName", handlerName);
-  // console.log("handlerPath", handlerPath);
-  // console.log("exist", exist);
 
   if (exist) {
     const cmd = `node ${handlerName} ${util.toWinPath(selectPath)}`;
