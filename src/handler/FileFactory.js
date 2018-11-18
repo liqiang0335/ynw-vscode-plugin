@@ -32,5 +32,7 @@ module.exports = async function(URI) {
       }
       window.showInformationMessage("File-Factory: OK");
     });
+  } else {
+    window.showErrorMessage("File-Factory: Not Found!");
   }
 };
