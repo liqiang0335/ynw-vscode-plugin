@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -20,7 +20,9 @@
     "Other"
   ],
   "icon": "icon.jpg",
-  "keywords": ["ynw"],
+  "keywords": [
+    "ynw"
+  ],
   "activationEvents": [
     "onCommand:ynw.createJson",
     "onCommand:ynw.fileFactory",
@@ -38,19 +40,24 @@
       "title": "YNW配置文件",
       "properties": {
         "ynw.showJsonMenu": {
-          "description": "显示创建JSON菜单",
+          "description": "JSON: 设置显示菜单",
           "type": "boolean",
           "default": false
         },
         "ynw.jsonName": {
-          "description": "生成JSON文件的名称",
+          "description": "JSON: 设置文件名称",
           "type": "string",
-          "default": "__subs__"
+          "default": "__db__"
         },
         "ynw.jsonIgnore": {
-          "description": "生成JSON文件忽略的正则",
+          "description": "JSON: 设置忽略正则",
           "type": "string",
           "default": "dist"
+        },
+        "ynw.jsonIncludeFiles": {
+          "description": "JSON: 是否包含文件",
+          "type": "boolean",
+          "default": false
         },
         "ynw.showFileFactory": {
           "description": "加工文件",
@@ -128,12 +135,14 @@
       }
     ],
     "keybindings": [{
-      "command": "ynw.fileFactory",
-      "key": "ctrl+y ctrl+c"
-    }, {
-      "command": "ynw.createSameNameFile",
-      "key": "ctrl+y ctrl+n"
-    }],
+        "command": "ynw.fileFactory",
+        "key": "ctrl+y ctrl+c"
+      },
+      {
+        "command": "ynw.createSameNameFile",
+        "key": "ctrl+y ctrl+n"
+      }
+    ],
     "menus": {
       "editor/context": [{
         "command": "ynw.fileFactory"
