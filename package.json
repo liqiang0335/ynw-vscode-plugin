@@ -22,6 +22,7 @@
   "icon": "icon.jpg",
   "keywords": ["ynw"],
   "activationEvents": [
+    "onCommand:ynw.createJson",
     "onCommand:ynw.fileFactory",
     "onCommand:ynw.createSameNameFile",
     "onCommand:ynw.importModule",
@@ -34,8 +35,23 @@
   "contributes": {
     "configuration": {
       "type": "object",
-      "title": "Ynw配置文件",
+      "title": "YNW配置文件",
       "properties": {
+        "ynw.showJsonMenu": {
+          "description": "显示创建JSON菜单",
+          "type": "boolean",
+          "default": false
+        },
+        "ynw.jsonName": {
+          "description": "生成JSON文件的名称",
+          "type": "string",
+          "default": "__subs__"
+        },
+        "ynw.jsonIgnore": {
+          "description": "生成JSON文件忽略的正则",
+          "type": "string",
+          "default": "dist"
+        },
         "ynw.showFileFactory": {
           "description": "加工文件",
           "type": "boolean",
@@ -81,6 +97,10 @@
     "commands": [{
         "command": "ynw.fileFactory",
         "title": "文件加工"
+      },
+      {
+        "command": "ynw.createJson",
+        "title": "生成JSON文件"
       },
       {
         "command": "ynw.importModule",
@@ -137,6 +157,11 @@
           "command": "ynw.fileFactory",
           "when": "config.ynw.showFileFactory",
           "group": "ynw-b@1"
+        },
+        {
+          "command": "ynw.createJson",
+          "when": "config.ynw.showJsonMenu",
+          "group": "ynw-b@2"
         },
         {
           "command": "ynw.webpackBuild.dev",
