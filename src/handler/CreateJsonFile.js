@@ -35,11 +35,18 @@ module.exports = async function(URI) {
   }
 };
 
+const ignoreReg = new RegExp(jsonIgnore);
+function shouldIgnore(name) {
+  const a = ignoreReg.test(name);
+  const b = name == jsonName;
+  const c = name == "node_modules";
+  return a || b || c;
+}
+
 function gen(folder, inject) {
   const files = fs.readdirSync(folder);
   for (var name of files) {
-    const reg = new RegExp(jsonIgnore);
-    if (reg.test(name) || jsonName == name) {
+    if (shouldIgnore(name)) {
       continue;
     }
     const filePath = path.join(folder, name);
