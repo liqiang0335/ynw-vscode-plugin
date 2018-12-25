@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -52,7 +52,7 @@
         "ynw.jsonIgnore": {
           "description": "JSON: 设置忽略正则",
           "type": "string",
-          "default": "dist"
+          "default": "(dist|images?|style|script)"
         },
         "ynw.jsonIncludeFiles": {
           "description": "JSON: 是否包含文件",
@@ -67,12 +67,12 @@
         "ynw.showImportModuleMenu": {
           "description": "导入模块",
           "type": "boolean",
-          "default": false
+          "default": true
         },
         "ynw.showCopyRelativePathMenu": {
           "description": "复制相对路径",
           "type": "boolean",
-          "default": false
+          "default": true
         },
         "ynw.createSameNameFile": {
           "description": "创建同名文件",
