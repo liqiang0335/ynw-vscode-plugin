@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -52,7 +52,7 @@
         "ynw.jsonIgnore": {
           "description": "JSON: 设置忽略正则",
           "type": "string",
-          "default": "(dist|images?|style|script)"
+          "default": "(src|dist|images?|style|script)"
         },
         "ynw.jsonIncludeFiles": {
           "description": "JSON: 是否包含文件",
