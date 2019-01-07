@@ -57,7 +57,7 @@ function gen(folder, inject) {
     }
 
     const bundlePath = path.join(filePath, "dist/index.bundle.js");
-    const isPlain = fs.existsSync(bundlePath);
+    const isPlain = isDir && fs.existsSync(bundlePath);
 
     const id = uuid();
     result.push({ name, id, isDir, ...inject, isPlain });
