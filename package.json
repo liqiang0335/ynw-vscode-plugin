@@ -50,14 +50,9 @@
           "default": "__db__"
         },
         "ynw.jsonIgnore": {
-          "description": "JSON: 设置忽略正则",
+          "description": "JSON: 设置忽略文件夹的正则",
           "type": "string",
           "default": "(src|dist|images?|style|script)"
-        },
-        "ynw.jsonIncludeFiles": {
-          "description": "JSON: 是否包含文件",
-          "type": "boolean",
-          "default": false
         },
         "ynw.showFileFactory": {
           "description": "加工文件",
