@@ -22,7 +22,7 @@ module.exports = async function(URI) {
   if (isDir) {
     result = [];
     const target = path.join(filePath, jsonName);
-    gen(filePath, { rel: path.basename(filePath), pid: "0" });
+    gen(filePath, { rel: "", pid: "0" });
 
     fs.writeFile(target, JSON.stringify(result), err => {
       if (err) {
