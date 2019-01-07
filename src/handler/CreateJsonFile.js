@@ -5,7 +5,6 @@ const fs = require("fs");
 
 const config = vscode.workspace.getConfiguration("ynw");
 const jsonIgnore = config.get("jsonIgnore");
-const isIncludeFile = config.get("jsonIncludeFiles");
 const jsonName = config.get("jsonName") + ".json";
 
 let result = [];
@@ -36,29 +35,32 @@ module.exports = async function(URI) {
 };
 
 const ignoreReg = new RegExp(jsonIgnore);
-function shouldIgnore(name) {
+function shouldIgnore(name, isDir) {
   const a = ignoreReg.test(name);
   const b = name == jsonName;
   const c = name == "node_modules";
-  return a || b || c;
+  const d = name == "index.html";
+  const e = !isDir && !/\.html$/.test(name);
+  return a || b || c || d || e;
 }
 
 function gen(folder, inject) {
   const files = fs.readdirSync(folder);
+
   for (var name of files) {
-    if (shouldIgnore(name)) {
-      continue;
-    }
     const filePath = path.join(folder, name);
     const stat = fs.statSync(filePath);
     const isDir = stat.isDirectory();
 
-    if (!isDir && !isIncludeFile) {
+    if (shouldIgnore(name, isDir)) {
       continue;
     }
 
+    const bundlePath = path.join(filePath, "dist/index.bundle.js");
+    const isPlain = fs.existsSync(bundlePath);
+
     const id = uuid();
-    result.push({ name, id, isDir, ...inject });
+    result.push({ name, id, isDir, ...inject, isPlain });
     const rel = inject && inject.rel ? `${inject.rel}/${name}` : name;
 
     if (isDir) {
