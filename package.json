@@ -185,30 +185,9 @@
       ]
     },
     "snippets": [{
-        "language": "vue",
-        "path": "./snippets/vue.json"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/vue-template.json"
-      },
-      {
-        "language": "vue-html",
-        "path": "./snippets/vue-template.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/vue-script.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/vue-script-vuex.json"
-      },
-      {
-        "language": "plaintext",
-        "path": "./snippets/plaintext.json"
-      }
-    ]
+      "language": "vue",
+      "path": "./snippets/vue.json"
+    }]
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
