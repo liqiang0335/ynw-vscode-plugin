@@ -5,6 +5,8 @@ const ImportModule = require("./handler/ImportModule");
 const CreateSameNameFile = require("./handler/CreateSameNameFile");
 const FileFactory = require("./handler/FileFactory");
 const CreateJsonFile = require("./handler/CreateJsonFile");
+const CreateIndexFiles = require("./handler/CreateIndexFiles");
+
 /**
  * activate
  */
@@ -44,6 +46,10 @@ exports.activate = function(context) {
       "ynw.createSameNameFile",
       CreateSameNameFile
     )
+  );
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand("ynw.createIndexFiles", CreateIndexFiles)
   );
 
   context.subscriptions.push(
