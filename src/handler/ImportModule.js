@@ -13,7 +13,7 @@ module.exports = function(URI) {
   if (/s?css/.test(ext)) {
     content = `import "${relativePath}";\n`;
   }
-  copy(content);
+  copy("* as ");
   //insert to open document
   vscode.window.activeTextEditor.edit(editBuilder => {
     let position = vscode.window.activeTextEditor.selection.end;
