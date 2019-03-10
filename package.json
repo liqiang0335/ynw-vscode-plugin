@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.3.8",
+  "version": "0.4.0",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -24,10 +24,6 @@
     "ynw"
   ],
   "activationEvents": [
-    "onCommand:ynw.createJson",
-    "onCommand:ynw.fileFactory",
-    "onCommand:ynw.createIndexFiles",
-    "onCommand:ynw.createSameNameFile",
     "onCommand:ynw.importModule",
     "onCommand:ynw.relavePath",
     "onCommand:ynw.webpackBuild.dev",
@@ -36,91 +32,9 @@
   ],
   "main": "./src/extension",
   "contributes": {
-    "configuration": {
-      "type": "object",
-      "title": "YNW配置文件",
-      "properties": {
-        "ynw.showJsonMenu": {
-          "description": "JSON: 设置显示菜单",
-          "type": "boolean",
-          "default": false
-        },
-        "ynw.jsonName": {
-          "description": "JSON: 设置文件名称",
-          "type": "string",
-          "default": "__db__"
-        },
-        "ynw.jsonIgnore": {
-          "description": "JSON: 设置忽略文件夹的正则",
-          "type": "string",
-          "default": "(src|dist|images?|style|script)"
-        },
-        "ynw.showFileFactory": {
-          "description": "加工文件",
-          "type": "boolean",
-          "default": false
-        },
-        "ynw.showImportModuleMenu": {
-          "description": "导入模块",
-          "type": "boolean",
-          "default": true
-        },
-        "ynw.showCopyRelativePathMenu": {
-          "description": "复制相对路径",
-          "type": "boolean",
-          "default": true
-        },
-        "ynw.createSameNameFile": {
-          "description": "创建同名文件",
-          "type": "boolean",
-          "default": false
-        },
-        "ynw.createIndexFiles": {
-          "description": "创建Index文件",
-          "type": "boolean",
-          "default": false
-        },
-        "ynw.styleFileType": {
-          "description": "创建同名样式文件的类型",
-          "type": "string",
-          "default": "scss",
-          "enum": [
-            "css",
-            "scss",
-            "less"
-          ]
-        }
-      },
-      "ynw.createStyleFileType": {
-        "description": "创建同名样式文件的类型",
-        "type": "string",
-        "default": "scss",
-        "enum": [
-          "css",
-          "scss",
-          "less"
-        ]
-      }
-    },
     "commands": [{
-        "command": "ynw.fileFactory",
-        "title": "文件加工"
-      },
-      {
-        "command": "ynw.createJson",
-        "title": "生成JSON文件"
-      },
-      {
         "command": "ynw.importModule",
         "title": "导入选中模块"
-      },
-      {
-        "command": "ynw.createSameNameFile",
-        "title": "新建同名文件"
-      },
-      {
-        "command": "ynw.createIndexFiles",
-        "title": "创建 Index 文件"
       },
       {
         "command": "ynw.relavePath",
@@ -139,48 +53,18 @@
         "title": "ynw-cli >> 生产环境"
       }
     ],
-    "keybindings": [{
-        "command": "ynw.fileFactory",
-        "key": "ctrl+y ctrl+c"
-      },
-      {
-        "command": "ynw.createSameNameFile",
-        "key": "ctrl+y ctrl+n"
-      }
-    ],
+    "keybindings": [],
     "menus": {
-      "editor/context": [{
-        "command": "ynw.fileFactory"
-      }],
+      "editor/context": [],
       "explorer/context": [{
           "command": "ynw.importModule",
           "when": "config.ynw.showImportModuleMenu",
           "group": "ynw-a@1"
         },
         {
-          "command": "ynw.createSameNameFile",
-          "when": "config.ynw.createSameNameFile",
-          "group": "ynw-a@2"
-        },
-        {
-          "command": "ynw.createIndexFiles",
-          "when": "config.ynw.createIndexFiles",
-          "group": "ynw-a@3"
-        },
-        {
           "command": "ynw.relavePath",
           "when": "config.ynw.showCopyRelativePathMenu",
-          "group": "ynw-a@4"
-        },
-        {
-          "command": "ynw.fileFactory",
-          "when": "config.ynw.showFileFactory",
-          "group": "ynw-b@1"
-        },
-        {
-          "command": "ynw.createJson",
-          "when": "config.ynw.showJsonMenu",
-          "group": "ynw-b@2"
+          "group": "ynw-a@2"
         },
         {
           "command": "ynw.webpackBuild.dev",
