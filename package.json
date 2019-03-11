@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -26,20 +26,40 @@
   "activationEvents": [
     "onCommand:ynw.importModule",
     "onCommand:ynw.relavePath",
+    "onCommand:ynw.createSameNameFile",
     "onCommand:ynw.webpackBuild.dev",
     "onCommand:ynw.webpackBuild.hot",
     "onCommand:ynw.webpackBuild.pro"
   ],
   "main": "./src/extension",
   "contributes": {
-    "commands": [
-      {
+    "configuration": {
+      "type": "object",
+      "title": "ynw",
+      "properties": {
+        "ynw.styleFileType": {
+          "description": "创建样式文件的类型",
+          "type": "string",
+          "default": "scss",
+          "enum": [
+            "css",
+            "scss",
+            "less"
+          ]
+        }
+      }
+    },
+    "commands": [{
         "command": "ynw.importModule",
         "title": "导入选中模块"
       },
       {
         "command": "ynw.relavePath",
         "title": "复制相对路径"
+      },
+      {
+        "command": "ynw.createSameNameFile",
+        "title": "创建同名文件"
       },
       {
         "command": "ynw.webpackBuild.dev",
@@ -57,14 +77,17 @@
     "keybindings": [],
     "menus": {
       "editor/context": [],
-      "explorer/context": [
-        {
+      "explorer/context": [{
           "command": "ynw.importModule",
           "group": "ynw-a@1"
         },
         {
           "command": "ynw.relavePath",
           "group": "ynw-a@2"
+        },
+        {
+          "command": "ynw.createSameNameFile",
+          "group": "ynw-a@3"
         },
         {
           "command": "ynw.webpackBuild.dev",
@@ -83,12 +106,10 @@
         }
       ]
     },
-    "snippets": [
-      {
-        "language": "vue",
-        "path": "./snippets/vue.json"
-      }
-    ]
+    "snippets": [{
+      "language": "vue",
+      "path": "./snippets/vue.json"
+    }]
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",

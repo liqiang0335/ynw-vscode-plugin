@@ -2,6 +2,7 @@ const vscode = require("vscode");
 const RelativePathHandler = require("./handler/RelativePath");
 const WebpackBuildHandler = require("./handler/WebpackBuild");
 const ImportModule = require("./handler/ImportModule");
+const CreateSameNameFile = require("./handler/CreateSameNameFile");
 
 /**
  * activate
@@ -20,6 +21,13 @@ exports.activate = function(context) {
   context.subscriptions.push(
     vscode.commands.registerCommand("ynw.webpackBuild.hot", uri =>
       WebpackBuildHandler(uri, "hot")
+    )
+  );
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand(
+      "ynw.createSameNameFile",
+      CreateSameNameFile
     )
   );
 
