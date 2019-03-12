@@ -1,7 +1,26 @@
 const vscode = require("vscode");
 const { getRelativePath } = require("./util.js");
 const path = require("path");
-const { copy } = require("copy-paste");
+
+const maps = [
+  {
+    reg: /\.scss$/,
+    handler: ({ relativePath }) => `import styles from "${relativePath}"`
+  },
+  {
+    reg: /\.css$/,
+    handler: ({ relativePath }) => `import "${relativePath}"`
+  },
+  {
+    reg: /(api)$/,
+    handler: ({ relativePath, basename }) =>
+      `import * as ${basename} from "${relativePath}"`
+  },
+  {
+    reg: /(const|utils)$/i,
+    handler: ({ relativePath }) => `import {  } from "${relativePath}"`
+  }
+];
 
 module.exports = function(URI) {
   const activeDocument = vscode.window.activeTextEditor.document;
@@ -9,11 +28,13 @@ module.exports = function(URI) {
   const relativePath = getRelativePath(URI.fsPath, activeDocument.uri.fsPath);
   const basename = path.basename(relativePath);
   const ext = path.extname(basename);
-  let content = `import ${basename} from "${relativePath}";\n`;
-  if (/s?css/.test(ext)) {
-    content = `import "${relativePath}";\n`;
-  }
-  copy("* as ");
+  const ctx = { relativePath, ext, basename };
+  console.log("TCL: ctx", ctx);
+  const match = maps.find(item => item.reg.test(basename));
+  const content = match
+    ? match.handler(ctx) + ";\n"
+    : `import ${basename} from "${relativePath}";\n`;
+
   //insert to open document
   vscode.window.activeTextEditor.edit(editBuilder => {
     let position = vscode.window.activeTextEditor.selection.end;
