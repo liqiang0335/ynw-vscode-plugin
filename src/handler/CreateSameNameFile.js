@@ -17,7 +17,7 @@ module.exports = async function(URI) {
       const ext = config.get("styleFileType");
       const fullName = name + "." + ext;
       const target = path.join(dirname, fullName);
-      const content = `.${name} {\n\n}`;
+      const content = ``;
       return { target, content };
     },
     dir() {
