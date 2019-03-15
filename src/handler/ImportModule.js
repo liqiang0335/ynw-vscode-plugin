@@ -17,6 +17,10 @@ const maps = [
       `import * as ${basename} from "${relativePath}"`
   },
   {
+    reg: /hub$/,
+    handler: ({ relativePath }) => `import hub, {  } from "${relativePath}"`
+  },
+  {
     reg: /(const|utils)$/i,
     handler: ({ relativePath }) => `import {  } from "${relativePath}"`
   }
@@ -29,7 +33,6 @@ module.exports = function(URI) {
   const basename = path.basename(relativePath);
   const ext = path.extname(basename);
   const ctx = { relativePath, ext, basename };
-  console.log("TCL: ctx", ctx);
   const match = maps.find(item => item.reg.test(basename));
   const content = match
     ? match.handler(ctx) + ";\n"
