@@ -17,10 +17,6 @@ const maps = [
       `import * as ${basename} from "${relativePath}"`
   },
   {
-    reg: /hub$/,
-    handler: ({ relativePath }) => `import hub, {  } from "${relativePath}"`
-  },
-  {
     reg: /(const|utils)$/i,
     handler: ({ relativePath }) => `import {  } from "${relativePath}"`
   }
