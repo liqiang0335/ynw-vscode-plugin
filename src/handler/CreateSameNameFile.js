@@ -23,7 +23,10 @@ module.exports = async function(URI) {
     dir() {
       const name = filePath.match(/\w+$/)[0];
       const target = path.join(filePath, name + ".js");
-      const content = `import React from "react";\n`;
+      const content = `import React from "react";
+      export default function ${name}(){
+        return <div>${name}</div>
+      }`;
       return { target, content };
     }
   };
