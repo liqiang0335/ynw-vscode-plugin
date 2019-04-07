@@ -49,8 +49,7 @@
         }
       }
     },
-    "commands": [
-      {
+    "commands": [{
         "command": "ynw.importModule",
         "title": "导入选中模块"
       },
@@ -78,18 +77,17 @@
     "keybindings": [],
     "menus": {
       "editor/context": [],
-      "explorer/context": [
-        {
+      "explorer/context": [{
           "command": "ynw.importModule",
-          "group": "ynw-a@1"
+          "group": "a1@1"
         },
         {
           "command": "ynw.relavePath",
-          "group": "ynw-a@2"
+          "group": "a1@2"
         },
         {
           "command": "ynw.createSameNameFile",
-          "group": "ynw-a@3"
+          "group": "a1@3"
         },
         {
           "command": "ynw.webpackBuild.dev",
@@ -108,12 +106,10 @@
         }
       ]
     },
-    "snippets": [
-      {
-        "language": "vue",
-        "path": "./snippets/vue.json"
-      }
-    ]
+    "snippets": [{
+      "language": "vue",
+      "path": "./snippets/vue.json"
+    }]
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
