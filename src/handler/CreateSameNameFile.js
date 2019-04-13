@@ -1,11 +1,13 @@
 const vscode = require("vscode");
 const path = require("path");
 const utils = require("./util");
+const { copy } = require("copy-paste");
 
 module.exports = async function(URI) {
   const filePath = URI
     ? URI.fsPath
     : vscode.window.activeTextEditor.document.fileName;
+
   const stat = await utils.stat(filePath);
   const fileType = stat.isDirectory() ? "dir" : "file";
 
@@ -17,13 +19,14 @@ module.exports = async function(URI) {
       const ext = config.get("styleFileType");
       const fullName = name + "." + ext;
       const target = path.join(dirname, fullName);
-      const content = ``;
+      const content = `.container{\n\n}`;
+      copy(`import styles from "./${fullName}"`);
       return { target, content };
     },
     dir() {
       const name = filePath.match(/\w+$/)[0];
       const target = path.join(filePath, name + ".js");
-      const content = `import React from "react";
+      const content = `import React from "react";\n\n
       export default function ${name}(){
         return <div>${name}</div>
       }`;
