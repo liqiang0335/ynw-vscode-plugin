@@ -25,6 +25,7 @@
   ],
   "activationEvents": [
     "onCommand:ynw.createAction",
+    "onCommand:ynw.createConstant",
     "onCommand:ynw.importModule",
     "onCommand:ynw.relavePath",
     "onCommand:ynw.createSameNameFile",
@@ -50,13 +51,16 @@
         }
       }
     },
-    "commands": [
-      {
+    "commands": [{
         "command": "ynw.importModule",
         "title": "导入选中模块"
       },
       {
         "command": "ynw.createAction",
+        "title": "Create Redux Action"
+      },
+      {
+        "command": "ynw.createConstant",
         "title": "Create Redux Action"
       },
       {
@@ -80,20 +84,22 @@
         "title": "ynw-cli >> 生产环境"
       }
     ],
-    "keybindings": [
-      {
+    "keybindings": [{
         "command": "ynw.createSameNameFile",
         "key": "ctrl+y ctrl+s"
       },
       {
         "command": "ynw.createAction",
         "key": "ctrl+y ctrl+a"
+      },
+      {
+        "command": "ynw.createConstant",
+        "key": "ctrl+y ctrl+b"
       }
     ],
     "menus": {
       "editor/context": [],
-      "explorer/context": [
-        {
+      "explorer/context": [{
           "command": "ynw.importModule",
           "group": "a1@1"
         },
@@ -122,12 +128,10 @@
         }
       ]
     },
-    "snippets": [
-      {
-        "language": "vue",
-        "path": "./snippets/vue.json"
-      }
-    ]
+    "snippets": [{
+      "language": "vue",
+      "path": "./snippets/vue.json"
+    }]
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",

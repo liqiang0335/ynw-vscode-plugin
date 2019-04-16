@@ -4,11 +4,15 @@ const WebpackBuildHandler = require("./handler/WebpackBuild");
 const ImportModule = require("./handler/ImportModule");
 const CreateSameNameFile = require("./handler/CreateSameNameFile");
 const createAction = require("./handler/createAction");
+const createConstant = require("./handler/createConstant");
 
 /**
  * activate
  */
 exports.activate = function(context) {
+  context.subscriptions.push(
+    vscode.commands.registerCommand("ynw.createConstant", createConstant)
+  );
   context.subscriptions.push(
     vscode.commands.registerCommand("ynw.createAction", createAction)
   );
