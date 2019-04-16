@@ -6,7 +6,7 @@ module.exports = function() {
   if (!selection) {
     return;
   }
-  const source = selection.split("_");
+  const source = selection.split("_").map(it => it.toLowerCase());
   const constantName = source.map(it => it.toUpperCase()).join("_");
   const content = `export const ${constantName} = "${constantName}"\n`;
   replace(content);

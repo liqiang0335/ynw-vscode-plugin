@@ -7,7 +7,7 @@ module.exports = function() {
     return;
   }
 
-  const source = selection.split("_");
+  const source = selection.split("_").map(it => it.toLowerCase());
   const constantName = source.map(it => it.toUpperCase()).join("_");
   const creatorName = source
     .map(item => {
