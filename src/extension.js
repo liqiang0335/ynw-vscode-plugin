@@ -3,11 +3,16 @@ const RelativePathHandler = require("./handler/RelativePath");
 const WebpackBuildHandler = require("./handler/WebpackBuild");
 const ImportModule = require("./handler/ImportModule");
 const CreateSameNameFile = require("./handler/CreateSameNameFile");
+const createAction = require("./handler/createAction");
 
 /**
  * activate
  */
 exports.activate = function(context) {
+  context.subscriptions.push(
+    vscode.commands.registerCommand("ynw.createAction", createAction)
+  );
+
   context.subscriptions.push(
     vscode.commands.registerCommand("ynw.relavePath", RelativePathHandler)
   );

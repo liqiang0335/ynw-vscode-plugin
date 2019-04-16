@@ -20,6 +20,7 @@
   "icon": "icon.jpg",
   "keywords": ["ynw"],
   "activationEvents": [
+    "onCommand:ynw.createAction",
     "onCommand:ynw.importModule",
     "onCommand:ynw.relavePath",
     "onCommand:ynw.createSameNameFile",
@@ -46,6 +47,10 @@
         "title": "导入选中模块"
       },
       {
+        "command": "ynw.createAction",
+        "title": "Create Redux Action"
+      },
+      {
         "command": "ynw.relavePath",
         "title": "复制相对路径"
       },
@@ -67,9 +72,14 @@
       }
     ],
     "keybindings": [{
-      "command": "ynw.createSameNameFile",
-      "key": "ctrl+y ctrl+s"
-    }],
+        "command": "ynw.createSameNameFile",
+        "key": "ctrl+y ctrl+s"
+      },
+      {
+        "command": "ynw.createAction",
+        "key": "ctrl+y ctrl+a"
+      }
+    ],
     "menus": {
       "editor/context": [],
       "explorer/context": [{
