@@ -51,8 +51,7 @@
         }
       }
     },
-    "commands": [
-      {
+    "commands": [{
         "command": "ynw.importModule",
         "title": "导入选中模块"
       },
@@ -85,24 +84,21 @@
         "title": "ynw-cli >> 生产环境"
       }
     ],
-    "keybindings": [
-      {
+    "keybindings": [{
         "command": "ynw.createSameNameFile",
         "key": "ctrl+y ctrl+s"
-      },
-      {
-        "command": "ynw.createAction",
+      }, {
+        "command": "ynw.createConstant",
         "key": "ctrl+y ctrl+6"
       },
       {
-        "command": "ynw.createConstant",
-        "key": "ctrl+y ctrl+8"
+        "command": "ynw.createAction",
+        "key": "ctrl+y ctrl+7"
       }
     ],
     "menus": {
       "editor/context": [],
-      "explorer/context": [
-        {
+      "explorer/context": [{
           "command": "ynw.importModule",
           "group": "a1@1"
         },
@@ -131,12 +127,10 @@
         }
       ]
     },
-    "snippets": [
-      {
-        "language": "vue",
-        "path": "./snippets/vue.json"
-      }
-    ]
+    "snippets": [{
+      "language": "vue",
+      "path": "./snippets/vue.json"
+    }]
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
