@@ -1,5 +1,6 @@
 const replace = require("../utils/replace");
 const getSelection = require("../utils/getSelection");
+const { copy } = require("copy-paste");
 
 module.exports = function() {
   const selection = getSelection();
@@ -22,4 +23,8 @@ module.exports = function() {
     `export const dispatch${creatorName} = createAction(${constantName})\n`;
 
   replace(content);
+
+  copy(`[${constantName}]: (state) => {
+    return { ...state };
+  }`);
 };
