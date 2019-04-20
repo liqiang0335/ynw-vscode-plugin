@@ -17,7 +17,7 @@ const maps = [
       `import * as ${basename} from "${relativePath}"`
   },
   {
-    reg: /(const|utils)$/i,
+    reg: /(const|utils|\.action|\.epic)/i,
     handler: ({ relativePath }) => `import {  } from "${relativePath}"`
   }
 ];
