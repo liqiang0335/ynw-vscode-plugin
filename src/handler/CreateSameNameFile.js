@@ -11,12 +11,14 @@ module.exports = async function(URI) {
   const stat = await utils.stat(filePath);
   const fileType = stat.isDirectory() ? "dir" : "file";
 
+  const config = vscode.workspace.getConfiguration("ynw");
+  const ext = config.get("styleFileType");
+  const scriptFileType = config.get("scriptFileType");
+
   const fileTypeHandler = {
     file() {
       const dirname = path.dirname(filePath);
       const name = path.basename(filePath).match(/^\w+/)[0];
-      const config = vscode.workspace.getConfiguration("ynw");
-      const ext = config.get("styleFileType");
       const fullName = name + "." + ext;
       const target = path.join(dirname, fullName);
       const content = `.container{\n\n}`;
@@ -25,7 +27,7 @@ module.exports = async function(URI) {
     },
     dir() {
       const name = filePath.match(/\w+$/)[0];
-      const target = path.join(filePath, name + ".js");
+      const target = path.join(filePath, name + "." + scriptFileType);
       const content = `import React from "react";\n\n
       export default function ${name}(){
         return <div>${name}</div>

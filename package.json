@@ -48,11 +48,20 @@
             "scss",
             "less"
           ]
+        },
+        "ynw.scriptFileType": {
+          "description": "创建同名文件的类型",
+          "type": "string",
+          "default": "js",
+          "enum": [
+            "js",
+            "jsx",
+            "ts"
+          ]
         }
       }
     },
-    "commands": [
-      {
+    "commands": [{
         "command": "ynw.importModule",
         "title": "导入选中模块"
       },
@@ -85,8 +94,7 @@
         "title": "ynw-cli >> 生产环境"
       }
     ],
-    "keybindings": [
-      {
+    "keybindings": [{
         "command": "ynw.createSameNameFile",
         "key": "ctrl+y ctrl+s"
       },
@@ -101,8 +109,7 @@
     ],
     "menus": {
       "editor/context": [],
-      "explorer/context": [
-        {
+      "explorer/context": [{
           "command": "ynw.importModule",
           "group": "a1@1"
         },
@@ -131,12 +138,10 @@
         }
       ]
     },
-    "snippets": [
-      {
-        "language": "vue",
-        "path": "./snippets/vue.json"
-      }
-    ]
+    "snippets": [{
+      "language": "vue",
+      "path": "./snippets/vue.json"
+    }]
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
