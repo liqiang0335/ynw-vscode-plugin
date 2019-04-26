@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -61,8 +61,7 @@
         }
       }
     },
-    "commands": [
-      {
+    "commands": [{
         "command": "ynw.importModule",
         "title": "导入选中模块"
       },
@@ -95,8 +94,7 @@
         "title": "ynw-cli >> 生产环境"
       }
     ],
-    "keybindings": [
-      {
+    "keybindings": [{
         "command": "ynw.createSameNameFile",
         "key": "ctrl+y ctrl+s"
       },
@@ -111,8 +109,7 @@
     ],
     "menus": {
       "editor/context": [],
-      "explorer/context": [
-        {
+      "explorer/context": [{
           "command": "ynw.importModule",
           "group": "a1@1"
         },
@@ -126,27 +123,25 @@
         },
         {
           "command": "ynw.webpackBuild.dev",
-          "when": "resourceExtname == .js",
+          "when": "resourceExtname =~ /jsx?/",
           "group": "ynw-c@1"
         },
         {
           "command": "ynw.webpackBuild.hot",
-          "when": "resourceExtname == .js",
+          "when": "resourceExtname =~ /jsx?/",
           "group": "ynw-c@2"
         },
         {
           "command": "ynw.webpackBuild.pro",
-          "when": "resourceExtname == .js",
+          "when": "resourceExtname =~ /jsx?/",
           "group": "ynw-c@3"
         }
       ]
     },
-    "snippets": [
-      {
-        "language": "vue",
-        "path": "./snippets/vue.json"
-      }
-    ]
+    "snippets": [{
+      "language": "vue",
+      "path": "./snippets/vue.json"
+    }]
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
