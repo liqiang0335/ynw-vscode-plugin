@@ -24,7 +24,7 @@ module.exports = function() {
 
   replace(content);
 
-  copy(`[${constantName}]: (state) => {
+  copy(`[${constantName}]: (state, { payload }) => {
     return { ...state };
   }`);
 };
