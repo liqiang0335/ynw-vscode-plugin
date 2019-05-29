@@ -20,7 +20,7 @@ module.exports = function() {
 
   const content =
     `export const ${constantName} = "${constantName}"\n` +
-    `export const dispatch${creatorName} = createAction(${constantName})\n`;
+    `export const ${creatorName} = createAction(${constantName})\n`;
 
   replace(content);
 
