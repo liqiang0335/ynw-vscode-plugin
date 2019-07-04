@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.6.9",
+  "version": "0.6.10",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -57,6 +57,15 @@
             "js",
             "jsx",
             "ts"
+          ]
+        },
+        "ynw.moduleType": {
+          "description": "模块类型",
+          "type": "string",
+          "default": "esm",
+          "enum": [
+            "esm",
+            "cmd"
           ]
         }
       }
