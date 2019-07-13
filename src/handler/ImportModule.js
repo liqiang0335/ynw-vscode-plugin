@@ -12,7 +12,7 @@ const maps = [
     handler: ({ relativePath }) => `import "${relativePath}"`
   },
   {
-    reg: /(api)$/,
+    reg: /(api)|(Types)$/i,
     handler: ({ relativePath, basename }) =>
       `import * as ${basename} from "${relativePath}"`
   },
