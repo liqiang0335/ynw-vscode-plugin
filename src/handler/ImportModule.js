@@ -2,6 +2,10 @@ const vscode = require("vscode");
 const { getRelativePath } = require("./util.js");
 const path = require("path");
 
+const config = vscode.workspace.getConfiguration("ynw");
+const moduleType = config.get("moduleType");
+const isESM = moduleType === "esm";
+
 const maps = [
   {
     reg: /\.scss$/,
@@ -32,7 +36,9 @@ module.exports = function(URI) {
   const match = maps.find(item => item.reg.test(basename));
   const content = match
     ? match.handler(ctx) + ";\n"
-    : `import ${basename} from "${relativePath}";\n`;
+    : isESM
+    ? `import ${basename} from "${relativePath}";\n`
+    : `const ${basename} = require("${relativePath}");\n`;
 
   //insert to open document
   vscode.window.activeTextEditor.edit(editBuilder => {

@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.6.6",
+  "version": "0.6.10",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -58,10 +58,20 @@
             "jsx",
             "ts"
           ]
+        },
+        "ynw.moduleType": {
+          "description": "模块类型",
+          "type": "string",
+          "default": "esm",
+          "enum": [
+            "esm",
+            "cmd"
+          ]
         }
       }
     },
-    "commands": [{
+    "commands": [
+      {
         "command": "ynw.importModule",
         "title": "导入选中模块"
       },
@@ -94,7 +104,8 @@
         "title": "ynw-cli >> 生产环境"
       }
     ],
-    "keybindings": [{
+    "keybindings": [
+      {
         "command": "ynw.createSameNameFile",
         "key": "ctrl+y ctrl+s"
       },
@@ -109,7 +120,8 @@
     ],
     "menus": {
       "editor/context": [],
-      "explorer/context": [{
+      "explorer/context": [
+        {
           "command": "ynw.importModule",
           "group": "a1@1"
         },
@@ -138,10 +150,12 @@
         }
       ]
     },
-    "snippets": [{
-      "language": "vue",
-      "path": "./snippets/vue.json"
-    }]
+    "snippets": [
+      {
+        "language": "vue",
+        "path": "./snippets/vue.json"
+      }
+    ]
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",
