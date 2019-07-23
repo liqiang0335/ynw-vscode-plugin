@@ -34,11 +34,12 @@ module.exports = function(URI) {
   const ext = path.extname(basename);
   const ctx = { relativePath, ext, basename };
   const match = maps.find(item => item.reg.test(basename));
-  const content = match
+
+  const content = isESM
+    ? `const ${basename} = require("${relativePath}");\n`
+    : match
     ? match.handler(ctx) + ";\n"
-    : isESM
-    ? `import ${basename} from "${relativePath}";\n`
-    : `const ${basename} = require("${relativePath}");\n`;
+    : `import ${basename} from "${relativePath}";\n`;
 
   //insert to open document
   vscode.window.activeTextEditor.edit(editBuilder => {
