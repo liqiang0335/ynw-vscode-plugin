@@ -35,7 +35,7 @@ module.exports = function(URI) {
   const ctx = { relativePath, ext, basename };
   const match = maps.find(item => item.reg.test(basename));
 
-  const content = isESM
+  const content = !isESM
     ? `const ${basename} = require("${relativePath}");\n`
     : match
     ? match.handler(ctx) + ";\n"
