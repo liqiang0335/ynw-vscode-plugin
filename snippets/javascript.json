@@ -1,0 +1,42 @@
+{
+  "ynw.mapState": {
+    "prefix": "yy.mapstate",
+    "body": ["import { mapState } from 'vuex'"]
+  },
+  "iilog": {
+    "prefix": "iilog",
+    "body": ["consle.log(\"$1\",$2)"]
+  },
+  "==log2==": {
+    "prefix": "iilog3",
+    "body": ["console.log(`%c ${$1}`,'background:blue;color:white')$0"]
+  },
+  "yy.format": {
+    "prefix": "yy.format",
+    "body": ["import format from 'date-fns/format';"]
+  },
+  "yy.debounce": {
+    "prefix": "yy.debounce",
+    "body": ["import debounce from 'lodash/debounce';"]
+  },
+  "==env.dev==": {
+    "prefix": "iienv",
+    "body": ["process.env.NODE_ENV ==\"development\""]
+  },
+  "==env.pro==": {
+    "prefix": "iienv",
+    "body": ["process.env.NODE_ENV ==\"production\""]
+  },
+  "==import-module==": {
+    "prefix": "iima",
+    "body": "import { $2 } from '${1:module}'$0"
+  },
+  "==import==": {
+    "prefix": "iimb",
+    "body": "import ${2:moduleName} from '${1:module}'$0"
+  },
+  "==function==": {
+    "prefix": "iifuncion",
+    "body": ["const $1 = ($2) => {", " $0", "};"]
+  }
+}

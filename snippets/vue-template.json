@@ -1,10 +1,6 @@
 {
-  "==ynw.mapState==": {
-    "prefix": "ynw.mapState",
-    "body": ["import { mapState } from 'vuex';"]
-  },
-  "==ynw.vbase==": {
-    "prefix": "ynw.base",
+  "==ynw.base==": {
+    "prefix": "yy.base",
     "body": [
       "<template>",
       "  <div class='container'>",

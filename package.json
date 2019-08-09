@@ -153,15 +153,19 @@
     "snippets": [
       {
         "language": "vue",
-        "path": "./snippets/vue.json"
+        "path": "./snippets/vue-template.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/vue-script.json"
+        "path": "./snippets/javascript.json"
       },
       {
         "language": "javascript",
         "path": "./snippets/ynw.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/ynw-vue.json"
       },
       {
         "language": "javascriptreact",
@@ -170,6 +174,10 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/react.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/javascript.json"
       }
     ]
   },

@@ -1,34 +1,56 @@
 const fs = require("fs");
 const path = require("path");
 const getFiles = require("./utils/getFiles");
-const ynwPath = path.join(__dirname, "../snippets/ynw.json");
-const vuePath = path.join(__dirname, "../snippets/vue.json");
-const vueSource = require("./src/vue-source");
-
-// Files
 const SOURCE = "D:\\Git\\ynw";
 
 main();
 function main() {
   const files = getFiles()(SOURCE);
-  const jsfiles = files.filter(it => it.extname === ".js");
 
-  const ynwString = jsfiles.map(item => template(item)).join(",");
-  fs.writeFileSync(ynwPath, `{${ynwString}}`);
+  const jsContent = files
+    .filter(it => it.extname === ".js")
+    .map(item => template(item))
+    .join(",");
+  fs.writeFileSync(
+    path.join(__dirname, "../snippets/ynw.json"),
+    `{${jsContent}}`
+  );
 
-  // add ywn to vue
-  setTimeout(() => {
-    const ynw = require("../snippets/ynw.json");
-    const vueSnip = Object.assign(vueSource, ynw);
-    fs.writeFileSync(vuePath, JSON.stringify(vueSnip));
-  }, 500);
+  const vueContents = files
+    .filter(it => it.extname === ".vue")
+    .map(item => template(item))
+    .join(",");
+  fs.writeFileSync(
+    path.join(__dirname, "../snippets/ynw-vue.json"),
+    `{${vueContents}}`
+  );
 }
 
 function template(item) {
   const name = item.basename.replace(/\.\w+$/, "");
-  const react = /react/.test(item.dirname) ? "react/" : "";
+  const forlder = getFolder(item);
+  const prefix = getPrefix(item);
   return `"==ynw.${name}==": {
-      "prefix": "ynw.${name}",
-      "body": ["import ${name} from 'ynw/${react}${name}'"]
+      "prefix": "${prefix}.${name}",
+      "body": ["import ${name} from 'ynw/${forlder}${name}'"]
     }`;
+}
+
+function getFolder(item) {
+  const { dirname, extname } = item;
+  if (extname === ".vue") {
+    return "vue/";
+  }
+  if (/react/.test(dirname)) {
+    return "react/";
+  }
+  return "";
+}
+
+function getPrefix(item) {
+  const { extname } = item;
+  if (extname === ".vue") {
+    return "yv";
+  }
+  return "yy";
 }

@@ -1,24 +1,4 @@
 {
-  "==env.dev==": {
-    "prefix": "iienv",
-    "body": ["process.env.NODE_ENV ==\"development\""]
-  },
-  "==env.pro==": {
-    "prefix": "iienv",
-    "body": ["process.env.NODE_ENV ==\"production\""]
-  },
-  "==log1==": {
-    "prefix": "iilog1",
-    "body": ["console.log(\"$1\",$2)$0"]
-  },
-  "==log2==": {
-    "prefix": "iilog2",
-    "body": ["console.log($2)$0"]
-  },
-  "==log3==": {
-    "prefix": "iilog3",
-    "body": ["console.log(`%c ${$1}`,'background:blue;color:white')$0"]
-  },
   "==useState==": {
     "prefix": "iiuseState",
     "body": [
@@ -89,14 +69,6 @@
     "prefix": "iinames",
     "body": "import classNames from 'classNames';"
   },
-  "==import-module==": {
-    "prefix": "iima",
-    "body": "import { $2 } from '${1:module}'$0"
-  },
-  "==import==": {
-    "prefix": "iimb",
-    "body": "import ${2:moduleName} from '${1:module}'$0"
-  },
   "==exportDefault==": {
     "prefix": "iiexp",
     "body": "export default $1$0"
@@ -114,8 +86,7 @@
       "  )",
       "}",
       ""
-    ],
-    "description": "Creates a React Functional Component with ES7 module system"
+    ]
   },
   "==useContext==": {
     "prefix": "iiuseContext",
@@ -235,10 +206,6 @@
       "      $2: payload",
       "}),"
     ]
-  },
-  "==function==": {
-    "prefix": "iifuncion",
-    "body": ["const $1 = ($2) => {", " $0", "};"]
   },
   "==PropTypes==": {
     "prefix": "iitypes",
