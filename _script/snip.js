@@ -1,7 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 const getFiles = require("./utils/getFiles");
-const ynw = path.join(__dirname, "../snippets/ynw.json");
+const ynwPath = path.join(__dirname, "../snippets/ynw.json");
+const vuePath = path.join(__dirname, "../snippets/vue.json");
+const vueSource = require("../snippets/src/vue-source.json");
 
 // Files
 const SOURCE = "D:\\Git\\ynw";
@@ -11,10 +13,15 @@ function main() {
   const files = getFiles()(SOURCE);
   const jsfiles = files.filter(it => it.extname === ".js");
 
-  const content = jsfiles.map(item => template(item)).join(",");
-  fs.writeFileSync(ynw, `{${content}}`);
+  const ynwString = jsfiles.map(item => template(item)).join(",");
+  fs.writeFileSync(ynwPath, `{${ynwString}}`);
 
-  // add ynw to vue.json
+  // add ywn to vue
+  setTimeout(() => {
+    const ynw = require("../snippets/ynw.json");
+    const vueSnip = Object.assign(vueSource, ynw);
+    fs.writeFileSync(vuePath, JSON.stringify(vueSnip));
+  }, 500);
 }
 
 function template(item) {

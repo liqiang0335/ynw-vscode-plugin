@@ -156,10 +156,6 @@
         "path": "./snippets/vue.json"
       },
       {
-        "language": "vue",
-        "path": "./snippets/ynw.json"
-      },
-      {
         "language": "javascript",
         "path": "./snippets/ynw.json"
       },
