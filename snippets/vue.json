@@ -1,42 +1,29 @@
 {
-  "ynw.mapState": {
+  "==ynw.mapState==": {
     "prefix": "ynw.mapState",
     "body": ["import { mapState } from 'vuex';"]
   },
-  "ynw.mapMutations": {
-    "prefix": "ynw.mapMutations",
-    "body": ["import { mapMutations } from 'vuex';"]
-  },
-  "ynw.mapGetters": {
-    "prefix": "ynw.mapGetters",
-    "body": ["import { mapGetters } from 'vuex';"]
-  },
-  "ynw.vbase": {
-    "prefix": "ynw.vbase",
+  "==ynw.vbase==": {
+    "prefix": "ynw.base",
     "body": [
       "<template>",
       "  <div class='container'>",
       "    <div>Hello</div>",
       "  </div>",
       "</template>",
-      "",
       "<script>",
       "export default {",
       "  data() {",
-      "    return {",
-      "      msg: ''",
-      "    };",
+      "    return {}",
       "  },",
       "  computed:{},",
       "  mounted() {},",
       "  methods: {}",
       "};",
       "</script>",
-      "",
       "<style scoped lang='scss'>",
       "</style>"
-    ],
-    "description": "Vue-Basic"
+    ]
   },
   "==ynw.applyMiddleware==": {
     "prefix": "ynw.applyMiddleware",

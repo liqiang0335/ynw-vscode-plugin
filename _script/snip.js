@@ -3,7 +3,7 @@ const path = require("path");
 const getFiles = require("./utils/getFiles");
 const ynwPath = path.join(__dirname, "../snippets/ynw.json");
 const vuePath = path.join(__dirname, "../snippets/vue.json");
-const vueSource = require("../snippets/src/vue-source.json");
+const vueSource = require("./src/vue-source");
 
 // Files
 const SOURCE = "D:\\Git\\ynw";

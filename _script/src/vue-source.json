@@ -1,17 +1,9 @@
 {
-  "vv.mapState": {
+  "==ynw.mapState==": {
     "prefix": "ynw.mapState",
     "body": ["import { mapState } from 'vuex';"]
   },
-  "vv.mapMutations": {
-    "prefix": "ynw.mapMutations",
-    "body": ["import { mapMutations } from 'vuex';"]
-  },
-  "vv.mapGetters": {
-    "prefix": "ynw.mapGetters",
-    "body": ["import { mapGetters } from 'vuex';"]
-  },
-  "Vue-Basic": {
+  "==ynw.vbase==": {
     "prefix": "ynw.base",
     "body": [
       "<template>",
@@ -19,23 +11,18 @@
       "    <div>Hello</div>",
       "  </div>",
       "</template>",
-      "",
       "<script>",
       "export default {",
       "  data() {",
-      "    return {",
-      "      msg: ''",
-      "    };",
+      "    return {}",
       "  },",
       "  computed:{},",
       "  mounted() {},",
       "  methods: {}",
       "};",
       "</script>",
-      "",
       "<style scoped lang='scss'>",
       "</style>"
-    ],
-    "description": "Vue-Basic"
+    ]
   }
 }
