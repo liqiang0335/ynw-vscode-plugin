@@ -1,14 +1,21 @@
 const fs = require("fs");
 const path = require("path");
 const getFiles = require("./utils/getFiles");
-const SOURCE = "D:\\Git\\ynw";
+const os = require("os");
+const SOURCE =
+  os.platform() === "darwin"
+    ? "/Users/liqiang/Desktop/Git/ynw"
+    : "D:\\Git\\ynw";
 
 main();
 function main() {
-  const files = getFiles()(SOURCE);
+  const files = getFiles(/lib/)(SOURCE);
+  console.log(files);
 
+  // js files
   const jsContent = files
     .filter(it => it.extname === ".js")
+    .filter(it => !/index/.test(it.basename))
     .map(item => template(item))
     .join(",");
   fs.writeFileSync(
@@ -16,6 +23,7 @@ function main() {
     `{${jsContent}}`
   );
 
+  // vue files
   const vueContents = files
     .filter(it => it.extname === ".vue")
     .map(item => template(item))

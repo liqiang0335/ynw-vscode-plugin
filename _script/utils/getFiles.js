@@ -3,14 +3,17 @@ const path = require("path");
 const excludes = /[\\\/]+[._]/;
 
 /**
- * @return {Array<{filePath,mtime,basename,dirname, extname}>}
+ * @param {Regex, Optional} reg - 要排除的文件夹正则
+ * @param {String} folder - 目标文件夹
+ *
+ * @return {Array}
  */
-const getDirFiles = function() {
+const getDirFiles = function(reg) {
   const result = [];
   return function getFiles(folder) {
-    if (excludes.test(folder)) {
-      return;
-    }
+    // exclues
+    if (excludes.test(folder)) return;
+    if (reg && reg.test(folder)) return;
     const files = fs.readdirSync(folder);
     for (let name of files) {
       const filePath = path.join(folder, name);
