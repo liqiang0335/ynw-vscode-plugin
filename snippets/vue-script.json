@@ -1,0 +1,6 @@
+{
+  "Vuex mapState": {
+    "prefix": "ynwmapstate",
+    "body": ["import { mapState } from 'vuex'"]
+  }
+}

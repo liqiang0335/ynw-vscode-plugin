@@ -157,6 +157,10 @@
       },
       {
         "language": "javascript",
+        "path": "./snippets/vue-script.json"
+      },
+      {
+        "language": "javascript",
         "path": "./snippets/ynw.json"
       },
       {
