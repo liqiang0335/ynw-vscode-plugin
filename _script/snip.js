@@ -10,7 +10,6 @@ const SOURCE =
 main();
 function main() {
   const files = getFiles(/lib/)(SOURCE);
-  console.log(files);
 
   // js files
   const jsContent = files
