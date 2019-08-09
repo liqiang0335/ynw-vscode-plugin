@@ -166,6 +166,10 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/ynw.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react.json"
       }
     ]
   },
