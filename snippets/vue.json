@@ -1,18 +1,18 @@
 {
-  "vv.mapState": {
+  "ynw.mapState": {
     "prefix": "ynw.mapState",
     "body": ["import { mapState } from 'vuex';"]
   },
-  "vv.mapMutations": {
+  "ynw.mapMutations": {
     "prefix": "ynw.mapMutations",
     "body": ["import { mapMutations } from 'vuex';"]
   },
-  "vv.mapGetters": {
+  "ynw.mapGetters": {
     "prefix": "ynw.mapGetters",
     "body": ["import { mapGetters } from 'vuex';"]
   },
-  "Vue-Basic": {
-    "prefix": "ynw.base",
+  "ynw.vbase": {
+    "prefix": "ynw.vbase",
     "body": [
       "<template>",
       "  <div class='container'>",
