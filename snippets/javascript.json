@@ -5,11 +5,11 @@
   },
   "iilog": {
     "prefix": "iilog",
-    "body": ["consle.log(\"$1\",$2)"]
+    "body": ["console.log(\"$1\",$2)"]
   },
   "==log2==": {
-    "prefix": "iilog3",
-    "body": ["console.log(`%c ${$1}`,'background:blue;color:white')$0"]
+    "prefix": "iilog-color",
+    "body": ["console.log(`%c ${$1}`,'background:blue;color:white');$0"]
   },
   "yy.format": {
     "prefix": "yy.format",
@@ -20,11 +20,11 @@
     "body": ["import debounce from 'lodash/debounce';"]
   },
   "==env.dev==": {
-    "prefix": "iienv",
+    "prefix": "iienvdev",
     "body": ["process.env.NODE_ENV ==\"development\""]
   },
   "==env.pro==": {
-    "prefix": "iienv",
+    "prefix": "iienvpro",
     "body": ["process.env.NODE_ENV ==\"production\""]
   },
   "==import-module==": {
