@@ -156,6 +156,10 @@
         "path": "./snippets/vue.json"
       },
       {
+        "language": "vue",
+        "path": "./snippets/ynw.json"
+      },
+      {
         "language": "javascript",
         "path": "./snippets/ynw.json"
       },
@@ -166,6 +170,7 @@
     ]
   },
   "scripts": {
+    "snip": "node _script/snip",
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test"
   },

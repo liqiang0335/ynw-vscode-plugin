@@ -1,5 +1,17 @@
 {
-  "Vue 基础模板代码": {
+  "vv.mapState": {
+    "prefix": "vv.mapState",
+    "body": ["import { mapState } from 'vuex';"]
+  },
+  "vv.mapMutations": {
+    "prefix": "vv.mapMutations",
+    "body": ["import { mapMutations } from 'vuex';"]
+  },
+  "vv.mapGetters": {
+    "prefix": "vv.mapGetters",
+    "body": ["import { mapGetters } from 'vuex';"]
+  },
+  "Vue-Basic": {
     "prefix": "vbase",
     "body": [
       "<template>",
@@ -24,6 +36,6 @@
       "<style scoped lang='scss'>",
       "</style>"
     ],
-    "description": "VUE基础代码"
+    "description": "Vue-Basic"
   }
 }

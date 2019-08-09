@@ -186,5 +186,9 @@
   "==ynw.validateIdCard==": {
     "prefix": "ynw.validateIdCard",
     "body": ["import validateIdCard from 'ynw/validateIdCard'"]
+  },
+  "==ynw.web==": {
+    "prefix": "ynw.web",
+    "body": ["import web from 'ynw/web'"]
   }
 }
