@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.6.13",
+  "version": "0.6.14",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -154,6 +154,14 @@
       {
         "language": "vue",
         "path": "./snippets/vue.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/ynw.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/ynw.json"
       }
     ]
   },
