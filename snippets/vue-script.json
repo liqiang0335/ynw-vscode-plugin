@@ -1,6 +1,10 @@
 {
-  "Vuex mapState": {
+  "ynw.mapState": {
     "prefix": "ynwmapstate",
     "body": ["import { mapState } from 'vuex'"]
+  },
+  "ynw.log": {
+    "prefix": "ynwlog",
+    "body": ["consle.log(\"$1\",$2)"]
   }
 }
