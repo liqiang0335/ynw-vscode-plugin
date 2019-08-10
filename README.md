@@ -1,8 +1,9 @@
 # YNW
 
+## Webpack
+
 - `Dev` : 使用 `ynw-cli` 开发模式构建
 - `Hot` : 使用 `ynw-cli` 热更新模式开发
 - `pro` : 使用 `ynw-cli` 生产模式构建
-- 导入选中模块
-- 复制相对路径: 相对当前打开的文档的路径
-- 创建同名文件: 同名的.js或.scss文件(ynw选项中配置)
+
+## Snippets
