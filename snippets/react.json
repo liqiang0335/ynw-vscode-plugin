@@ -5,6 +5,22 @@
       "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState($2)"
     ]
   },
+  "==useData==": {
+    "prefix": "iiuseData",
+    "body": ["const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useData($2)"]
+  },
+  "==useToggle==": {
+    "prefix": "iiuseToggle",
+    "body": [
+      "const [${1:state}, toggle${1/(.*)/${1:/capitalize}/}] = useToggle($2)"
+    ]
+  },
+  "==useBoolCall==": {
+    "prefix": "iiuseBoolCall",
+    "body": [
+      "const [${1:state}, toggle${1/(.*)/${1:/capitalize}/}] = useBoolCall($2)"
+    ]
+  },
   "==useEffect==": {
     "prefix": "iiuseEffect",
     "body": ["useEffect(() => {", " $1", " },", "[]", ")"]
