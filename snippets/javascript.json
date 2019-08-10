@@ -43,6 +43,18 @@
     "prefix": "iimb",
     "body": "import ${2:moduleName} from '${1:module}'$0"
   },
+  "module-import": {
+    "prefix": "iic",
+    "body": ["import ${1:name} from '$2/${1}';$0"]
+  },
+  "lodash-import": {
+    "prefix": "iilodash",
+    "body": ["import ${1:name} from 'lodash/${1}';$0"]
+  },
+  "date-fns-import": {
+    "prefix": "iidate-fns",
+    "body": ["import ${1:name} from 'date-fns/${1}';$0"]
+  },
   "==function==": {
     "prefix": "iifuncion",
     "body": ["const $1 = ($2) => {", " $0", "};"]
