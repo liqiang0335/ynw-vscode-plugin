@@ -1,6 +1,6 @@
 {
   "ynw.mapState": {
-    "prefix": "yy.mapstate",
+    "prefix": "ii.mapstate",
     "body": ["import { mapState } from 'vuex'"]
   },
   "iilog": {
@@ -11,12 +11,16 @@
     "prefix": "iilog-color",
     "body": ["console.log(`%c ${$1}`,'background:blue;color:white');$0"]
   },
-  "yy.format": {
-    "prefix": "yy.format",
+  "ii.format-import": {
+    "prefix": "ii.format",
     "body": ["import format from 'date-fns/format';"]
   },
-  "yy.debounce": {
-    "prefix": "yy.debounce",
+  "ii.format": {
+    "prefix": "ii.format",
+    "body": ["format($1,'YYYY-MM-DD HH:mm');$2"]
+  },
+  "ii.debounce": {
+    "prefix": "ii.debounce",
     "body": ["import debounce from 'lodash/debounce';"]
   },
   "==env.dev==": {
