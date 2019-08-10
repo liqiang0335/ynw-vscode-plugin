@@ -5,11 +5,7 @@
   },
   "iilog": {
     "prefix": "iilog",
-    "body": ["console.log(\"$1\",$2)"]
-  },
-  "==log2==": {
-    "prefix": "iilog-color",
-    "body": ["console.log(`%c ${$1}`,'background:blue;color:white');$0"]
+    "body": ["console.log('>> ${1:name}',${1});$0"]
   },
   "ii.format-import": {
     "prefix": "ii.format",
@@ -19,9 +15,17 @@
     "prefix": "ii.format",
     "body": ["format($1,'YYYY-MM-DD HH:mm');$2"]
   },
-  "ii.debounce": {
+  "ii.debounce-import": {
     "prefix": "ii.debounce",
     "body": ["import debounce from 'lodash/debounce';"]
+  },
+  "ii.debounce-function": {
+    "prefix": "ii.debounce",
+    "body": [
+      "debounce(function() {",
+      "\t\t$1",
+      "}, 1000, { leading: true, trailing: false })"
+    ]
   },
   "==env.dev==": {
     "prefix": "iienvdev",
