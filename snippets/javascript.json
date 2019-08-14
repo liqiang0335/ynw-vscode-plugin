@@ -47,6 +47,14 @@
     "prefix": "iimc",
     "body": ["import ${1:name} from '$2/${1}';$0"]
   },
+  "==import-api==": {
+    "prefix": "iimd",
+    "body": ["import * as $1 from '$2';$0"]
+  },
+  "==import-style==": {
+    "prefix": "iims",
+    "body": ["import ${1:styles} from './${TM_FILENAME_BASE}.scss';$0"]
+  },
   "lodash-import": {
     "prefix": "iilodash",
     "body": ["import ${1:name} from 'lodash/${1}';$0"]
