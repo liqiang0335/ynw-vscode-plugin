@@ -16,7 +16,7 @@ const maps = [
     handler: ({ relativePath }) => `import "${relativePath}"`
   },
   {
-    reg: /(api)|(Types)|(selector)$/,
+    reg: /(api)|(^Types)|(selector)$/,
     handler: ({ relativePath, basename }) =>
       `import * as ${basename} from "${relativePath}"`
   },
