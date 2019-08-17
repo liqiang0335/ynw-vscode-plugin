@@ -81,14 +81,14 @@
   },
   "ant-resetFields": {
     "prefix": "ant.resetFields",
-    "body": ["resetFields"]
+    "body": ["form.resetFields"]
   },
   "ant-setFieldsValue": {
     "prefix": "ant.setFieldsValue",
-    "body": ["setFieldsValue"]
+    "body": ["form.setFieldsValue"]
   },
   "ant-validateFields": {
     "prefix": "ant.validateFields",
-    "body": ["validateFields"]
+    "body": ["form.validateFields"]
   }
 }
