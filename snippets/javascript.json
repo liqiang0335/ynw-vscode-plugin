@@ -7,6 +7,10 @@
     "prefix": "iilog",
     "body": ["console.log('>> ${1:name}',${1});$0"]
   },
+  "iilog-color": {
+    "prefix": "iilogcolor",
+    "body": ["console.log('>> ${1:name}'.bgGreen, ${1});$0"]
+  },
   "ii.format-import": {
     "prefix": "ii.format",
     "body": ["import format from 'date-fns/format';"]
@@ -58,5 +62,25 @@
   "==function==": {
     "prefix": "iifuncion",
     "body": ["const $1 = ($2) => {", " $0", "};"]
+  },
+  "express.response": {
+    "prefix": "ii.response",
+    "body": [".then(data => res.send(response.success(data)))", ".catch(next);"]
+  },
+  "ant-getFieldDecorator": {
+    "prefix": "ant.getFieldDecorator",
+    "body": ["getFieldDecorator"]
+  },
+  "ant-resetFields": {
+    "prefix": "ant.resetFields",
+    "body": ["resetFields"]
+  },
+  "ant-setFieldsValue": {
+    "prefix": "ant.setFieldsValue",
+    "body": ["setFieldsValue"]
+  },
+  "ant-validateFields": {
+    "prefix": "ant.validateFields",
+    "body": ["validateFields"]
   }
 }
