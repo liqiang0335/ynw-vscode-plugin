@@ -76,19 +76,19 @@
     "body": [".then(data => res.send(response.success(data)))", ".catch(next);"]
   },
   "ant-getFieldDecorator": {
-    "prefix": "ant.getFieldDecorator",
+    "prefix": "getFieldDecorator",
     "body": ["getFieldDecorator"]
   },
   "ant-resetFields": {
-    "prefix": "ant.resetFields",
+    "prefix": "form.resetFields",
     "body": ["form.resetFields"]
   },
   "ant-setFieldsValue": {
-    "prefix": "ant.setFieldsValue",
+    "prefix": "form.setFieldsValue",
     "body": ["form.setFieldsValue"]
   },
   "ant-validateFields": {
-    "prefix": "ant.validateFields",
+    "prefix": "form.validateFields",
     "body": ["form.validateFields"]
   }
 }
