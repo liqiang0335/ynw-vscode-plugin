@@ -20,7 +20,7 @@
     "body": [
       "import React, { useEffect } from 'react';",
       "import { Modal, Form, Input, message } from 'antd';",
-      "const FormItem = { Form };",
+      "const { FormItem } = Form;",
       "const ItemLayout = { labelCol: { span: 7 }, wrapperCol: { span: 15 } };",
       "",
       "/**",
