@@ -178,6 +178,10 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/antd.json"
       }
     ]
   },

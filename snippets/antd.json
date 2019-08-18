@@ -1,0 +1,80 @@
+{
+  "ant-getFieldDecorator": {
+    "prefix": "getFieldDecorator",
+    "body": ["getFieldDecorator"]
+  },
+  "ant-resetFields": {
+    "prefix": "form.resetFields",
+    "body": ["form.resetFields"]
+  },
+  "ant-setFieldsValue": {
+    "prefix": "form.setFieldsValue",
+    "body": ["form.setFieldsValue"]
+  },
+  "ant-validateFields": {
+    "prefix": "form.validateFields",
+    "body": ["form.validateFields"]
+  },
+  "ant-modal": {
+    "prefix": "ant.modal",
+    "body": [
+      "import React, { useEffect } from 'react';",
+      "import { Modal, Form, Input, message } from 'antd';",
+      "const FormItem = { Form };",
+      "const ItemLayout = { labelCol: { span: 7 }, wrapperCol: { span: 15 } };",
+      "",
+      "/**",
+      " * @param {Boolean} visible",
+      " * @param {Function} onSuccess",
+      " * @param {Function} onCancel",
+      " */",
+      "export default Form.create({})(${TM_FILENAME_BASE});",
+      "function ${TM_FILENAME_BASE}(props) {",
+      "  const { form, onCancel, onSuccess, visible } = props;",
+      "  const { getFieldDecorator } = form;",
+
+      "  const editor = yn.selection;",
+      "  const title = editor ? '修改' : '添加';",
+      "  useEffect(() => {",
+      "    if (editor) {",
+      "      form.setFieldsValue({});",
+      "    }",
+      "  }, [editor]);",
+      "",
+      "  const onOk = () => {",
+      "    form.validateFields(async (error, value) => {",
+      "      if (error) return;",
+      "      if (editor) {",
+      "        value._id = yn.selection._id;",
+      "      }",
+      "      console.log('>> value', value);",
+      "      message.success('操作成功');",
+      "      close();",
+      "      onSuccess();",
+      "    });",
+      "  };",
+      "",
+      "  const close = () => {",
+      "    yn.selection = '';",
+      "    form.resetFields();",
+      "    onCancel();",
+      "  };",
+      "",
+      "  return (",
+      "    <Modal",
+      "      title={`${title}标题`}",
+      "      onOk={onOk}",
+      "      onCancel={close}",
+      "      visible={visible}",
+      "    >",
+      "      <Form>",
+      "        <FormItem {...ItemLayout} label='标题'>",
+      "          {getFieldDecorator('name')(<Input />)}",
+      "        </FormItem>",
+      "      </Form>",
+      "    </Modal>",
+      "  );",
+      "}"
+    ]
+  }
+}
