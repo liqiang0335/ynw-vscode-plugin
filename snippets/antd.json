@@ -20,7 +20,7 @@
     "body": [
       "import React, { useEffect } from 'react';",
       "import { Modal, Form, Input, message } from 'antd';",
-      "const { FormItem } = Form;",
+      "const FormItem = Form.Item;",
       "const ItemLayout = { labelCol: { span: 7 }, wrapperCol: { span: 15 } };",
       "",
       "/**",
@@ -29,6 +29,7 @@
       " * @param {Function} onCancel",
       " */",
       "export default Form.create({})(${TM_FILENAME_BASE});",
+
       "function ${TM_FILENAME_BASE}(props) {",
       "  const { form, onCancel, onSuccess, visible } = props;",
       "  const { getFieldDecorator } = form;",
