@@ -1,4 +1,8 @@
 {
+  "ii.function-property": {
+    "prefix": "ii.function",
+    "body": ["$1() {", "  $2", "},"]
+  },
   "ynw.mapState": {
     "prefix": "ii.mapstate",
     "body": ["import { mapState } from 'vuex'"]
