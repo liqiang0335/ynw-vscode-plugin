@@ -70,9 +70,5 @@
   "==function==": {
     "prefix": "iifuncion",
     "body": ["const $1 = ($2) => {", " $0", "};"]
-  },
-  "express.response": {
-    "prefix": "ii.response",
-    "body": [".then(data => res.send(response.success(data)))", ".catch(next);"]
   }
 }

@@ -182,6 +182,10 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/antd.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/express.json"
       }
     ]
   },
