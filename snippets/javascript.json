@@ -11,6 +11,10 @@
     "prefix": "iilog",
     "body": ["console.log('>> ${1:name}',${1});$0"]
   },
+  "iilog2": {
+    "prefix": "iilog",
+    "body": ["console.log('>> $1';$0"]
+  },
   "iilog-color": {
     "prefix": "iilogcolor",
     "body": ["console.log('>> ${1:name}'.bgGreen, ${1});$0"]
@@ -21,7 +25,7 @@
   },
   "ii.format": {
     "prefix": "ii.format",
-    "body": ["format($1,'YYYY-MM-DD HH:mm');$2"]
+    "body": ["format($1,'yyyy-MM-dd HH:mm');$2"]
   },
   "ii.debounce-import": {
     "prefix": "ii.debounce",
