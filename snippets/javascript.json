@@ -13,7 +13,7 @@
   },
   "iilog2": {
     "prefix": "iilog",
-    "body": ["console.log('>> $1';$0"]
+    "body": ["console.log('>> $1');$0"]
   },
   "iilog-color": {
     "prefix": "iilogcolor",
