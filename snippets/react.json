@@ -171,11 +171,7 @@
       "const initState = {}",
       "",
       "export default handleActions(",
-      "  {",
-      "    []: (state, { payload }) => {",
-      "      return { ...state }",
-      "    }",
-      "  },",
+      "  { $1 }",
       "  initState",
       ")"
     ]
@@ -217,10 +213,11 @@
   "==reducer2==": {
     "prefix": "iireducer",
     "body": [
-      "[$1]: (state, { payload }) => ({",
-      "      ...state,",
-      "      $2: payload",
-      "}),"
+      "[$1]: (state, { payload }) => {",
+      "  return {",
+      "    ...state,$2",
+      "  };",
+      "},"
     ]
   },
   "==PropTypes==": {
