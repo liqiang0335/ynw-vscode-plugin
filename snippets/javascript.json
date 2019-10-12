@@ -11,6 +11,10 @@
     "prefix": "iilog",
     "body": ["console.log('>> $1', $2);$0"]
   },
+  "iilog-same": {
+    "prefix": "iilog",
+    "body": ["console.log('>> ${1:name}', ${1});$0"]
+  },
   "iilog2": {
     "prefix": "iilog",
     "body": ["console.log('>> $1');$0"]
