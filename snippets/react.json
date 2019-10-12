@@ -223,5 +223,9 @@
   "==PropTypes==": {
     "prefix": "iitypes",
     "body": ["import PropTypes from 'prop-types';"]
+  },
+  "iiuse": {
+    "prefix": "iimu",
+    "body": ["import { useEffect, useState } from \"react\";"]
   }
 }

@@ -9,7 +9,7 @@
   },
   "iilog": {
     "prefix": "iilog",
-    "body": ["console.log('>> ${1:name}',${1});$0"]
+    "body": ["console.log('>> $1', $2);$0"]
   },
   "iilog2": {
     "prefix": "iilog",
@@ -17,7 +17,7 @@
   },
   "iilog-color": {
     "prefix": "iilogcolor",
-    "body": ["console.log('>> ${1:name}'.bgGreen, ${1});$0"]
+    "body": ["console.log('>> ${1:name}'.red, ${1});$0"]
   },
   "ii.format-import": {
     "prefix": "ii.format",
