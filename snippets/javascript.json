@@ -7,17 +7,13 @@
     "prefix": "ii.mapstate",
     "body": ["import { mapState } from 'vuex'"]
   },
-  "iilog": {
-    "prefix": "iilog",
-    "body": ["console.log('>> $1', $2);$0"]
-  },
   "iilog-same": {
     "prefix": "iilog",
     "body": ["console.log('>> ${1:name}', ${1});$0"]
   },
-  "iilog2": {
+  "iilog": {
     "prefix": "iilog",
-    "body": ["console.log('>> $1');$0"]
+    "body": ["console.log('>> $1', $2);$0"]
   },
   "iilog-color": {
     "prefix": "iilogcolor",
