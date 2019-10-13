@@ -227,5 +227,20 @@
   "iiuse": {
     "prefix": "iimu",
     "body": ["import { useEffect, useState } from \"react\";"]
+  },
+  "iiHooks": {
+    "prefix": "iihooks",
+    "body": [
+      "import { useEffect, useState } from \"react\";",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "",
+      "  useEffect(() => {",
+      "",
+      "  }, []);",
+      "",
+      "  return { };",
+      "}"
+    ]
   }
 }
