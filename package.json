@@ -40,7 +40,7 @@
       "title": "ynw",
       "properties": {
         "ynw.styleFileType": {
-          "description": "创建样式文件的类型",
+          "description": "创建同名样式文件",
           "type": "string",
           "default": "scss",
           "enum": [
@@ -51,7 +51,7 @@
           ]
         },
         "ynw.scriptFileType": {
-          "description": "创建同名文件的类型",
+          "description": "创建同名JS文件",
           "type": "string",
           "default": "js",
           "enum": [
