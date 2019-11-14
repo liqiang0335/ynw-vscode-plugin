@@ -30,7 +30,7 @@ module.exports = function(URI) {
   const activeDocument = vscode.window.activeTextEditor.document;
   if (!activeDocument) return;
   const relativePath = getRelativePath(URI.fsPath, activeDocument.uri.fsPath);
-  const basename = path.basename(relativePath);
+  const basename = path.basename(relativePath).match(/^[\w\-_]+/)[0];
   const ext = path.extname(basename);
   const ctx = { relativePath, ext, basename };
   const match = maps.find(item => item.reg.test(basename));

@@ -3,6 +3,11 @@ const path = require("path");
 const utils = require("./util");
 const { copy } = require("copy-paste");
 
+const DefualtFileInputs = {
+  "style.js": "import styled from 'styled-components';",
+  scss: ".container"
+};
+
 module.exports = async function(URI) {
   const filePath = URI
     ? URI.fsPath
@@ -21,7 +26,7 @@ module.exports = async function(URI) {
       const name = path.basename(filePath).match(/^\w+/)[0];
       const fullName = name + "." + ext;
       const target = path.join(dirname, fullName);
-      const content = `.container{\n\n}`;
+      const content = (DefualtFileInputs[ext] || "") + "\n";
       copy(`import styles from "./${fullName}"`);
       return { target, content };
     },
