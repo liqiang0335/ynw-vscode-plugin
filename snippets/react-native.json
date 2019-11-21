@@ -51,5 +51,9 @@
       "  }",
       "});"
     ]
+  },
+  "== css module: style ==": {
+    "prefix": "iistyle",
+    "body": ["style={styles.$1}$0"]
   }
 }

@@ -15,7 +15,7 @@
     "prefix": "form.validateFields",
     "body": ["form.validateFields"]
   },
-  "ant-modal": {
+  "Antd: 弹窗": {
     "prefix": "ant.modal",
     "body": [
       "import React, { useEffect } from 'react';",
@@ -34,7 +34,7 @@
       "  const { form, onCancel, onSuccess, visible } = props;",
       "  const { getFieldDecorator } = form;",
 
-      "  const editor = yn.selection;",
+      "  const editor = state.editor;",
       "  const title = editor ? '修改' : '添加';",
       "  useEffect(() => {",
       "    if (editor) {",
@@ -46,7 +46,7 @@
       "    form.validateFields(async (error, value) => {",
       "      if (error) return;",
       "      if (editor) {",
-      "        value._id = yn.selection._id;",
+      "        value._id = state.editor._id;",
       "      }",
       "      console.log('>> value', value);",
       "      message.success('操作成功');",
@@ -56,7 +56,7 @@
       "  };",
       "",
       "  const close = () => {",
-      "    yn.selection = '';",
+      "    state.editor = '';",
       "    form.resetFields();",
       "    onCancel();",
       "  };",
@@ -78,7 +78,7 @@
       "}"
     ]
   },
-  "ant-table": {
+  "Antd: 表格": {
     "prefix": "ant.table",
     "body": [
       "import React, { useEffect, useState } from 'react';",
@@ -119,12 +119,12 @@
       "",
       "  const onEdit = async () => {",
       "    const key = await checkSelection(true);",
-      "    yn.selection = { ...data.find(item => item._id == key) };",
+      "    state.editor = { ...data.find(item => item._id == key) };",
       "    toggle();",
       "  };",
 
       "  const onNew = () => {",
-      "    yn.selection = null;",
+      "    state.editor = null;",
       "    toggle();",
       "  };",
       "",

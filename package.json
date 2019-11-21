@@ -178,6 +178,10 @@
       },
       {
         "language": "javascriptreact",
+        "path": "./snippets/react-native.json"
+      },
+      {
+        "language": "javascriptreact",
         "path": "./snippets/javascript.json"
       },
       {
