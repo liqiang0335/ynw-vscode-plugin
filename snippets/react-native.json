@@ -1,0 +1,55 @@
+{
+  "== RN组件: 外部样式 ==": {
+    "prefix": "iirnfunc",
+    "body": [
+      "import React from 'react';",
+      "import { View, Text } from 'react-native';",
+      "import styles from './${1:${TM_FILENAME_BASE}}.style'",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <View style={styles.container}>",
+      "      <Text>${1:${TM_FILENAME_BASE}}</Text>",
+      "    </View>",
+      "  );",
+      "}",
+      ""
+    ]
+  },
+  "== RN组件: 嵌入样式 ==": {
+    "prefix": "iirnfunc",
+    "body": [
+      "import React from 'react';",
+      "import { View, Text, StyleSheet } from 'react-native';",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <View style={styles.container}>",
+      "      <Text>${1:${TM_FILENAME_BASE}}</Text>",
+      "    </View>",
+      "  );",
+      "}",
+      "",
+      "const styles = StyleSheet.create({",
+      "  container: {",
+      "    flex: 1,",
+      "    justifyContent: 'center',",
+      "    alignItems: 'center',",
+      "    backgroundColor: '#2c3e50'",
+      "  }",
+      "});"
+    ]
+  },
+  "== RN样式文件 ==": {
+    "prefix": "iirnstyle",
+    "body": [
+      "import { StyleSheet } from 'react-native';",
+      "",
+      "export default StyleSheet.create({",
+      "  container:{ ",
+      "    backgroundColor:'white'",
+      "  }",
+      "});"
+    ]
+  }
+}
