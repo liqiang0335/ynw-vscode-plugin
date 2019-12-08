@@ -255,7 +255,7 @@
       "  return { ...state, ...action };",
       "};",
       "",
-      "export default function test() {",
+      "export default function useHooks() {",
       "  const [state, dispatch] = useReducer(reducer, initialState);",
       "",
       "  useEffect(() => {}, []);",
