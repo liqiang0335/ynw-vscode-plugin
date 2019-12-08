@@ -242,5 +242,26 @@
       "  return { };",
       "}"
     ]
+  },
+  "iiHooks-Reducer": {
+    "prefix": "iihooksreducer",
+    "body": [
+      "import { useEffect, useReducer } from 'react';",
+      "",
+      "const initialState = {};",
+      "",
+      "const reducer = (state, action) => {",
+      "  const { type } = action;",
+      "  return { ...state, ...action };",
+      "};",
+      "",
+      "export default function test() {",
+      "  const [state, dispatch] = useReducer(reducer, initialState);",
+      "",
+      "  useEffect(() => {}, []);",
+      "",
+      "  return {};",
+      "}"
+    ]
   }
 }
