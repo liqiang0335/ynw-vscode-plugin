@@ -111,7 +111,7 @@
   "==useReducer==": {
     "prefix": "iiuseReducer",
     "body": [
-      "const [state, dispatch] = useReducer(${1:reducer}, ${2:initialState}, ${3:init})"
+      "const [state, dispatch] = useReducer(${1:reducer}, ${2:initState})"
     ]
   },
   "==useCallback==": {
@@ -240,6 +240,27 @@
       "  }, []);",
       "",
       "  return { };",
+      "}"
+    ]
+  },
+  "iiHooks-Reducer": {
+    "prefix": "iihooksreducer",
+    "body": [
+      "import { useEffect, useReducer } from 'react';",
+      "",
+      "const initState = {};",
+      "",
+      "const reducer = (state, action) => {",
+      "  const { type } = action;",
+      "  return { ...state, ...action };",
+      "};",
+      "",
+      "export default function ${TM_FILENAME_BASE}() {",
+      "  const [state, dispatch] = useReducer(reducer, initState);",
+      "",
+      "  useEffect(() => {}, []);",
+      "",
+      "  return {};",
       "}"
     ]
   }

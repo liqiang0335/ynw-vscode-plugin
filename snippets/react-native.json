@@ -1,6 +1,6 @@
 {
   "== RN组件: 外部样式 ==": {
-    "prefix": "iirnfunc",
+    "prefix": "iirnfunc.1",
     "body": [
       "import React from 'react';",
       "import { View, Text } from 'react-native';",
@@ -16,8 +16,8 @@
       ""
     ]
   },
-  "== RN组件: 嵌入样式 ==": {
-    "prefix": "iirnfunc",
+  "== RN组件: 内部样式 ==": {
+    "prefix": "iirnfunc.2",
     "body": [
       "import React from 'react';",
       "import { View, Text, StyleSheet } from 'react-native';",
@@ -40,6 +40,21 @@
       "});"
     ]
   },
+  "== RN函数组件 ==": {
+    "prefix": "iirnfunc.3",
+    "body": [
+      "import React from 'react';",
+      "import { View, Text } from 'react-native';",
+      "",
+      "export default function FormIntro() {",
+      "  return (",
+      "    <View >",
+      "      <Text>FormIntro</Text>",
+      "    </View>",
+      "  );",
+      "}"
+    ]
+  },
   "== RN样式文件 ==": {
     "prefix": "iirnstyle",
     "body": [
@@ -55,5 +70,9 @@
   "== css module: style ==": {
     "prefix": "iistyle",
     "body": ["style={styles.$1}$0"]
+  },
+  "iirn: 图标": {
+    "prefix": "iirnicon",
+    "body": ["import { Entypo } from '@expo/vector-icons';"]
   }
 }
