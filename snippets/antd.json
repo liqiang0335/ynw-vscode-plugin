@@ -16,7 +16,7 @@
     "body": ["form.validateFields"]
   },
   "Antd: 弹窗": {
-    "prefix": "ant.modal",
+    "prefix": "modal.antd",
     "body": [
       "import React, { useEffect } from 'react';",
       "import { Modal, Form, Input, message } from 'antd';",
@@ -79,7 +79,7 @@
     ]
   },
   "Antd: 表格": {
-    "prefix": "ant.table",
+    "prefix": "table.antd",
     "body": [
       "import React, { useEffect, useState } from 'react';",
       "import { Table, message, Modal } from 'antd';",
