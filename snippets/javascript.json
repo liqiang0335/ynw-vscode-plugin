@@ -20,12 +20,12 @@
     "body": ["console.log('>> ${1:name}'.red, ${1});$0"]
   },
   "ii.format-import": {
-    "prefix": "ii.format",
+    "prefix": "iiformat",
     "body": ["import format from 'date-fns/format';"]
   },
   "ii.format": {
-    "prefix": "ii.format",
-    "body": ["format($1,'yyyy-MM-dd HH:mm');$2"]
+    "prefix": "iiformat",
+    "body": ["yyyy-MM-dd HH:mm:ss"]
   },
   "ii.debounce-import": {
     "prefix": "ii.debounce",
@@ -70,10 +70,6 @@
   "lodash-import": {
     "prefix": "iilodash",
     "body": ["import ${1:name} from 'lodash/${1}';$0"]
-  },
-  "date-fns-import": {
-    "prefix": "iidate-fns",
-    "body": ["import ${1:name} from 'date-fns/${1}';$0"]
   },
   "==function==": {
     "prefix": "iifuncion",

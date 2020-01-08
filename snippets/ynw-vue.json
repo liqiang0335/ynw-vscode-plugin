@@ -1,22 +1,30 @@
-{"==ynw.chat==": {
-      "prefix": "yv.chat",
-      "body": ["import chat from 'ynw/vue/chat'"]
-    },"==ynw.cropper==": {
-      "prefix": "yv.cropper",
-      "body": ["import cropper from 'ynw/vue/cropper'"]
-    },"==ynw.iphone==": {
-      "prefix": "yv.iphone",
-      "body": ["import iphone from 'ynw/vue/iphone'"]
-    },"==ynw.keyboard==": {
-      "prefix": "yv.keyboard",
-      "body": ["import keyboard from 'ynw/vue/keyboard'"]
-    },"==ynw.loading==": {
-      "prefix": "yv.loading",
-      "body": ["import loading from 'ynw/vue/loading'"]
-    },"==ynw.lookImg==": {
-      "prefix": "yv.lookImg",
-      "body": ["import lookImg from 'ynw/vue/lookImg'"]
-    },"==ynw.yn-van-picker==": {
-      "prefix": "yv.yn-van-picker",
-      "body": ["import yn-van-picker from 'ynw/vue/yn-van-picker'"]
-    }}
+{
+  "==ynw.chat==": {
+    "prefix": "yv.chat",
+    "body": ["import chat from 'ynw/vue/chat'"]
+  },
+  "==ynw.cropper==": {
+    "prefix": "yv.cropper",
+    "body": ["import cropper from 'ynw/vue/cropper'"]
+  },
+  "==ynw.iphone==": {
+    "prefix": "yv.iphone",
+    "body": ["import iphone from 'ynw/vue/iphone'"]
+  },
+  "==ynw.keyboard==": {
+    "prefix": "yv.keyboard",
+    "body": ["import keyboard from 'ynw/vue/keyboard'"]
+  },
+  "==ynw.loading==": {
+    "prefix": "yv.loading",
+    "body": ["import loading from 'ynw/vue/loading'"]
+  },
+  "==ynw.lookImg==": {
+    "prefix": "yv.lookImg",
+    "body": ["import lookImg from 'ynw/vue/lookImg'"]
+  },
+  "==ynw.yn-van-picker==": {
+    "prefix": "yv.yn-van-picker",
+    "body": ["import yn-van-picker from 'ynw/vue/yn-van-picker'"]
+  }
+}

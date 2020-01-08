@@ -51,27 +51,17 @@
       "ReactDOM.render(<App />, document.getElementById('app'))"
     ]
   },
-  "==withRouter==": {
-    "prefix": "iiwithRouter",
-    "body": ["import { withRouter } from 'react-router-dom'"]
+  "==iirouter==": {
+    "prefix": "iirouter",
+    "body": ["import { useHistory } from 'react-router-dom'"]
   },
   "==NavLink==": {
     "prefix": "iiNavLink",
     "body": ["import { NavLink } from 'react-router-dom'"]
   },
   "==import-connect==": {
-    "prefix": "iiconnect",
-    "body": ["import { connect } from 'react-redux'"]
-  },
-  "==redux-connect==": {
-    "prefix": "iiconnect",
-    "body": [
-      "connect(",
-      "    state => ({",
-      "      key:state",
-      "    })",
-      " )(${TM_FILENAME_BASE})"
-    ]
+    "prefix": "iiselector",
+    "body": ["import { useSelector } from 'react-redux'"]
   },
   "==imr==": {
     "prefix": "iir",
@@ -84,10 +74,6 @@
   "==classsNames==": {
     "prefix": "iinames",
     "body": "import classNames from 'classNames';"
-  },
-  "==exportDefault==": {
-    "prefix": "iiexp",
-    "body": "export default $1$0"
   },
   "==reactFunctionalComponent==": {
     "prefix": "iirfc",
