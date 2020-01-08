@@ -1,4 +1,15 @@
 {
+  "==导入RxJS==": {
+    "prefix": "iiimrxjs",
+    "body": [
+      "import { Subject } from 'rxjs';",
+      "import { map } from 'rxjs/operators'"
+    ]
+  },
+  "==导入RxJS-Hooks==": {
+    "prefix": "iiimrxjshooks",
+    "body": ["import { useEventCallback, useObservable } from 'rxjs-hooks'"]
+  },
   "==useState==": {
     "prefix": "iiuseState",
     "body": [
