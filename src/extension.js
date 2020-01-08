@@ -5,6 +5,7 @@ const ImportModule = require("./handler/ImportModule");
 const CreateSameNameFile = require("./handler/CreateSameNameFile");
 const createAction = require("./handler/createAction");
 const createConstant = require("./handler/createConstant");
+const fastInput = require("./handler/fastInput");
 
 /**
  * activate
@@ -48,6 +49,10 @@ exports.activate = function(context) {
 
   context.subscriptions.push(
     vscode.commands.registerCommand("ynw.importModule", ImportModule)
+  );
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand("ynw.fastInput", fastInput)
   );
 
   ////////////////////// END ///////////////////////

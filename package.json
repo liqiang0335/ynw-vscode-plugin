@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.7.20",
+  "version": "0.7.21",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -24,6 +24,7 @@
     "ynw"
   ],
   "activationEvents": [
+    "onCommand:ynw.fastInput",
     "onCommand:ynw.createAction",
     "onCommand:ynw.createConstant",
     "onCommand:ynw.importModule",
@@ -106,6 +107,10 @@
       }
     ],
     "keybindings": [
+      {
+        "command": "ynw.fastInput",
+        "key": "ctrl+y ctrl+h"
+      },
       {
         "command": "ynw.createSameNameFile",
         "key": "ctrl+y ctrl+s"
