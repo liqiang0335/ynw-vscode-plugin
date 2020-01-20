@@ -41,7 +41,7 @@
     "body": "className={styles.$1} $2"
   },
   "==Styled==": {
-    "prefix": "iistyle",
+    "prefix": "iiimstyled",
     "body": "import styled from 'styled-components'"
   },
   "==imrd==": {
@@ -82,8 +82,8 @@
     "prefix": "iid",
     "body": ["import { render } from 'react-dom'"]
   },
-  "==classsNames==": {
-    "prefix": "iinames",
+  "==导入classsNames==": {
+    "prefix": "iiimclassnames",
     "body": "import classNames from 'classNames';"
   },
   "==reactFunctionalComponent==": {
@@ -134,21 +134,13 @@
     "prefix": "iiv",
     "body": ["<div className={styles.$1}>$0</div>"]
   },
-  "==span==": {
+  "==tag.span==": {
     "prefix": "iispan",
     "body": ["<span className={styles.$1}>$0</span>"]
-  },
-  "==h1==": {
-    "prefix": "iih1",
-    "body": ["<h1 className={styles.$1}>$0</h1>"]
   },
   "==p==": {
     "prefix": "iip",
     "body": ["<p className={styles.$1}>$0</p>"]
-  },
-  "==button==": {
-    "prefix": "iib",
-    "body": ["<button className={styles.$1}>$0</button>"]
   },
   "==redux-combineActions==": {
     "prefix": "iicombineActions",
@@ -193,28 +185,6 @@
       "import { combineEpics } from \"redux-observable\"",
       "",
       "export default combineEpics()"
-    ]
-  },
-  "==dispatch1==": {
-    "prefix": "iidispatch",
-    "body": ["dispatch($1)$0"]
-  },
-  "==dispatch2==": {
-    "prefix": "iidispatch",
-    "body": ["const { dispatch } = props;"]
-  },
-  "==reducer1==": {
-    "prefix": "iireducer",
-    "body": ["[$1]: (state, { payload }) => ({ ...state, $2: payload }),"]
-  },
-  "==reducer2==": {
-    "prefix": "iireducer",
-    "body": [
-      "[$1]: (state, { payload }) => {",
-      "  return {",
-      "    ...state,$2",
-      "  };",
-      "},"
     ]
   },
   "==PropTypes==": {
