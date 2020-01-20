@@ -63,15 +63,15 @@
     ]
   },
   "==iirouter==": {
-    "prefix": "iirouter",
+    "prefix": "iiimrouter",
     "body": ["import { useHistory } from 'react-router-dom'"]
   },
   "==NavLink==": {
-    "prefix": "iiNavLink",
+    "prefix": "iiimrouter",
     "body": ["import { NavLink } from 'react-router-dom'"]
   },
   "==import-connect==": {
-    "prefix": "iiselector",
+    "prefix": "iiimredux",
     "body": ["import { useSelector } from 'react-redux'"]
   },
   "==imr==": {
