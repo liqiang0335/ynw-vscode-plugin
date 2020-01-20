@@ -221,8 +221,9 @@
     "prefix": "iitypes",
     "body": [
       "import PropTypes from 'prop-types';",
+      "",
       "${TM_FILENAME_BASE}.propTypes = {",
-      " ",
+      "$1",
       "};"
     ]
   },
