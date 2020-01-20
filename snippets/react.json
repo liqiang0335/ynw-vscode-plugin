@@ -222,7 +222,12 @@
   },
   "==PropTypes==": {
     "prefix": "iitypes",
-    "body": ["import PropTypes from 'prop-types';"]
+    "body": [
+      "import PropTypes from 'prop-types';",
+      "${TM_FILENAME_BASE}.propTypes = {",
+      " ",
+      "};"
+    ]
   },
   "iiuse": {
     "prefix": "iimu",
