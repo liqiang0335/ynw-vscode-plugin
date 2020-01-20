@@ -188,18 +188,25 @@
     ]
   },
   "==PropTypes==": {
-    "prefix": "iitypes",
+    "prefix": "iiimtypes",
     "body": [
       "import PropTypes from 'prop-types';",
       "",
       "${TM_FILENAME_BASE}.propTypes = {",
-      "$1",
+      "  number: PropTypes.number.isRequired,",
+      "  func: PropTypes.func,",
+      "  bool: PropTypes.bool,",
+      "  object: PropTypes.object,",
+      "  string: PropTypes.string,",
+      "  element: PropTypes.element,",
+      "  any: PropTypes.any,",
+      "  enum: PropTypes.oneOf([1, 2]),",
+      "  union: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),",
+      "  arrayOf: PropTypes.arrayOf(PropTypes.number),",
+      "  objectOf: PropTypes.objectOf(PropTypes.number),",
+      "  customProp(props, propName, componentName) {}",
       "};"
     ]
-  },
-  "iiuse": {
-    "prefix": "iimu",
-    "body": ["import { useEffect, useState } from \"react\";"]
   },
   "iiHooks": {
     "prefix": "iihooks",
@@ -224,7 +231,7 @@
       "const initState = {};",
       "",
       "const reducer = (state, action) => {",
-      "  const { type } = action;",
+      "  // const { type } = action;",
       "  return { ...state, ...action };",
       "};",
       "",
@@ -233,7 +240,7 @@
       "",
       "  useEffect(() => {}, []);",
       "",
-      "  return {};",
+      "  return {state, dispatch};",
       "}"
     ]
   }
