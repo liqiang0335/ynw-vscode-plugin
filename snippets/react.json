@@ -41,7 +41,7 @@
     "body": "className={styles.$1} $2"
   },
   "==Styled==": {
-    "prefix": "iistyle",
+    "prefix": "iiimstyled",
     "body": "import styled from 'styled-components'"
   },
   "==imrd==": {
@@ -63,15 +63,15 @@
     ]
   },
   "==iirouter==": {
-    "prefix": "iirouter",
+    "prefix": "iiimrouter",
     "body": ["import { useHistory } from 'react-router-dom'"]
   },
   "==NavLink==": {
-    "prefix": "iiNavLink",
+    "prefix": "iiimrouter",
     "body": ["import { NavLink } from 'react-router-dom'"]
   },
   "==import-connect==": {
-    "prefix": "iiselector",
+    "prefix": "iiimredux",
     "body": ["import { useSelector } from 'react-redux'"]
   },
   "==imr==": {
@@ -82,8 +82,8 @@
     "prefix": "iid",
     "body": ["import { render } from 'react-dom'"]
   },
-  "==classsNames==": {
-    "prefix": "iinames",
+  "==导入classsNames==": {
+    "prefix": "iiimclassnames",
     "body": "import classNames from 'classNames';"
   },
   "==reactFunctionalComponent==": {
@@ -134,21 +134,13 @@
     "prefix": "iiv",
     "body": ["<div className={styles.$1}>$0</div>"]
   },
-  "==span==": {
+  "==tag.span==": {
     "prefix": "iispan",
     "body": ["<span className={styles.$1}>$0</span>"]
-  },
-  "==h1==": {
-    "prefix": "iih1",
-    "body": ["<h1 className={styles.$1}>$0</h1>"]
   },
   "==p==": {
     "prefix": "iip",
     "body": ["<p className={styles.$1}>$0</p>"]
-  },
-  "==button==": {
-    "prefix": "iib",
-    "body": ["<button className={styles.$1}>$0</button>"]
   },
   "==redux-combineActions==": {
     "prefix": "iicombineActions",
@@ -195,35 +187,26 @@
       "export default combineEpics()"
     ]
   },
-  "==dispatch1==": {
-    "prefix": "iidispatch",
-    "body": ["dispatch($1)$0"]
-  },
-  "==dispatch2==": {
-    "prefix": "iidispatch",
-    "body": ["const { dispatch } = props;"]
-  },
-  "==reducer1==": {
-    "prefix": "iireducer",
-    "body": ["[$1]: (state, { payload }) => ({ ...state, $2: payload }),"]
-  },
-  "==reducer2==": {
-    "prefix": "iireducer",
-    "body": [
-      "[$1]: (state, { payload }) => {",
-      "  return {",
-      "    ...state,$2",
-      "  };",
-      "},"
-    ]
-  },
   "==PropTypes==": {
-    "prefix": "iitypes",
-    "body": ["import PropTypes from 'prop-types';"]
-  },
-  "iiuse": {
-    "prefix": "iimu",
-    "body": ["import { useEffect, useState } from \"react\";"]
+    "prefix": "iiimtypes",
+    "body": [
+      "import PropTypes from 'prop-types';",
+      "",
+      "${TM_FILENAME_BASE}.propTypes = {",
+      "  number: PropTypes.number.isRequired,",
+      "  func: PropTypes.func,",
+      "  bool: PropTypes.bool,",
+      "  object: PropTypes.object,",
+      "  string: PropTypes.string,",
+      "  element: PropTypes.element,",
+      "  any: PropTypes.any,",
+      "  enum: PropTypes.oneOf([1, 2]),",
+      "  union: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),",
+      "  arrayOf: PropTypes.arrayOf(PropTypes.number),",
+      "  objectOf: PropTypes.objectOf(PropTypes.number),",
+      "  customProp(props, propName, componentName) {}",
+      "};"
+    ]
   },
   "iiHooks": {
     "prefix": "iihooks",
@@ -248,7 +231,7 @@
       "const initState = {};",
       "",
       "const reducer = (state, action) => {",
-      "  const { type } = action;",
+      "  // const { type } = action;",
       "  return { ...state, ...action };",
       "};",
       "",
@@ -257,7 +240,7 @@
       "",
       "  useEffect(() => {}, []);",
       "",
-      "  return {};",
+      "  return {state, dispatch};",
       "}"
     ]
   }
