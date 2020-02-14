@@ -1,17 +1,6 @@
 {
-  "express.try": {
-    "prefix": "iitry",
-    "body": [
-      "try {",
-      "  const data = await ",
-      "  res.send(response.success(data));",
-      "} catch (err) {",
-      "  return next(err);",
-      "}"
-    ]
-  },
   "express.response": {
     "prefix": "ii.response",
-    "body": [".then(data => res.send(response.success(data)))", ".catch(next);"]
+    "body": [".then(data => res.send(req.fn.ok(data)))", ".catch(next);"]
   }
 }
