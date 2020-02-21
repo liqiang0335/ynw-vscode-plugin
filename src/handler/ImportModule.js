@@ -1,27 +1,18 @@
 const vscode = require("vscode");
-const { getRelativePath } = require("./util.js");
 const path = require("path");
-
 const config = vscode.workspace.getConfiguration("ynw");
 const moduleType = config.get("moduleType");
 const isESM = moduleType === "esm";
+const { getRelativePathInfo } = require("./util.js");
 
-const maps = [
+const RegsTable = [
   {
     reg: /\.scss$/,
     handler: ({ relativePath }) => `import styles from "${relativePath}"`
   },
+  { reg: /\.css$/, handler: ({ relativePath }) => `import "${relativePath}"` },
   {
-    reg: /\.css$/,
-    handler: ({ relativePath }) => `import "${relativePath}"`
-  },
-  {
-    reg: /(api)|(^Types)|(selector)$/,
-    handler: ({ relativePath, basename }) =>
-      `import * as ${basename} from "${relativePath}"`
-  },
-  {
-    reg: /(const|utils|\.action|\.epic)/i,
+    reg: /s\.js$/i,
     handler: ({ relativePath }) => `import {  } from "${relativePath}"`
   }
 ];
@@ -29,11 +20,14 @@ const maps = [
 module.exports = function(URI) {
   const activeDocument = vscode.window.activeTextEditor.document;
   if (!activeDocument) return;
-  const relativePath = getRelativePath(URI.fsPath, activeDocument.uri.fsPath);
+  const { relativePath, ext } = getRelativePathInfo(
+    URI.fsPath,
+    activeDocument.uri.fsPath
+  );
   const basename = path.basename(relativePath).match(/^[\w\-_]+/)[0];
-  const ext = path.extname(basename);
-  const ctx = { relativePath, ext, basename };
-  const match = maps.find(item => item.reg.test(basename));
+  const fullName = basename + ext;
+  const ctx = { relativePath, ext, basename, fullName };
+  const match = RegsTable.find(item => item.reg.test(fullName));
 
   const content = !isESM
     ? `const ${basename} = require("${relativePath}");\n`

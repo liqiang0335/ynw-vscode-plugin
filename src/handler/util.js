@@ -2,6 +2,9 @@ const path = require("path");
 const fs = require("fs");
 const util = require("util");
 
+// Handle window's Style file path
+const toWinPath = p => p.replace(/\\+/g, "\\\\").replace(/^\\+/, "");
+
 /**
  * Get Relative Path for active
  */
@@ -11,7 +14,7 @@ const getRelativePath = function(selectFilePath, activeFilePath) {
     .replace(/\\+/g, "/") //replace sep
     .replace(/^\.\.\//, "");
 
-  //remove extension for some file type
+  // remove extension for some file type
   if (/\.(jsx?|vue|json)$/.test(relativePath)) {
     relativePath = relativePath.replace(/\.[a-z]+$/, "");
   }
@@ -22,8 +25,28 @@ const getRelativePath = function(selectFilePath, activeFilePath) {
   return relativePath;
 };
 
-//处理window路径
-const toWinPath = p => p.replace(/\\+/g, "\\\\").replace(/^\\+/, "");
+/**
+ * Get Path With Suffix
+ */
+const getRelativePathInfo = function(selectFilePath, activeFilePath) {
+  let relativePath = path
+    .relative(activeFilePath, selectFilePath)
+    .replace(/\\+/g, "/") //replace sep
+    .replace(/^\.\.\//, "");
+
+  const ext = path.extname(relativePath);
+  let result = relativePath;
+
+  // remove extension for some file type
+  if (/\.(jsx?|vue)$/.test(relativePath)) {
+    result = relativePath.replace(/\.[a-z]+$/, "");
+  }
+  if (!result.startsWith(".")) {
+    result = "./" + result;
+  }
+
+  return { relativePath: result, ext };
+};
 
 ////////////////////////////////////////////////////////////
 
@@ -32,3 +55,4 @@ exports.writeFile = util.promisify(fs.writeFile);
 exports.exists = util.promisify(fs.exists);
 exports.getRelativePath = getRelativePath;
 exports.toWinPath = toWinPath;
+exports.getRelativePathInfo = getRelativePathInfo;
