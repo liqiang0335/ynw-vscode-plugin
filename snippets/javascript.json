@@ -20,11 +20,11 @@
     "body": ["console.log('>> ${1:name}'.red, ${1});$0"]
   },
   "ii.format-import": {
-    "prefix": "iiimformat",
+    "prefix": "iiimdatafns",
     "body": ["import format from 'date-fns/format';"]
   },
   "ii.format": {
-    "prefix": "iiformat",
+    "prefix": "iitime",
     "body": ["yyyy-MM-dd HH:mm:ss"]
   },
   "ii.debounce-import": {
