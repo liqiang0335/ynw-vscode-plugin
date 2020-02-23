@@ -9,7 +9,7 @@
   },
   "iilog-same": {
     "prefix": "iilog",
-    "body": ["console.log('>> ${1:name}', ${1});$0"]
+    "body": ["console.log(${1});$0"]
   },
   "iilog": {
     "prefix": "iilog",

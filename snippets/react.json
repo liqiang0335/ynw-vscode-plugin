@@ -1,13 +1,13 @@
 {
-  "==导入RxJS==": {
+  "==导入:RxJS==": {
     "prefix": "iiimrxjs",
     "body": [
       "import { Subject } from 'rxjs';",
       "import { map } from 'rxjs/operators'"
     ]
   },
-  "==导入RxJS-Hooks==": {
-    "prefix": "iiimrxjshooks",
+  "==导入:rxjs-hooks==": {
+    "prefix": "iiimrxjs",
     "body": ["import { useEventCallback, useObservable } from 'rxjs-hooks'"]
   },
   "==useState==": {
@@ -62,17 +62,17 @@
       "ReactDOM.render(<App />, document.getElementById('app'))"
     ]
   },
-  "==iirouter==": {
+  "==导入:router==": {
     "prefix": "iiimrouter",
-    "body": ["import { useHistory } from 'react-router-dom'"]
+    "body": ["import { useHistory, NavLink } from 'react-router-dom'"]
   },
-  "==NavLink==": {
-    "prefix": "iiimrouter",
-    "body": ["import { NavLink } from 'react-router-dom'"]
-  },
-  "==import-connect==": {
+  "==导入:useSelector ==": {
     "prefix": "iiimredux",
-    "body": ["import { useSelector } from 'react-redux'"]
+    "body": ["import { useSelector, useDispatch } from 'react-redux'"]
+  },
+  "==导入:reselect==": {
+    "prefix": "iiimredux",
+    "body": ["import { createSelector } from 'reselect'"]
   },
   "==imr==": {
     "prefix": "iir",
@@ -80,13 +80,13 @@
   },
   "==imd==": {
     "prefix": "iid",
-    "body": ["import { render } from 'react-dom'"]
+    "body": ["import ReactDOM from 'react-dom'"]
   },
   "==导入classsNames==": {
     "prefix": "iiimclassnames",
     "body": "import classNames from 'classNames';"
   },
-  "==reactFunctionalComponent==": {
+  "==函数组件==": {
     "prefix": "iirfc",
     "body": [
       "import React from 'react'",
@@ -142,31 +142,8 @@
     "prefix": "iip",
     "body": ["<p className={styles.$1}>$0</p>"]
   },
-  "==redux-combineActions==": {
-    "prefix": "iicombineActions",
-    "body": [" import { combineActions } from \"redux-actions\""]
-  },
-  "==redux-createAction==": {
-    "prefix": "iicreateAction",
-    "body": [" import { createAction, handleActions } from \"redux-actions\""]
-  },
-  "==redux-actions==": {
-    "prefix": "iiredux-actions",
-    "body": [
-      "import { createAction, handleActions } from 'redux-actions'",
-      "",
-      "",
-      "",
-      "const initState = {}",
-      "",
-      "export default handleActions(",
-      "  { $1 }",
-      "  initState",
-      ")"
-    ]
-  },
   "==redux-ob==": {
-    "prefix": "iiepic",
+    "prefix": "iiob",
     "body": [
       "import { from } from 'rxjs'",
       "import { switchMap, map, catchError } from 'rxjs/operators'",
@@ -180,9 +157,9 @@
     ]
   },
   "==redux-combineEpics==": {
-    "prefix": "iicombineEpics",
+    "prefix": "iiob",
     "body": [
-      "import { combineEpics } from \"redux-observable\"",
+      "import { combineEpics } from 'redux-observable'",
       "",
       "export default combineEpics()"
     ]
@@ -192,18 +169,9 @@
     "body": [
       "import PropTypes from 'prop-types';",
       "",
+      "//func,bool,element,any,enum,arrayOf",
       "${TM_FILENAME_BASE}.propTypes = {",
       "  number: PropTypes.number.isRequired,",
-      "  func: PropTypes.func,",
-      "  bool: PropTypes.bool,",
-      "  object: PropTypes.object,",
-      "  string: PropTypes.string,",
-      "  element: PropTypes.element,",
-      "  any: PropTypes.any,",
-      "  enum: PropTypes.oneOf([1, 2]),",
-      "  union: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),",
-      "  arrayOf: PropTypes.arrayOf(PropTypes.number),",
-      "  objectOf: PropTypes.objectOf(PropTypes.number),",
       "  customProp(props, propName, componentName) {}",
       "};"
     ]
@@ -231,7 +199,6 @@
       "const initState = {};",
       "",
       "const reducer = (state, action) => {",
-      "  // const { type } = action;",
       "  return { ...state, ...action };",
       "};",
       "",
