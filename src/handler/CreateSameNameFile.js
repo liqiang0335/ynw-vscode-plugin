@@ -5,7 +5,7 @@ const { copy } = require("copy-paste");
 
 const DefualtFileInputs = {
   "style.js": "import styled from 'styled-components';",
-  scss: ".container"
+  scss: ""
 };
 
 module.exports = async function(URI) {
