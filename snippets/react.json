@@ -1,13 +1,13 @@
 {
-  "==导入:RxJS==": {
-    "prefix": "iiimrxjs",
+  "==RxJS==": {
+    "prefix": "iirxjs",
     "body": [
       "import { Subject } from 'rxjs';",
       "import { map } from 'rxjs/operators'"
     ]
   },
-  "==导入:rxjs-hooks==": {
-    "prefix": "iiimrxjs",
+  "==rxjs-hooks==": {
+    "prefix": "iirxjs",
     "body": ["import { useEventCallback, useObservable } from 'rxjs-hooks'"]
   },
   "==useState==": {
@@ -41,7 +41,7 @@
     "body": "className={styles.$1} $2"
   },
   "==Styled==": {
-    "prefix": "iiimstyled",
+    "prefix": "iistyled",
     "body": "import styled from 'styled-components'"
   },
   "==imrd==": {
@@ -62,16 +62,16 @@
       "ReactDOM.render(<App />, document.getElementById('app'))"
     ]
   },
-  "==导入:router==": {
-    "prefix": "iiimrouter",
+  "==router==": {
+    "prefix": "iirouter",
     "body": ["import { useHistory, NavLink } from 'react-router-dom'"]
   },
-  "==导入:useSelector ==": {
-    "prefix": "iiimredux",
+  "==useSelector ==": {
+    "prefix": "iiredux",
     "body": ["import { useSelector, useDispatch } from 'react-redux'"]
   },
-  "==导入:reselect==": {
-    "prefix": "iiimredux",
+  "==reselect==": {
+    "prefix": "iiredux",
     "body": ["import { createSelector } from 'reselect'"]
   },
   "==imr==": {
@@ -82,8 +82,8 @@
     "prefix": "iid",
     "body": ["import ReactDOM from 'react-dom'"]
   },
-  "==导入classsNames==": {
-    "prefix": "iiimclassnames",
+  "==classsNames==": {
+    "prefix": "iiclassnames",
     "body": "import classNames from 'classNames';"
   },
   "==函数组件==": {
@@ -165,7 +165,7 @@
     ]
   },
   "==PropTypes==": {
-    "prefix": "iiimtypes",
+    "prefix": "iitypes",
     "body": [
       "import PropTypes from 'prop-types';",
       "",

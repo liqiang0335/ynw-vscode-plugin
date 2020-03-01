@@ -60,7 +60,7 @@
     "body": ["console.log('>> ${1:name}'.red, ${1});$0"]
   },
   "ii.format-import": {
-    "prefix": "iiimdatafns",
+    "prefix": "iidatafns",
     "body": ["import format from 'date-fns/format';"]
   },
   "ii.format": {
