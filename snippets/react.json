@@ -1,12 +1,12 @@
 {
-  "==RxJS==": {
+  "==im-rxjx==": {
     "prefix": "iirxjs",
     "body": [
       "import { Subject } from 'rxjs';",
       "import { map } from 'rxjs/operators'"
     ]
   },
-  "==rxjs-hooks==": {
+  "==im-rxjs-hooks==": {
     "prefix": "iirxjs",
     "body": ["import { useEventCallback, useObservable } from 'rxjs-hooks'"]
   },
@@ -36,7 +36,7 @@
     "prefix": "iiuseEffect",
     "body": ["useEffect(() => {", " $1", " },", "[]", ")"]
   },
-  "classsNames2": {
+  "classsNames-inline": {
     "prefix": "iiclass",
     "body": "className={styles.$1} $2"
   },
@@ -70,9 +70,17 @@
     "prefix": "iiredux",
     "body": ["import { useSelector, useDispatch } from 'react-redux'"]
   },
-  "==reselect==": {
+  "==createSelector==": {
     "prefix": "iiredux",
-    "body": ["import { createSelector } from 'reselect'"]
+    "body": [
+      "import { createSelector } from 'reselect';",
+      "",
+      "export default createSelector(state => state.$1, Handler);",
+      "",
+      "function Handler($2) {",
+      "  $0",
+      "}"
+    ]
   },
   "==imr==": {
     "prefix": "iir",
