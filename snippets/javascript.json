@@ -1,4 +1,44 @@
 {
+  "import-alias-module": {
+    "prefix": "ii@module",
+    "body": ["import module from '@module/$1';\n"]
+  },
+  "import-alias-store": {
+    "prefix": "ii@store",
+    "body": ["import store from '@store/store';\n"]
+  },
+  "import-alias-types": {
+    "prefix": "ii@types",
+    "body": ["import * as Types from '@store/Types';\n"]
+  },
+  "import-alias-script": {
+    "prefix": "ii@script",
+    "body": ["import module from '@script/$1';\n"]
+  },
+  "import-alias-hook": {
+    "prefix": "ii@hook",
+    "body": ["import module  from '@hook/$1';\n"]
+  },
+  "import-alias-comps": {
+    "prefix": "ii@comps",
+    "body": ["import module from '@comps/$1';\n"]
+  },
+  "import-alias-const": {
+    "prefix": "ii@const",
+    "body": ["import module from '@const/$1';\n"]
+  },
+  "reducer": {
+    "prefix": "iireducer",
+    "body": [
+      "import * as Types from '@store/Types';",
+      "",
+      "const init = {};",
+      "",
+      "export default function reducer(state = init, { type, payload }) {",
+      "  return state;",
+      "}"
+    ]
+  },
   "ii.function-property": {
     "prefix": "ii.function.property",
     "body": ["$1() {", "  $2", "},"]
