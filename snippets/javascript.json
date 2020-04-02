@@ -1,4 +1,44 @@
 {
+  "import-alias-module": {
+    "prefix": "iiimodule",
+    "body": ["import module from '@module/$1';\n"]
+  },
+  "import-alias-store": {
+    "prefix": "iiistore",
+    "body": ["import store from '@store/store';\n"]
+  },
+  "import-alias-types": {
+    "prefix": "iiitypes",
+    "body": ["import * as Types from '@store/Types';\n"]
+  },
+  "import-alias-script": {
+    "prefix": "iiiscript",
+    "body": ["import module from '@script/$1';\n"]
+  },
+  "import-alias-hook": {
+    "prefix": "iiihook",
+    "body": ["import module  from '@hook/$1';\n"]
+  },
+  "import-alias-comps": {
+    "prefix": "iiicomps",
+    "body": ["import module from '@comps/$1';\n"]
+  },
+  "import-alias-const": {
+    "prefix": "iiiconst",
+    "body": ["import module from '@const/$1';\n"]
+  },
+  "reducer": {
+    "prefix": "iireducer",
+    "body": [
+      "import * as Types from '@store/Types';",
+      "",
+      "const init = {};",
+      "",
+      "export default function reducer(state = init, { type, payload }) {",
+      "  return state;",
+      "}"
+    ]
+  },
   "ii.function-property": {
     "prefix": "ii.function.property",
     "body": ["$1() {", "  $2", "},"]
@@ -9,7 +49,7 @@
   },
   "iilog-same": {
     "prefix": "iilog",
-    "body": ["console.log('>> ${1:name}', ${1});$0"]
+    "body": ["console.log(${1});$0"]
   },
   "iilog": {
     "prefix": "iilog",
@@ -20,11 +60,11 @@
     "body": ["console.log('>> ${1:name}'.red, ${1});$0"]
   },
   "ii.format-import": {
-    "prefix": "iiimformat",
+    "prefix": "iidatafns",
     "body": ["import format from 'date-fns/format';"]
   },
   "ii.format": {
-    "prefix": "iiformat",
+    "prefix": "iitime",
     "body": ["yyyy-MM-dd HH:mm:ss"]
   },
   "ii.debounce-import": {

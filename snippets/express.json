@@ -1,6 +1,6 @@
 {
   "express.response": {
-    "prefix": "ii.response",
-    "body": [".then(data => res.send(req.fn.ok(data)))", ".catch(next);"]
+    "prefix": "iiresponse",
+    "body": ["then(data => res.send(req.fn.ok(data)))", ".catch(next);"]
   }
 }

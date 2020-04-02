@@ -1,13 +1,13 @@
 {
-  "==导入RxJS==": {
-    "prefix": "iiimrxjs",
+  "==im-rxjx==": {
+    "prefix": "iirxjs",
     "body": [
       "import { Subject } from 'rxjs';",
       "import { map } from 'rxjs/operators'"
     ]
   },
-  "==导入RxJS-Hooks==": {
-    "prefix": "iiimrxjshooks",
+  "==im-rxjs-hooks==": {
+    "prefix": "iirxjs",
     "body": ["import { useEventCallback, useObservable } from 'rxjs-hooks'"]
   },
   "==useState==": {
@@ -36,12 +36,12 @@
     "prefix": "iiuseEffect",
     "body": ["useEffect(() => {", " $1", " },", "[]", ")"]
   },
-  "classsNames2": {
+  "classsNames-inline": {
     "prefix": "iiclass",
     "body": "className={styles.$1} $2"
   },
   "==Styled==": {
-    "prefix": "iiimstyled",
+    "prefix": "iistyled",
     "body": "import styled from 'styled-components'"
   },
   "==imrd==": {
@@ -62,17 +62,25 @@
       "ReactDOM.render(<App />, document.getElementById('app'))"
     ]
   },
-  "==iirouter==": {
-    "prefix": "iiimrouter",
-    "body": ["import { useHistory } from 'react-router-dom'"]
+  "==router==": {
+    "prefix": "iirouter",
+    "body": ["import { useHistory, NavLink } from 'react-router-dom'"]
   },
-  "==NavLink==": {
-    "prefix": "iiimrouter",
-    "body": ["import { NavLink } from 'react-router-dom'"]
+  "==useSelector ==": {
+    "prefix": "iiredux",
+    "body": ["import { useSelector, useDispatch } from 'react-redux'"]
   },
-  "==import-connect==": {
-    "prefix": "iiimredux",
-    "body": ["import { useSelector } from 'react-redux'"]
+  "==createSelector==": {
+    "prefix": "iiredux",
+    "body": [
+      "import { createSelector } from 'reselect';",
+      "",
+      "export default createSelector(state => state.$1, Handler);",
+      "",
+      "function Handler($2) {",
+      "  $0",
+      "}"
+    ]
   },
   "==imr==": {
     "prefix": "iir",
@@ -80,13 +88,13 @@
   },
   "==imd==": {
     "prefix": "iid",
-    "body": ["import { render } from 'react-dom'"]
+    "body": ["import ReactDOM from 'react-dom'"]
   },
-  "==导入classsNames==": {
-    "prefix": "iiimclassnames",
+  "==classsNames==": {
+    "prefix": "iiclassnames",
     "body": "import classNames from 'classNames';"
   },
-  "==reactFunctionalComponent==": {
+  "==函数组件==": {
     "prefix": "iirfc",
     "body": [
       "import React from 'react'",
@@ -142,31 +150,8 @@
     "prefix": "iip",
     "body": ["<p className={styles.$1}>$0</p>"]
   },
-  "==redux-combineActions==": {
-    "prefix": "iicombineActions",
-    "body": [" import { combineActions } from \"redux-actions\""]
-  },
-  "==redux-createAction==": {
-    "prefix": "iicreateAction",
-    "body": [" import { createAction, handleActions } from \"redux-actions\""]
-  },
-  "==redux-actions==": {
-    "prefix": "iiredux-actions",
-    "body": [
-      "import { createAction, handleActions } from 'redux-actions'",
-      "",
-      "",
-      "",
-      "const initState = {}",
-      "",
-      "export default handleActions(",
-      "  { $1 }",
-      "  initState",
-      ")"
-    ]
-  },
   "==redux-ob==": {
-    "prefix": "iiepic",
+    "prefix": "iiob",
     "body": [
       "import { from } from 'rxjs'",
       "import { switchMap, map, catchError } from 'rxjs/operators'",
@@ -180,30 +165,21 @@
     ]
   },
   "==redux-combineEpics==": {
-    "prefix": "iicombineEpics",
+    "prefix": "iiob",
     "body": [
-      "import { combineEpics } from \"redux-observable\"",
+      "import { combineEpics } from 'redux-observable'",
       "",
       "export default combineEpics()"
     ]
   },
   "==PropTypes==": {
-    "prefix": "iiimtypes",
+    "prefix": "iitypes",
     "body": [
       "import PropTypes from 'prop-types';",
       "",
+      "//func,bool,element,any,enum,arrayOf",
       "${TM_FILENAME_BASE}.propTypes = {",
       "  number: PropTypes.number.isRequired,",
-      "  func: PropTypes.func,",
-      "  bool: PropTypes.bool,",
-      "  object: PropTypes.object,",
-      "  string: PropTypes.string,",
-      "  element: PropTypes.element,",
-      "  any: PropTypes.any,",
-      "  enum: PropTypes.oneOf([1, 2]),",
-      "  union: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),",
-      "  arrayOf: PropTypes.arrayOf(PropTypes.number),",
-      "  objectOf: PropTypes.objectOf(PropTypes.number),",
       "  customProp(props, propName, componentName) {}",
       "};"
     ]
@@ -231,7 +207,6 @@
       "const initState = {};",
       "",
       "const reducer = (state, action) => {",
-      "  // const { type } = action;",
       "  return { ...state, ...action };",
       "};",
       "",
