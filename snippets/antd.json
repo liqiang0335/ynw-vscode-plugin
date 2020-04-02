@@ -1,18 +1,22 @@
 {
-  "ant-getFieldDecorator": {
-    "prefix": "getFieldDecorator",
-    "body": ["getFieldDecorator"]
-  },
-  "ant-resetFields": {
+  "表单重置-antd": {
     "prefix": "form.resetFields",
     "body": ["form.resetFields"]
   },
-  "ant-setFieldsValue": {
+  "表单设置-antd": {
     "prefix": "form.setFieldsValue",
     "body": ["form.setFieldsValue"]
   },
-  "ant-validateFields": {
+  "表单验证-antd": {
     "prefix": "form.validateFields",
     "body": ["form.validateFields"]
+  },
+  "图标-antd": {
+    "prefix": "icon",
+    "body": ["import { $1 } from '@ant-design/icons';"]
+  },
+  "导入antd": {
+    "prefix": "antd",
+    "body": ["import { $1 } from 'antd'"]
   }
 }
