@@ -1,38 +1,38 @@
 {
-  "==im-rxjx==": {
+  "导入rxjx": {
     "prefix": "iirxjs",
     "body": [
       "import { Subject } from 'rxjs';",
       "import { map } from 'rxjs/operators'"
     ]
   },
-  "==im-rxjs-hooks==": {
+  "导入rxjs-hooks": {
     "prefix": "iirxjs",
     "body": ["import { useEventCallback, useObservable } from 'rxjs-hooks'"]
   },
-  "==useState==": {
+  "useState": {
     "prefix": "iiuseState",
     "body": [
       "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState($2)"
     ]
   },
-  "==useData==": {
+  "useData": {
     "prefix": "iiuseData",
     "body": ["const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useData($2)"]
   },
-  "==useToggle==": {
+  "useToggle": {
     "prefix": "iiuseToggle",
     "body": [
       "const [${1:state}, toggle${1/(.*)/${1:/capitalize}/}] = useToggle($2)"
     ]
   },
-  "==useBoolCall==": {
+  "useBoolCall": {
     "prefix": "iiuseBoolCall",
     "body": [
       "const [${1:state}, toggle${1/(.*)/${1:/capitalize}/}] = useBoolCall($2)"
     ]
   },
-  "==useEffect==": {
+  "useEffect": {
     "prefix": "iiuseEffect",
     "body": ["useEffect(() => {", " $1", " },", "[]", ")"]
   },
@@ -40,11 +40,11 @@
     "prefix": "iiclass",
     "body": "className={styles.$1} $2"
   },
-  "==Styled==": {
+  "导入Styled": {
     "prefix": "iistyled",
     "body": "import styled from 'styled-components'"
   },
-  "==imrd==": {
+  "imrd": {
     "prefix": "iird",
     "body": [
       "import React from 'react'",
@@ -62,15 +62,15 @@
       "ReactDOM.render(<App />, document.getElementById('app'))"
     ]
   },
-  "==router==": {
+  "导入router": {
     "prefix": "iirouter",
     "body": ["import { useHistory, NavLink } from 'react-router-dom'"]
   },
-  "==useSelector ==": {
+  "导入useSelector ": {
     "prefix": "iiredux",
     "body": ["import { useSelector, useDispatch } from 'react-redux'"]
   },
-  "==createSelector==": {
+  "createSelector": {
     "prefix": "iiredux",
     "body": [
       "import { createSelector } from 'reselect';",
@@ -82,19 +82,19 @@
       "}"
     ]
   },
-  "==imr==": {
+  "imr": {
     "prefix": "iir",
     "body": ["import React from 'react'"]
   },
-  "==imd==": {
+  "imd": {
     "prefix": "iid",
     "body": ["import ReactDOM from 'react-dom'"]
   },
-  "==classsNames==": {
+  "classsNames": {
     "prefix": "iiclassnames",
     "body": "import classNames from 'classNames';"
   },
-  "==函数组件==": {
+  "函数组件": {
     "prefix": "iirfc",
     "body": [
       "import React from 'react'",
@@ -109,17 +109,17 @@
       ""
     ]
   },
-  "==useContext==": {
+  "useContext": {
     "prefix": "iiuseContext",
     "body": ["const ${1:context} = useContext(${2:contextValue})"]
   },
-  "==useReducer==": {
+  "useReducer": {
     "prefix": "iiuseReducer",
     "body": [
       "const [state, dispatch] = useReducer(${1:reducer}, ${2:initState})"
     ]
   },
-  "==useCallback==": {
+  "useCallback": {
     "prefix": "iiuseCallback",
     "body": [
       "useCallback(",
@@ -130,27 +130,23 @@
       ")"
     ]
   },
-  "==useMemo==": {
+  "useMemo": {
     "prefix": "iiuseMemo",
     "body": ["useMemo(() => ${1:function}, ${2:input})"]
   },
-  "==useRef==": {
+  "useRef": {
     "prefix": "iiuseRef",
     "body": ["const ${1:ref} = useRef(${2:initialValue})"]
   },
-  "==div==": {
+  "标签div": {
     "prefix": "iiv",
     "body": ["<div className={styles.$1}>$0</div>"]
   },
-  "==tag.span==": {
+  "标签span": {
     "prefix": "iispan",
     "body": ["<span className={styles.$1}>$0</span>"]
   },
-  "==p==": {
-    "prefix": "iip",
-    "body": ["<p className={styles.$1}>$0</p>"]
-  },
-  "==redux-ob==": {
+  "redux-ob": {
     "prefix": "iiob",
     "body": [
       "import { from } from 'rxjs'",
@@ -164,7 +160,7 @@
       "  )"
     ]
   },
-  "==redux-combineEpics==": {
+  "redux-combineEpics": {
     "prefix": "iiob",
     "body": [
       "import { combineEpics } from 'redux-observable'",
@@ -172,7 +168,7 @@
       "export default combineEpics()"
     ]
   },
-  "==PropTypes==": {
+  "PropTypes": {
     "prefix": "iitypes",
     "body": [
       "import PropTypes from 'prop-types';",
