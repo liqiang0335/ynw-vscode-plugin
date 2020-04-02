@@ -7,3 +7,14 @@
 - `pro` : 使用 `ynw-cli` 生产模式构建
 
 ## Snippets
+
+## ynw.config
+
+```js
+module.exports = {
+  vscode: {
+    styleFileType: "[name].module.scss",
+    scriptFileType: "[name].js"
+  }
+};
+```

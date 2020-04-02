@@ -2,11 +2,7 @@ const vscode = require("vscode");
 const path = require("path");
 const utils = require("./util");
 const { copy } = require("copy-paste");
-
-const DefualtFileInputs = {
-  "style.js": "import styled from 'styled-components';",
-  scss: ""
-};
+const getConfigValue = require("../utils/getConfigValue");
 
 module.exports = async function(URI) {
   const filePath = URI
@@ -15,18 +11,16 @@ module.exports = async function(URI) {
 
   const stat = await utils.stat(filePath);
   const fileType = stat.isDirectory() ? "dir" : "file";
-
-  const config = vscode.workspace.getConfiguration("ynw");
-  const ext = config.get("styleFileType");
-  const scriptFileType = config.get("scriptFileType");
+  const styleFileType = getConfigValue("styleFileType");
+  const scriptFileType = getConfigValue("scriptFileType");
 
   const fileTypeHandler = {
     file() {
       const dirname = path.dirname(filePath);
       const name = path.basename(filePath).match(/^\w+/)[0];
-      const fullName = name + "." + ext;
+      const fullName = name + "." + styleFileType;
       const target = path.join(dirname, fullName);
-      const content = (DefualtFileInputs[ext] || "") + "\n";
+      const content = "\n";
       copy(`import styles from "./${fullName}"`);
       return { target, content };
     },
