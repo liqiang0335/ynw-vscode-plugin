@@ -67,10 +67,6 @@
     "prefix": "iitime",
     "body": ["yyyy-MM-dd HH:mm:ss"]
   },
-  "ii.debounce-import": {
-    "prefix": "ii.debounce",
-    "body": ["import debounce from 'lodash/debounce';"]
-  },
   "ii.debounce-function": {
     "prefix": "ii.debounce",
     "body": [
@@ -114,5 +110,21 @@
   "==function==": {
     "prefix": "iifuncion",
     "body": ["const $1 = ($2) => {", " $0", "};"]
+  },
+  "导入API": {
+    "prefix": "iiapi",
+    "body": ["import * as api from '@script/api';"]
+  },
+  "导入immer": {
+    "prefix": "immer",
+    "body": ["import produce from 'immer';"]
+  },
+  "接口返回": {
+    "prefix": "iires",
+    "body": ["const [res, err] = await $1;", "if (err) return;"]
+  },
+  "Hub": {
+    "prefix": "iihub",
+    "body": ["import hub, { $1 } from '@store/hub';"]
   }
 }

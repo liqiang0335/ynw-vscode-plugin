@@ -2,22 +2,14 @@ const vscode = require("vscode");
 const RelativePathHandler = require("./handler/RelativePath");
 const WebpackBuildHandler = require("./handler/WebpackBuild");
 const ImportModule = require("./handler/ImportModule");
+const requireModule = require("./handler/requireModule");
 const CreateSameNameFile = require("./handler/CreateSameNameFile");
-const createAction = require("./handler/createAction");
-const createConstant = require("./handler/createConstant");
 const fastInput = require("./handler/fastInput");
 
 /**
  * activate
  */
-exports.activate = function(context) {
-  context.subscriptions.push(
-    vscode.commands.registerCommand("ynw.createConstant", createConstant)
-  );
-  context.subscriptions.push(
-    vscode.commands.registerCommand("ynw.createAction", createAction)
-  );
-
+exports.activate = function (context) {
   context.subscriptions.push(
     vscode.commands.registerCommand("ynw.relavePath", RelativePathHandler)
   );
@@ -35,6 +27,12 @@ exports.activate = function(context) {
   );
 
   context.subscriptions.push(
+    vscode.commands.registerCommand("ynw.webpackBuild.pro", uri =>
+      WebpackBuildHandler(uri, "pro")
+    )
+  );
+
+  context.subscriptions.push(
     vscode.commands.registerCommand(
       "ynw.createSameNameFile",
       CreateSameNameFile
@@ -42,13 +40,11 @@ exports.activate = function(context) {
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("ynw.webpackBuild.pro", uri =>
-      WebpackBuildHandler(uri, "pro")
-    )
+    vscode.commands.registerCommand("ynw.importModule", ImportModule)
   );
 
   context.subscriptions.push(
-    vscode.commands.registerCommand("ynw.importModule", ImportModule)
+    vscode.commands.registerCommand("ynw.requireModule", requireModule)
   );
 
   context.subscriptions.push(
@@ -61,4 +57,4 @@ exports.activate = function(context) {
 /**
  * deactivate
  */
-exports.deactivate = function() {};
+exports.deactivate = function () {};
