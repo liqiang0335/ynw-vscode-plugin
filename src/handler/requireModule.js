@@ -3,17 +3,8 @@ const insertContent = require("../utils/insertContent");
 
 const RegExpTable = [
   {
-    reg: /api/,
-    handler: ({ relativePath }) => `import * as api from "${relativePath}"`,
-  },
-  { reg: /\.css$/, handler: ({ relativePath }) => `import "${relativePath}"` },
-  {
-    reg: /\.scss$/,
-    handler: ({ relativePath }) => `import styles from "${relativePath}"`,
-  },
-  {
     reg: /s\.js$/,
-    handler: ({ relativePath }) => `import {  } from "${relativePath}"`,
+    handler: ({ relativePath }) => `const {  } = require("${relativePath}")`,
   },
 ];
 
@@ -26,7 +17,7 @@ module.exports = function (URI) {
 
   const content = regMatch
     ? regMatch.handler(info) + ";\n"
-    : `import ${baseName} from "${relativePath}";\n`;
+    : `const ${baseName} = require("${relativePath}")\n`;
 
   insertContent(content);
 };

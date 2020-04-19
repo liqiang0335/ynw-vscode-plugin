@@ -3,7 +3,7 @@ const fs = require("fs");
 const getLocalFile = require("../utils/getLocalFile");
 
 const getLocalFastValue = () => {
-  const localFile = getLocalFile("ynw-fast.txt");
+  const localFile = getLocalFile("ynw-copy.txt");
   if (fs.existsSync(localFile)) {
     return fs.readFileSync(localFile, "utf-8");
   } else {
@@ -11,7 +11,7 @@ const getLocalFastValue = () => {
   }
 };
 
-module.exports = function() {
+module.exports = function () {
   const fastValue = getLocalFastValue();
   vscode.window.activeTextEditor.edit(editBuilder => {
     let position = vscode.window.activeTextEditor.selection.end;

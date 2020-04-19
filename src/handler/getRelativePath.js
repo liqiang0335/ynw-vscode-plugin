@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const util = require("util");
+const vscode = require("vscode");
 
 // Handle window's Style file path
 const toWinPath = p => p.replace(/\\+/g, "\\\\").replace(/^\\+/, "");
@@ -25,10 +26,18 @@ const getRelativePath = function (selectFilePath, activeFilePath) {
   return relativePath;
 };
 
+const getActiveDocumentPath = () => {
+  const activeDocument = vscode.window.activeTextEditor.document;
+  return activeDocument ? activeDocument.uri.fsPath : "";
+};
+
 /**
  * Get Path With Suffix
  */
-const getRelativePathInfo = function (selectFilePath, activeFilePath) {
+const getRelativePathInfo = function (selectFilePath) {
+  const activeFilePath = getActiveDocumentPath();
+  if (!activeFilePath) return "";
+
   let relativePath = path
     .relative(activeFilePath, selectFilePath)
     .replace(/\\+/g, "/") //replace sep
