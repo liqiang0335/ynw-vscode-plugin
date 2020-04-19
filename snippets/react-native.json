@@ -1,5 +1,5 @@
 {
-  "== RN组件: 外部样式 ==": {
+  "RN组件-外部样式": {
     "prefix": "iirnfunc.1",
     "body": [
       "import React from 'react';",
@@ -16,7 +16,7 @@
       ""
     ]
   },
-  "== RN组件: 内部样式 ==": {
+  "RN组件内部样式 ==": {
     "prefix": "iirnfunc.2",
     "body": [
       "import React from 'react';",
@@ -40,7 +40,7 @@
       "});"
     ]
   },
-  "== RN函数组件 ==": {
+  "RN函数组件": {
     "prefix": "iirnfunc.3",
     "body": [
       "import React from 'react';",
@@ -55,7 +55,7 @@
       "}"
     ]
   },
-  "== RN样式文件 ==": {
+  "RN样式文件": {
     "prefix": "iirnstyle",
     "body": [
       "import { StyleSheet } from 'react-native';",
@@ -67,11 +67,11 @@
       "});"
     ]
   },
-  "== css module: style ==": {
+  "RN嵌入样式 ==": {
     "prefix": "iistyle",
     "body": ["style={styles.$1}$0"]
   },
-  "iirn: 图标": {
+  "RN图标": {
     "prefix": "iirnicon",
     "body": ["import { Entypo } from '@expo/vector-icons';"]
   }
