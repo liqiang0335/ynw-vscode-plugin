@@ -1,20 +1,16 @@
-const vscode = require("vscode");
 const fs = require("fs");
 const getLocalFile = require("../utils/getLocalFile");
+const insertContent = require("../utils/insertContent");
+const DefaultContent =
+  "/**\n * @param {Number} name - explain\n * @return {}\n*/";
 
 const getLocalFastValue = () => {
   const localFile = getLocalFile("ynw-copy.txt");
-  if (fs.existsSync(localFile)) {
-    return fs.readFileSync(localFile, "utf-8");
-  } else {
-    return "/**\n * @param {Number} name - explain\n * @return {}\n*/";
-  }
+  const exists = fs.existsSync(localFile);
+  return exists ? fs.readFileSync(localFile, "utf-8") : DefaultContent;
 };
 
 module.exports = function () {
-  const fastValue = getLocalFastValue();
-  vscode.window.activeTextEditor.edit(editBuilder => {
-    let position = vscode.window.activeTextEditor.selection.end;
-    editBuilder.insert(position, fastValue);
-  });
+  const contents = getLocalFastValue();
+  insertContent(contents);
 };
