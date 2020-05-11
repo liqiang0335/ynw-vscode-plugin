@@ -59,19 +59,13 @@
     "prefix": "iilogcolor",
     "body": ["console.log('>> ${1:name}'.red, ${1});$0"]
   },
-  "ii.format-import": {
-    "prefix": "iidatafns",
-    "body": ["import format from 'date-fns/format';"]
+  "导入dayjs": {
+    "prefix": "iidayjs",
+    "body": ["import dayjs from 'dayjs;"]
   },
-<<<<<<< HEAD
-  "ii.debounce-import": {
-    "prefix": "ii.debounce",
-    "body": ["import debounce from 'lodash/debounce';"]
-=======
-  "ii.format": {
+  "时间格式dayjs": {
     "prefix": "iitime",
-    "body": ["yyyy-MM-dd HH:mm:ss"]
->>>>>>> af328afb225f80128ef01cb750c512ffa148df1e
+    "body": ["dayjs(time).format('YYYY-MM-DD HH:mm:ss')"]
   },
   "ii.debounce-function": {
     "prefix": "ii.debounce",
