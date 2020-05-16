@@ -63,15 +63,9 @@
     "prefix": "iidatafns",
     "body": ["import format from 'date-fns/format';"]
   },
-<<<<<<< HEAD
-  "ii.debounce-import": {
-    "prefix": "ii.debounce",
-    "body": ["import debounce from 'lodash/debounce';"]
-=======
   "ii.format": {
     "prefix": "iitime",
     "body": ["yyyy-MM-dd HH:mm:ss"]
->>>>>>> af328afb225f80128ef01cb750c512ffa148df1e
   },
   "ii.debounce-function": {
     "prefix": "ii.debounce",
