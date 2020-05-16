@@ -40,7 +40,7 @@
       "  useEffect(() => {",
       "    if (state.isEdit) {",
       "      const editData = state.rows.find(item=>item._id == state.select)",
-      "      form.setFieldsValue(state.editData);",
+      "      form.setFieldsValue(editData);",
       "    }",
       "  }, [state.isEdit]);",
       "  const submit = () => {",

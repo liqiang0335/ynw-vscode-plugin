@@ -5,11 +5,11 @@
   },
   "EP.get": {
     "prefix": "eeget",
-    "body": ["router.get('$1 ', (req, res, next) => {", "  $2", "});"]
+    "body": ["router.get('$1', (req, res, next) => {", "  $2", "});"]
   },
   "EP.post": {
     "prefix": "eepost",
-    "body": ["router.post('$1 ', (req, res, next) => {", "  $2", "});"]
+    "body": ["router.post('$1', (req, res, next) => {", "  $2", "});"]
   },
   "EP.use": {
     "prefix": "eeuse",
