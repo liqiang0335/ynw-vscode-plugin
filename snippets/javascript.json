@@ -59,13 +59,13 @@
     "prefix": "iilogcolor",
     "body": ["console.log('>> ${1:name}'.red, ${1});$0"]
   },
-  "ii.format-import": {
-    "prefix": "iidatafns",
-    "body": ["import format from 'date-fns/format';"]
+  "导入dayjs": {
+    "prefix": "iidayjs",
+    "body": ["import dayjs from 'dayjs;"]
   },
-  "ii.format": {
+  "时间格式dayjs": {
     "prefix": "iitime",
-    "body": ["yyyy-MM-dd HH:mm:ss"]
+    "body": ["dayjs(time).format('YYYY-MM-DD HH:mm:ss')"]
   },
   "ii.debounce-function": {
     "prefix": "ii.debounce",
@@ -126,5 +126,24 @@
   "Hub": {
     "prefix": "iihub",
     "body": ["import hub, { $1 } from '@store/hub';"]
+  },
+  "注册V组件": {
+    "prefix": "iivregister",
+    "body": [
+      "import Vue from 'vue';",
+      "const comps = require.context('../comps', true, /\\.vue$/);",
+      "const getCompPathName = path => {",
+      "  const match = path.match(/\\w+?(?=\\/)/g);",
+      "  if (!match) return '';",
+      "  return match.map(item => item.replace(/\\//g, '')).join('-') + '-';",
+      "};",
+      "comps.keys().forEach(p => {",
+      "  const name = p.match(/([\\w\\-]+)\\.vue$/)[1];",
+      "  const folder = getCompPathName(p).toLowerCase();",
+      "  const option = comps(p).default;",
+      "  const final = 'yn-' + folder + name;",
+      "  Vue.component(final, option);",
+      "});"
+    ]
   }
 }
