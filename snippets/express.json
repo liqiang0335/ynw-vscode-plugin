@@ -1,6 +1,18 @@
 {
-  "express.response": {
-    "prefix": "iiresponse",
+  "EP.res": {
+    "prefix": "eeres",
     "body": [".then(data => res.send(req.fn.ok(data)))", ".catch(next);"]
+  },
+  "EP.get": {
+    "prefix": "eeget",
+    "body": ["router.get('$1 ', (req, res, next) => {", "  $2", "});"]
+  },
+  "EP.post": {
+    "prefix": "eepost",
+    "body": ["router.post('$1 ', (req, res, next) => {", "  $2", "});"]
+  },
+  "EP.use": {
+    "prefix": "eeuse",
+    "body": ["router.use((req, res, next) => {", "  $2", "});"]
   }
 }

@@ -214,5 +214,9 @@
       "  return {state, dispatch};",
       "}"
     ]
+  },
+  "导入SWR": {
+    "prefix": "iiswr",
+    "body": ["import useSWR from 'swr';"]
   }
 }
