@@ -3,8 +3,8 @@
     "prefix": "yy.base",
     "body": [
       "<template>",
-      "  <div class='container'>",
-      "    <div>Hello</div>",
+      "  <div class='${TM_FILENAME_BASE}'>",
+      "    <div>${TM_FILENAME_BASE}</div>",
       "  </div>",
       "</template>",
       "<script>",
