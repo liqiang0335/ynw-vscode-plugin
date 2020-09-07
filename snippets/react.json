@@ -1,4 +1,8 @@
 {
+  "导入Styled": {
+    "prefix": "iistyled",
+    "body": "import styled from 'styled-components'"
+  },
   "导入rxjx": {
     "prefix": "iirxjs",
     "body": [
@@ -6,9 +10,25 @@
       "import { map } from 'rxjs/operators'"
     ]
   },
+  "导入styled": {
+    "prefix": "imstyle",
+    "body": ["import styled from \"styled-components\";"]
+  },
   "导入rxjs-hooks": {
     "prefix": "iirxjs",
     "body": ["import { useEventCallback, useObservable } from 'rxjs-hooks'"]
+  },
+  "导入router": {
+    "prefix": "iirouter",
+    "body": ["import { useHistory, NavLink } from 'react-router-dom'"]
+  },
+  "导入useSelector ": {
+    "prefix": "iiredux",
+    "body": ["import { useSelector } from 'react-redux'"]
+  },
+  "导入useDispatch": {
+    "prefix": "iiredux",
+    "body": ["import { useDispatch } from 'react-redux'"]
   },
   "useState": {
     "prefix": "iiuseState",
@@ -40,38 +60,8 @@
     "prefix": "iiclass",
     "body": "className={styles.$1} $2"
   },
-  "导入Styled": {
-    "prefix": "iistyled",
-    "body": "import styled from 'styled-components'"
-  },
-  "imrd": {
-    "prefix": "iird",
-    "body": [
-      "import React from 'react'",
-      "import ReactDOM from 'react-dom'",
-      "",
-      "",
-      "const App = () => {",
-      "  return (",
-      "    <div>",
-      "      <div>Hello</div>",
-      "    </div>",
-      "  )",
-      "}",
-      "",
-      "ReactDOM.render(<App />, document.getElementById('app'))"
-    ]
-  },
-  "导入router": {
-    "prefix": "iirouter",
-    "body": ["import { useHistory, NavLink } from 'react-router-dom'"]
-  },
-  "导入useSelector ": {
-    "prefix": "iiredux",
-    "body": ["import { useSelector, useDispatch } from 'react-redux'"]
-  },
   "createSelector": {
-    "prefix": "iiredux",
+    "prefix": "iicreateSelector",
     "body": [
       "import { createSelector } from 'reselect';",
       "",
@@ -146,26 +136,22 @@
     "prefix": "iispan",
     "body": ["<span className={styles.$1}>$0</span>"]
   },
-  "redux-ob": {
-    "prefix": "iiob",
+  "imrd": {
+    "prefix": "iird",
     "body": [
-      "import { from } from 'rxjs'",
-      "import { switchMap, map, catchError } from 'rxjs/operators'",
-      "import { ofType, combineEpics } from 'redux-observable'",
+      "import React from 'react'",
+      "import ReactDOM from 'react-dom'",
       "",
-      "const epic = (action$, state$) =>",
-      "  action$.pipe(",
-      "    ofType(ACTION),",
-      "    switchMap(({payload}) => from(api))",
-      "  )"
-    ]
-  },
-  "redux-combineEpics": {
-    "prefix": "iiob",
-    "body": [
-      "import { combineEpics } from 'redux-observable'",
       "",
-      "export default combineEpics()"
+      "const App = () => {",
+      "  return (",
+      "    <div>",
+      "      <div>Hello</div>",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "ReactDOM.render(<App />, document.getElementById('app'))"
     ]
   },
   "PropTypes": {
@@ -180,23 +166,8 @@
       "};"
     ]
   },
-  "iiHooks": {
-    "prefix": "iihooks",
-    "body": [
-      "import { useEffect, useState } from \"react\";",
-      "",
-      "export default function ${1:${TM_FILENAME_BASE}}() {",
-      "",
-      "  useEffect(() => {",
-      "",
-      "  }, []);",
-      "",
-      "  return { };",
-      "}"
-    ]
-  },
-  "iiHooks-Reducer": {
-    "prefix": "iihooksreducer",
+  "iiuseLogic": {
+    "prefix": "iiuseLogic",
     "body": [
       "import { useEffect, useReducer } from 'react';",
       "",
@@ -218,5 +189,70 @@
   "导入SWR": {
     "prefix": "iiswr",
     "body": ["import useSWR from 'swr';"]
+  },
+  "创建styled": {
+    "prefix": "ss",
+    "body": ["const Style$1 = styled.div`", "  $0", "`"]
+  },
+  "try-send": {
+    "prefix": "eetry",
+    "body": [
+      "try {",
+      "  const op = await $1.create(req.body);",
+      "  req.ctx.sendData = op;",
+      "  next();",
+      "} catch (err) {",
+      "  next(err);",
+      "}"
+    ]
+  },
+  "try-next": {
+    "prefix": "eetry",
+    "body": ["try {", "  $1", "} catch (err) {", "  next(err);", "}"]
+  },
+  "try-throw": {
+    "prefix": "iitry",
+    "body": ["try {", "  $1", "} catch (err) {", "  throw new Erro(err);", "}"]
+  },
+  "分隔符": {
+    "prefix": "ii**",
+    "body": [
+      "/**",
+      " * ----------------------------------------",
+      " * $0",
+      " * ----------------------------------------",
+      " */"
+    ]
+  },
+  "路由导出": {
+    "prefix": "eerouter",
+    "body": [
+      "const router = require('express').Router();",
+      "",
+      "$0",
+      "",
+      "module.exports = router;"
+    ]
+  },
+  "路由中间件": {
+    "prefix": "eeuse",
+    "body": [
+      "router.use(function (req, res, next) {",
+      "  $0",
+      "  next();",
+      "});"
+    ]
+  },
+  "发送数据": {
+    "prefix": "eeok",
+    "body": ["res.send(req.fn.ok($0))"]
+  },
+  "发送错误": {
+    "prefix": "eefail",
+    "body": ["res.send(req.fn.error($0))"]
+  },
+  "颜色输出": {
+    "prefix": "iilog",
+    "body": ["console.log('%c 输出：$2', 'background:blue;color:white', $1);$0"]
   }
 }

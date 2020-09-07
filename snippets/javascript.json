@@ -64,7 +64,7 @@
     "body": ["import dayjs from 'dayjs;"]
   },
   "时间格式dayjs": {
-    "prefix": "iitime",
+    "prefix": "iidayjs",
     "body": ["dayjs(time).format('YYYY-MM-DD HH:mm:ss')"]
   },
   "ii.debounce-function": {
