@@ -1,13 +1,22 @@
 const fs = require("fs");
 const getLocalFile = require("../utils/getLocalFile");
 const insertContent = require("../utils/insertContent");
-const DefaultContent =
-  "/**\n * @param {Number} name - explain\n * @return {}\n*/";
 
 const getLocalFastValue = () => {
-  const localFile = getLocalFile("ynw-copy.txt");
-  const exists = fs.existsSync(localFile);
-  return exists ? fs.readFileSync(localFile, "utf-8") : DefaultContent;
+  const CopyPath = getLocalFile("ynw-copy.txt");
+  const FastPath = getLocalFile("ynw-fast.js");
+
+  // copy
+  if (fs.existsSync(CopyPath)) {
+    return fs.readFileSync(CopyPath, "utf-8");
+  }
+  // Dynamic content
+  if (fs.existsSync(FastPath)) {
+    const value = require(FastPath)();
+    return `${value}`;
+  }
+  // Default
+  return `${Date.now()}`;
 };
 
 module.exports = function () {

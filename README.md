@@ -8,13 +8,5 @@
 
 ## Snippets
 
-## ynw.config
-
-```js
-module.exports = {
-  vscode: {
-    styleFileType: "[name].module.scss",
-    scriptFileType: "[name].js"
-  }
-};
-```
+- fastInput: `ctrl+y ctrl+h`, `ynw-copy.txt` or `ynw-fast.js`
+- createSameNameFile: `ctrl+y ctrl+s`
