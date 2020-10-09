@@ -47,17 +47,9 @@
     "prefix": "ii.mapstate",
     "body": ["import { mapState } from 'vuex'"]
   },
-  "iilog-same": {
-    "prefix": "iilog",
-    "body": ["console.log(${1});$0"]
-  },
   "iilog": {
     "prefix": "iilog",
-    "body": ["console.log('>> $1', $2);$0"]
-  },
-  "iilog-color": {
-    "prefix": "iilogcolor",
-    "body": ["console.log('>> ${1:name}'.red, ${1});$0"]
+    "body": ["console.log('>>>', ${1});$0"]
   },
   "导入dayjs": {
     "prefix": "iidayjs",
