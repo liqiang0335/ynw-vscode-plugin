@@ -6,14 +6,18 @@ const getLocalFastValue = () => {
   const CopyPath = getLocalFile("ynw-copy.txt");
   const FastPath = getLocalFile("ynw-fast.js");
 
+  // copy
   if (fs.existsSync(CopyPath)) {
     return fs.readFileSync(CopyPath, "utf-8");
   }
+
+  // dynamic
   if (fs.existsSync(FastPath)) {
     const value = require(FastPath)();
     return `${value}`;
   }
 
+  // default
   return `${Date.now()}`;
 };
 
