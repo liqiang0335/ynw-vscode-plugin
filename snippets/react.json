@@ -192,7 +192,7 @@
   },
   "创建styled": {
     "prefix": "ss",
-    "body": ["const Style$1 = styled.div`", "  $0", "`"]
+    "body": ["const S$1 = styled.$2`", "  $0", "`"]
   },
   "try-send": {
     "prefix": "eetry",
