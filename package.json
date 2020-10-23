@@ -140,6 +140,10 @@
     },
     "snippets": [
       {
+        "language": "html",
+        "path": "./snippets/html.json"
+      },
+      {
         "language": "vue",
         "path": "./snippets/vue-template.json"
       },
