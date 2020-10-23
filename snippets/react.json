@@ -250,9 +250,5 @@
   "发送错误": {
     "prefix": "eefail",
     "body": ["res.send(req.fn.error($0))"]
-  },
-  "颜色输出": {
-    "prefix": "iilog",
-    "body": ["console.log('%c 输出：$2', 'background:blue;color:white', $1);$0"]
   }
 }
