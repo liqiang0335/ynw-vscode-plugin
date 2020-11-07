@@ -1,29 +1,29 @@
 {
-  "import-alias-module": {
+  "导入moudule": {
     "prefix": "iiimodule",
     "body": ["import module from '@module/$1';\n"]
   },
-  "import-alias-store": {
+  "导入Store": {
     "prefix": "iiistore",
     "body": ["import store from '@store/store';\n"]
   },
-  "import-alias-types": {
+  "公共Types": {
     "prefix": "iiitypes",
     "body": ["import * as Types from '@store/Types';\n"]
   },
-  "import-alias-script": {
+  "公共脚本": {
     "prefix": "iiiscript",
     "body": ["import module from '@script/$1';\n"]
   },
-  "import-alias-hook": {
+  "公共Hooks": {
     "prefix": "iiihook",
     "body": ["import module  from '@hook/$1';\n"]
   },
-  "import-alias-comps": {
+  "公共组件": {
     "prefix": "iiicomps",
     "body": ["import module from '@comps/$1';\n"]
   },
-  "import-alias-const": {
+  "公共常量": {
     "prefix": "iiiconst",
     "body": ["import module from '@const/$1';\n"]
   },
@@ -39,27 +39,27 @@
       "}"
     ]
   },
-  "ii.function-property": {
+  "Vue函数": {
     "prefix": "ii.function.property",
     "body": ["$1() {", "  $2", "},"]
   },
-  "ii.mapState": {
+  "Vue-mapstate": {
     "prefix": "ii.mapstate",
     "body": ["import { mapState } from 'vuex'"]
   },
-  "iilog": {
+  "打印": {
     "prefix": "iilog",
-    "body": ["console.log('>>>', ${1});$0"]
+    "body": ["console.log(${1});$0"]
   },
   "导入dayjs": {
     "prefix": "iidayjs",
-    "body": ["import dayjs from 'dayjs;"]
+    "body": ["import dayjs from 'dayjs';"]
   },
   "时间格式dayjs": {
     "prefix": "iidayjs",
     "body": ["dayjs(time).format('YYYY-MM-DD HH:mm:ss')"]
   },
-  "ii.debounce-function": {
+  "防抖节流": {
     "prefix": "ii.debounce",
     "body": [
       "debounce(function() {",
@@ -67,11 +67,11 @@
       "}, 1000, { leading: true, trailing: false })"
     ]
   },
-  "==env.dev==": {
+  "环境开发": {
     "prefix": "iienvdev",
     "body": ["process.env.NODE_ENV ==\"development\""]
   },
-  "==env.pro==": {
+  "环境生产": {
     "prefix": "iienvpro",
     "body": ["process.env.NODE_ENV ==\"production\""]
   },
@@ -87,7 +87,7 @@
     "prefix": "iimc",
     "body": ["import ${1:name} from '$2/${1}';$0"]
   },
-  "==import-api==": {
+  "导入全部as": {
     "prefix": "iimd",
     "body": ["import * as $1 from '$2';$0"]
   },
@@ -99,7 +99,7 @@
     "prefix": "iilodash",
     "body": ["import ${1:name} from 'lodash/${1}';$0"]
   },
-  "==function==": {
+  "函数创建": {
     "prefix": "iifuncion",
     "body": ["const $1 = ($2) => {", " $0", "};"]
   },

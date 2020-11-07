@@ -3,15 +3,15 @@
     "prefix": "eeres",
     "body": [".then(data => res.send(req.fn.ok(data)))", ".catch(next);"]
   },
-  "EP.get": {
+  "EP.Get方法": {
     "prefix": "eeget",
     "body": ["router.get('$1', (req, res, next) => {", "  $2", "});"]
   },
-  "EP.post": {
+  "EP.Post方法": {
     "prefix": "eepost",
     "body": ["router.post('$1', (req, res, next) => {", "  $2", "});"]
   },
-  "EP.use": {
+  "EP.中间件": {
     "prefix": "eeuse",
     "body": ["router.use((req, res, next) => {", "  $2", "});"]
   }
