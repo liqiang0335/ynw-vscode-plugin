@@ -67,11 +67,11 @@
       "}, 1000, { leading: true, trailing: false })"
     ]
   },
-  "环境开发": {
+  "环境:开发": {
     "prefix": "iienvdev",
     "body": ["process.env.NODE_ENV ==\"development\""]
   },
-  "环境生产": {
+  "环境:生产": {
     "prefix": "iienvpro",
     "body": ["process.env.NODE_ENV ==\"production\""]
   },
@@ -87,7 +87,7 @@
     "prefix": "iimc",
     "body": ["import ${1:name} from '$2/${1}';$0"]
   },
-  "导入全部as": {
+  "导入as": {
     "prefix": "iimd",
     "body": ["import * as $1 from '$2';$0"]
   },
@@ -110,10 +110,6 @@
   "导入immer": {
     "prefix": "immer",
     "body": ["import produce from 'immer';"]
-  },
-  "接口返回": {
-    "prefix": "iires",
-    "body": ["const [res, err] = await $1;", "if (err) return;"]
   },
   "Hub": {
     "prefix": "iihub",
