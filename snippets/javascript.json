@@ -30,12 +30,9 @@
   "reducer": {
     "prefix": "iireducer",
     "body": [
-      "import * as Types from '@store/Types';",
-      "",
-      "const init = {};",
-      "",
-      "export default function reducer(state = init, { type, payload }) {",
-      "  return state;",
+      "const initState = {};",
+      "const reducer(state, action) {",
+      "  return {...state, ...action};",
       "}"
     ]
   },
