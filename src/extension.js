@@ -5,11 +5,17 @@ const ImportModule = require("./handler/ImportModule");
 const requireModule = require("./handler/requireModule");
 const CreateSameNameFile = require("./handler/CreateSameNameFile");
 const fastInput = require("./handler/fastInput");
-
+const CopyName = require("./handler/CopyName");
 /**
+ * ----------------------------------------
  * activate
+ * ----------------------------------------
  */
 exports.activate = function (context) {
+  context.subscriptions.push(
+    vscode.commands.registerCommand("ynw.copyName", CopyName)
+  );
+
   context.subscriptions.push(
     vscode.commands.registerCommand("ynw.relavePath", RelativePathHandler)
   );

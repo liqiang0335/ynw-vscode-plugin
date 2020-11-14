@@ -24,6 +24,7 @@
     "ynw"
   ],
   "activationEvents": [
+    "onCommand:ynw.copyName",
     "onCommand:ynw.fastInput",
     "onCommand:ynw.importModule",
     "onCommand:ynw.requireModule",
@@ -93,6 +94,10 @@
       }
     ],
     "keybindings": [
+      {
+        "command": "ynw.copyName",
+        "key": "ctrl+c ctrl+c"
+      },
       {
         "command": "ynw.fastInput",
         "key": "ctrl+y ctrl+h"
