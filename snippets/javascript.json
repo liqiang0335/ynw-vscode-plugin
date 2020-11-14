@@ -1,31 +1,27 @@
 {
-  "导入moudule": {
-    "prefix": "iiimodule",
-    "body": ["import module from '@module/$1';\n"]
-  },
   "导入Store": {
     "prefix": "iiistore",
-    "body": ["import store from '@store/store';\n"]
+    "body": ["import store from '@store/store';"]
   },
   "公共Types": {
     "prefix": "iiitypes",
-    "body": ["import * as Types from '@store/Types';\n"]
+    "body": ["import * as Types from '@store/Types';"]
   },
   "公共脚本": {
     "prefix": "iiiscript",
-    "body": ["import module from '@script/$1';\n"]
+    "body": ["import module from '@script/$1';"]
   },
   "公共Hooks": {
     "prefix": "iiihook",
-    "body": ["import module  from '@hook/$1';\n"]
+    "body": ["import module  from '@hook/$1';"]
   },
   "公共组件": {
     "prefix": "iiicomps",
-    "body": ["import module from '@comps/$1';\n"]
+    "body": ["import module from '@comps/$1';"]
   },
   "公共常量": {
     "prefix": "iiiconst",
-    "body": ["import module from '@const/$1';\n"]
+    "body": ["import module from '@const/$1';"]
   },
   "reducer": {
     "prefix": "iireducer",
@@ -46,7 +42,7 @@
   },
   "打印": {
     "prefix": "iilog",
-    "body": ["console.log(${1});$0"]
+    "body": ["console.log(${CLIPBOARD});$0"]
   },
   "导入dayjs": {
     "prefix": "iidayjs",
