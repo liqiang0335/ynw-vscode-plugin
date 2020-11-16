@@ -179,5 +179,17 @@
       "  return { state, data, dispatch, onClickAdd, onClickDelete, onClickEdit };",
       "}"
     ]
+  },
+  "导入Taro组件": {
+    "prefix": "taro",
+    "body": "import { View, Text } from '@tarojs/components'"
+  },
+  "导入taro-UI": {
+    "prefix": "taro",
+    "body": "import { AtButton } from 'taro-ui'"
+  },
+  "导入Taro-JS": {
+    "prefix": "taro",
+    "body": "import Taro from '@tarojs/taro'"
   }
 }
