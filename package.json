@@ -96,7 +96,7 @@
     "keybindings": [
       {
         "command": "ynw.copyName",
-        "key": "ctrl+c ctrl+c"
+        "key": "ctrl+o ctrl+o"
       },
       {
         "command": "ynw.fastInput",
