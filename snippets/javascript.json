@@ -27,7 +27,7 @@
     "prefix": "iireducer",
     "body": [
       "const initState = {};",
-      "const reducer = (state, action) {",
+      "const reducer = (state, action) => {",
       "  return {...state, ...action};",
       "}"
     ]
