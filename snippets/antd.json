@@ -184,11 +184,11 @@
     "prefix": "taro",
     "body": "import { View, Text } from '@tarojs/components'"
   },
-  "导入taro-UI": {
+  "导入Taro-UI": {
     "prefix": "taro",
     "body": "import { AtButton } from 'taro-ui'"
   },
-  "导入Taro-JS": {
+  "导入TaroJS": {
     "prefix": "taro",
     "body": "import Taro from '@tarojs/taro'"
   }
