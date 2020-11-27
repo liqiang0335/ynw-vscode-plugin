@@ -56,7 +56,7 @@
     "prefix": "iiuseEffect",
     "body": ["useEffect(() => {", " $1", " },", "[]", ")"]
   },
-  "classsNames-inline": {
+  "行内样式": {
     "prefix": "iiclass",
     "body": "className={styles.$1} $2"
   },
@@ -166,7 +166,7 @@
       "};"
     ]
   },
-  "iiuseLogic": {
+  "Logic逻辑层": {
     "prefix": "iiuseLogic",
     "body": [
       "import { useEffect, useReducer } from 'react';",
@@ -224,31 +224,19 @@
       " */"
     ]
   },
-  "路由导出": {
-    "prefix": "eerouter",
-    "body": [
-      "const router = require('express').Router();",
+  "useHook公用逻辑":{
+    "prefix":"iiuseHook",
+    "body":[
+      "import { useEffect, useState } from 'react';",
+      "import http from '@script/http';",
       "",
-      "$0",
+      "export default function ${TM_FILENAME_BASE}() {",
+      "  const [data, setData] = useState([]);",
       "",
-      "module.exports = router;"
+      "  useEffect(() => {}, []);",
+      "",
+      "  return data;",
+      "}"
     ]
-  },
-  "路由中间件": {
-    "prefix": "eeuse",
-    "body": [
-      "router.use(function (req, res, next) {",
-      "  $0",
-      "  next();",
-      "});"
-    ]
-  },
-  "发送数据": {
-    "prefix": "eeok",
-    "body": ["res.send(req.fn.ok($0))"]
-  },
-  "发送错误": {
-    "prefix": "eefail",
-    "body": ["res.send(req.fn.error($0))"]
   }
 }

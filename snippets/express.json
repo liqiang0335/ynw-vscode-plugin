@@ -14,5 +14,32 @@
   "EP.中间件": {
     "prefix": "eeuse",
     "body": ["router.use((req, res, next) => {", "  $2", "});"]
+  },
+  "路由导出": {
+    "prefix": "eerouter",
+    "body": [
+      "const router = require('express').Router();",
+      "",
+      "$0",
+      "",
+      "module.exports = router;"
+    ]
+  },
+  "路由中间件": {
+    "prefix": "eeuse",
+    "body": [
+      "router.use(function (req, res, next) {",
+      "  $0",
+      "  next();",
+      "});"
+    ]
+  },
+  "发送数据": {
+    "prefix": "eeok",
+    "body": ["res.send(req.fn.ok($0))"]
+  },
+  "发送错误": {
+    "prefix": "eefail",
+    "body": ["res.send(req.fn.error($0))"]
   }
 }
