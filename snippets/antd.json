@@ -129,11 +129,10 @@
   "通用逻辑": {
     "prefix": "iicomlogic",
     "body": [
-      "import { useReducer } from 'react';",
+      "import { useReducer, useEffect } from 'react';",
       "import { message } from 'antd';",
       "import deleter from '@script/deleter';",
       "import http from '@script/http';",
-      "import useSWR from 'swr';",
       "",
       "const initState = {",
       "  rows: [],",
@@ -147,6 +146,8 @@
       "",
       "export default function useLogic() {",
       "  const [state, dispatch] = useReducer(reducer, initState);",
+      "",
+      "  useEffect(() => {}, [state.version]);",
       "",
       "  const checker = async => {",
       "    if (!state.select) {",
