@@ -82,7 +82,7 @@
   },
   "classsNames": {
     "prefix": "iiclassnames",
-    "body": "import classNames from 'classNames';"
+    "body": "import m from 'classNames';"
   },
   "函数组件": {
     "prefix": "iirfc",
