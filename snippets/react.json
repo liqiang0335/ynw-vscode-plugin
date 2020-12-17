@@ -1,242 +1,228 @@
 {
-  "导入Styled": {
-    "prefix": "iistyled",
-    "body": "import styled from 'styled-components'"
-  },
-  "导入rxjx": {
-    "prefix": "iirxjs",
-    "body": [
-      "import { Subject } from 'rxjs';",
-      "import { map } from 'rxjs/operators'"
-    ]
-  },
-  "导入styled": {
-    "prefix": "imstyle",
-    "body": ["import styled from \"styled-components\";"]
-  },
-  "导入rxjs-hooks": {
-    "prefix": "iirxjs",
-    "body": ["import { useEventCallback, useObservable } from 'rxjs-hooks'"]
-  },
-  "导入router": {
-    "prefix": "iirouter",
-    "body": ["import { useHistory, NavLink } from 'react-router-dom'"]
-  },
-  "导入useSelector ": {
-    "prefix": "iiredux",
-    "body": ["import { useSelector } from 'react-redux'"]
-  },
-  "导入useDispatch": {
-    "prefix": "iiredux",
-    "body": ["import { useDispatch } from 'react-redux'"]
-  },
-  "useState": {
-    "prefix": "iiuseState",
-    "body": [
-      "const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState($2)"
-    ]
-  },
-  "useData": {
-    "prefix": "iiuseData",
-    "body": ["const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useData($2)"]
-  },
-  "useToggle": {
-    "prefix": "iiuseToggle",
-    "body": [
-      "const [${1:state}, toggle${1/(.*)/${1:/capitalize}/}] = useToggle($2)"
-    ]
-  },
-  "useBoolCall": {
-    "prefix": "iiuseBoolCall",
-    "body": [
-      "const [${1:state}, toggle${1/(.*)/${1:/capitalize}/}] = useBoolCall($2)"
-    ]
-  },
-  "useEffect": {
-    "prefix": "iiuseEffect",
-    "body": ["useEffect(() => {", " $1", " },", "[]", ")"]
-  },
-  "行内样式": {
-    "prefix": "iiclass",
-    "body": "className={styles.$1} $2"
-  },
-  "createSelector": {
-    "prefix": "iicreateSelector",
-    "body": [
-      "import { createSelector } from 'reselect';",
-      "",
-      "export default createSelector(state => state.$1, Handler);",
-      "",
-      "function Handler($2) {",
-      "  $0",
-      "}"
-    ]
-  },
-  "imr": {
-    "prefix": "iir",
-    "body": ["import React from 'react'"]
-  },
-  "imd": {
-    "prefix": "iid",
-    "body": ["import ReactDOM from 'react-dom'"]
-  },
-  "classsNames": {
-    "prefix": "iiclassnames",
-    "body": "import m from 'classNames';"
-  },
-  "函数组件": {
-    "prefix": "iirfc",
-    "body": [
-      "import React from 'react'",
-      "",
-      "export default function ${1:${TM_FILENAME_BASE}}() {",
-      "  return (",
-      "    <div>",
-      "      ${TM_FILENAME_BASE}$0",
-      "    </div>",
-      "  )",
-      "}",
-      ""
-    ]
-  },
-  "useContext": {
-    "prefix": "iiuseContext",
-    "body": ["const ${1:context} = useContext(${2:contextValue})"]
-  },
-  "useReducer": {
-    "prefix": "iiuseReducer",
-    "body": [
-      "const [state, dispatch] = useReducer(${1:reducer}, ${2:initState})"
-    ]
-  },
-  "useCallback": {
-    "prefix": "iiuseCallback",
-    "body": [
-      "useCallback(",
-      "  () => {",
-      "    ${1:callback}",
-      "  },",
-      "  [${2:input}],",
-      ")"
-    ]
-  },
-  "useMemo": {
-    "prefix": "iiuseMemo",
-    "body": ["useMemo(() => ${1:function}, ${2:input})"]
-  },
-  "useRef": {
-    "prefix": "iiuseRef",
-    "body": ["const ${1:ref} = useRef(${2:initialValue})"]
-  },
-  "标签div": {
-    "prefix": "iiv",
-    "body": ["<div className={styles.$1}>$0</div>"]
-  },
-  "标签span": {
-    "prefix": "iispan",
-    "body": ["<span className={styles.$1}>$0</span>"]
-  },
-  "imrd": {
-    "prefix": "iird",
-    "body": [
-      "import React from 'react'",
-      "import ReactDOM from 'react-dom'",
-      "",
-      "",
-      "const App = () => {",
-      "  return (",
-      "    <div>",
-      "      <div>Hello</div>",
-      "    </div>",
-      "  )",
-      "}",
-      "",
-      "ReactDOM.render(<App />, document.getElementById('app'))"
-    ]
-  },
-  "PropTypes": {
-    "prefix": "iitypes",
-    "body": [
-      "import PropTypes from 'prop-types';",
-      "",
-      "//func,bool,element,any,enum,arrayOf",
-      "${TM_FILENAME_BASE}.propTypes = {",
-      "  number: PropTypes.number.isRequired,",
-      "  customProp(props, propName, componentName) {}",
-      "};"
-    ]
-  },
-  "Logic逻辑层": {
-    "prefix": "iiuseLogic",
-    "body": [
-      "import { useEffect, useReducer } from 'react';",
-      "",
-      "const initState = {};",
-      "",
-      "const reducer = (state, action) => {",
-      "  return { ...state, ...action };",
-      "};",
-      "",
-      "export default function ${TM_FILENAME_BASE}() {",
-      "  const [state, dispatch] = useReducer(reducer, initState);",
-      "",
-      "  useEffect(() => {}, []);",
-      "",
-      "  return {state, dispatch};",
-      "}"
-    ]
-  },
-  "导入SWR": {
-    "prefix": "iiswr",
-    "body": ["import useSWR from 'swr';"]
-  },
-  "创建styled": {
-    "prefix": "ss",
-    "body": ["const S$1 = styled.div`", "  $0", "`"]
-  },
-  "try-send": {
-    "prefix": "eetry",
-    "body": [
-      "try {",
-      "  const op = await $1.create(req.body);",
-      "  req.ctx.sendData = op;",
-      "  next();",
-      "} catch (err) {",
-      "  next(err);",
-      "}"
-    ]
-  },
-  "try-next": {
-    "prefix": "eetry",
-    "body": ["try {", "  $1", "} catch (err) {", "  next(err);", "}"]
-  },
-  "try-throw": {
-    "prefix": "iitry",
-    "body": ["try {", "  $1", "} catch (err) {", "  throw new Erro(err);", "}"]
-  },
-  "分隔符": {
-    "prefix": "ii**",
-    "body": [
-      "/**",
-      " * ----------------------------------------",
-      " * $0",
-      " * ----------------------------------------",
-      " */"
-    ]
-  },
-  "useHook公用逻辑":{
-    "prefix":"iiuseHook",
-    "body":[
-      "import { useEffect, useState } from 'react';",
-      "import http from '@script/http';",
-      "",
-      "export default function ${TM_FILENAME_BASE}() {",
-      "  const [data, setData] = useState([]);",
-      "",
-      "  useEffect(() => {}, []);",
-      "",
-      "  return data;",
-      "}"
-    ]
-  }
+	"导入Styled": {
+		"prefix": "iistyled",
+		"body": "import styled from 'styled-components'"
+	},
+	"导入rxjx": {
+		"prefix": "iirxjs",
+		"body": [
+			"import { Subject } from 'rxjs';",
+			"import { map } from 'rxjs/operators'"
+		]
+	},
+	"导入styled": {
+		"prefix": "imstyle",
+		"body": ["import styled from \"styled-components\";"]
+	},
+	"导入rxjs-hooks": {
+		"prefix": "iirxjs",
+		"body": ["import { useEventCallback, useObservable } from 'rxjs-hooks'"]
+	},
+	"导入router": {
+		"prefix": "iirouter",
+		"body": ["import { useHistory, NavLink } from 'react-router-dom'"]
+	},
+	"导入useSelector ": {
+		"prefix": "iiredux",
+		"body": ["import { useSelector } from 'react-redux'"]
+	},
+	"导入useDispatch": {
+		"prefix": "iiredux",
+		"body": ["import { useDispatch } from 'react-redux'"]
+	},
+	"useState": {
+		"prefix": "iiuseState",
+		"body": [
+			"const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState($2)"
+		]
+	},
+	"useData": {
+		"prefix": "iiuseData",
+		"body": ["const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useData($2)"]
+	},
+	"useToggle": {
+		"prefix": "iiuseToggle",
+		"body": [
+			"const [${1:state}, toggle${1/(.*)/${1:/capitalize}/}] = useToggle($2)"
+		]
+	},
+	"useBoolCall": {
+		"prefix": "iiuseBoolCall",
+		"body": [
+			"const [${1:state}, toggle${1/(.*)/${1:/capitalize}/}] = useBoolCall($2)"
+		]
+	},
+	"useEffect": {
+		"prefix": "iiuseEffect",
+		"body": ["useEffect(() => {", " $1", " },", "[]", ")"]
+	},
+	"行内样式": {
+		"prefix": "iiclass",
+		"body": "className={styles.$1} $2"
+	},
+	"createSelector": {
+		"prefix": "iicreateSelector",
+		"body": [
+			"import { createSelector } from 'reselect';",
+			"",
+			"export default createSelector(state => state.$1, Handler);",
+			"",
+			"function Handler($2) {",
+			"  $0",
+			"}"
+		]
+	},
+	"imr": {
+		"prefix": "iir",
+		"body": ["import React from 'react'"]
+	},
+	"imd": {
+		"prefix": "iid",
+		"body": ["import ReactDOM from 'react-dom'"]
+	},
+	"classsNames": {
+		"prefix": "iiclassnames",
+		"body": "import m from 'classNames';"
+	},
+	"函数组件": {
+		"prefix": "iirfc",
+		"body": [
+			"import React from 'react'",
+			"",
+			"export default function ${1:${TM_FILENAME_BASE}}() {",
+			"  return (",
+			"    <div>",
+			"      ${TM_FILENAME_BASE}$0",
+			"    </div>",
+			"  )",
+			"}",
+			""
+		]
+	},
+	"逻辑组件": {
+		"prefix": "iiif",
+		"description":"创建逻辑组件、useHook组件",
+		"body": [
+			"import React, { useReducer, useEffect } from 'react';",
+			"import http from '@script/http';",
+			"",
+			"const initState = {};",
+			"const reducer = (state, action) => {",
+			"  return { ...state, ...action };",
+			"};",
+			"",
+			"export default function ${TM_FILENAME_BASE}() {",
+			"  const [state, dispatch] = useReducer(reducer, initState);",
+			"",
+			"  useEffect(() => {}, []);",
+			"",
+			"  return <div>${TM_FILENAME_BASE}</div>;",
+			"}"
+		]
+	},
+	"useContext": {
+		"prefix": "iiuseContext",
+		"body": ["const ${1:context} = useContext(${2:contextValue})"]
+	},
+	"useReducer": {
+		"prefix": "iiuseReducer",
+		"body": [
+			"const [state, dispatch] = useReducer(${1:reducer}, ${2:initState})"
+		]
+	},
+	"useCallback": {
+		"prefix": "iiuseCallback",
+		"body": [
+			"useCallback(",
+			"  () => {",
+			"    ${1:callback}",
+			"  },",
+			"  [${2:input}],",
+			")"
+		]
+	},
+	"useMemo": {
+		"prefix": "iiuseMemo",
+		"body": ["useMemo(() => ${1:function}, ${2:input})"]
+	},
+	"useRef": {
+		"prefix": "iiuseRef",
+		"body": ["const ${1:ref} = useRef(${2:initialValue})"]
+	},
+	"标签div": {
+		"prefix": "iiv",
+		"body": ["<div className={styles.$1}>$0</div>"]
+	},
+	"标签span": {
+		"prefix": "iispan",
+		"body": ["<span className={styles.$1}>$0</span>"]
+	},
+	"imrd": {
+		"prefix": "iird",
+		"body": [
+			"import React from 'react'",
+			"import ReactDOM from 'react-dom'",
+			"",
+			"",
+			"const App = () => {",
+			"  return (",
+			"    <div>",
+			"      <div>Hello</div>",
+			"    </div>",
+			"  )",
+			"}",
+			"",
+			"ReactDOM.render(<App />, document.getElementById('app'))"
+		]
+	},
+	"PropTypes": {
+		"prefix": "iitypes",
+		"body": [
+			"import PropTypes from 'prop-types';",
+			"",
+			"//func,bool,element,any,enum,arrayOf",
+			"${TM_FILENAME_BASE}.propTypes = {",
+			"  number: PropTypes.number.isRequired,",
+			"  customProp(props, propName, componentName) {}",
+			"};"
+		]
+	},
+	"导入SWR": {
+		"prefix": "iiswr",
+		"body": ["import useSWR from 'swr';"]
+	},
+	"创建styled": {
+		"prefix": "ss",
+		"body": ["const S$1 = styled.div`", "  $0", "`"]
+	},
+	"try-send": {
+		"prefix": "eetry",
+		"body": [
+			"try {",
+			"  const op = await $1.create(req.body);",
+			"  req.ctx.sendData = op;",
+			"  next();",
+			"} catch (err) {",
+			"  next(err);",
+			"}"
+		]
+	},
+	"try-next": {
+		"prefix": "eetry",
+		"body": ["try {", "  $1", "} catch (err) {", "  next(err);", "}"]
+	},
+	"try-throw": {
+		"prefix": "iitry",
+		"body": ["try {", "  $1", "} catch (err) {", "  throw new Erro(err);", "}"]
+	},
+	"分隔符": {
+		"prefix": "ii**",
+		"body": [
+			"/**",
+			" * ----------------------------------------",
+			" * $0",
+			" * ----------------------------------------",
+			" */"
+		]
+	}
 }
