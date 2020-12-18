@@ -168,7 +168,7 @@
       "  const onClickDelete = async () => {",
       "    await checker();",
       "    await deleter(() => http.post('/delete', {_id:state.select}));",
-      "    dispatch({ version: Date.now() });",
+      "    dispatch({ version: Date.now(), select:'' });",
       "  };",
       "",
       "  return { state, dispatch, onClickAdd, onClickDelete, onClickEdit };",
