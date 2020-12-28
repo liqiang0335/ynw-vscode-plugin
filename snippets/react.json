@@ -1,21 +1,17 @@
 {
-	"导入Styled": {
-		"prefix": "iistyled",
-		"body": "import styled from 'styled-components'"
+	"导入styled": {
+		"prefix": "imstyled",
+		"body": ["import styled from 'styled-components';"]
 	},
 	"导入rxjx": {
-		"prefix": "iirxjs",
+		"prefix": "iirxjs1",
 		"body": [
 			"import { Subject } from 'rxjs';",
 			"import { map } from 'rxjs/operators'"
 		]
 	},
-	"导入styled": {
-		"prefix": "imstyle",
-		"body": ["import styled from \"styled-components\";"]
-	},
 	"导入rxjs-hooks": {
-		"prefix": "iirxjs",
+		"prefix": "iirxjs2-hooks",
 		"body": ["import { useEventCallback, useObservable } from 'rxjs-hooks'"]
 	},
 	"导入router": {
@@ -200,7 +196,7 @@
 		"body": ["try {", "  $1", "} catch (err) {", "  throw new Erro(err);", "}"]
 	},
 	"分隔符": {
-		"prefix": "ii**",
+		"prefix": "iii*",
 		"body": [
 			"/**",
 			" * ----------------------------------------",
