@@ -53,7 +53,7 @@
     "body": ["dayjs(time).format('YYYY-MM-DD HH:mm:ss')"]
   },
   "防抖节流": {
-    "prefix": "ii.debounce",
+    "prefix": "iidebounce",
     "body": [
       "debounce(function() {",
       "\t\t$1",
@@ -68,20 +68,12 @@
     "prefix": "iienvpro",
     "body": ["process.env.NODE_ENV ==\"production\""]
   },
-  "导入某个模块": {
-    "prefix": "iima",
+  "导入{*}模块": {
+    "prefix": "iim1",
     "body": "import { $2 } from '${1:module}'$0"
   },
-  "导入模块": {
-    "prefix": "iimb",
-    "body": "import ${2:moduleName} from '${1:module}'$0"
-  },
-  "导入单独": {
-    "prefix": "iimc",
-    "body": ["import ${1:name} from '$2/${1}';$0"]
-  },
-  "导入模块as": {
-    "prefix": "iimd",
+  "导入*as模块": {
+    "prefix": "iim2",
     "body": ["import * as $1 from '$2';$0"]
   },
   "导入相关样式": {

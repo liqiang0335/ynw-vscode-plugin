@@ -11,7 +11,7 @@
 		]
 	},
 	"导入rxjs-hooks": {
-		"prefix": "iirxjs2-hooks",
+		"prefix": "iirxjs2",
 		"body": ["import { useEventCallback, useObservable } from 'rxjs-hooks'"]
 	},
 	"导入router": {
@@ -19,12 +19,24 @@
 		"body": ["import { useHistory, NavLink } from 'react-router-dom'"]
 	},
 	"导入useSelector ": {
-		"prefix": "iiredux",
+		"prefix": "iiredux1",
 		"body": ["import { useSelector } from 'react-redux'"]
 	},
 	"导入useDispatch": {
-		"prefix": "iiredux",
+		"prefix": "iiredux2",
 		"body": ["import { useDispatch } from 'react-redux'"]
+	},
+	"createSelector": {
+		"prefix": "iiredux3",
+		"body": [
+			"import { createSelector } from 'reselect';",
+			"",
+			"export default createSelector(state => state.$1, Handler);",
+			"",
+			"function Handler($2) {",
+			"  $0",
+			"}"
+		]
 	},
 	"useState": {
 		"prefix": "iiuseState",
@@ -39,18 +51,6 @@
 	"行内样式": {
 		"prefix": "iiclass",
 		"body": "className={styles.$1} $2"
-	},
-	"createSelector": {
-		"prefix": "iicreateSelector",
-		"body": [
-			"import { createSelector } from 'reselect';",
-			"",
-			"export default createSelector(state => state.$1, Handler);",
-			"",
-			"function Handler($2) {",
-			"  $0",
-			"}"
-		]
 	},
 	"imr": {
 		"prefix": "iir",
@@ -196,7 +196,7 @@
 		"body": ["try {", "  $1", "} catch (err) {", "  throw new Erro(err);", "}"]
 	},
 	"分隔符": {
-		"prefix": "iiii*",
+		"prefix": "iiii",
 		"body": [
 			"/**",
 			" * ----------------------------------------",
