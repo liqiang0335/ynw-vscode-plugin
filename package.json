@@ -47,6 +47,7 @@
           "enum": [
             "css",
             "scss",
+            "module.scss",
             "style.js",
             "less"
           ]
