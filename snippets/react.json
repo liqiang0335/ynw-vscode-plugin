@@ -96,7 +96,7 @@
 			"",
 			"  useEffect(() => {}, []);",
 			"",
-			"  return <div>${TM_FILENAME_BASE}</div>;",
+			"  return { state, dispatch }",
 			"}"
 		]
 	},
