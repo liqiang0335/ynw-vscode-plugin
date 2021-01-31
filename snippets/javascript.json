@@ -72,7 +72,7 @@
     "prefix": "iima",
     "body": "import { $2 } from '${1:module}'$0"
   },
-  "导入模块": {
+  "导入模块imp{}": {
     "prefix": "iimb",
     "body": "import ${2:moduleName} from '${1:module}'$0"
   },
@@ -84,6 +84,14 @@
     "prefix": "iimd",
     "body": ["import * as $1 from '$2';$0"]
   },
+  "导入CMD-1": {
+    "prefix": "re{",
+    "body": ["const { $2 } = require('$1');$0"]
+  },
+  "导入CMD-2": {
+    "prefix": "re",
+    "body": ["const $2 = require('$1');$0"]
+	},
   "导入相关样式": {
     "prefix": "iims",
     "body": ["import ${1:styles} from './${TM_FILENAME_BASE}.scss';$0"]
@@ -96,6 +104,24 @@
     "prefix": "iifuncion",
     "body": ["const $1 = ($2) => {", " $0", "};"]
   },
+  "http.get":{
+		"prefix": "httpget",
+		"body": [
+		"const params = {};",
+		 "http.get('$1',{ params }).then(res => {",
+		 "  console.log('🚀🚀🚀 ~ res', res);",
+		 "});"
+		]
+  },
+  "http.post":{
+		"prefix": "httppost",
+		"body": [
+		"const params = {};",
+		 "http.post('$1',params).then(res => {",
+		 "  console.log('🚀🚀🚀 ~ res', res);",
+		 "});"
+		]
+	},
   "导入API": {
     "prefix": "iiapi",
     "body": ["import * as api from '@script/api';"]
