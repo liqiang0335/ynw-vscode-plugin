@@ -53,7 +53,7 @@
     "body": ["dayjs(time).format('YYYY-MM-DD HH:mm:ss')"]
   },
   "防抖节流": {
-    "prefix": "ii.debounce",
+    "prefix": "iidebounce",
     "body": [
       "debounce(function() {",
       "\t\t$1",
@@ -68,30 +68,22 @@
     "prefix": "iienvpro",
     "body": ["process.env.NODE_ENV ==\"production\""]
   },
-  "导入某个模块": {
-    "prefix": "iima",
+  "导入{*}模块": {
+    "prefix": "iim1",
     "body": "import { $2 } from '${1:module}'$0"
   },
-  "导入模块imp{}": {
-    "prefix": "iimb",
-    "body": "import ${2:moduleName} from '${1:module}'$0"
-  },
-  "导入单独": {
-    "prefix": "iimc",
-    "body": ["import ${1:name} from '$2/${1}';$0"]
-  },
-  "导入模块as": {
-    "prefix": "iimd",
+  "导入*as模块": {
+    "prefix": "iim2",
     "body": ["import * as $1 from '$2';$0"]
   },
-  "导入CMD-1": {
-    "prefix": "re{",
-    "body": ["const { $2 } = require('$1');$0"]
-  },
-  "导入CMD-2": {
-    "prefix": "re",
+  "CMD导入": {
+    "prefix": "re1",
     "body": ["const $2 = require('$1');$0"]
 	},
+  "CMD导入{}": {
+    "prefix": "re2",
+    "body": ["const { $2 } = require('$1');$0"]
+  },
   "导入相关样式": {
     "prefix": "iims",
     "body": ["import ${1:styles} from './${TM_FILENAME_BASE}.scss';$0"]
