@@ -56,7 +56,7 @@
     ]
   },
   "RN创建样式": {
-    "prefix": "iirnstyle",
+    "prefix": "iirnstyle1",
     "body": [
       "import { StyleSheet } from 'react-native';",
       "",
@@ -68,7 +68,7 @@
     ]
   },
   "RN(Style属性) ==": {
-    "prefix": "iistyle",
+    "prefix": "iirnstyle2",
     "body": ["style={styles.$1}$0"]
   },
   "RN图标": {
@@ -76,7 +76,7 @@
     "body": ["import { Entypo } from '@expo/vector-icons';"]
   },
   "RN-Text": {
-    "prefix": "Text",
+    "prefix": "iirnText",
     "body": ["<Text style={styles.$2}>$1</Text>$0"]
   }
 }
