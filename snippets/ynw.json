@@ -1,196 +1,398 @@
-{"==ynw.Actionbar==": {
-      "prefix": "ynw.antd.Actionbar",
-      "body": ["import Actionbar from 'ynw/antd/Actionbar'"]
-    },"==ynw.AntConfig==": {
-      "prefix": "ynw.antd.AntConfig",
-      "body": ["import AntConfig from 'ynw/antd/AntConfig'"]
-    },"==ynw.Buttons==": {
-      "prefix": "ynw.antd.Buttons",
-      "body": ["import Buttons from 'ynw/antd/Buttons'"]
-    },"==ynw._cropper==": {
-      "prefix": "ynw.antd._cropper",
-      "body": ["import _cropper from 'ynw/antd/_cropper'"]
-    },"==ynw.DayPicker==": {
-      "prefix": "ynw.antd.DayPicker",
-      "body": ["import DayPicker from 'ynw/antd/DayPicker'"]
-    },"==ynw.Download==": {
-      "prefix": "ynw.antd.Download",
-      "body": ["import Download from 'ynw/antd/Download'"]
-    },"==ynw.FetchMore==": {
-      "prefix": "ynw.antd.FetchMore",
-      "body": ["import FetchMore from 'ynw/antd/FetchMore'"]
-    },"==ynw.InputFileReader==": {
-      "prefix": "ynw.antd.InputFileReader",
-      "body": ["import InputFileReader from 'ynw/antd/InputFileReader'"]
-    },"==ynw.InputNumber==": {
-      "prefix": "ynw.antd.InputNumber",
-      "body": ["import InputNumber from 'ynw/antd/InputNumber'"]
-    },"==ynw.NullLoading==": {
-      "prefix": "ynw.antd.NullLoading",
-      "body": ["import NullLoading from 'ynw/antd/NullLoading'"]
-    },"==ynw.Para==": {
-      "prefix": "ynw.antd.Para",
-      "body": ["import Para from 'ynw/antd/Para'"]
-    },"==ynw.PopArticle==": {
-      "prefix": "ynw.antd.PopArticle",
-      "body": ["import PopArticle from 'ynw/antd/PopArticle'"]
-    },"==ynw.PopMulChoose==": {
-      "prefix": "ynw.antd.PopMulChoose",
-      "body": ["import PopMulChoose from 'ynw/antd/PopMulChoose'"]
-    },"==ynw.ResultStatus==": {
-      "prefix": "ynw.antd.ResultStatus",
-      "body": ["import ResultStatus from 'ynw/antd/ResultStatus'"]
-    },"==ynw.SearchBar==": {
-      "prefix": "ynw.antd.SearchBar",
-      "body": ["import SearchBar from 'ynw/antd/SearchBar'"]
-    },"==ynw.SelectCommon==": {
-      "prefix": "ynw.antd.SelectCommon",
-      "body": ["import SelectCommon from 'ynw/antd/SelectCommon'"]
-    },"==ynw.TreeRadio==": {
-      "prefix": "ynw.antd.TreeRadio",
-      "body": ["import TreeRadio from 'ynw/antd/TreeRadio'"]
-    },"==ynw.Uploadbox==": {
-      "prefix": "ynw.antd.Uploadbox",
-      "body": ["import Uploadbox from 'ynw/antd/Uploadbox'"]
-    },"==ynw.array2Tree==": {
-      "prefix": "ynw.array.array2Tree",
-      "body": ["import array2Tree from 'ynw/array/array2Tree'"]
-    },"==ynw.tree2Array==": {
-      "prefix": "ynw.array.tree2Array",
-      "body": ["import tree2Array from 'ynw/array/tree2Array'"]
-    },"==ynw.UUIDBrowser==": {
-      "prefix": "ynw.browser.UUIDBrowser",
-      "body": ["import UUIDBrowser from 'ynw/browser/UUIDBrowser'"]
-    },"==ynw.copyToClipboard==": {
-      "prefix": "ynw.browser.copyToClipboard",
-      "body": ["import copyToClipboard from 'ynw/browser/copyToClipboard'"]
-    },"==ynw.detectBrowser==": {
-      "prefix": "ynw.browser.detectBrowser",
-      "body": ["import detectBrowser from 'ynw/browser/detectBrowser'"]
-    },"==ynw.detectDeviceType==": {
-      "prefix": "ynw.browser.detectDeviceType",
-      "body": ["import detectDeviceType from 'ynw/browser/detectDeviceType'"]
-    },"==ynw.elementInViewport==": {
-      "prefix": "ynw.browser.elementInViewport",
-      "body": ["import elementInViewport from 'ynw/browser/elementInViewport'"]
-    },"==ynw.isDocumentVisible==": {
-      "prefix": "ynw.browser.isDocumentVisible",
-      "body": ["import isDocumentVisible from 'ynw/browser/isDocumentVisible'"]
-    },"==ynw.getUrlParams==": {
-      "prefix": "ynw.getUrlParams",
-      "body": ["import getUrlParams from 'ynw/getUrlParams'"]
-    },"==ynw.touch==": {
-      "prefix": "ynw.mobile.touch",
-      "body": ["import touch from 'ynw/mobile/touch'"]
-    },"==ynw.fillZero==": {
-      "prefix": "ynw.number.fillZero",
-      "body": ["import fillZero from 'ynw/number/fillZero'"]
-    },"==ynw.extend==": {
-      "prefix": "ynw.object.extend",
-      "body": ["import extend from 'ynw/object/extend'"]
-    },"==ynw.chineseNumber==": {
-      "prefix": "ynw.other.chineseNumber",
-      "body": ["import chineseNumber from 'ynw/other/chineseNumber'"]
-    },"==ynw.createSocket==": {
-      "prefix": "ynw.other.createSocket",
-      "body": ["import createSocket from 'ynw/other/createSocket'"]
-    },"==ynw.getChineseMoneyUnit==": {
-      "prefix": "ynw.other.getChineseMoneyUnit",
-      "body": ["import getChineseMoneyUnit from 'ynw/other/getChineseMoneyUnit'"]
-    },"==ynw.validateIdCard==": {
-      "prefix": "ynw.other.validateIdCard",
-      "body": ["import validateIdCard from 'ynw/other/validateIdCard'"]
-    },"==ynw.HashTable==": {
-      "prefix": "ynw.pattern.HashTable",
-      "body": ["import HashTable from 'ynw/pattern/HashTable'"]
-    },"==ynw.LinkedList==": {
-      "prefix": "ynw.pattern.LinkedList",
-      "body": ["import LinkedList from 'ynw/pattern/LinkedList'"]
-    },"==ynw.Queue==": {
-      "prefix": "ynw.pattern.Queue",
-      "body": ["import Queue from 'ynw/pattern/Queue'"]
-    },"==ynw.Stack==": {
-      "prefix": "ynw.pattern.Stack",
-      "body": ["import Stack from 'ynw/pattern/Stack'"]
-    },"==ynw.applyMiddleware==": {
-      "prefix": "ynw.pattern.applyMiddleware",
-      "body": ["import applyMiddleware from 'ynw/pattern/applyMiddleware'"]
-    },"==ynw.compose==": {
-      "prefix": "ynw.pattern.compose",
-      "body": ["import compose from 'ynw/pattern/compose'"]
-    },"==ynw.composeRight==": {
-      "prefix": "ynw.pattern.composeRight",
-      "body": ["import composeRight from 'ynw/pattern/composeRight'"]
-    },"==ynw.createEventHub==": {
-      "prefix": "ynw.pattern.createEventHub",
-      "body": ["import createEventHub from 'ynw/pattern/createEventHub'"]
-    },"==ynw.koaChain==": {
-      "prefix": "ynw.pattern.koaChain",
-      "body": ["import koaChain from 'ynw/pattern/koaChain'"]
-    },"==ynw.nextChain==": {
-      "prefix": "ynw.pattern.nextChain",
-      "body": ["import nextChain from 'ynw/pattern/nextChain'"]
-    },"==ynw.promiseChain==": {
-      "prefix": "ynw.pattern.promiseChain",
-      "body": ["import promiseChain from 'ynw/pattern/promiseChain'"]
-    },"==ynw.ZoomImg==": {
-      "prefix": "ynw.react.ZoomImg",
-      "body": ["import ZoomImg from 'ynw/react/ZoomImg'"]
-    },"==ynw.useConstant==": {
-      "prefix": "ynw.react.useConstant",
-      "body": ["import useConstant from 'ynw/react/useConstant'"]
-    },"==ynw.useEventCallback==": {
-      "prefix": "ynw.react.useEventCallback",
-      "body": ["import useEventCallback from 'ynw/react/useEventCallback'"]
-    },"==ynw.useKeyboardJs==": {
-      "prefix": "ynw.react.useKeyboardJs",
-      "body": ["import useKeyboardJs from 'ynw/react/useKeyboardJs'"]
-    },"==ynw.useObservable==": {
-      "prefix": "ynw.react.useObservable",
-      "body": ["import useObservable from 'ynw/react/useObservable'"]
-    },"==ynw.useScroll==": {
-      "prefix": "ynw.react.useScroll",
-      "body": ["import useScroll from 'ynw/react/useScroll'"]
-    },"==ynw.useToggle==": {
-      "prefix": "ynw.react.useToggle",
-      "body": ["import useToggle from 'ynw/react/useToggle'"]
-    },"==ynw.useWindowSize==": {
-      "prefix": "ynw.react.useWindowSize",
-      "body": ["import useWindowSize from 'ynw/react/useWindowSize'"]
-    },"==ynw.arrayById==": {
-      "prefix": "ynw.script.arrayById",
-      "body": ["import arrayById from 'ynw/script/arrayById'"]
-    },"==ynw.createReducer==": {
-      "prefix": "ynw.script.createReducer",
-      "body": ["import createReducer from 'ynw/script/createReducer'"]
-    },"==ynw.deleter==": {
-      "prefix": "ynw.script.deleter",
-      "body": ["import deleter from 'ynw/script/deleter'"]
-    },"==ynw.getFormValues==": {
-      "prefix": "ynw.script.getFormValues",
-      "body": ["import getFormValues from 'ynw/script/getFormValues'"]
-    },"==ynw.onFormFieldChange==": {
-      "prefix": "ynw.script.onFormFieldChange",
-      "body": ["import onFormFieldChange from 'ynw/script/onFormFieldChange'"]
-    },"==ynw.previewImage==": {
-      "prefix": "ynw.script.previewImage",
-      "body": ["import previewImage from 'ynw/script/previewImage'"]
-    },"==ynw.compareVersion==": {
-      "prefix": "ynw.string.compareVersion",
-      "body": ["import compareVersion from 'ynw/string/compareVersion'"]
-    },"==ynw.createShortText==": {
-      "prefix": "ynw.string.createShortText",
-      "body": ["import createShortText from 'ynw/string/createShortText'"]
-    },"==ynw.formatDuration==": {
-      "prefix": "ynw.time.formatDuration",
-      "body": ["import formatDuration from 'ynw/time/formatDuration'"]
-    },"==ynw.formatTime==": {
-      "prefix": "ynw.time.formatTime",
-      "body": ["import formatTime from 'ynw/time/formatTime'"]
-    },"==ynw.overTime==": {
-      "prefix": "ynw.time.overTime",
-      "body": ["import overTime from 'ynw/time/overTime'"]
-    },"==ynw.tiper==": {
-      "prefix": "ynw.tiper",
-      "body": ["import tiper from 'ynw/tiper'"]
-    }}
+{
+  "ynw.antd.Actionbar": {
+    "prefix": "ynw.antd.Actionbar",
+    "body": [
+      "import Actionbar from 'ynw/antd/Actionbar'"
+    ]
+  },
+  "ynw.antd.AntConfig": {
+    "prefix": "ynw.antd.AntConfig",
+    "body": [
+      "import AntConfig from 'ynw/antd/AntConfig'"
+    ]
+  },
+  "ynw.antd.Buttons": {
+    "prefix": "ynw.antd.Buttons",
+    "body": [
+      "import Buttons from 'ynw/antd/Buttons'"
+    ]
+  },
+  "ynw.antd/Cropper.index": {
+    "prefix": "ynw.antd/Cropper.index",
+    "body": [
+      "import index from 'ynw/antd/Cropper/index'"
+    ]
+  },
+  "ynw.antd.DayPicker": {
+    "prefix": "ynw.antd.DayPicker",
+    "body": [
+      "import DayPicker from 'ynw/antd/DayPicker'"
+    ]
+  },
+  "ynw.antd.Download": {
+    "prefix": "ynw.antd.Download",
+    "body": [
+      "import Download from 'ynw/antd/Download'"
+    ]
+  },
+  "ynw.antd.FetchMore": {
+    "prefix": "ynw.antd.FetchMore",
+    "body": [
+      "import FetchMore from 'ynw/antd/FetchMore'"
+    ]
+  },
+  "ynw.antd.InputFileReader": {
+    "prefix": "ynw.antd.InputFileReader",
+    "body": [
+      "import InputFileReader from 'ynw/antd/InputFileReader'"
+    ]
+  },
+  "ynw.antd.InputNumber": {
+    "prefix": "ynw.antd.InputNumber",
+    "body": [
+      "import InputNumber from 'ynw/antd/InputNumber'"
+    ]
+  },
+  "ynw.antd.NullLoading": {
+    "prefix": "ynw.antd.NullLoading",
+    "body": [
+      "import NullLoading from 'ynw/antd/NullLoading'"
+    ]
+  },
+  "ynw.antd.Para": {
+    "prefix": "ynw.antd.Para",
+    "body": [
+      "import Para from 'ynw/antd/Para'"
+    ]
+  },
+  "ynw.antd.PopArticle": {
+    "prefix": "ynw.antd.PopArticle",
+    "body": [
+      "import PopArticle from 'ynw/antd/PopArticle'"
+    ]
+  },
+  "ynw.antd.PopMulChoose": {
+    "prefix": "ynw.antd.PopMulChoose",
+    "body": [
+      "import PopMulChoose from 'ynw/antd/PopMulChoose'"
+    ]
+  },
+  "ynw.antd.ResultStatus": {
+    "prefix": "ynw.antd.ResultStatus",
+    "body": [
+      "import ResultStatus from 'ynw/antd/ResultStatus'"
+    ]
+  },
+  "ynw.antd.SearchBar": {
+    "prefix": "ynw.antd.SearchBar",
+    "body": [
+      "import SearchBar from 'ynw/antd/SearchBar'"
+    ]
+  },
+  "ynw.antd.SelectCommon": {
+    "prefix": "ynw.antd.SelectCommon",
+    "body": [
+      "import SelectCommon from 'ynw/antd/SelectCommon'"
+    ]
+  },
+  "ynw.antd.TreeRadio": {
+    "prefix": "ynw.antd.TreeRadio",
+    "body": [
+      "import TreeRadio from 'ynw/antd/TreeRadio'"
+    ]
+  },
+  "ynw.antd.Uploadbox": {
+    "prefix": "ynw.antd.Uploadbox",
+    "body": [
+      "import Uploadbox from 'ynw/antd/Uploadbox'"
+    ]
+  },
+  "ynw.array.array2Tree": {
+    "prefix": "ynw.array.array2Tree",
+    "body": [
+      "import array2Tree from 'ynw/array/array2Tree'"
+    ]
+  },
+  "ynw.array.arrayById": {
+    "prefix": "ynw.array.arrayById",
+    "body": [
+      "import arrayById from 'ynw/array/arrayById'"
+    ]
+  },
+  "ynw.array.tree2Array": {
+    "prefix": "ynw.array.tree2Array",
+    "body": [
+      "import tree2Array from 'ynw/array/tree2Array'"
+    ]
+  },
+  "ynw.browser.UUIDBrowser": {
+    "prefix": "ynw.browser.UUIDBrowser",
+    "body": [
+      "import UUIDBrowser from 'ynw/browser/UUIDBrowser'"
+    ]
+  },
+  "ynw.browser.copyToClipboard": {
+    "prefix": "ynw.browser.copyToClipboard",
+    "body": [
+      "import copyToClipboard from 'ynw/browser/copyToClipboard'"
+    ]
+  },
+  "ynw.browser.detectBrowser": {
+    "prefix": "ynw.browser.detectBrowser",
+    "body": [
+      "import detectBrowser from 'ynw/browser/detectBrowser'"
+    ]
+  },
+  "ynw.browser.detectDeviceType": {
+    "prefix": "ynw.browser.detectDeviceType",
+    "body": [
+      "import detectDeviceType from 'ynw/browser/detectDeviceType'"
+    ]
+  },
+  "ynw.browser.elementInViewport": {
+    "prefix": "ynw.browser.elementInViewport",
+    "body": [
+      "import elementInViewport from 'ynw/browser/elementInViewport'"
+    ]
+  },
+  "ynw.browser.isDocumentVisible": {
+    "prefix": "ynw.browser.isDocumentVisible",
+    "body": [
+      "import isDocumentVisible from 'ynw/browser/isDocumentVisible'"
+    ]
+  },
+  "ynw.getUrlParams": {
+    "prefix": "ynw.getUrlParams",
+    "body": [
+      "import getUrlParams from 'ynw/getUrlParams'"
+    ]
+  },
+  "ynw.index": {
+    "prefix": "ynw.index",
+    "body": [
+      "import index from 'ynw/index'"
+    ]
+  },
+  "ynw.mobile.touch": {
+    "prefix": "ynw.mobile.touch",
+    "body": [
+      "import touch from 'ynw/mobile/touch'"
+    ]
+  },
+  "ynw.number.fillZero": {
+    "prefix": "ynw.number.fillZero",
+    "body": [
+      "import fillZero from 'ynw/number/fillZero'"
+    ]
+  },
+  "ynw.object.extend": {
+    "prefix": "ynw.object.extend",
+    "body": [
+      "import extend from 'ynw/object/extend'"
+    ]
+  },
+  "ynw.other.chineseNumber": {
+    "prefix": "ynw.other.chineseNumber",
+    "body": [
+      "import chineseNumber from 'ynw/other/chineseNumber'"
+    ]
+  },
+  "ynw.other.createSocket": {
+    "prefix": "ynw.other.createSocket",
+    "body": [
+      "import createSocket from 'ynw/other/createSocket'"
+    ]
+  },
+  "ynw.other.getChineseMoneyUnit": {
+    "prefix": "ynw.other.getChineseMoneyUnit",
+    "body": [
+      "import getChineseMoneyUnit from 'ynw/other/getChineseMoneyUnit'"
+    ]
+  },
+  "ynw.other.validateIdCard": {
+    "prefix": "ynw.other.validateIdCard",
+    "body": [
+      "import validateIdCard from 'ynw/other/validateIdCard'"
+    ]
+  },
+  "ynw.pattern.HashTable": {
+    "prefix": "ynw.pattern.HashTable",
+    "body": [
+      "import HashTable from 'ynw/pattern/HashTable'"
+    ]
+  },
+  "ynw.pattern.LinkedList": {
+    "prefix": "ynw.pattern.LinkedList",
+    "body": [
+      "import LinkedList from 'ynw/pattern/LinkedList'"
+    ]
+  },
+  "ynw.pattern.Queue": {
+    "prefix": "ynw.pattern.Queue",
+    "body": [
+      "import Queue from 'ynw/pattern/Queue'"
+    ]
+  },
+  "ynw.pattern.Stack": {
+    "prefix": "ynw.pattern.Stack",
+    "body": [
+      "import Stack from 'ynw/pattern/Stack'"
+    ]
+  },
+  "ynw.pattern.applyMiddleware": {
+    "prefix": "ynw.pattern.applyMiddleware",
+    "body": [
+      "import applyMiddleware from 'ynw/pattern/applyMiddleware'"
+    ]
+  },
+  "ynw.pattern.compose": {
+    "prefix": "ynw.pattern.compose",
+    "body": [
+      "import compose from 'ynw/pattern/compose'"
+    ]
+  },
+  "ynw.pattern.composeRight": {
+    "prefix": "ynw.pattern.composeRight",
+    "body": [
+      "import composeRight from 'ynw/pattern/composeRight'"
+    ]
+  },
+  "ynw.pattern.createEventHub": {
+    "prefix": "ynw.pattern.createEventHub",
+    "body": [
+      "import createEventHub from 'ynw/pattern/createEventHub'"
+    ]
+  },
+  "ynw.pattern.koaChain": {
+    "prefix": "ynw.pattern.koaChain",
+    "body": [
+      "import koaChain from 'ynw/pattern/koaChain'"
+    ]
+  },
+  "ynw.pattern.nextChain": {
+    "prefix": "ynw.pattern.nextChain",
+    "body": [
+      "import nextChain from 'ynw/pattern/nextChain'"
+    ]
+  },
+  "ynw.pattern.promiseChain": {
+    "prefix": "ynw.pattern.promiseChain",
+    "body": [
+      "import promiseChain from 'ynw/pattern/promiseChain'"
+    ]
+  },
+  "ynw.react.ZoomImg": {
+    "prefix": "ynw.react.ZoomImg",
+    "body": [
+      "import ZoomImg from 'ynw/react/ZoomImg'"
+    ]
+  },
+  "ynw.react.useConstant": {
+    "prefix": "ynw.react.useConstant",
+    "body": [
+      "import useConstant from 'ynw/react/useConstant'"
+    ]
+  },
+  "ynw.react.useEventCallback": {
+    "prefix": "ynw.react.useEventCallback",
+    "body": [
+      "import useEventCallback from 'ynw/react/useEventCallback'"
+    ]
+  },
+  "ynw.react.useKeyboardJs": {
+    "prefix": "ynw.react.useKeyboardJs",
+    "body": [
+      "import useKeyboardJs from 'ynw/react/useKeyboardJs'"
+    ]
+  },
+  "ynw.react.useObservable": {
+    "prefix": "ynw.react.useObservable",
+    "body": [
+      "import useObservable from 'ynw/react/useObservable'"
+    ]
+  },
+  "ynw.react.useScroll": {
+    "prefix": "ynw.react.useScroll",
+    "body": [
+      "import useScroll from 'ynw/react/useScroll'"
+    ]
+  },
+  "ynw.react.useToggle": {
+    "prefix": "ynw.react.useToggle",
+    "body": [
+      "import useToggle from 'ynw/react/useToggle'"
+    ]
+  },
+  "ynw.react.useWindowSize": {
+    "prefix": "ynw.react.useWindowSize",
+    "body": [
+      "import useWindowSize from 'ynw/react/useWindowSize'"
+    ]
+  },
+  "ynw.script.createReducer": {
+    "prefix": "ynw.script.createReducer",
+    "body": [
+      "import createReducer from 'ynw/script/createReducer'"
+    ]
+  },
+  "ynw.script.deleter": {
+    "prefix": "ynw.script.deleter",
+    "body": [
+      "import deleter from 'ynw/script/deleter'"
+    ]
+  },
+  "ynw.script.getFormValues": {
+    "prefix": "ynw.script.getFormValues",
+    "body": [
+      "import getFormValues from 'ynw/script/getFormValues'"
+    ]
+  },
+  "ynw.script.onFormFieldChange": {
+    "prefix": "ynw.script.onFormFieldChange",
+    "body": [
+      "import onFormFieldChange from 'ynw/script/onFormFieldChange'"
+    ]
+  },
+  "ynw.script.previewImage": {
+    "prefix": "ynw.script.previewImage",
+    "body": [
+      "import previewImage from 'ynw/script/previewImage'"
+    ]
+  },
+  "ynw.string.compareVersion": {
+    "prefix": "ynw.string.compareVersion",
+    "body": [
+      "import compareVersion from 'ynw/string/compareVersion'"
+    ]
+  },
+  "ynw.string.createShortText": {
+    "prefix": "ynw.string.createShortText",
+    "body": [
+      "import createShortText from 'ynw/string/createShortText'"
+    ]
+  },
+  "ynw.time.formatDuration": {
+    "prefix": "ynw.time.formatDuration",
+    "body": [
+      "import formatDuration from 'ynw/time/formatDuration'"
+    ]
+  },
+  "ynw.time.formatTime": {
+    "prefix": "ynw.time.formatTime",
+    "body": [
+      "import formatTime from 'ynw/time/formatTime'"
+    ]
+  },
+  "ynw.time.overTime": {
+    "prefix": "ynw.time.overTime",
+    "body": [
+      "import overTime from 'ynw/time/overTime'"
+    ]
+  },
+  "ynw.tiper": {
+    "prefix": "ynw.tiper",
+    "body": [
+      "import tiper from 'ynw/tiper'"
+    ]
+  }
+}

@@ -1,37 +1,37 @@
-{"==ynw.chat==": {
+{"ynw.vue.chat": {
       "prefix": "ynw.vue.chat",
       "body": ["import chat from 'ynw/vue/chat'"]
-    },"==ynw.cropper==": {
+    },"ynw.vue.cropper": {
       "prefix": "ynw.vue.cropper",
       "body": ["import cropper from 'ynw/vue/cropper'"]
-    },"==ynw.fetch==": {
+    },"ynw.vue.fetch": {
       "prefix": "ynw.vue.fetch",
       "body": ["import fetch from 'ynw/vue/fetch'"]
-    },"==ynw.loading==": {
+    },"ynw.vue.loading": {
       "prefix": "ynw.vue.loading",
       "body": ["import loading from 'ynw/vue/loading'"]
-    },"==ynw.lookImg==": {
+    },"ynw.vue.lookImg": {
       "prefix": "ynw.vue.lookImg",
       "body": ["import lookImg from 'ynw/vue/lookImg'"]
-    },"==ynw.nav-back==": {
+    },"ynw.vue.nav-back": {
       "prefix": "ynw.vue.nav-back",
       "body": ["import nav-back from 'ynw/vue/nav-back'"]
-    },"==ynw.picker==": {
+    },"ynw.vue.picker": {
       "prefix": "ynw.vue.picker",
       "body": ["import picker from 'ynw/vue/picker'"]
-    },"==ynw.pop==": {
+    },"ynw.vue.pop": {
       "prefix": "ynw.vue.pop",
       "body": ["import pop from 'ynw/vue/pop'"]
-    },"==ynw.radios==": {
+    },"ynw.vue.radios": {
       "prefix": "ynw.vue.radios",
       "body": ["import radios from 'ynw/vue/radios'"]
-    },"==ynw.submit==": {
+    },"ynw.vue.submit": {
       "prefix": "ynw.vue.submit",
       "body": ["import submit from 'ynw/vue/submit'"]
-    },"==ynw.uploader==": {
+    },"ynw.vue.uploader": {
       "prefix": "ynw.vue.uploader",
       "body": ["import uploader from 'ynw/vue/uploader'"]
-    },"==ynw.vscroll==": {
+    },"ynw.vue.vscroll": {
       "prefix": "ynw.vue.vscroll",
       "body": ["import vscroll from 'ynw/vue/vscroll'"]
     }}

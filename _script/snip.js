@@ -17,7 +17,7 @@ function main() {
   //1. JS FILES
   const jsContent = files
     .filter(it => it.extname === ".js")
-    .filter(it => !/index/.test(it.basename))
+    .filter(it => !/^_/.test(it.basename))
     .map(item => createSnipTemplate(item))
     .join(",");
   fs.writeFileSync(
@@ -41,7 +41,7 @@ function createSnipTemplate(item) {
   const forlder = getFolder(item);
   const prefix = forlder ? forlder + "." : "";
   const dir = forlder ? forlder + "/" : "";
-  return `"==ynw.${name}==": {
+  return `"ynw.${prefix}${name}": {
       "prefix": "ynw.${prefix}${name}",
       "body": ["import ${name} from 'ynw/${dir}${name}'"]
     }`;
@@ -49,7 +49,7 @@ function createSnipTemplate(item) {
 
 function getFolder(item) {
   const { dirname } = item;
-  const match = dirname.match(/ynw\/(\w+)\/?/);
+  const match = dirname.match(/ynw\/([\w/]+)/);
   if (match) {
     return match[1];
   }
