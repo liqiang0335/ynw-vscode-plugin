@@ -1,19 +1,34 @@
 {
-  "EP.res": {
+  "Express.res": {
     "prefix": "eeres",
-    "body": [".then(data => res.send(req.fn.ok(data)))", ".catch(next);"]
+    "body": [
+      ".then(data => res.send(req.fn.ok(data)))",
+      ".catch(next);"
+    ]
   },
-  "EP.Get方法": {
+  "Express.Get方法": {
     "prefix": "eeget",
-    "body": ["router.get('$1', (req, res, next) => {", "  $2", "});"]
+    "body": [
+      "router.get('$1', (req, res, next) => {",
+      "  $2",
+      "});"
+    ]
   },
-  "EP.Post方法": {
+  "Express.Post方法": {
     "prefix": "eepost",
-    "body": ["router.post('$1', (req, res, next) => {", "  $2", "});"]
+    "body": [
+      "router.post('$1', (req, res, next) => {",
+      "  $2",
+      "});"
+    ]
   },
-  "EP.中间件": {
+  "Express.中间件": {
     "prefix": "eeuse",
-    "body": ["router.use((req, res, next) => {", "  $2", "});"]
+    "body": [
+      "router.use((req, res, next) => {",
+      "  $2",
+      "});"
+    ]
   },
   "路由导出": {
     "prefix": "eerouter",
@@ -36,10 +51,14 @@
   },
   "发送数据": {
     "prefix": "eeok",
-    "body": ["res.send(req.fn.ok($0))"]
+    "body": [
+      "res.send(req.fn.ok($0))"
+    ]
   },
   "发送错误": {
     "prefix": "eefail",
-    "body": ["res.send(req.fn.error($0))"]
+    "body": [
+      "res.send(req.fn.error($0))"
+    ]
   }
 }
