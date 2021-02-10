@@ -39,10 +39,10 @@ function main() {
 function createSnipTemplate(item) {
   const name = item.basename.replace(/\.\w+$/, "");
   const forlder = getFolder(item);
-  const prefix = forlder ? forlder + "." : "";
+  const prefix = forlder ? forlder + "_" : "";
   const dir = forlder ? forlder + "/" : "";
   return `"ynw.${prefix}${name}": {
-      "prefix": "yy.${prefix}${name}",
+      "prefix": "yy${prefix}${name}",
       "body": ["import ${name} from 'ynw/${dir}${name}'"]
     }`;
 }

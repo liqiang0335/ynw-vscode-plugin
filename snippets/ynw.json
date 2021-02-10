@@ -1,396 +1,396 @@
 {
-  "ynw.antd.Actionbar": {
-    "prefix": "ynw.antd.Actionbar",
+  "ynw.antd_Actionbar": {
+    "prefix": "yyantd_Actionbar",
     "body": [
       "import Actionbar from 'ynw/antd/Actionbar'"
     ]
   },
-  "ynw.antd.AntConfig": {
-    "prefix": "ynw.antd.AntConfig",
+  "ynw.antd_AntConfig": {
+    "prefix": "yyantd_AntConfig",
     "body": [
       "import AntConfig from 'ynw/antd/AntConfig'"
     ]
   },
-  "ynw.antd.Buttons": {
-    "prefix": "ynw.antd.Buttons",
+  "ynw.antd_Buttons": {
+    "prefix": "yyantd_Buttons",
     "body": [
       "import Buttons from 'ynw/antd/Buttons'"
     ]
   },
-  "ynw.antd/Cropper.index": {
-    "prefix": "ynw.antd/Cropper.index",
+  "ynw.antd/Cropper_index": {
+    "prefix": "yyantd/Cropper_index",
     "body": [
       "import index from 'ynw/antd/Cropper/index'"
     ]
   },
-  "ynw.antd.DayPicker": {
-    "prefix": "ynw.antd.DayPicker",
+  "ynw.antd_DayPicker": {
+    "prefix": "yyantd_DayPicker",
     "body": [
       "import DayPicker from 'ynw/antd/DayPicker'"
     ]
   },
-  "ynw.antd.Download": {
-    "prefix": "ynw.antd.Download",
+  "ynw.antd_Download": {
+    "prefix": "yyantd_Download",
     "body": [
       "import Download from 'ynw/antd/Download'"
     ]
   },
-  "ynw.antd.FetchMore": {
-    "prefix": "ynw.antd.FetchMore",
+  "ynw.antd_FetchMore": {
+    "prefix": "yyantd_FetchMore",
     "body": [
       "import FetchMore from 'ynw/antd/FetchMore'"
     ]
   },
-  "ynw.antd.InputFileReader": {
-    "prefix": "ynw.antd.InputFileReader",
+  "ynw.antd_InputFileReader": {
+    "prefix": "yyantd_InputFileReader",
     "body": [
       "import InputFileReader from 'ynw/antd/InputFileReader'"
     ]
   },
-  "ynw.antd.InputNumber": {
-    "prefix": "ynw.antd.InputNumber",
+  "ynw.antd_InputNumber": {
+    "prefix": "yyantd_InputNumber",
     "body": [
       "import InputNumber from 'ynw/antd/InputNumber'"
     ]
   },
-  "ynw.antd.NullLoading": {
-    "prefix": "ynw.antd.NullLoading",
+  "ynw.antd_NullLoading": {
+    "prefix": "yyantd_NullLoading",
     "body": [
       "import NullLoading from 'ynw/antd/NullLoading'"
     ]
   },
-  "ynw.antd.Para": {
-    "prefix": "ynw.antd.Para",
+  "ynw.antd_Para": {
+    "prefix": "yyantd_Para",
     "body": [
       "import Para from 'ynw/antd/Para'"
     ]
   },
-  "ynw.antd.PopArticle": {
-    "prefix": "ynw.antd.PopArticle",
+  "ynw.antd_PopArticle": {
+    "prefix": "yyantd_PopArticle",
     "body": [
       "import PopArticle from 'ynw/antd/PopArticle'"
     ]
   },
-  "ynw.antd.PopMulChoose": {
-    "prefix": "ynw.antd.PopMulChoose",
+  "ynw.antd_PopMulChoose": {
+    "prefix": "yyantd_PopMulChoose",
     "body": [
       "import PopMulChoose from 'ynw/antd/PopMulChoose'"
     ]
   },
-  "ynw.antd.ResultStatus": {
-    "prefix": "ynw.antd.ResultStatus",
+  "ynw.antd_ResultStatus": {
+    "prefix": "yyantd_ResultStatus",
     "body": [
       "import ResultStatus from 'ynw/antd/ResultStatus'"
     ]
   },
-  "ynw.antd.SearchBar": {
-    "prefix": "ynw.antd.SearchBar",
+  "ynw.antd_SearchBar": {
+    "prefix": "yyantd_SearchBar",
     "body": [
       "import SearchBar from 'ynw/antd/SearchBar'"
     ]
   },
-  "ynw.antd.SelectCommon": {
-    "prefix": "ynw.antd.SelectCommon",
+  "ynw.antd_SelectCommon": {
+    "prefix": "yyantd_SelectCommon",
     "body": [
       "import SelectCommon from 'ynw/antd/SelectCommon'"
     ]
   },
-  "ynw.antd.TreeRadio": {
-    "prefix": "ynw.antd.TreeRadio",
+  "ynw.antd_TreeRadio": {
+    "prefix": "yyantd_TreeRadio",
     "body": [
       "import TreeRadio from 'ynw/antd/TreeRadio'"
     ]
   },
-  "ynw.antd.Uploadbox": {
-    "prefix": "ynw.antd.Uploadbox",
+  "ynw.antd_Uploadbox": {
+    "prefix": "yyantd_Uploadbox",
     "body": [
       "import Uploadbox from 'ynw/antd/Uploadbox'"
     ]
   },
-  "ynw.array.array2Tree": {
-    "prefix": "ynw.array.array2Tree",
+  "ynw.array_array2Tree": {
+    "prefix": "yyarray_array2Tree",
     "body": [
       "import array2Tree from 'ynw/array/array2Tree'"
     ]
   },
-  "ynw.array.arrayById": {
-    "prefix": "ynw.array.arrayById",
+  "ynw.array_arrayById": {
+    "prefix": "yyarray_arrayById",
     "body": [
       "import arrayById from 'ynw/array/arrayById'"
     ]
   },
-  "ynw.array.tree2Array": {
-    "prefix": "ynw.array.tree2Array",
+  "ynw.array_tree2Array": {
+    "prefix": "yyarray_tree2Array",
     "body": [
       "import tree2Array from 'ynw/array/tree2Array'"
     ]
   },
-  "ynw.browser.UUIDBrowser": {
-    "prefix": "ynw.browser.UUIDBrowser",
+  "ynw.browser_UUIDBrowser": {
+    "prefix": "yybrowser_UUIDBrowser",
     "body": [
       "import UUIDBrowser from 'ynw/browser/UUIDBrowser'"
     ]
   },
-  "ynw.browser.copyToClipboard": {
-    "prefix": "ynw.browser.copyToClipboard",
+  "ynw.browser_copyToClipboard": {
+    "prefix": "yybrowser_copyToClipboard",
     "body": [
       "import copyToClipboard from 'ynw/browser/copyToClipboard'"
     ]
   },
-  "ynw.browser.detectBrowser": {
-    "prefix": "ynw.browser.detectBrowser",
+  "ynw.browser_detectBrowser": {
+    "prefix": "yybrowser_detectBrowser",
     "body": [
       "import detectBrowser from 'ynw/browser/detectBrowser'"
     ]
   },
-  "ynw.browser.detectDeviceType": {
-    "prefix": "ynw.browser.detectDeviceType",
+  "ynw.browser_detectDeviceType": {
+    "prefix": "yybrowser_detectDeviceType",
     "body": [
       "import detectDeviceType from 'ynw/browser/detectDeviceType'"
     ]
   },
-  "ynw.browser.elementInViewport": {
-    "prefix": "ynw.browser.elementInViewport",
+  "ynw.browser_elementInViewport": {
+    "prefix": "yybrowser_elementInViewport",
     "body": [
       "import elementInViewport from 'ynw/browser/elementInViewport'"
     ]
   },
-  "ynw.browser.isDocumentVisible": {
-    "prefix": "ynw.browser.isDocumentVisible",
+  "ynw.browser_isDocumentVisible": {
+    "prefix": "yybrowser_isDocumentVisible",
     "body": [
       "import isDocumentVisible from 'ynw/browser/isDocumentVisible'"
     ]
   },
   "ynw.getUrlParams": {
-    "prefix": "ynw.getUrlParams",
+    "prefix": "yygetUrlParams",
     "body": [
       "import getUrlParams from 'ynw/getUrlParams'"
     ]
   },
   "ynw.index": {
-    "prefix": "ynw.index",
+    "prefix": "yyindex",
     "body": [
       "import index from 'ynw/index'"
     ]
   },
-  "ynw.mobile.touch": {
-    "prefix": "ynw.mobile.touch",
+  "ynw.mobile_touch": {
+    "prefix": "yymobile_touch",
     "body": [
       "import touch from 'ynw/mobile/touch'"
     ]
   },
-  "ynw.number.fillZero": {
-    "prefix": "ynw.number.fillZero",
+  "ynw.number_fillZero": {
+    "prefix": "yynumber_fillZero",
     "body": [
       "import fillZero from 'ynw/number/fillZero'"
     ]
   },
-  "ynw.object.extend": {
-    "prefix": "ynw.object.extend",
+  "ynw.object_extend": {
+    "prefix": "yyobject_extend",
     "body": [
       "import extend from 'ynw/object/extend'"
     ]
   },
-  "ynw.other.chineseNumber": {
-    "prefix": "ynw.other.chineseNumber",
+  "ynw.other_chineseNumber": {
+    "prefix": "yyother_chineseNumber",
     "body": [
       "import chineseNumber from 'ynw/other/chineseNumber'"
     ]
   },
-  "ynw.other.createSocket": {
-    "prefix": "ynw.other.createSocket",
+  "ynw.other_createSocket": {
+    "prefix": "yyother_createSocket",
     "body": [
       "import createSocket from 'ynw/other/createSocket'"
     ]
   },
-  "ynw.other.getChineseMoneyUnit": {
-    "prefix": "ynw.other.getChineseMoneyUnit",
+  "ynw.other_getChineseMoneyUnit": {
+    "prefix": "yyother_getChineseMoneyUnit",
     "body": [
       "import getChineseMoneyUnit from 'ynw/other/getChineseMoneyUnit'"
     ]
   },
-  "ynw.other.validateIdCard": {
-    "prefix": "ynw.other.validateIdCard",
+  "ynw.other_validateIdCard": {
+    "prefix": "yyother_validateIdCard",
     "body": [
       "import validateIdCard from 'ynw/other/validateIdCard'"
     ]
   },
-  "ynw.pattern.HashTable": {
-    "prefix": "ynw.pattern.HashTable",
+  "ynw.pattern_HashTable": {
+    "prefix": "yypattern_HashTable",
     "body": [
       "import HashTable from 'ynw/pattern/HashTable'"
     ]
   },
-  "ynw.pattern.LinkedList": {
-    "prefix": "ynw.pattern.LinkedList",
+  "ynw.pattern_LinkedList": {
+    "prefix": "yypattern_LinkedList",
     "body": [
       "import LinkedList from 'ynw/pattern/LinkedList'"
     ]
   },
-  "ynw.pattern.Queue": {
-    "prefix": "ynw.pattern.Queue",
+  "ynw.pattern_Queue": {
+    "prefix": "yypattern_Queue",
     "body": [
       "import Queue from 'ynw/pattern/Queue'"
     ]
   },
-  "ynw.pattern.Stack": {
-    "prefix": "ynw.pattern.Stack",
+  "ynw.pattern_Stack": {
+    "prefix": "yypattern_Stack",
     "body": [
       "import Stack from 'ynw/pattern/Stack'"
     ]
   },
-  "ynw.pattern.applyMiddleware": {
-    "prefix": "ynw.pattern.applyMiddleware",
+  "ynw.pattern_applyMiddleware": {
+    "prefix": "yypattern_applyMiddleware",
     "body": [
       "import applyMiddleware from 'ynw/pattern/applyMiddleware'"
     ]
   },
-  "ynw.pattern.compose": {
-    "prefix": "ynw.pattern.compose",
+  "ynw.pattern_compose": {
+    "prefix": "yypattern_compose",
     "body": [
       "import compose from 'ynw/pattern/compose'"
     ]
   },
-  "ynw.pattern.composeRight": {
-    "prefix": "ynw.pattern.composeRight",
+  "ynw.pattern_composeRight": {
+    "prefix": "yypattern_composeRight",
     "body": [
       "import composeRight from 'ynw/pattern/composeRight'"
     ]
   },
-  "ynw.pattern.createEventHub": {
-    "prefix": "ynw.pattern.createEventHub",
+  "ynw.pattern_createEventHub": {
+    "prefix": "yypattern_createEventHub",
     "body": [
       "import createEventHub from 'ynw/pattern/createEventHub'"
     ]
   },
-  "ynw.pattern.koaChain": {
-    "prefix": "ynw.pattern.koaChain",
+  "ynw.pattern_koaChain": {
+    "prefix": "yypattern_koaChain",
     "body": [
       "import koaChain from 'ynw/pattern/koaChain'"
     ]
   },
-  "ynw.pattern.nextChain": {
-    "prefix": "ynw.pattern.nextChain",
+  "ynw.pattern_nextChain": {
+    "prefix": "yypattern_nextChain",
     "body": [
       "import nextChain from 'ynw/pattern/nextChain'"
     ]
   },
-  "ynw.pattern.promiseChain": {
-    "prefix": "ynw.pattern.promiseChain",
+  "ynw.pattern_promiseChain": {
+    "prefix": "yypattern_promiseChain",
     "body": [
       "import promiseChain from 'ynw/pattern/promiseChain'"
     ]
   },
-  "ynw.react.ZoomImg": {
-    "prefix": "ynw.react.ZoomImg",
+  "ynw.react_ZoomImg": {
+    "prefix": "yyreact_ZoomImg",
     "body": [
       "import ZoomImg from 'ynw/react/ZoomImg'"
     ]
   },
-  "ynw.react.useConstant": {
-    "prefix": "ynw.react.useConstant",
+  "ynw.react_useConstant": {
+    "prefix": "yyreact_useConstant",
     "body": [
       "import useConstant from 'ynw/react/useConstant'"
     ]
   },
-  "ynw.react.useEventCallback": {
-    "prefix": "ynw.react.useEventCallback",
+  "ynw.react_useEventCallback": {
+    "prefix": "yyreact_useEventCallback",
     "body": [
       "import useEventCallback from 'ynw/react/useEventCallback'"
     ]
   },
-  "ynw.react.useKeyboardJs": {
-    "prefix": "ynw.react.useKeyboardJs",
+  "ynw.react_useKeyboardJs": {
+    "prefix": "yyreact_useKeyboardJs",
     "body": [
       "import useKeyboardJs from 'ynw/react/useKeyboardJs'"
     ]
   },
-  "ynw.react.useObservable": {
-    "prefix": "ynw.react.useObservable",
+  "ynw.react_useObservable": {
+    "prefix": "yyreact_useObservable",
     "body": [
       "import useObservable from 'ynw/react/useObservable'"
     ]
   },
-  "ynw.react.useScroll": {
-    "prefix": "ynw.react.useScroll",
+  "ynw.react_useScroll": {
+    "prefix": "yyreact_useScroll",
     "body": [
       "import useScroll from 'ynw/react/useScroll'"
     ]
   },
-  "ynw.react.useToggle": {
-    "prefix": "ynw.react.useToggle",
+  "ynw.react_useToggle": {
+    "prefix": "yyreact_useToggle",
     "body": [
       "import useToggle from 'ynw/react/useToggle'"
     ]
   },
-  "ynw.react.useWindowSize": {
-    "prefix": "ynw.react.useWindowSize",
+  "ynw.react_useWindowSize": {
+    "prefix": "yyreact_useWindowSize",
     "body": [
       "import useWindowSize from 'ynw/react/useWindowSize'"
     ]
   },
-  "ynw.script.createReducer": {
-    "prefix": "ynw.script.createReducer",
+  "ynw.script_createReducer": {
+    "prefix": "yyscript_createReducer",
     "body": [
       "import createReducer from 'ynw/script/createReducer'"
     ]
   },
-  "ynw.script.deleter": {
-    "prefix": "ynw.script.deleter",
+  "ynw.script_deleter": {
+    "prefix": "yyscript_deleter",
     "body": [
       "import deleter from 'ynw/script/deleter'"
     ]
   },
-  "ynw.script.getFormValues": {
-    "prefix": "ynw.script.getFormValues",
+  "ynw.script_getFormValues": {
+    "prefix": "yyscript_getFormValues",
     "body": [
       "import getFormValues from 'ynw/script/getFormValues'"
     ]
   },
-  "ynw.script.onFormFieldChange": {
-    "prefix": "ynw.script.onFormFieldChange",
+  "ynw.script_onFormFieldChange": {
+    "prefix": "yyscript_onFormFieldChange",
     "body": [
       "import onFormFieldChange from 'ynw/script/onFormFieldChange'"
     ]
   },
-  "ynw.script.previewImage": {
-    "prefix": "ynw.script.previewImage",
+  "ynw.script_previewImage": {
+    "prefix": "yyscript_previewImage",
     "body": [
       "import previewImage from 'ynw/script/previewImage'"
     ]
   },
-  "ynw.string.compareVersion": {
-    "prefix": "ynw.string.compareVersion",
+  "ynw.string_compareVersion": {
+    "prefix": "yystring_compareVersion",
     "body": [
       "import compareVersion from 'ynw/string/compareVersion'"
     ]
   },
-  "ynw.string.createShortText": {
-    "prefix": "ynw.string.createShortText",
+  "ynw.string_createShortText": {
+    "prefix": "yystring_createShortText",
     "body": [
       "import createShortText from 'ynw/string/createShortText'"
     ]
   },
-  "ynw.time.formatDuration": {
-    "prefix": "ynw.time.formatDuration",
+  "ynw.time_formatDuration": {
+    "prefix": "yytime_formatDuration",
     "body": [
       "import formatDuration from 'ynw/time/formatDuration'"
     ]
   },
-  "ynw.time.formatTime": {
-    "prefix": "ynw.time.formatTime",
+  "ynw.time_formatTime": {
+    "prefix": "yytime_formatTime",
     "body": [
       "import formatTime from 'ynw/time/formatTime'"
     ]
   },
-  "ynw.time.overTime": {
-    "prefix": "ynw.time.overTime",
+  "ynw.time_overTime": {
+    "prefix": "yytime_overTime",
     "body": [
       "import overTime from 'ynw/time/overTime'"
     ]
   },
   "ynw.tiper": {
-    "prefix": "ynw.tiper",
+    "prefix": "yytiper",
     "body": [
       "import tiper from 'ynw/tiper'"
     ]

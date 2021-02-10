@@ -1,37 +1,37 @@
-{"ynw.vue.chat": {
-      "prefix": "ynw.vue.chat",
+{"ynw.vue_chat": {
+      "prefix": "yyvue_chat",
       "body": ["import chat from 'ynw/vue/chat'"]
-    },"ynw.vue.cropper": {
-      "prefix": "ynw.vue.cropper",
+    },"ynw.vue_cropper": {
+      "prefix": "yyvue_cropper",
       "body": ["import cropper from 'ynw/vue/cropper'"]
-    },"ynw.vue.fetch": {
-      "prefix": "ynw.vue.fetch",
+    },"ynw.vue_fetch": {
+      "prefix": "yyvue_fetch",
       "body": ["import fetch from 'ynw/vue/fetch'"]
-    },"ynw.vue.loading": {
-      "prefix": "ynw.vue.loading",
+    },"ynw.vue_loading": {
+      "prefix": "yyvue_loading",
       "body": ["import loading from 'ynw/vue/loading'"]
-    },"ynw.vue.lookImg": {
-      "prefix": "ynw.vue.lookImg",
+    },"ynw.vue_lookImg": {
+      "prefix": "yyvue_lookImg",
       "body": ["import lookImg from 'ynw/vue/lookImg'"]
-    },"ynw.vue.nav-back": {
-      "prefix": "ynw.vue.nav-back",
+    },"ynw.vue_nav-back": {
+      "prefix": "yyvue_nav-back",
       "body": ["import nav-back from 'ynw/vue/nav-back'"]
-    },"ynw.vue.picker": {
-      "prefix": "ynw.vue.picker",
+    },"ynw.vue_picker": {
+      "prefix": "yyvue_picker",
       "body": ["import picker from 'ynw/vue/picker'"]
-    },"ynw.vue.pop": {
-      "prefix": "ynw.vue.pop",
+    },"ynw.vue_pop": {
+      "prefix": "yyvue_pop",
       "body": ["import pop from 'ynw/vue/pop'"]
-    },"ynw.vue.radios": {
-      "prefix": "ynw.vue.radios",
+    },"ynw.vue_radios": {
+      "prefix": "yyvue_radios",
       "body": ["import radios from 'ynw/vue/radios'"]
-    },"ynw.vue.submit": {
-      "prefix": "ynw.vue.submit",
+    },"ynw.vue_submit": {
+      "prefix": "yyvue_submit",
       "body": ["import submit from 'ynw/vue/submit'"]
-    },"ynw.vue.uploader": {
-      "prefix": "ynw.vue.uploader",
+    },"ynw.vue_uploader": {
+      "prefix": "yyvue_uploader",
       "body": ["import uploader from 'ynw/vue/uploader'"]
-    },"ynw.vue.vscroll": {
-      "prefix": "ynw.vue.vscroll",
+    },"ynw.vue_vscroll": {
+      "prefix": "yyvue_vscroll",
       "body": ["import vscroll from 'ynw/vue/vscroll'"]
     }}
