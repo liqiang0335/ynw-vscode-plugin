@@ -1,31 +1,34 @@
 const fs = require("fs");
-const path = require("path");
 const getFiles = require("./utils/getFiles");
 const os = require("os");
+const path = require("path");
+
+/**====================================*/
 const SOURCE =
   os.platform() === "darwin"
-    ? "/Users/liqiang/Desktop/Git/ynw"
+    ? "/Users/liqiang/Documents/Git/YNW/ynw"
     : "D:\\Git\\ynw";
+/**====================================*/
 
 main();
 function main() {
   const files = getFiles(/lib/)(SOURCE);
 
-  // js files
+  //1. JS FILES
   const jsContent = files
     .filter(it => it.extname === ".js")
     .filter(it => !/index/.test(it.basename))
-    .map(item => template(item))
+    .map(item => createSnipTemplate(item))
     .join(",");
   fs.writeFileSync(
     path.join(__dirname, "../snippets/ynw.json"),
     `{${jsContent}}`
   );
 
-  // vue files
+  //2. VUE FILES
   const vueContents = files
     .filter(it => it.extname === ".vue")
-    .map(item => template(item))
+    .map(item => createSnipTemplate(item))
     .join(",");
   fs.writeFileSync(
     path.join(__dirname, "../snippets/ynw-vue.json"),
@@ -33,31 +36,22 @@ function main() {
   );
 }
 
-function template(item) {
+function createSnipTemplate(item) {
   const name = item.basename.replace(/\.\w+$/, "");
   const forlder = getFolder(item);
-  const prefix = getPrefix(item);
+  const prefix = forlder ? forlder + "." : "";
+  const dir = forlder ? forlder + "/" : "";
   return `"==ynw.${name}==": {
-      "prefix": "${prefix}.${name}",
-      "body": ["import ${name} from 'ynw/${forlder}${name}'"]
+      "prefix": "ynw.${prefix}${name}",
+      "body": ["import ${name} from 'ynw/${dir}${name}'"]
     }`;
 }
 
 function getFolder(item) {
-  const { dirname, extname } = item;
-  if (extname === ".vue") {
-    return "vue/";
-  }
-  if (/react/.test(dirname)) {
-    return "react/";
+  const { dirname } = item;
+  const match = dirname.match(/ynw\/(\w+)\/?/);
+  if (match) {
+    return match[1];
   }
   return "";
-}
-
-function getPrefix(item) {
-  const { extname } = item;
-  if (extname === ".vue") {
-    return "yv";
-  }
-  return "yy";
 }

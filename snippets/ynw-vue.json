@@ -1,30 +1,37 @@
-{
-  "==ynw.chat==": {
-    "prefix": "yv.chat",
-    "body": ["import chat from 'ynw/vue/chat'"]
-  },
-  "==ynw.cropper==": {
-    "prefix": "yv.cropper",
-    "body": ["import cropper from 'ynw/vue/cropper'"]
-  },
-  "==ynw.iphone==": {
-    "prefix": "yv.iphone",
-    "body": ["import iphone from 'ynw/vue/iphone'"]
-  },
-  "==ynw.keyboard==": {
-    "prefix": "yv.keyboard",
-    "body": ["import keyboard from 'ynw/vue/keyboard'"]
-  },
-  "==ynw.loading==": {
-    "prefix": "yv.loading",
-    "body": ["import loading from 'ynw/vue/loading'"]
-  },
-  "==ynw.lookImg==": {
-    "prefix": "yv.lookImg",
-    "body": ["import lookImg from 'ynw/vue/lookImg'"]
-  },
-  "==ynw.yn-van-picker==": {
-    "prefix": "yv.yn-van-picker",
-    "body": ["import yn-van-picker from 'ynw/vue/yn-van-picker'"]
-  }
-}
+{"==ynw.chat==": {
+      "prefix": "ynw.vue.chat",
+      "body": ["import chat from 'ynw/vue/chat'"]
+    },"==ynw.cropper==": {
+      "prefix": "ynw.vue.cropper",
+      "body": ["import cropper from 'ynw/vue/cropper'"]
+    },"==ynw.fetch==": {
+      "prefix": "ynw.vue.fetch",
+      "body": ["import fetch from 'ynw/vue/fetch'"]
+    },"==ynw.loading==": {
+      "prefix": "ynw.vue.loading",
+      "body": ["import loading from 'ynw/vue/loading'"]
+    },"==ynw.lookImg==": {
+      "prefix": "ynw.vue.lookImg",
+      "body": ["import lookImg from 'ynw/vue/lookImg'"]
+    },"==ynw.nav-back==": {
+      "prefix": "ynw.vue.nav-back",
+      "body": ["import nav-back from 'ynw/vue/nav-back'"]
+    },"==ynw.picker==": {
+      "prefix": "ynw.vue.picker",
+      "body": ["import picker from 'ynw/vue/picker'"]
+    },"==ynw.pop==": {
+      "prefix": "ynw.vue.pop",
+      "body": ["import pop from 'ynw/vue/pop'"]
+    },"==ynw.radios==": {
+      "prefix": "ynw.vue.radios",
+      "body": ["import radios from 'ynw/vue/radios'"]
+    },"==ynw.submit==": {
+      "prefix": "ynw.vue.submit",
+      "body": ["import submit from 'ynw/vue/submit'"]
+    },"==ynw.uploader==": {
+      "prefix": "ynw.vue.uploader",
+      "body": ["import uploader from 'ynw/vue/uploader'"]
+    },"==ynw.vscroll==": {
+      "prefix": "ynw.vue.vscroll",
+      "body": ["import vscroll from 'ynw/vue/vscroll'"]
+    }}
