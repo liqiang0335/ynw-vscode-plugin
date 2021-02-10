@@ -1,26 +1,42 @@
 {
   "表单重置-antd": {
     "prefix": "form.resetFields",
-    "body": ["form.resetFields"]
+    "body": [
+      "form.resetFields"
+    ]
   },
   "表单设置-antd": {
     "prefix": "form.setFieldsValue",
-    "body": ["form.setFieldsValue"]
+    "body": [
+      "form.setFieldsValue"
+    ]
   },
   "表单验证-antd": {
     "prefix": "form.validateFields",
-    "body": ["form.validateFields"]
+    "body": [
+      "form.validateFields"
+    ]
   },
   "图标-antd": {
-    "prefix": "icon",
-    "body": ["import { $1 } from '@ant-design/icons';"]
+    "prefix": "icon1",
+    "body": [
+      "import { $1 } from '@ant-design/icons';"
+    ]
+  },
+  "图标-iconpark": {
+    "prefix": "icon2",
+    "body": [
+      "import { $1 } from '@icon-park/react';"
+    ]
   },
   "导入antd": {
     "prefix": "antd",
-    "body": ["import { $1 } from 'antd'"]
+    "body": [
+      "import { $1 } from 'antd'"
+    ]
   },
   "通用弹窗": {
-    "prefix": "iicommodal",
+    "prefix": "iicomdialog",
     "body": [
       "import React, { useEffect } from 'react';",
       "import { Modal, Form, Input, message } from 'antd';",
