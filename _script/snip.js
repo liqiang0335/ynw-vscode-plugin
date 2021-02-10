@@ -42,7 +42,7 @@ function createSnipTemplate(item) {
   const prefix = forlder ? forlder + "." : "";
   const dir = forlder ? forlder + "/" : "";
   return `"ynw.${prefix}${name}": {
-      "prefix": "ynw.${prefix}${name}",
+      "prefix": "yy.${prefix}${name}",
       "body": ["import ${name} from 'ynw/${dir}${name}'"]
     }`;
 }
