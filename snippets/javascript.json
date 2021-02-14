@@ -61,7 +61,7 @@
   "打印1-剪贴板": {
     "prefix": "iilog1",
     "body": [
-      "console.log('{CLIPBOARD}', ${CLIPBOARD})"
+      "console.log('${CLIPBOARD}', ${CLIPBOARD})"
     ]
   },
   "打印2": {
@@ -115,7 +115,7 @@
   "CMD导入": {
     "prefix": "iire1",
     "body": [
-      "const $2 = require('$1');$0"
+      "const ${1} = require('${1:name}');$0"
     ]
   },
   "CMD导入{}": {
