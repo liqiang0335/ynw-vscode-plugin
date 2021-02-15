@@ -124,6 +124,13 @@
       "const { $2 } = require('$1');$0"
     ]
   },
+  "导入Rxjs.CMD": {
+    "prefix": "iirxcmd",
+    "body": [
+      "const { Subject } = require('rxjs');",
+      "const { map } = require('rxjs/operators');"
+    ]
+  },
   "导入相关样式": {
     "prefix": "iims",
     "body": [
