@@ -1,12 +1,7 @@
 const getRalativeInfo = require("../utils/getRalativeInfo");
 const insertContent = require("../utils/insertContent");
 
-const RegExpTable = [
-  {
-    reg: /s\.js$/,
-    handler: ({ relativePath }) => `const {  } = require("${relativePath}")`,
-  },
-];
+const RegExpTable = [];
 
 module.exports = function (URI) {
   const info = getRalativeInfo(URI.fsPath);

@@ -11,10 +11,6 @@ const RegExpTable = [
     reg: /\.scss$/,
     handler: ({ relativePath }) => `import styles from "${relativePath}"`,
   },
-  {
-    reg: /s\.js$/,
-    handler: ({ relativePath }) => `import {  } from "${relativePath}"`,
-  },
 ];
 
 module.exports = function (URI) {
