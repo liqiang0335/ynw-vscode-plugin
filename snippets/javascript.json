@@ -92,15 +92,11 @@
   },
   "环境:开发": {
     "prefix": "iienvdev",
-    "body": [
-      "process.env.NODE_ENV ==\"development\""
-    ]
+    "body": "process.env.NODE_ENV ==\"development\""
   },
   "环境:生产": {
     "prefix": "iienvpro",
-    "body": [
-      "process.env.NODE_ENV ==\"production\""
-    ]
+    "body": "process.env.NODE_ENV ==\"production\""
   },
   "导入{*}模块": {
     "prefix": "iim1",
@@ -108,21 +104,19 @@
   },
   "导入*as模块": {
     "prefix": "iim2",
-    "body": [
-      "import * as $1 from '$2';$0"
-    ]
+    "body": "import * as $1 from '$2';$0"
   },
   "CMD导入": {
     "prefix": "iire1",
-    "body": [
-      "const ${1} = require('${1:name}');$0"
-    ]
+    "body": "const ${1} = require('${1:name}');$0"
   },
   "CMD导入{}": {
     "prefix": "iire2",
-    "body": [
-      "const { $2 } = require('$1');$0"
-    ]
+    "body": "const { $2 } = require('$1');$0"
+  },
+  "导入变量模块": {
+    "prefix": "iire3",
+    "body": "const { $2 } = $1;$0"
   },
   "导入Rxjs.CMD": {
     "prefix": "iirxcmd",
