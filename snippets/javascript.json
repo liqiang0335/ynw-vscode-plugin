@@ -98,12 +98,16 @@
     "prefix": "iienvpro",
     "body": "process.env.NODE_ENV ==\"production\""
   },
+  "导入模块": {
+    "prefix": "im0",
+    "body": "import ${1} from '${1:name}"
+  },
   "导入{*}模块": {
-    "prefix": "iim1",
+    "prefix": "im1",
     "body": "import { $2 } from '${1:module}'$0"
   },
   "导入*as模块": {
-    "prefix": "iim2",
+    "prefix": "im2",
     "body": "import * as $1 from '$2';$0"
   },
   "CMD导入": {
