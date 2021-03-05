@@ -12,6 +12,7 @@ const SOURCE =
 
 main();
 function main() {
+  console.log(`引用路径: ${SOURCE}`);
   const files = getFiles(/lib/)(SOURCE);
 
   //1. JS FILES
