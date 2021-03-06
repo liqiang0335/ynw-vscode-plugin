@@ -204,5 +204,9 @@
   "导入TaroJS": {
     "prefix": "taro",
     "body": "import Taro from '@tarojs/taro'"
+  },
+  "空数据组件": {
+    "prefix": "iiempty",
+    "body": "<Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />"
   }
 }
