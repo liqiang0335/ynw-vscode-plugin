@@ -61,7 +61,7 @@
   "打印1-剪贴板": {
     "prefix": "iilog1",
     "body": [
-      "console.log('${CLIPBOARD}', ${CLIPBOARD})"
+      "console.log('打印数据: ${CLIPBOARD}', ${CLIPBOARD})"
     ]
   },
   "打印2": {
@@ -154,7 +154,7 @@
     "body": [
       "const params = {};",
       "http.get('$1',{ params }).then(res => {",
-      "  console.log('🚀🚀🚀 ~ res', res);",
+      "  console.log('返回数据', res);",
       "});"
     ]
   },
@@ -163,7 +163,7 @@
     "body": [
       "const params = {};",
       "http.post('$1',params).then(res => {",
-      "  console.log('🚀🚀🚀 ~ res', res);",
+      "  console.log('返回数据', res);",
       "});"
     ]
   },
@@ -219,5 +219,104 @@
   "next-header": {
     "prefix": "nextheader",
     "body": "import Head from 'next/head'"
+  },
+  "AXIOS创建HTTP": {
+    "prefix": "iiaxios1",
+    "body": [
+      "import { notification, message } from 'antd';",
+      "import axios from 'axios';",
+      "",
+      "const http = axios.create({ baseURL: '/api', timeout: 30000 });",
+      "export default http;",
+      "",
+      "http.interceptors.request.use(config => {",
+      "  if (config.method === 'post') {",
+      "    config.data = config.data || {};",
+      "  }",
+      "  if (config.method === 'get') {",
+      "    config.params = config.params || {};",
+      "  }",
+      "  return config;",
+      "});",
+      "",
+      "http.interceptors.response.use(",
+      "  function(res) {",
+      "    const body = res.data;",
+      "    if (body.code == 1) {",
+      "      return body.data;",
+      "    } else {",
+      "      message.error(body.message);",
+      "      return Promise.reject();",
+      "    }",
+      "  },",
+      "  function(err) {",
+      "    if (err.response) {",
+      "      const { config, status } = err.response;",
+      "      notification.error({",
+      "        placement: 'topRight',",
+      "        duration: 6,",
+      "        message: `服务错误: ${status}`,",
+      "        description: `${config.url}`,",
+      "      });",
+      "    }",
+      "    if (err.code === 'ECONNABORTED') {",
+      "      notification.error({",
+      "        placement: 'bottomLeft',",
+      "        duration: 6,",
+      "        message: '请求超时',",
+      "        description: `请确认网略连接是否正常`,",
+      "      });",
+      "    }",
+      "    return Promise.reject(err);",
+      "  }",
+      ");"
+    ]
+  },
+  "AXIOS创建HTTP2": {
+    "prefix": "iiaxios2",
+    "body": [
+      "import Qs from 'querystring';",
+      "import axios from 'axios';",
+      "import { message } from 'antd';",
+      "",
+      "const http = axios.create({",
+      "  baseURL: '/api',",
+      "  timeout: 30000,",
+      "  withCredentials: true,",
+      "  headers: {",
+      "    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',",
+      "  },",
+      "  transformRequest: params => Qs.stringify(params),",
+      "});",
+      "",
+      "export default http;",
+      "",
+      "http.interceptors.request.use(config => {",
+      "  return config;",
+      "});",
+      "",
+      "http.interceptors.response.use(",
+      "  function (res) {",
+      "    const body = res.data;",
+      "    if (body.code != 1) {",
+      "      message.error(body.message);",
+      "      return Promise.reject(body);",
+      "    }",
+      "    return Promise.resolve(body.data);",
+      "  },",
+      "  function (err) {",
+      "    if (err.code === 'ECONNABORTED') {",
+      "      message.error('网络超时');",
+      "    }",
+      "    if (err.response) {",
+      "      const res = err.response;",
+      "      if (res.status == '500') {",
+      "        message.error('服务器异常');",
+      "      }",
+      "    }",
+      "    return Promise.reject(err);",
+      "  }",
+      ");"
+    ]
   }
 }

@@ -151,6 +151,9 @@
     },"ynw.react_ErrorBoundary": {
       "prefix": "yyreact_ErrorBoundary",
       "body": ["import ErrorBoundary from 'ynw/react/ErrorBoundary'"]
+    },"ynw.react_IF": {
+      "prefix": "yyreact_IF",
+      "body": ["import IF from 'ynw/react/IF'"]
     },"ynw.react_ZoomImg": {
       "prefix": "yyreact_ZoomImg",
       "body": ["import ZoomImg from 'ynw/react/ZoomImg'"]
@@ -175,6 +178,9 @@
     },"ynw.react_useWindowSize": {
       "prefix": "yyreact_useWindowSize",
       "body": ["import useWindowSize from 'ynw/react/useWindowSize'"]
+    },"ynw.script_Highcharts": {
+      "prefix": "yyscript_Highcharts",
+      "body": ["import Highcharts from 'ynw/script/Highcharts'"]
     },"ynw.script_createReducer": {
       "prefix": "yyscript_createReducer",
       "body": ["import createReducer from 'ynw/script/createReducer'"]
