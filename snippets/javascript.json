@@ -100,7 +100,7 @@
   },
   "导入模块": {
     "prefix": "iim1",
-    "body": "import ${1} from '${1:name}"
+    "body": "import ${1} from '${1:name}'"
   },
   "导入{*}模块": {
     "prefix": "iim2",
