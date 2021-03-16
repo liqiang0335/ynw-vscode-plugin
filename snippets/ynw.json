@@ -22,6 +22,9 @@
     },"ynw.antd_FetchMore": {
       "prefix": "yyantd_FetchMore",
       "body": ["import FetchMore from 'ynw/antd/FetchMore'"]
+    },"ynw.antd_GlobalMask": {
+      "prefix": "yyantd_GlobalMask",
+      "body": ["import GlobalMask from 'ynw/antd/GlobalMask'"]
     },"ynw.antd_HeaderPopAction": {
       "prefix": "yyantd_HeaderPopAction",
       "body": ["import HeaderPopAction from 'ynw/antd/HeaderPopAction'"]
@@ -181,6 +184,9 @@
     },"ynw.script_Highcharts": {
       "prefix": "yyscript_Highcharts",
       "body": ["import Highcharts from 'ynw/script/Highcharts'"]
+    },"ynw.script_confirmer": {
+      "prefix": "yyscript_confirmer",
+      "body": ["import confirmer from 'ynw/script/confirmer'"]
     },"ynw.script_createReducer": {
       "prefix": "yyscript_createReducer",
       "body": ["import createReducer from 'ynw/script/createReducer'"]
