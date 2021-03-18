@@ -253,7 +253,7 @@
       "export default http;"
     ]
   },
-  "Axios-inter": {
+  "Axios-use": {
     "prefix": "iiaxios_use",
     "body": [
       "http.interceptors.request.use(onRequest);",
