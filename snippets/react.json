@@ -1,7 +1,9 @@
 {
 	"导入styled": {
 		"prefix": "imstyled",
-		"body": ["import styled from 'styled-components';"]
+		"body": [
+			"import styled from 'styled-components';"
+		]
 	},
 	"导入rxjx": {
 		"prefix": "iirxjs1",
@@ -12,19 +14,27 @@
 	},
 	"导入rxjs-hooks": {
 		"prefix": "iirxjs2",
-		"body": ["import { useEventCallback, useObservable } from 'rxjs-hooks'"]
+		"body": [
+			"import { useEventCallback, useObservable } from 'rxjs-hooks'"
+		]
 	},
 	"导入router": {
 		"prefix": "iirouter",
-		"body": ["import { useHistory, NavLink } from 'react-router-dom'"]
+		"body": [
+			"import { useHistory, NavLink } from 'react-router-dom'"
+		]
 	},
 	"导入useSelector ": {
 		"prefix": "iiredux1",
-		"body": ["import { useSelector } from 'react-redux'"]
+		"body": [
+			"import { useSelector } from 'react-redux'"
+		]
 	},
 	"导入useDispatch": {
 		"prefix": "iiredux2",
-		"body": ["import { useDispatch } from 'react-redux'"]
+		"body": [
+			"import { useDispatch } from 'react-redux'"
+		]
 	},
 	"createSelector": {
 		"prefix": "iiredux3",
@@ -46,7 +56,13 @@
 	},
 	"useEffect": {
 		"prefix": "iiuseEffect",
-		"body": ["useEffect(() => {", " $1", " },", "[]", ")"]
+		"body": [
+			"useEffect(() => {",
+			" $1",
+			" },",
+			"[]",
+			")"
+		]
 	},
 	"行内样式": {
 		"prefix": "iiclass",
@@ -54,11 +70,15 @@
 	},
 	"imr": {
 		"prefix": "iir",
-		"body": ["import React from 'react'"]
+		"body": [
+			"import React from 'react'"
+		]
 	},
 	"imd": {
 		"prefix": "iid",
-		"body": ["import ReactDOM from 'react-dom'"]
+		"body": [
+			"import ReactDOM from 'react-dom'"
+		]
 	},
 	"classsNames": {
 		"prefix": "iiclassnames",
@@ -81,7 +101,7 @@
 	},
 	"逻辑组件": {
 		"prefix": "iiif",
-		"description":"创建逻辑组件、useHook组件",
+		"description": "创建逻辑组件、useHook组件",
 		"body": [
 			"import React, { useReducer, useEffect } from 'react';",
 			"import http from '@script/http';",
@@ -102,7 +122,9 @@
 	},
 	"useContext": {
 		"prefix": "iiuseContext",
-		"body": ["const ${1:context} = useContext(${2:contextValue})"]
+		"body": [
+			"const ${1:context} = useContext(${2:contextValue})"
+		]
 	},
 	"useReducer": {
 		"prefix": "iiuseReducer",
@@ -123,19 +145,27 @@
 	},
 	"useMemo": {
 		"prefix": "iiuseMemo",
-		"body": ["useMemo(() => ${1:function}, ${2:input})"]
+		"body": [
+			"useMemo(() => ${1:function}, ${2:input})"
+		]
 	},
 	"useRef": {
 		"prefix": "iiuseRef",
-		"body": ["const ${1:ref} = useRef(${2:initialValue})"]
+		"body": [
+			"const ${1:ref} = useRef(${2:initialValue})"
+		]
 	},
 	"标签div": {
 		"prefix": "iiv",
-		"body": ["<div className={styles.$1}>$0</div>"]
+		"body": [
+			"<div className={styles.$1}>$0</div>"
+		]
 	},
 	"标签span": {
 		"prefix": "iispan",
-		"body": ["<span className={styles.$1}>$0</span>"]
+		"body": [
+			"<span className={styles.$1}>$0</span>"
+		]
 	},
 	"imrd": {
 		"prefix": "iird",
@@ -169,11 +199,17 @@
 	},
 	"导入SWR": {
 		"prefix": "iiswr",
-		"body": ["import useSWR from 'swr';"]
+		"body": [
+			"import useSWR from 'swr';"
+		]
 	},
 	"创建styled": {
 		"prefix": "ss",
-		"body": ["const S$1 = styled.div`", "  $0", "`"]
+		"body": [
+			"const S$1 = styled.div`",
+			"  $0",
+			"`"
+		]
 	},
 	"try-send": {
 		"prefix": "eetry",
@@ -189,11 +225,23 @@
 	},
 	"try-next": {
 		"prefix": "eetry",
-		"body": ["try {", "  $1", "} catch (err) {", "  next(err);", "}"]
+		"body": [
+			"try {",
+			"  $1",
+			"} catch (err) {",
+			"  next(err);",
+			"}"
+		]
 	},
 	"try-throw": {
 		"prefix": "iitry",
-		"body": ["try {", "  $1", "} catch (err) {", "  throw new Erro(err);", "}"]
+		"body": [
+			"try {",
+			"  $1",
+			"} catch (err) {",
+			"  throw new Error(err);",
+			"}"
+		]
 	},
 	"分隔符": {
 		"prefix": "iiii",
