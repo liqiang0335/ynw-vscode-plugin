@@ -300,5 +300,24 @@
       "  return Promise.reject(err);",
       "}"
     ]
+  },
+  "HOOK数据": {
+    "prefix": "iihookdata",
+    "body": [
+      "import React, { useState, useEffect } from 'react';",
+      "import http from '@script/http';",
+      "/**",
+      " * ----------------------------------------",
+      " * DATA HOOK",
+      " * ----------------------------------------",
+      " */",
+      "export default function ${TM_FILENAME_BASE}() {",
+      "  const [data, setData] = useState([]);",
+      "",
+      "  useEffect(() => {}, []);",
+      "",
+      "  return data;",
+      "}"
+    ]
   }
 }
