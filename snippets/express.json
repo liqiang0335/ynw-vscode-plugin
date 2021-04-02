@@ -11,7 +11,7 @@
     "body": [
       "router.get('$1', ${2:name});",
       "",
-      "function ${2}(req, res, next) {",
+      "async function ${2}(req, res, next) {",
       "   $0",
       "  next();",
       "}"
@@ -22,7 +22,7 @@
     "body": [
       "router.use('$1', ${2:name});",
       "",
-      "function ${2}(req, res, next) {",
+      "async function ${2}(req, res, next) {",
       "   $0",
       "  next();",
       "}"
@@ -33,7 +33,7 @@
     "body": [
       "router.post('$1', ${2:name});",
       "",
-      "function ${2}(req, res, next) {",
+      "async function ${2}(req, res, next) {",
       "   $0",
       "  next();",
       "}"
