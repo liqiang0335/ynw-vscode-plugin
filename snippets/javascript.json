@@ -267,7 +267,7 @@
       "",
       "function onResponseSuccess(res) {",
       "  const body = res.data;",
-      "  if (body.code !== 0) {",
+      "  if (body.code !== 1) {",
       "    notification.error({",
       "      placement: 'topRight',",
       "      duration: 5,",
