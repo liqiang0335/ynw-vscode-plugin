@@ -272,7 +272,7 @@
       "      placement: 'topRight',",
       "      duration: 5,",
       "      message: '出现错误',",
-      "      description: body.ret_msg,",
+      "      description: body.message,",
       "    });",
       "    return Promise.reject(body.code);",
       "  }",
