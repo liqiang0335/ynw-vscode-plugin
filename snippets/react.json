@@ -224,7 +224,7 @@
 		]
 	},
 	"catchAsync": {
-		"prefix": "iicatchAsync",
+		"prefix": "eecatchAsync",
 		"body": [
 			"const $1 = catchAsync(async (req, res) => {",
 			"  $2",
