@@ -223,14 +223,12 @@
 			"}"
 		]
 	},
-	"try-next": {
-		"prefix": "eetry",
+	"catchAsync": {
+		"prefix": "iicatchAsync",
 		"body": [
-			"try {",
-			"  $1",
-			"} catch (err) {",
-			"  next(err);",
-			"}"
+			"const $1 = catchAsync(async (req, res) => {",
+			"  $2",
+			"});"
 		]
 	},
 	"try-throw": {
