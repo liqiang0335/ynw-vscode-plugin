@@ -211,26 +211,6 @@
 			"`"
 		]
 	},
-	"try-send": {
-		"prefix": "eetry",
-		"body": [
-			"try {",
-			"  const op = await $1.create(req.body);",
-			"  req.ctx.sendData = op;",
-			"  next();",
-			"} catch (err) {",
-			"  next(err);",
-			"}"
-		]
-	},
-	"catchAsync": {
-		"prefix": "eecatchAsync",
-		"body": [
-			"const $1 = catchAsync(async (req, res) => {",
-			"  $2",
-			"});"
-		]
-	},
 	"try-throw": {
 		"prefix": "iitry",
 		"body": [

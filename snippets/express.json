@@ -2,8 +2,7 @@
   "Express.res": {
     "prefix": "eeres",
     "body": [
-      ".then(data => res.send(req.fn.ok(data)))",
-      ".catch(next);"
+      "res.send(req.fn.ok(data))"
     ]
   },
   "Express.Get方法": {
@@ -11,10 +10,9 @@
     "body": [
       "router.get('$1', ${2:name});",
       "",
-      "async function ${2}(req, res, next) {",
-      "   $0",
-      "  next();",
-      "}"
+      "const ${2} = catchAsync(async (req, res) => {",
+      "  $0",
+      "});"
     ]
   },
   "Express.Use方法": {
@@ -22,10 +20,9 @@
     "body": [
       "router.use('$1', ${2:name});",
       "",
-      "async function ${2}(req, res, next) {",
-      "   $0",
-      "  next();",
-      "}"
+      "const ${2} = catchAsync(async (req, res) => {",
+      "  $0",
+      "});"
     ]
   },
   "Express.POST方法": {
@@ -33,10 +30,9 @@
     "body": [
       "router.post('$1', ${2:name});",
       "",
-      "async function ${2}(req, res, next) {",
-      "   $0",
-      "  next();",
-      "}"
+      "const ${2} = catchAsync(async (req, res) => {",
+      "  $0",
+      "});"
     ]
   },
   "路由导出": {
@@ -68,6 +64,20 @@
     "prefix": "eefail",
     "body": [
       "res.send(req.fn.error($0))"
+    ]
+  },
+  "导入Modal": {
+    "prefix": "eeremodals",
+    "body": [
+      "const { $1 } = require('../../models')$0"
+    ]
+  },
+  "catchAsync函数": {
+    "prefix": "eecatchAsync",
+    "body": [
+      "const $1 = catchAsync(async (req, res) => {",
+      "  $2",
+      "});"
     ]
   }
 }
