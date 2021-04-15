@@ -72,6 +72,12 @@
       "const { $1 } = require('../../models')$0"
     ]
   },
+  "导入catchAsync": {
+    "prefix": "eerecatchAsync",
+    "body": [
+      "const catchAsync = require('../help/catchAsync')"
+    ]
+  },
   "catchAsync函数": {
     "prefix": "eecatchAsync",
     "body": [
