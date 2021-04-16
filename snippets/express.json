@@ -6,33 +6,33 @@
     ]
   },
   "Express.Get方法": {
-    "prefix": "eeapiget",
+    "prefix": "eeget",
     "body": [
-      "router.get('$1', ${2:name});",
-      "",
       "const ${2} = catchAsync(async (req, res) => {",
       "  $0",
-      "});"
+      "});",
+      "",
+      "router.get('/$1', ${2:name});"
     ]
   },
   "Express.Use方法": {
-    "prefix": "eeapiuse",
+    "prefix": "eeuse",
     "body": [
-      "router.use('$1', ${2:name});",
-      "",
       "const ${2} = catchAsync(async (req, res) => {",
       "  $0",
-      "});"
+      "});",
+      "",
+      "router.use('/$1', ${2:name});"
     ]
   },
   "Express.POST方法": {
-    "prefix": "eeapipost",
+    "prefix": "eepost",
     "body": [
-      "router.post('$1', ${2:name});",
-      "",
       "const ${2} = catchAsync(async (req, res) => {",
       "  $0",
-      "});"
+      "});",
+      "",
+      "router.post('/$1', ${2:name});"
     ]
   },
   "路由导出": {
@@ -45,13 +45,15 @@
       "module.exports = router;"
     ]
   },
-  "路由中间件": {
-    "prefix": "eeapifunction",
+  "中间件": {
+    "prefix": "eemiddleware",
     "body": [
-      "function $1(req, res, next) {",
+      "const ${1:name} = (req, res, next) => {",
       "  $0",
       "  next();",
-      "};"
+      "};",
+      "",
+      "module.exports = ${1}"
     ]
   },
   "发送数据": {
@@ -69,7 +71,7 @@
   "导入Modal": {
     "prefix": "eeremodals",
     "body": [
-      "const { $1 } = require('../../models')$0"
+      "const { $1 } = require('../models')$0"
     ]
   },
   "导入catchAsync": {
