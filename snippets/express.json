@@ -1,44 +1,25 @@
 {
   "Express.res": {
     "prefix": "eeres",
-    "body": [
-      "res.send(req.fn.ok(data))"
-    ]
+    "body": ["res.send(req.fn.ok(data))"]
   },
   "Express.Get方法": {
     "prefix": "eeget",
-    "body": [
-      "const ${2} = catchAsync(async (req, res) => {",
-      "  $0",
-      "});",
-      "",
-      "router.get('/$1', ${2:name});"
-    ]
+    "body": ["router.get('/$1',Controller.$2);"]
   },
   "Express.Use方法": {
     "prefix": "eeuse",
-    "body": [
-      "const ${2} = catchAsync(async (req, res) => {",
-      "  $0",
-      "});",
-      "",
-      "router.use('/$1', ${2:name});"
-    ]
+    "body": ["router.use('/$1', $0);"]
   },
   "Express.POST方法": {
     "prefix": "eepost",
-    "body": [
-      "const ${2} = catchAsync(async (req, res) => {",
-      "  $0",
-      "});",
-      "",
-      "router.post('/$1', ${2:name});"
-    ]
+    "body": ["router.post('/$1', Controller.$2);"]
   },
   "路由导出": {
     "prefix": "eerouter",
     "body": [
       "const router = require('express').Router();",
+      "const Controller = require('../Controller')",
       "",
       "$0",
       "",
@@ -51,41 +32,27 @@
       "const ${1:name} = (req, res, next) => {",
       "  $0",
       "  next();",
-      "};",
-      "",
-      "module.exports = ${1}"
+      "};"
     ]
   },
   "发送数据": {
     "prefix": "eeok",
-    "body": [
-      "res.send(req.fn.ok($0))"
-    ]
+    "body": ["res.send(req.fn.ok($0))"]
   },
   "发送错误": {
     "prefix": "eefail",
-    "body": [
-      "res.send(req.fn.error($0))"
-    ]
+    "body": ["res.send(req.fn.error($0))"]
   },
   "导入Modal": {
     "prefix": "eeremodals",
-    "body": [
-      "const { $1 } = require('../models')$0"
-    ]
+    "body": ["const { $1 } = require('../models')$0"]
   },
   "导入catchAsync": {
     "prefix": "eerecatchAsync",
-    "body": [
-      "const catchAsync = require('../help/catchAsync')"
-    ]
+    "body": ["const catchAsync = require('../help/catchAsync')"]
   },
-  "catchAsync函数": {
+  "导出catchAsync函数": {
     "prefix": "eecatchAsync",
-    "body": [
-      "const $1 = catchAsync(async (req, res) => {",
-      "  $2",
-      "});"
-    ]
+    "body": ["exports.$1 = catchAsync(async (req, res) => {", "  $2", "});"]
   }
 }
