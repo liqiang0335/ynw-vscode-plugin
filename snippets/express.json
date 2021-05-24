@@ -23,7 +23,6 @@
     "prefix": "eerouter",
     "body": [
       "const router = require('express').Router();",
-      "const Controller = require('../Controller')",
       "",
       "$0",
       "",
@@ -49,26 +48,6 @@
     "prefix": "eefail",
     "body": [
       "res.send(req.fn.error($0))"
-    ]
-  },
-  "导入Modal": {
-    "prefix": "eeremodals",
-    "body": [
-      "const { $1 } = require('../models')$0"
-    ]
-  },
-  "导入catchAsync": {
-    "prefix": "eerecatchAsync",
-    "body": [
-      "const catchAsync = require('../help/catchAsync')"
-    ]
-  },
-  "导出catchAsync函数": {
-    "prefix": "eecatchAsync",
-    "body": [
-      "exports.$1 = catchAsync(async (req, res) => {",
-      "  $2",
-      "});"
     ]
   }
 }
