@@ -1,4 +1,11 @@
 {
+  "Express.响应": {
+    "prefix": "eeresponse",
+    "body": [
+      ".then(data => res.send(req.fn.ok(data)))",
+      ".catch(next);"
+    ]
+  },
   "Express.Get方法": {
     "prefix": "eeget",
     "body": [
