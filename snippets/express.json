@@ -1,25 +1,35 @@
 {
-  "Express.res": {
-    "prefix": "eeres",
-    "body": ["res.send(req.fn.ok(data))"]
+  "Express.响应": {
+    "prefix": "eeresponse",
+    "body": [
+      ".then(data => res.send(req.fn.ok(data)))",
+      ".catch(next);"
+    ]
   },
   "Express.Get方法": {
     "prefix": "eeget",
-    "body": ["router.get('/$1',Controller.$2);"]
+    "body": [
+      "router.get('$1', ${2:name});",
+      "",
+      "function ${2}(req, res, next) {",
+      "   $0",
+      "}"
+    ]
   },
-  "Express.Use方法": {
-    "prefix": "eeuse",
-    "body": ["router.use('/$1', $0);"]
-  },
-  "Express.POST方法": {
+  "Express.Post方法": {
     "prefix": "eepost",
-    "body": ["router.post('/$1', Controller.$2);"]
+    "body": [
+      "router.post('$1', ${2:name});",
+      "",
+      "function ${2}(req, res, next) {",
+      "   $0",
+      "}"
+    ]
   },
   "路由导出": {
     "prefix": "eerouter",
     "body": [
       "const router = require('express').Router();",
-      "const Controller = require('../Controller')",
       "",
       "$0",
       "",
@@ -37,22 +47,14 @@
   },
   "发送数据": {
     "prefix": "eeok",
-    "body": ["res.send(req.fn.ok($0))"]
+    "body": [
+      "res.send(req.fn.ok($0))"
+    ]
   },
   "发送错误": {
     "prefix": "eefail",
-    "body": ["res.send(req.fn.error($0))"]
-  },
-  "导入Modal": {
-    "prefix": "eeremodals",
-    "body": ["const { $1 } = require('../models')$0"]
-  },
-  "导入catchAsync": {
-    "prefix": "eerecatchAsync",
-    "body": ["const catchAsync = require('../help/catchAsync')"]
-  },
-  "导出catchAsync函数": {
-    "prefix": "eecatchAsync",
-    "body": ["exports.$1 = catchAsync(async (req, res) => {", "  $2", "});"]
+    "body": [
+      "res.send(req.fn.error($0))"
+    ]
   }
 }
