@@ -1,39 +1,42 @@
 {
+  "逗号": {
+    "prefix": "ii,",
+    "body": ["，$0"],
+    "description": "逗号"
+  },
+  "冒号": {
+    "prefix": "ii:",
+    "body": ["：$0"],
+    "description": "冒号"
+  },
+  "句号": {
+    "prefix": "ii.",
+    "body": ["。$0"],
+    "description": "句号"
+  },
   "导入Store": {
     "prefix": "iiistore",
-    "body": [
-      "import store from '@store/store';"
-    ]
+    "body": ["import store from '@store/store';"]
   },
   "公共Types": {
     "prefix": "iiitypes",
-    "body": [
-      "import * as Types from '@store/Types';"
-    ]
+    "body": ["import * as Types from '@store/Types';"]
   },
   "公共脚本": {
     "prefix": "iiiscript",
-    "body": [
-      "import module from '@script/$1';"
-    ]
+    "body": ["import module from '@script/$1';"]
   },
   "公共Hooks": {
     "prefix": "iiihook",
-    "body": [
-      "import module  from '@hook/$1';"
-    ]
+    "body": ["import module  from '@hook/$1';"]
   },
   "公共组件": {
     "prefix": "iiicomps",
-    "body": [
-      "import module from '@comps/$1';"
-    ]
+    "body": ["import module from '@comps/$1';"]
   },
   "公共常量": {
     "prefix": "iiiconst",
-    "body": [
-      "import module from '@const/$1';"
-    ]
+    "body": ["import module from '@const/$1';"]
   },
   "内部reducer": {
     "prefix": "iireducer",
@@ -46,41 +49,27 @@
   },
   "Vue函数": {
     "prefix": "ii.function.property",
-    "body": [
-      "$1() {",
-      "  $2",
-      "},"
-    ]
+    "body": ["$1() {", "  $2", "},"]
   },
   "Vue-mapstate": {
     "prefix": "ii.mapstate",
-    "body": [
-      "import { mapState } from 'vuex'"
-    ]
+    "body": ["import { mapState } from 'vuex'"]
   },
   "打印1-剪贴板": {
     "prefix": "iilog1",
-    "body": [
-      "console.log('打印数据: ${CLIPBOARD}', ${CLIPBOARD})"
-    ]
+    "body": ["console.log('>>>', ${CLIPBOARD})"]
   },
   "打印2": {
     "prefix": "iilog2",
-    "body": [
-      "console.log($1);"
-    ]
+    "body": ["console.log($1);"]
   },
   "导入dayjs": {
     "prefix": "iidayjs1",
-    "body": [
-      "import dayjs from 'dayjs';"
-    ]
+    "body": ["import dayjs from 'dayjs';"]
   },
   "时间格式dayjs": {
     "prefix": "iidayjs2",
-    "body": [
-      "dayjs(time).format('YYYY-MM-DD HH:mm:ss')"
-    ]
+    "body": ["dayjs(time).format('YYYY-MM-DD HH:mm:ss')"]
   },
   "防抖节流": {
     "prefix": "iidebounce",
@@ -131,23 +120,15 @@
   },
   "导入相关样式": {
     "prefix": "iims",
-    "body": [
-      "import ${1:styles} from './${TM_FILENAME_BASE}.scss';$0"
-    ]
+    "body": ["import ${1:styles} from './${TM_FILENAME_BASE}.scss';$0"]
   },
   "导入lodash模块": {
     "prefix": "iilodash",
-    "body": [
-      "import ${1:name} from 'lodash/${1}';$0"
-    ]
+    "body": ["import ${1:name} from 'lodash/${1}';$0"]
   },
   "函数1": {
     "prefix": "iifuncion",
-    "body": [
-      "const $1 = ($2) => {",
-      " $0",
-      "};"
-    ]
+    "body": ["const $1 = ($2) => {", " $0", "};"]
   },
   "http.get": {
     "prefix": "http.get",
@@ -169,21 +150,15 @@
   },
   "导入API": {
     "prefix": "iiapi",
-    "body": [
-      "import * as api from '@script/api';"
-    ]
+    "body": ["import * as api from '@script/api';"]
   },
   "导入immer": {
     "prefix": "immer",
-    "body": [
-      "import produce from 'immer';"
-    ]
+    "body": ["import produce from 'immer';"]
   },
   "我的Hub": {
     "prefix": "iihub",
-    "body": [
-      "import hub, { $1 } from '@store/hub';"
-    ]
+    "body": ["import hub, { $1 } from '@store/hub';"]
   },
   "注册V组件": {
     "prefix": "iivregister",
