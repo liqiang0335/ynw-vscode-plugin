@@ -36,10 +36,19 @@
       "module.exports = router;"
     ]
   },
-  "中间件": {
+  "中间件1": {
     "prefix": "eemiddleware",
     "body": [
       "const ${1:name} = (req, res, next) => {",
+      "  $0",
+      "  next();",
+      "};"
+    ]
+  },
+  "中间件2": {
+    "prefix": "eemiddlewarefunction",
+    "body": [
+      "function $1(req, res, next) {",
       "  $0",
       "  next();",
       "};"
