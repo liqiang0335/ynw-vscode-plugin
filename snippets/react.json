@@ -132,6 +132,13 @@
 			"const [state, dispatch] = useReducer(${1:reducer}, ${2:initState})"
 		]
 	},
+	"iiuselogic": {
+		"prefix": "iiuseReducer",
+		"body": [
+			"const props = useLogic();",
+			"const { state, dispatch } = props;"
+		]
+	},
 	"useCallback": {
 		"prefix": "iiuseCallback",
 		"body": [
