@@ -45,12 +45,21 @@
       "};"
     ]
   },
+  "Express.try": {
+    "prefix": "eetry",
+    "body": [
+      "try {",
+      "  $0",
+      "} catch (err) {",
+      "  next(new Error(err))",
+      "}"
+    ]
+  },
   "中间件2": {
     "prefix": "eemiddlewarefunction",
     "body": [
-      "function $1(req, res, next) {",
+      "async function $1(req, res, next) {",
       "  $0",
-      "  next();",
       "};"
     ]
   },
