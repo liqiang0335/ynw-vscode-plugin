@@ -56,7 +56,7 @@
     ]
   },
   "中间件2": {
-    "prefix": "eemiddlewarefunction",
+    "prefix": "eefunction",
     "body": [
       "async function $1(req, res, next) {",
       "  $0",
