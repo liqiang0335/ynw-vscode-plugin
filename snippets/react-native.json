@@ -103,20 +103,20 @@
       "import { $0 } from 'react-native';"
     ]
   },
-  "导入NGNative": {
-    "prefix": "nnimnavNative",
+  "导入NavNative": {
+    "prefix": "navnative",
     "body": [
       "import { NavigationContainer } from '@react-navigation/native'"
     ]
   },
-  "导入NGStack": {
-    "prefix": "nnimnavStack",
+  "导入NavStack": {
+    "prefix": "navstack",
     "body": [
       "import { createStackNavigator } from '@react-navigation/stack'"
     ]
   },
-  "导入NGSBottomTab": {
-    "prefix": "nnimnavBottomTabs",
+  "导入NavBottomTab": {
+    "prefix": "navbottom",
     "body": [
       "import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'"
     ]

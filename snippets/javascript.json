@@ -56,36 +56,6 @@
       "import module from '@const/$1';"
     ]
   },
-  "Node导入1": {
-    "prefix": "eee_const",
-    "body": [
-      "const module = require('@const$0');"
-    ]
-  },
-  "Node导入2": {
-    "prefix": "eee_pipes",
-    "body": [
-      "const module = require('@pipes$0');"
-    ]
-  },
-  "Node导入3": {
-    "prefix": "eee_schema",
-    "body": [
-      "const module = require('@schema$0');"
-    ]
-  },
-  "Node导入4": {
-    "prefix": "eee_utils",
-    "body": [
-      "const module = require('@utils$1');"
-    ]
-  },
-  "Node导入5": {
-    "prefix": "eee_api",
-    "body": [
-      "const module = require('@api$1');"
-    ]
-  },
   "内部reducer": {
     "prefix": "iireducer",
     "body": [
