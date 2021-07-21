@@ -133,7 +133,7 @@
 		]
 	},
 	"iiuselogic": {
-		"prefix": "iiuseReducer",
+		"prefix": "iiuselogic",
 		"body": [
 			"const props = useLogic();",
 			"const { state, dispatch } = props;"
