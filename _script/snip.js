@@ -13,7 +13,7 @@ const SOURCE =
 main();
 function main() {
   console.log(`引用路径: ${SOURCE}`);
-  const files = getFiles(/lib/)(SOURCE);
+  const files = getFiles(/lib|docs/)(SOURCE);
 
   //1. JS FILES
   const jsContent = files
