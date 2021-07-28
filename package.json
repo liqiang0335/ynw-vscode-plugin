@@ -150,6 +150,10 @@
         "path": "./snippets/html.json"
       },
       {
+        "language": "markdown",
+        "path": "./snippets/markdown.json"
+      },
+      {
         "language": "vue",
         "path": "./snippets/vue-template.json"
       },
