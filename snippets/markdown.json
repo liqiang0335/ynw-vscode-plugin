@@ -5,42 +5,36 @@
       "```js",
       " $0",
       "```"
-    ],
-    "description": "代码块"
+    ]
   },
-  "tipblue": {
+  "蓝色小贴士": {
     "prefix": "tip",
     "body": [
       "{.tip .blue}"
-    ],
-    "description": "蓝色小贴士"
+    ]
   },
-  "tipred": {
+  "红色小贴士": {
     "prefix": "tipred",
     "body": [
       "{.tip .red}"
-    ],
-    "description": "红色小贴士"
+    ]
   },
-  "tipyellow": {
+  "橙色小贴士": {
     "prefix": "tipyellow",
     "body": [
       "{.tip .yellow}"
-    ],
-    "description": "警示小贴士"
+    ]
   },
   "列表数字": {
     "prefix": "listnumber",
     "body": [
       "{.list-number}"
-    ],
-    "description": "强调的列表数字"
+    ]
   },
   "列表": {
     "prefix": "list",
     "body": [
       "{.list}"
-    ],
-    "description": "强调的列表"
+    ]
   }
 }
