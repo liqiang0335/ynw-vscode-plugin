@@ -192,12 +192,12 @@
 			"ReactDOM.render(<App />, document.getElementById('app'))"
 		]
 	},
-	"PropTypes": {
-		"prefix": "iitypes",
+	"类型注释PropTypes": {
+		"prefix": "iiproptypes",
 		"body": [
 			"import PropTypes from 'prop-types';",
 			"",
-			"//func,bool,element,any,enum,arrayOf",
+			"// func,bool,string,object,element,any,arrayOf,oneOf([]),shape({})",
 			"${TM_FILENAME_BASE}.propTypes = {",
 			"  number: PropTypes.number.isRequired,",
 			"  customProp(props, propName, componentName) {}",
