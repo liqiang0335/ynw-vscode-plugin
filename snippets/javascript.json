@@ -159,7 +159,7 @@
   "导入lodash模块": {
     "prefix": "iilodash",
     "body": [
-      "import ${1:name} from 'lodash/${1}';$0"
+      "import { $0 } from 'lodash';"
     ]
   },
   "函数1": {
