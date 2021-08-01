@@ -10,27 +10,15 @@
     },"ynw.vue_loading": {
       "prefix": "yyvue_loading",
       "body": ["import loading from 'ynw/vue/loading'"]
-    },"ynw.vue_lookImg": {
-      "prefix": "yyvue_lookImg",
-      "body": ["import lookImg from 'ynw/vue/lookImg'"]
     },"ynw.vue_nav-back": {
       "prefix": "yyvue_nav-back",
       "body": ["import nav-back from 'ynw/vue/nav-back'"]
     },"ynw.vue_picker": {
       "prefix": "yyvue_picker",
       "body": ["import picker from 'ynw/vue/picker'"]
-    },"ynw.vue_pop": {
-      "prefix": "yyvue_pop",
-      "body": ["import pop from 'ynw/vue/pop'"]
-    },"ynw.vue_radios": {
-      "prefix": "yyvue_radios",
-      "body": ["import radios from 'ynw/vue/radios'"]
-    },"ynw.vue_submit": {
-      "prefix": "yyvue_submit",
-      "body": ["import submit from 'ynw/vue/submit'"]
-    },"ynw.vue_uploader": {
-      "prefix": "yyvue_uploader",
-      "body": ["import uploader from 'ynw/vue/uploader'"]
+    },"ynw.vue_submit-button": {
+      "prefix": "yyvue_submit-button",
+      "body": ["import submit-button from 'ynw/vue/submit-button'"]
     },"ynw.vue_vscroll": {
       "prefix": "yyvue_vscroll",
       "body": ["import vscroll from 'ynw/vue/vscroll'"]
