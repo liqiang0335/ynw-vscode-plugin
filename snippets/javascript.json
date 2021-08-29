@@ -156,10 +156,22 @@
       "import ${1:styles} from './${TM_FILENAME_BASE}.scss';$0"
     ]
   },
-  "导入lodash模块": {
-    "prefix": "iilodash",
+  "导入lodash模块1": {
+    "prefix": "iilodash1",
     "body": [
       "import { $0 } from 'lodash';"
+    ]
+  },
+  "导入lodash模块2": {
+    "prefix": "iilodash2",
+    "body": [
+      "const _ = require('lodash');"
+    ]
+  },
+  "导入lodash模块3": {
+    "prefix": "iilodash3",
+    "body": [
+      "const ${1} = require('lodash/${1}');"
     ]
   },
   "函数1": {
