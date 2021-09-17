@@ -56,7 +56,7 @@
       "import module from '@const/$1';"
     ]
   },
-  "内部reducer": {
+  "const reducer = (state, action) =>": {
     "prefix": "iireducer",
     "body": [
       "const initState = {};",
@@ -73,7 +73,7 @@
       "},"
     ]
   },
-  "Vue-mapstate": {
+  "import { mapState }": {
     "prefix": "ii.mapstate",
     "body": [
       "import { mapState } from 'vuex'"
@@ -85,19 +85,19 @@
       "console.log('>>>', ${CLIPBOARD})"
     ]
   },
-  "打印2": {
+  "console.log(xxx)": {
     "prefix": "iilog2",
     "body": [
       "console.log($1);"
     ]
   },
-  "导入dayjs": {
+  "import dayjs": {
     "prefix": "iidayjs1",
     "body": [
       "import dayjs from 'dayjs';"
     ]
   },
-  "时间格式dayjs": {
+  "dayjs(time).format": {
     "prefix": "iidayjs2",
     "body": [
       "dayjs(time).format('YYYY-MM-DD HH:mm:ss')"
@@ -119,23 +119,23 @@
     "prefix": "iienvpro",
     "body": "process.env.NODE_ENV ==\"production\""
   },
-  "导入模块": {
+  "import xxx from xxx": {
     "prefix": "iim1",
     "body": "import ${1} from '${1:name}'"
   },
-  "导入{*}模块": {
+  "import { xxx } from xxx": {
     "prefix": "iim2",
     "body": "import { $2 } from '${1:module}'$0"
   },
-  "导入*as模块": {
+  "import * as xxx": {
     "prefix": "iim3",
     "body": "import * as $1 from '$2';$0"
   },
-  "CMD导入": {
+  "xxx = require('xxx')": {
     "prefix": "iire1",
     "body": "const ${1} = require('${1:name}');$0"
   },
-  "CMD导入{}": {
+  "{ xxx } = require('xxx')": {
     "prefix": "iire2",
     "body": "const { $2 } = require('$1');$0"
   },
@@ -143,7 +143,7 @@
     "prefix": "iire3",
     "body": "const { $2 } = $1;$0"
   },
-  "导入Rxjs.CMD": {
+  "导入Rxjs": {
     "prefix": "iirxcmd",
     "body": [
       "const { Subject } = require('rxjs');",
@@ -156,19 +156,19 @@
       "import ${1:styles} from './${TM_FILENAME_BASE}.scss';$0"
     ]
   },
-  "导入lodash模块1": {
+  "import { $0 } from 'lodash'": {
     "prefix": "iilodash1",
     "body": [
       "import { $0 } from 'lodash';"
     ]
   },
-  "导入lodash模块2": {
+  "_ = require('lodash')": {
     "prefix": "iilodash2",
     "body": [
       "const _ = require('lodash');"
     ]
   },
-  "导入lodash模块3": {
+  "xxx = require('lodash/xxx')": {
     "prefix": "iilodash3",
     "body": [
       "const ${1} = require('lodash/${1}');"
