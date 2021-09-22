@@ -1,24 +1,36 @@
 {
-  "逗号": {
-    "prefix": "ii,",
+  "导入rxjx": {
+    "prefix": "iirxjs1",
     "body": [
-      "，$0"
-    ],
-    "description": "逗号"
+      "import { Subject } from 'rxjs';",
+      "import { map } from 'rxjs/operators'"
+    ]
   },
-  "冒号": {
-    "prefix": "ii:",
+  "导入rxjs-hooks": {
+    "prefix": "iirxjs2",
     "body": [
-      "：$0"
-    ],
-    "description": "冒号"
+      "import { useEventCallback, useObservable } from 'rxjs-hooks'"
+    ]
   },
-  "句号": {
-    "prefix": "ii.",
+  "try-throw": {
+    "prefix": "iitry",
     "body": [
-      "。$0"
-    ],
-    "description": "句号"
+      "try {",
+      "  $1",
+      "} catch (err) {",
+      "  throw new Error(err);",
+      "}"
+    ]
+  },
+  "分隔符": {
+    "prefix": "iiii",
+    "body": [
+      "/**",
+      " * ----------------------------------------",
+      " * $0",
+      " * ----------------------------------------",
+      " */"
+    ]
   },
   "导入Store": {
     "prefix": "iiistore",

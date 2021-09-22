@@ -5,19 +5,6 @@
 			"import styled from 'styled-components';"
 		]
 	},
-	"导入rxjx": {
-		"prefix": "iirxjs1",
-		"body": [
-			"import { Subject } from 'rxjs';",
-			"import { map } from 'rxjs/operators'"
-		]
-	},
-	"导入rxjs-hooks": {
-		"prefix": "iirxjs2",
-		"body": [
-			"import { useEventCallback, useObservable } from 'rxjs-hooks'"
-		]
-	},
 	"导入router": {
 		"prefix": "iirouter",
 		"body": [
@@ -204,7 +191,7 @@
 			"};"
 		]
 	},
-	"导入SWR": {
+	"import useSWR": {
 		"prefix": "iiswr",
 		"body": [
 			"import useSWR from 'swr';"
@@ -216,26 +203,6 @@
 			"const S$1 = styled.div`",
 			"  $0",
 			"`"
-		]
-	},
-	"try-throw": {
-		"prefix": "iitry",
-		"body": [
-			"try {",
-			"  $1",
-			"} catch (err) {",
-			"  throw new Error(err);",
-			"}"
-		]
-	},
-	"分隔符": {
-		"prefix": "iiii",
-		"body": [
-			"/**",
-			" * ----------------------------------------",
-			" * $0",
-			" * ----------------------------------------",
-			" */"
 		]
 	}
 }
