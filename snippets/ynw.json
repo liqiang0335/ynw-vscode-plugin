@@ -151,6 +151,9 @@
     },"ynw.object_extend": {
       "prefix": "yyobject_extend",
       "body": ["import extend from 'ynw/object/extend'"]
+    },"ynw.object_toKeyedArray": {
+      "prefix": "yyobject_toKeyedArray",
+      "body": ["import toKeyedArray from 'ynw/object/toKeyedArray'"]
     },"ynw.other_chineseNumber": {
       "prefix": "yyother_chineseNumber",
       "body": ["import chineseNumber from 'ynw/other/chineseNumber'"]
@@ -205,6 +208,9 @@
     },"ynw.react_ZoomImg": {
       "prefix": "yyreact_ZoomImg",
       "body": ["import ZoomImg from 'ynw/react/ZoomImg'"]
+    },"ynw.react_useCachedEnum": {
+      "prefix": "yyreact_useCachedEnum",
+      "body": ["import useCachedEnum from 'ynw/react/useCachedEnum'"]
     },"ynw.react_useConstant": {
       "prefix": "yyreact_useConstant",
       "body": ["import useConstant from 'ynw/react/useConstant'"]
@@ -235,6 +241,9 @@
     },"ynw.script_createReducer": {
       "prefix": "yyscript_createReducer",
       "body": ["import createReducer from 'ynw/script/createReducer'"]
+    },"ynw.script_dayjs": {
+      "prefix": "yyscript_dayjs",
+      "body": ["import dayjs from 'ynw/script/dayjs'"]
     },"ynw.script_deleter": {
       "prefix": "yyscript_deleter",
       "body": ["import deleter from 'ynw/script/deleter'"]
