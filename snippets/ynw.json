@@ -34,33 +34,15 @@
     },"ynw.antd_GlobalMask": {
       "prefix": "yyantd_GlobalMask",
       "body": ["import GlobalMask from 'ynw/antd/GlobalMask'"]
-    },"ynw.antd_HeaderPopAction": {
-      "prefix": "yyantd_HeaderPopAction",
-      "body": ["import HeaderPopAction from 'ynw/antd/HeaderPopAction'"]
     },"ynw.antd/IconFiles_IconFiles": {
       "prefix": "yyantd/IconFiles_IconFiles",
       "body": ["import IconFiles from 'ynw/antd/IconFiles/IconFiles'"]
-    },"ynw.antd_Image": {
-      "prefix": "yyantd_Image",
-      "body": ["import Image from 'ynw/antd/Image'"]
-    },"ynw.antd_ImageHolder": {
-      "prefix": "yyantd_ImageHolder",
-      "body": ["import ImageHolder from 'ynw/antd/ImageHolder'"]
-    },"ynw.antd_InputFileReader": {
-      "prefix": "yyantd_InputFileReader",
-      "body": ["import InputFileReader from 'ynw/antd/InputFileReader'"]
     },"ynw.antd_InputNumber": {
       "prefix": "yyantd_InputNumber",
       "body": ["import InputNumber from 'ynw/antd/InputNumber'"]
-    },"ynw.antd_LabelLine": {
-      "prefix": "yyantd_LabelLine",
-      "body": ["import LabelLine from 'ynw/antd/LabelLine'"]
     },"ynw.antd_NullLoading": {
       "prefix": "yyantd_NullLoading",
       "body": ["import NullLoading from 'ynw/antd/NullLoading'"]
-    },"ynw.antd_Para": {
-      "prefix": "yyantd_Para",
-      "body": ["import Para from 'ynw/antd/Para'"]
     },"ynw.antd/PayType_index": {
       "prefix": "yyantd/PayType_index",
       "body": ["import index from 'ynw/antd/PayType/index'"]
@@ -70,6 +52,12 @@
     },"ynw.antd_PopMulChoose": {
       "prefix": "yyantd_PopMulChoose",
       "body": ["import PopMulChoose from 'ynw/antd/PopMulChoose'"]
+    },"ynw.antd_PreviewImage": {
+      "prefix": "yyantd_PreviewImage",
+      "body": ["import PreviewImage from 'ynw/antd/PreviewImage'"]
+    },"ynw.antd_PreviewImageHolder": {
+      "prefix": "yyantd_PreviewImageHolder",
+      "body": ["import PreviewImageHolder from 'ynw/antd/PreviewImageHolder'"]
     },"ynw.antd_ResultStatus": {
       "prefix": "yyantd_ResultStatus",
       "body": ["import ResultStatus from 'ynw/antd/ResultStatus'"]
@@ -82,9 +70,6 @@
     },"ynw.antd_SelectCommon": {
       "prefix": "yyantd_SelectCommon",
       "body": ["import SelectCommon from 'ynw/antd/SelectCommon'"]
-    },"ynw.antd_ShowMulFile": {
-      "prefix": "yyantd_ShowMulFile",
-      "body": ["import ShowMulFile from 'ynw/antd/ShowMulFile'"]
     },"ynw.antd_Software": {
       "prefix": "yyantd_Software",
       "body": ["import Software from 'ynw/antd/Software'"]
@@ -94,9 +79,6 @@
     },"ynw.antd_SumCard": {
       "prefix": "yyantd_SumCard",
       "body": ["import SumCard from 'ynw/antd/SumCard'"]
-    },"ynw.antd_TabRangePicker": {
-      "prefix": "yyantd_TabRangePicker",
-      "body": ["import TabRangePicker from 'ynw/antd/TabRangePicker'"]
     },"ynw.antd_TextArea": {
       "prefix": "yyantd_TextArea",
       "body": ["import TextArea from 'ynw/antd/TextArea'"]
