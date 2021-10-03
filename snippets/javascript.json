@@ -1,4 +1,16 @@
 {
+  "< comp />": {
+    "prefix": "<<",
+    "body": [
+      "<$1 />"
+    ]
+  },
+  "prettier-ignore": {
+    "prefix": "ignore",
+    "body": [
+      "// prettier-ignore"
+    ]
+  },
   "导入rxjx": {
     "prefix": "iirxjs1",
     "body": [
