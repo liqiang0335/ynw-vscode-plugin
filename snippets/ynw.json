@@ -4,63 +4,30 @@
     },"ynw.antd_AntConfig": {
       "prefix": "yyantd_AntConfig",
       "body": ["import AntConfig from 'ynw/antd/AntConfig'"]
-    },"ynw.antd_BorderLabel": {
-      "prefix": "yyantd_BorderLabel",
-      "body": ["import BorderLabel from 'ynw/antd/BorderLabel'"]
-    },"ynw.antd_BraftEditor": {
-      "prefix": "yyantd_BraftEditor",
-      "body": ["import BraftEditor from 'ynw/antd/BraftEditor'"]
     },"ynw.antd_Buttons": {
       "prefix": "yyantd_Buttons",
       "body": ["import Buttons from 'ynw/antd/Buttons'"]
-    },"ynw.antd_CircleButton": {
-      "prefix": "yyantd_CircleButton",
-      "body": ["import CircleButton from 'ynw/antd/CircleButton'"]
-    },"ynw.antd_ColorTip": {
-      "prefix": "yyantd_ColorTip",
-      "body": ["import ColorTip from 'ynw/antd/ColorTip'"]
-    },"ynw.antd/Cropper_index": {
-      "prefix": "yyantd/Cropper_index",
-      "body": ["import index from 'ynw/antd/Cropper/index'"]
     },"ynw.antd_DayPicker": {
       "prefix": "yyantd_DayPicker",
       "body": ["import DayPicker from 'ynw/antd/DayPicker'"]
-    },"ynw.antd_Download": {
-      "prefix": "yyantd_Download",
-      "body": ["import Download from 'ynw/antd/Download'"]
-    },"ynw.antd_FetchMore": {
-      "prefix": "yyantd_FetchMore",
-      "body": ["import FetchMore from 'ynw/antd/FetchMore'"]
+    },"ynw.antd_DayRangePicker": {
+      "prefix": "yyantd_DayRangePicker",
+      "body": ["import DayRangePicker from 'ynw/antd/DayRangePicker'"]
     },"ynw.antd_GlobalMask": {
       "prefix": "yyantd_GlobalMask",
       "body": ["import GlobalMask from 'ynw/antd/GlobalMask'"]
-    },"ynw.antd/IconFiles_IconFiles": {
-      "prefix": "yyantd/IconFiles_IconFiles",
-      "body": ["import IconFiles from 'ynw/antd/IconFiles/IconFiles'"]
     },"ynw.antd_InputNumber": {
       "prefix": "yyantd_InputNumber",
       "body": ["import InputNumber from 'ynw/antd/InputNumber'"]
     },"ynw.antd_NullLoading": {
       "prefix": "yyantd_NullLoading",
       "body": ["import NullLoading from 'ynw/antd/NullLoading'"]
-    },"ynw.antd/PayType_index": {
-      "prefix": "yyantd/PayType_index",
-      "body": ["import index from 'ynw/antd/PayType/index'"]
     },"ynw.antd_PopArticle": {
       "prefix": "yyantd_PopArticle",
       "body": ["import PopArticle from 'ynw/antd/PopArticle'"]
     },"ynw.antd_PopMulChoose": {
       "prefix": "yyantd_PopMulChoose",
       "body": ["import PopMulChoose from 'ynw/antd/PopMulChoose'"]
-    },"ynw.antd_PreviewImage": {
-      "prefix": "yyantd_PreviewImage",
-      "body": ["import PreviewImage from 'ynw/antd/PreviewImage'"]
-    },"ynw.antd_PreviewImageHolder": {
-      "prefix": "yyantd_PreviewImageHolder",
-      "body": ["import PreviewImageHolder from 'ynw/antd/PreviewImageHolder'"]
-    },"ynw.antd_ResultStatus": {
-      "prefix": "yyantd_ResultStatus",
-      "body": ["import ResultStatus from 'ynw/antd/ResultStatus'"]
     },"ynw.antd_ScrolledTableBox": {
       "prefix": "yyantd_ScrolledTableBox",
       "body": ["import ScrolledTableBox from 'ynw/antd/ScrolledTableBox'"]
@@ -70,15 +37,6 @@
     },"ynw.antd_SelectCommon": {
       "prefix": "yyantd_SelectCommon",
       "body": ["import SelectCommon from 'ynw/antd/SelectCommon'"]
-    },"ynw.antd_Software": {
-      "prefix": "yyantd_Software",
-      "body": ["import Software from 'ynw/antd/Software'"]
-    },"ynw.antd_StatCard": {
-      "prefix": "yyantd_StatCard",
-      "body": ["import StatCard from 'ynw/antd/StatCard'"]
-    },"ynw.antd_SumCard": {
-      "prefix": "yyantd_SumCard",
-      "body": ["import SumCard from 'ynw/antd/SumCard'"]
     },"ynw.antd_TextArea": {
       "prefix": "yyantd_TextArea",
       "body": ["import TextArea from 'ynw/antd/TextArea'"]
@@ -238,6 +196,9 @@
     },"ynw.script_imageResize": {
       "prefix": "yyscript_imageResize",
       "body": ["import imageResize from 'ynw/script/imageResize'"]
+    },"ynw.script_numberArray": {
+      "prefix": "yyscript_numberArray",
+      "body": ["import numberArray from 'ynw/script/numberArray'"]
     },"ynw.script_previewImage": {
       "prefix": "yyscript_previewImage",
       "body": ["import previewImage from 'ynw/script/previewImage'"]
@@ -268,4 +229,58 @@
     },"ynw.tiper": {
       "prefix": "yytiper",
       "body": ["import tiper from 'ynw/tiper'"]
+    },"ynw.ui_BorderLabel": {
+      "prefix": "yyui_BorderLabel",
+      "body": ["import BorderLabel from 'ynw/ui/BorderLabel'"]
+    },"ynw.ui_BraftEditor": {
+      "prefix": "yyui_BraftEditor",
+      "body": ["import BraftEditor from 'ynw/ui/BraftEditor'"]
+    },"ynw.ui_ChooseFileOrigin": {
+      "prefix": "yyui_ChooseFileOrigin",
+      "body": ["import ChooseFileOrigin from 'ynw/ui/ChooseFileOrigin'"]
+    },"ynw.ui_CircleButton": {
+      "prefix": "yyui_CircleButton",
+      "body": ["import CircleButton from 'ynw/ui/CircleButton'"]
+    },"ynw.ui_ColorTip": {
+      "prefix": "yyui_ColorTip",
+      "body": ["import ColorTip from 'ynw/ui/ColorTip'"]
+    },"ynw.ui/Cropper_index": {
+      "prefix": "yyui/Cropper_index",
+      "body": ["import index from 'ynw/ui/Cropper/index'"]
+    },"ynw.ui_Download": {
+      "prefix": "yyui_Download",
+      "body": ["import Download from 'ynw/ui/Download'"]
+    },"ynw.ui_FetchMore": {
+      "prefix": "yyui_FetchMore",
+      "body": ["import FetchMore from 'ynw/ui/FetchMore'"]
+    },"ynw.ui_Figure": {
+      "prefix": "yyui_Figure",
+      "body": ["import Figure from 'ynw/ui/Figure'"]
+    },"ynw.ui/IconFiles_IconFiles": {
+      "prefix": "yyui/IconFiles_IconFiles",
+      "body": ["import IconFiles from 'ynw/ui/IconFiles/IconFiles'"]
+    },"ynw.ui/PayType_index": {
+      "prefix": "yyui/PayType_index",
+      "body": ["import index from 'ynw/ui/PayType/index'"]
+    },"ynw.ui_PreviewImage": {
+      "prefix": "yyui_PreviewImage",
+      "body": ["import PreviewImage from 'ynw/ui/PreviewImage'"]
+    },"ynw.ui_PreviewImageHolder": {
+      "prefix": "yyui_PreviewImageHolder",
+      "body": ["import PreviewImageHolder from 'ynw/ui/PreviewImageHolder'"]
+    },"ynw.ui_Software": {
+      "prefix": "yyui_Software",
+      "body": ["import Software from 'ynw/ui/Software'"]
+    },"ynw.ui_Spaces": {
+      "prefix": "yyui_Spaces",
+      "body": ["import Spaces from 'ynw/ui/Spaces'"]
+    },"ynw.ui_StatCard": {
+      "prefix": "yyui_StatCard",
+      "body": ["import StatCard from 'ynw/ui/StatCard'"]
+    },"ynw.ui_SuccessStatus": {
+      "prefix": "yyui_SuccessStatus",
+      "body": ["import SuccessStatus from 'ynw/ui/SuccessStatus'"]
+    },"ynw.ui_SumCard": {
+      "prefix": "yyui_SumCard",
+      "body": ["import SumCard from 'ynw/ui/SumCard'"]
     }}
