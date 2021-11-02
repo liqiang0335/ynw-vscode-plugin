@@ -80,8 +80,8 @@
       "import module from '@const/$1';"
     ]
   },
-  "const reducer = (state, action) =>": {
-    "prefix": "iireducer",
+  "reducer: initState": {
+    "prefix": "initState",
     "body": [
       "const initState = {};",
       "const reducer = (state, action) => {",
