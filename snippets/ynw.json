@@ -259,15 +259,15 @@
     },"ynw.ui/IconFiles_IconFiles": {
       "prefix": "yyui/IconFiles_IconFiles",
       "body": ["import IconFiles from 'ynw/ui/IconFiles/IconFiles'"]
+    },"ynw.ui_ImageHolder": {
+      "prefix": "yyui_ImageHolder",
+      "body": ["import ImageHolder from 'ynw/ui/ImageHolder'"]
+    },"ynw.ui_ImageWithPreview": {
+      "prefix": "yyui_ImageWithPreview",
+      "body": ["import ImageWithPreview from 'ynw/ui/ImageWithPreview'"]
     },"ynw.ui/PayType_index": {
       "prefix": "yyui/PayType_index",
       "body": ["import index from 'ynw/ui/PayType/index'"]
-    },"ynw.ui_PreviewImage": {
-      "prefix": "yyui_PreviewImage",
-      "body": ["import PreviewImage from 'ynw/ui/PreviewImage'"]
-    },"ynw.ui_PreviewImageHolder": {
-      "prefix": "yyui_PreviewImageHolder",
-      "body": ["import PreviewImageHolder from 'ynw/ui/PreviewImageHolder'"]
     },"ynw.ui_Software": {
       "prefix": "yyui_Software",
       "body": ["import Software from 'ynw/ui/Software'"]
