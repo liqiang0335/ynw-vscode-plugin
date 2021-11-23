@@ -24,7 +24,7 @@
 		]
 	},
 	"createSelector": {
-		"prefix": "iiredux3",
+		"prefix": "iicreateSelector",
 		"body": [
 			"import { createSelector } from 'reselect';",
 			"",
@@ -52,7 +52,7 @@
 		]
 	},
 	"行内样式": {
-		"prefix": "iiclass",
+		"prefix": "iiclassName",
 		"body": "className={styles.$1} $2"
 	},
 	"imr": {
@@ -66,10 +66,6 @@
 		"body": [
 			"import ReactDOM from 'react-dom'"
 		]
-	},
-	"classsNames": {
-		"prefix": "iiclassnames",
-		"body": "import m from 'classNames';"
 	},
 	"函数组件": {
 		"prefix": "iirfc",
@@ -150,7 +146,7 @@
 		]
 	},
 	"标签div": {
-		"prefix": "iiv",
+		"prefix": "iidiv",
 		"body": [
 			"<div className={styles.$1}>$0</div>"
 		]
