@@ -44,18 +44,6 @@
       " */"
     ]
   },
-  "导入Store": {
-    "prefix": "iiistore",
-    "body": [
-      "import store from '@store/store';"
-    ]
-  },
-  "公共Types": {
-    "prefix": "iiitypes",
-    "body": [
-      "import * as Types from '@store/Types';"
-    ]
-  },
   "公共脚本": {
     "prefix": "iiiscript",
     "body": [
@@ -78,6 +66,12 @@
     "prefix": "iiiconst",
     "body": [
       "import module from '@const/$1';"
+    ]
+  },
+  "公共样式": {
+    "prefix": "iiistyles",
+    "body": [
+      "import module from '@styles/$1';"
     ]
   },
   "reducer: initState": {
