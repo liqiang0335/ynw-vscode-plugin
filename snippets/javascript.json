@@ -362,13 +362,14 @@
       " * DATA HOOK",
       " * ----------------------------------------",
       " */",
-      "export default function ${TM_FILENAME_BASE}() {",
+      "function ${TM_FILENAME_BASE}() {",
       "  const [data, setData] = useState([]);",
       "",
       "  useEffect(() => {}, []);",
       "",
       "  return data;",
-      "}"
+      "}",
+      "export default ${TM_FILENAME_BASE}"
     ]
   }
 }

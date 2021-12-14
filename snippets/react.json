@@ -72,14 +72,15 @@
 		"body": [
 			"import React from 'react'",
 			"",
-			"export default function ${1:${TM_FILENAME_BASE}}() {",
+			"function ${1:${TM_FILENAME_BASE}}() {",
 			"  return (",
 			"    <div>",
 			"      ${TM_FILENAME_BASE}$0",
 			"    </div>",
 			"  )",
 			"}",
-			""
+			"",
+			"export default ${TM_FILENAME_BASE}"
 		]
 	},
 	"逻辑组件": {
@@ -94,13 +95,14 @@
 			"  return { ...state, ...action };",
 			"};",
 			"",
-			"export default function ${TM_FILENAME_BASE}() {",
+			"function ${TM_FILENAME_BASE}() {",
 			"  const [state, dispatch] = useReducer(reducer, initState);",
 			"",
 			"  useEffect(() => {}, []);",
 			"",
 			"  return { state, dispatch }",
-			"}"
+			"}",
+			"export default ${TM_FILENAME_BASE}"
 		]
 	},
 	"useContext": {

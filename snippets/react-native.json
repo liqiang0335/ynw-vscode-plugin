@@ -6,14 +6,14 @@
       "import { View, Text } from 'react-native';",
       "import styles from './${1:${TM_FILENAME_BASE}}.style'",
       "",
-      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "function ${1:${TM_FILENAME_BASE}}() {",
       "  return (",
       "    <View style={styles.container}>",
       "      <Text>${1:${TM_FILENAME_BASE}}</Text>",
       "    </View>",
       "  );",
       "}",
-      ""
+      "export default ${TM_FILENAME_BASE}"
     ]
   },
   "RN组件(内部样式)": {
@@ -22,13 +22,15 @@
       "import React from 'react';",
       "import { View, Text, StyleSheet } from 'react-native';",
       "",
-      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "function ${1:${TM_FILENAME_BASE}}() {",
       "  return (",
       "    <View style={styles.container}>",
       "      <Text>${1:${TM_FILENAME_BASE}}</Text>",
       "    </View>",
       "  );",
       "}",
+      "",
+      "export default ${TM_FILENAME_BASE}",
       "",
       "const styles = StyleSheet.create({",
       "  container: {",
@@ -46,13 +48,14 @@
       "import React from 'react';",
       "import { View, Text } from 'react-native';",
       "",
-      "export default function FormIntro() {",
+      "function ${TM_FILENAME_BASE}() {",
       "  return (",
       "    <View >",
       "      <Text>FormIntro</Text>",
       "    </View>",
       "  );",
-      "}"
+      "}",
+      "export default ${TM_FILENAME_BASE}"
     ]
   },
   "RN创建样式": {
