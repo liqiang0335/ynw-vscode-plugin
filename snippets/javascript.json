@@ -5,6 +5,10 @@
       "<$1 />"
     ]
   },
+  "当前文件名": {
+    "prefix": "iifile",
+    "body": " ${TM_FILENAME_BASE} "
+  },
   "prettier-ignore": {
     "prefix": "ignore",
     "body": [
