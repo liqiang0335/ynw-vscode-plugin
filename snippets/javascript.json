@@ -5,6 +5,10 @@
       "<$1 />"
     ]
   },
+  "当前文件名": {
+    "prefix": "iifile",
+    "body": " ${TM_FILENAME_BASE} "
+  },
   "prettier-ignore": {
     "prefix": "ignore",
     "body": [
@@ -44,18 +48,6 @@
       " */"
     ]
   },
-  "导入Store": {
-    "prefix": "iiistore",
-    "body": [
-      "import store from '@store/store';"
-    ]
-  },
-  "公共Types": {
-    "prefix": "iiitypes",
-    "body": [
-      "import * as Types from '@store/Types';"
-    ]
-  },
   "公共脚本": {
     "prefix": "iiiscript",
     "body": [
@@ -78,6 +70,12 @@
     "prefix": "iiiconst",
     "body": [
       "import module from '@const/$1';"
+    ]
+  },
+  "公共样式": {
+    "prefix": "iiistyles",
+    "body": [
+      "import module from '@styles/$1';"
     ]
   },
   "reducer: initState": {
@@ -368,13 +366,14 @@
       " * DATA HOOK",
       " * ----------------------------------------",
       " */",
-      "export default function ${TM_FILENAME_BASE}() {",
+      "function ${TM_FILENAME_BASE}() {",
       "  const [data, setData] = useState([]);",
       "",
       "  useEffect(() => {}, []);",
       "",
       "  return data;",
-      "}"
+      "}",
+      "export default ${TM_FILENAME_BASE}"
     ]
   }
 }

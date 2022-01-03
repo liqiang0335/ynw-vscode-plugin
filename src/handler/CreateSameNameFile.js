@@ -4,7 +4,7 @@ const utils = require("./util");
 const { copy } = require("copy-paste");
 const getConfigValue = require("../utils/getConfigValue");
 
-module.exports = async function(URI) {
+module.exports = async function (URI) {
   const filePath = URI
     ? URI.fsPath
     : vscode.window.activeTextEditor.document.fileName;
@@ -28,11 +28,12 @@ module.exports = async function(URI) {
       const name = filePath.match(/\w+$/)[0];
       const target = path.join(filePath, name + "." + scriptFileType);
       const content = `import React from "react";\n\n
-      export default function ${name}(){
+      function ${name}(){
         return <div>${name}</div>
-      }`;
+      }
+      export default ${name}`;
       return { target, content };
-    }
+    },
   };
 
   const { content, target } = fileTypeHandler[fileType]();
