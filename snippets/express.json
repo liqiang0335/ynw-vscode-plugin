@@ -104,5 +104,11 @@
     "body": [
       "const module = require('@api$1');"
     ]
+  },
+  "Node导入6": {
+    "prefix": "eee_controller",
+    "body": [
+      "const module = require('@controller$1');"
+    ]
   }
 }
