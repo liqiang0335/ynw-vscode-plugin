@@ -85,7 +85,7 @@
   "RN图标-示例": {
     "prefix": "nnicon2",
     "body": [
-      "<AntDesign name='closecircle' color='white' size={25}  />"
+      "<AntDesign name='closecircle' color='#ff0000' size={25}  />"
     ]
   },
   "RNText": {
