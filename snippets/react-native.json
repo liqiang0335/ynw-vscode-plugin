@@ -76,10 +76,16 @@
       "style={styles.$1}$0"
     ]
   },
-  "RN图标": {
-    "prefix": "nnicon",
+  "RN图标-导入": {
+    "prefix": "nnicon1",
     "body": [
       "import { Entypo, AntDesign } from '@expo/vector-icons';"
+    ]
+  },
+  "RN图标-示例": {
+    "prefix": "nnicon2",
+    "body": [
+      "<AntDesign name='closecircle' color='white' size={25}  />"
     ]
   },
   "RNText": {
