@@ -178,19 +178,19 @@
       "import ${1:styles} from './${TM_FILENAME_BASE}.scss';$0"
     ]
   },
-  "import { $0 } from 'lodash'": {
+  "ES导入: import { $0 } from 'lodash-es'": {
     "prefix": "iilodash1",
     "body": [
-      "import { $0 } from 'lodash';"
+      "import { $0 } from 'lodash-es';"
     ]
   },
-  "_ = require('lodash')": {
+  "CMD全部: _ = require('lodash')": {
     "prefix": "iilodash2",
     "body": [
       "const _ = require('lodash');"
     ]
   },
-  "xxx = require('lodash/xxx')": {
+  "CMD按需: xxx = require('lodash/xxx')": {
     "prefix": "iilodash3",
     "body": [
       "const ${1} = require('lodash/${1}');"
