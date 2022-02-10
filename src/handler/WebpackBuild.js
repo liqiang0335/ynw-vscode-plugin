@@ -7,10 +7,10 @@ const exec = (cmd, name) => {
   terminal.sendText(cmd);
 };
 
-module.exports = function(URI, env) {
+module.exports = function (URI, env) {
   const relative = vscode.workspace.asRelativePath(URI);
   const dirname = path.dirname(relative).match(/\w+$/) || ["app"];
   const entry = relative.replace(/\\+/g, "/").replace(/\.[a-z]+$/, "");
   const key = dirname[0];
-  exec(`ynw build=${key} entry=${entry} env=${env}`, key);
+  exec(`npx yy build=${key} entry=./${entry} env=${env}`, key);
 };
