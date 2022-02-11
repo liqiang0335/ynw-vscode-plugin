@@ -1,6 +1,6 @@
 {
 	"导入styled": {
-		"prefix": "imstyled",
+		"prefix": "iistyled",
 		"body": [
 			"import styled from 'styled-components';"
 		]
