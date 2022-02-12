@@ -196,7 +196,7 @@
 		]
 	},
 	"创建styled": {
-		"prefix": "ss",
+		"prefix": "sss",
 		"body": [
 			"const S$1 = styled.div`",
 			"  $0",
