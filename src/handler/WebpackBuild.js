@@ -1,5 +1,6 @@
 const vscode = require("vscode");
 const path = require("path");
+const getConfigValue = require("../utils/getConfigValue");
 
 const exec = (cmd, name) => {
   const terminal = vscode.window.createTerminal({ name });
@@ -12,5 +13,6 @@ module.exports = function (URI, env) {
   const dirname = path.dirname(relative).match(/\w+$/) || ["app"];
   const entry = relative.replace(/\\+/g, "/").replace(/\.[a-z]+$/, "");
   const key = dirname[0];
-  exec(`yy build=${key} entry=./${entry} env=${env}`, key);
+  const cmdName = getConfigValue("cmdName") || "yy";
+  exec(`${cmdName} build=${key} entry=./${entry} env=${env}`, key);
 };
