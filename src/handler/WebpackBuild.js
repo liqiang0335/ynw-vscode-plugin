@@ -12,5 +12,5 @@ module.exports = function (URI, env) {
   const dirname = path.dirname(relative).match(/\w+$/) || ["app"];
   const entry = relative.replace(/\\+/g, "/").replace(/\.[a-z]+$/, "");
   const key = dirname[0];
-  exec(`npx yy build=${key} entry=./${entry} env=${env}`, key);
+  exec(`yy build=${key} entry=./${entry} env=${env}`, key);
 };
