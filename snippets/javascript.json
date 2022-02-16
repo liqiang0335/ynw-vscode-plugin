@@ -51,31 +51,25 @@
   "公共脚本": {
     "prefix": "iiiscript",
     "body": [
-      "import module from '@script/$1';"
+      "import module from '@script$1';"
     ]
   },
   "公共Hooks": {
     "prefix": "iiihook",
     "body": [
-      "import module  from '@hook/$1';"
+      "import module  from '@hook$1';"
     ]
   },
   "公共组件": {
     "prefix": "iiicomps",
     "body": [
-      "import module from '@comps/$1';"
+      "import module from '@comps$1';"
     ]
   },
   "公共常量": {
     "prefix": "iiiconst",
     "body": [
-      "import module from '@const/$1';"
-    ]
-  },
-  "公共样式": {
-    "prefix": "iiistyles",
-    "body": [
-      "import module from '@styles/$1';"
+      "import module from '@const$1';"
     ]
   },
   "reducer: initState": {
