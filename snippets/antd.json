@@ -1,21 +1,23 @@
 {
   "表单重置-antd": {
     "prefix": "form.resetFields",
-    "body": [
-      "form.resetFields"
-    ]
+    "body": "form.resetFields"
+  },
+  "表单-onValuesChange": {
+    "prefix": "form.onValuesChange",
+    "body": "form.onValuesChange"
+  },
+  "表单-onFieldsChange": {
+    "prefix": "form.onFieldsChange",
+    "body": "form.onFieldsChange"
   },
   "表单设置-antd": {
     "prefix": "form.setFieldsValue",
-    "body": [
-      "form.setFieldsValue"
-    ]
+    "body": "form.setFieldsValue"
   },
   "表单验证-antd": {
     "prefix": "form.validateFields",
-    "body": [
-      "form.validateFields"
-    ]
+    "body": "form.validateFields"
   },
   "图标-antd": {
     "prefix": "icon1",
