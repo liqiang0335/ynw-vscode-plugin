@@ -4,10 +4,7 @@ const os = require("os");
 const path = require("path");
 
 /**====================================*/
-const SOURCE =
-  os.platform() === "darwin"
-    ? "/Users/liqiang/Documents/Git/YNW/ynw"
-    : "D:\\Git\\ynw";
+const SOURCE = "/Users/liqiang/Documents/repos/liqiang/ynw";
 /**====================================*/
 
 main();
@@ -21,20 +18,14 @@ function main() {
     .filter(it => !/^_/.test(it.basename))
     .map(item => createSnipTemplate(item))
     .join(",");
-  fs.writeFileSync(
-    path.join(__dirname, "../snippets/ynw.json"),
-    `{${jsContent}}`
-  );
+  fs.writeFileSync(path.join(__dirname, "../snippets/ynw.json"), `{${jsContent}}`);
 
   //2. VUE FILES
   const vueContents = files
     .filter(it => it.extname === ".vue")
     .map(item => createSnipTemplate(item))
     .join(",");
-  fs.writeFileSync(
-    path.join(__dirname, "../snippets/ynw-vue.json"),
-    `{${vueContents}}`
-  );
+  fs.writeFileSync(path.join(__dirname, "../snippets/ynw-vue.json"), `{${vueContents}}`);
 }
 
 function createSnipTemplate(item) {

@@ -76,6 +76,33 @@
     },"ynw.browser_isDocumentVisible": {
       "prefix": "yybrowser_isDocumentVisible",
       "body": ["import isDocumentVisible from 'ynw/browser/isDocumentVisible'"]
+    },"ynw.dataStructures_BinarySearchTree": {
+      "prefix": "yydataStructures_BinarySearchTree",
+      "body": ["import BinarySearchTree from 'ynw/dataStructures/BinarySearchTree'"]
+    },"ynw.dataStructures_BinaryTree": {
+      "prefix": "yydataStructures_BinaryTree",
+      "body": ["import BinaryTree from 'ynw/dataStructures/BinaryTree'"]
+    },"ynw.dataStructures_DoublyLinkedList": {
+      "prefix": "yydataStructures_DoublyLinkedList",
+      "body": ["import DoublyLinkedList from 'ynw/dataStructures/DoublyLinkedList'"]
+    },"ynw.dataStructures_Graph": {
+      "prefix": "yydataStructures_Graph",
+      "body": ["import Graph from 'ynw/dataStructures/Graph'"]
+    },"ynw.dataStructures_HashTable": {
+      "prefix": "yydataStructures_HashTable",
+      "body": ["import HashTable from 'ynw/dataStructures/HashTable'"]
+    },"ynw.dataStructures_LinkedList": {
+      "prefix": "yydataStructures_LinkedList",
+      "body": ["import LinkedList from 'ynw/dataStructures/LinkedList'"]
+    },"ynw.dataStructures_Queue": {
+      "prefix": "yydataStructures_Queue",
+      "body": ["import Queue from 'ynw/dataStructures/Queue'"]
+    },"ynw.dataStructures_Stack": {
+      "prefix": "yydataStructures_Stack",
+      "body": ["import Stack from 'ynw/dataStructures/Stack'"]
+    },"ynw.dataStructures_Tree": {
+      "prefix": "yydataStructures_Tree",
+      "body": ["import Tree from 'ynw/dataStructures/Tree'"]
     },"ynw.getUrlParams": {
       "prefix": "yygetUrlParams",
       "body": ["import getUrlParams from 'ynw/getUrlParams'"]
@@ -88,9 +115,12 @@
     },"ynw.number_fillZero": {
       "prefix": "yynumber_fillZero",
       "body": ["import fillZero from 'ynw/number/fillZero'"]
-    },"ynw.object_extend": {
-      "prefix": "yyobject_extend",
-      "body": ["import extend from 'ynw/object/extend'"]
+    },"ynw.object_copyValue": {
+      "prefix": "yyobject_copyValue",
+      "body": ["import copyValue from 'ynw/object/copyValue'"]
+    },"ynw.object_mergeValid": {
+      "prefix": "yyobject_mergeValid",
+      "body": ["import mergeValid from 'ynw/object/mergeValid'"]
     },"ynw.object_toKeyedArray": {
       "prefix": "yyobject_toKeyedArray",
       "body": ["import toKeyedArray from 'ynw/object/toKeyedArray'"]
@@ -106,18 +136,6 @@
     },"ynw.other_validateIdCard": {
       "prefix": "yyother_validateIdCard",
       "body": ["import validateIdCard from 'ynw/other/validateIdCard'"]
-    },"ynw.pattern_HashTable": {
-      "prefix": "yypattern_HashTable",
-      "body": ["import HashTable from 'ynw/pattern/HashTable'"]
-    },"ynw.pattern_LinkedList": {
-      "prefix": "yypattern_LinkedList",
-      "body": ["import LinkedList from 'ynw/pattern/LinkedList'"]
-    },"ynw.pattern_Queue": {
-      "prefix": "yypattern_Queue",
-      "body": ["import Queue from 'ynw/pattern/Queue'"]
-    },"ynw.pattern_Stack": {
-      "prefix": "yypattern_Stack",
-      "body": ["import Stack from 'ynw/pattern/Stack'"]
     },"ynw.pattern_applyMiddleware": {
       "prefix": "yypattern_applyMiddleware",
       "body": ["import applyMiddleware from 'ynw/pattern/applyMiddleware'"]
@@ -208,9 +226,6 @@
     },"ynw.string_createShortText": {
       "prefix": "yystring_createShortText",
       "body": ["import createShortText from 'ynw/string/createShortText'"]
-    },"ynw.test": {
-      "prefix": "yytest",
-      "body": ["import test from 'ynw/test'"]
     },"ynw.time_fillDays": {
       "prefix": "yytime_fillDays",
       "body": ["import fillDays from 'ynw/time/fillDays'"]
@@ -268,9 +283,6 @@
     },"ynw.ui/PayType_index": {
       "prefix": "yyui/PayType_index",
       "body": ["import index from 'ynw/ui/PayType/index'"]
-    },"ynw.ui_Software": {
-      "prefix": "yyui_Software",
-      "body": ["import Software from 'ynw/ui/Software'"]
     },"ynw.ui_Spaces": {
       "prefix": "yyui_Spaces",
       "body": ["import Spaces from 'ynw/ui/Spaces'"]
