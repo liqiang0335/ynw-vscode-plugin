@@ -199,7 +199,7 @@
     ]
   },
   "http.get": {
-    "prefix": "http.get",
+    "prefix": "httpget",
     "body": [
       "const params = {};",
       "http.get('$1',{ params }).then(res => {",
@@ -208,7 +208,7 @@
     ]
   },
   "http.post": {
-    "prefix": "http.post",
+    "prefix": "httppost",
     "body": [
       "const params = {};",
       "http.post('$1',params).then(res => {",
