@@ -4,15 +4,18 @@
     },"ynw.vue_cropper": {
       "prefix": "yyvue_cropper",
       "body": ["import cropper from 'ynw/vue/cropper'"]
-    },"ynw.vue_fetch": {
-      "prefix": "yyvue_fetch",
-      "body": ["import fetch from 'ynw/vue/fetch'"]
+    },"ynw.vue_fetch-page": {
+      "prefix": "yyvue_fetch-page",
+      "body": ["import fetch-page from 'ynw/vue/fetch-page'"]
     },"ynw.vue_loading": {
       "prefix": "yyvue_loading",
       "body": ["import loading from 'ynw/vue/loading'"]
     },"ynw.vue_nav-back": {
       "prefix": "yyvue_nav-back",
       "body": ["import nav-back from 'ynw/vue/nav-back'"]
+    },"ynw.vue_pay-type": {
+      "prefix": "yyvue_pay-type",
+      "body": ["import pay-type from 'ynw/vue/pay-type'"]
     },"ynw.vue_picker": {
       "prefix": "yyvue_picker",
       "body": ["import picker from 'ynw/vue/picker'"]

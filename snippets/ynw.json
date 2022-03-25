@@ -1,596 +1,313 @@
-{
-  "ynw.antd_Actionbar": {
-    "prefix": "yyantd_Actionbar",
-    "body": [
-      "import Actionbar from 'ynw/antd/Actionbar'"
-    ]
-  },
-  "ynw.antd_AntConfig": {
-    "prefix": "yyantd_AntConfig",
-    "body": [
-      "import AntConfig from 'ynw/antd/AntConfig'"
-    ]
-  },
-  "ynw.antd_Buttons": {
-    "prefix": "yyantd_Buttons",
-    "body": [
-      "import Buttons from 'ynw/antd/Buttons'"
-    ]
-  },
-  "ynw.antd_DayPicker": {
-    "prefix": "yyantd_DayPicker",
-    "body": [
-      "import DayPicker from 'ynw/antd/DayPicker'"
-    ]
-  },
-  "ynw.antd_DayRangePicker": {
-    "prefix": "yyantd_DayRangePicker",
-    "body": [
-      "import DayRangePicker from 'ynw/antd/DayRangePicker'"
-    ]
-  },
-  "ynw.antd_GlobalMask": {
-    "prefix": "yyantd_GlobalMask",
-    "body": [
-      "import GlobalMask from 'ynw/antd/GlobalMask'"
-    ]
-  },
-  "ynw.antd_InputNumber": {
-    "prefix": "yyantd_InputNumber",
-    "body": [
-      "import InputNumber from 'ynw/antd/InputNumber'"
-    ]
-  },
-  "ynw.antd_NullLoading": {
-    "prefix": "yyantd_NullLoading",
-    "body": [
-      "import NullLoading from 'ynw/antd/NullLoading'"
-    ]
-  },
-  "ynw.antd_PopArticle": {
-    "prefix": "yyantd_PopArticle",
-    "body": [
-      "import PopArticle from 'ynw/antd/PopArticle'"
-    ]
-  },
-  "ynw.antd_PopMulChoose": {
-    "prefix": "yyantd_PopMulChoose",
-    "body": [
-      "import PopMulChoose from 'ynw/antd/PopMulChoose'"
-    ]
-  },
-  "ynw.antd_ScrolledTableBox": {
-    "prefix": "yyantd_ScrolledTableBox",
-    "body": [
-      "import ScrolledTableBox from 'ynw/antd/ScrolledTableBox'"
-    ]
-  },
-  "ynw.antd_SearchBar": {
-    "prefix": "yyantd_SearchBar",
-    "body": [
-      "import SearchBar from 'ynw/antd/SearchBar'"
-    ]
-  },
-  "ynw.antd_SelectCommon": {
-    "prefix": "yyantd_SelectCommon",
-    "body": [
-      "import SelectCommon from 'ynw/antd/SelectCommon'"
-    ]
-  },
-  "ynw.antd_TextArea": {
-    "prefix": "yyantd_TextArea",
-    "body": [
-      "import TextArea from 'ynw/antd/TextArea'"
-    ]
-  },
-  "ynw.antd_TreeRadio": {
-    "prefix": "yyantd_TreeRadio",
-    "body": [
-      "import TreeRadio from 'ynw/antd/TreeRadio'"
-    ]
-  },
-  "ynw.antd_UploadInput": {
-    "prefix": "yyantd_UploadInput",
-    "body": [
-      "import UploadInput from 'ynw/antd/UploadInput'"
-    ]
-  },
-  "ynw.array_array2Tree": {
-    "prefix": "yyarray_array2Tree",
-    "body": [
-      "import array2Tree from 'ynw/array/array2Tree'"
-    ]
-  },
-  "ynw.array_arrayById": {
-    "prefix": "yyarray_arrayById",
-    "body": [
-      "import arrayById from 'ynw/array/arrayById'"
-    ]
-  },
-  "ynw.array_byId": {
-    "prefix": "yyarray_byId",
-    "body": [
-      "import byId from 'ynw/array/byId'"
-    ]
-  },
-  "ynw.array_tree2Array": {
-    "prefix": "yyarray_tree2Array",
-    "body": [
-      "import tree2Array from 'ynw/array/tree2Array'"
-    ]
-  },
-  "ynw.browser_UUIDBrowser": {
-    "prefix": "yybrowser_UUIDBrowser",
-    "body": [
-      "import UUIDBrowser from 'ynw/browser/UUIDBrowser'"
-    ]
-  },
-  "ynw.browser_copyToClipboard": {
-    "prefix": "yybrowser_copyToClipboard",
-    "body": [
-      "import copyToClipboard from 'ynw/browser/copyToClipboard'"
-    ]
-  },
-  "ynw.browser_detectBrowser": {
-    "prefix": "yybrowser_detectBrowser",
-    "body": [
-      "import detectBrowser from 'ynw/browser/detectBrowser'"
-    ]
-  },
-  "ynw.browser_detectDeviceType": {
-    "prefix": "yybrowser_detectDeviceType",
-    "body": [
-      "import detectDeviceType from 'ynw/browser/detectDeviceType'"
-    ]
-  },
-  "ynw.browser_elementInViewport": {
-    "prefix": "yybrowser_elementInViewport",
-    "body": [
-      "import elementInViewport from 'ynw/browser/elementInViewport'"
-    ]
-  },
-  "ynw.browser_isDocumentVisible": {
-    "prefix": "yybrowser_isDocumentVisible",
-    "body": [
-      "import isDocumentVisible from 'ynw/browser/isDocumentVisible'"
-    ]
-  },
-  "ynw.dataStructures_BinarySearchTree": {
-    "prefix": "yydataStructures_BinarySearchTree",
-    "body": [
-      "import BinarySearchTree from 'ynw/dataStructures/BinarySearchTree'"
-    ]
-  },
-  "ynw.dataStructures_BinaryTree": {
-    "prefix": "yydataStructures_BinaryTree",
-    "body": [
-      "import BinaryTree from 'ynw/dataStructures/BinaryTree'"
-    ]
-  },
-  "ynw.dataStructures_DoublyLinkedList": {
-    "prefix": "yydataStructures_DoublyLinkedList",
-    "body": [
-      "import DoublyLinkedList from 'ynw/dataStructures/DoublyLinkedList'"
-    ]
-  },
-  "ynw.dataStructures_Graph": {
-    "prefix": "yydataStructures_Graph",
-    "body": [
-      "import Graph from 'ynw/dataStructures/Graph'"
-    ]
-  },
-  "ynw.dataStructures_HashTable": {
-    "prefix": "yydataStructures_HashTable",
-    "body": [
-      "import HashTable from 'ynw/dataStructures/HashTable'"
-    ]
-  },
-  "ynw.dataStructures_LinkedList": {
-    "prefix": "yydataStructures_LinkedList",
-    "body": [
-      "import LinkedList from 'ynw/dataStructures/LinkedList'"
-    ]
-  },
-  "ynw.dataStructures_Queue": {
-    "prefix": "yydataStructures_Queue",
-    "body": [
-      "import Queue from 'ynw/dataStructures/Queue'"
-    ]
-  },
-  "ynw.dataStructures_Stack": {
-    "prefix": "yydataStructures_Stack",
-    "body": [
-      "import Stack from 'ynw/dataStructures/Stack'"
-    ]
-  },
-  "ynw.dataStructures_Tree": {
-    "prefix": "yydataStructures_Tree",
-    "body": [
-      "import Tree from 'ynw/dataStructures/Tree'"
-    ]
-  },
-  "ynw.getUrlParams": {
-    "prefix": "yygetUrlParams",
-    "body": [
-      "import getUrlParams from 'ynw/getUrlParams'"
-    ]
-  },
-  "ynw.index": {
-    "prefix": "yyindex",
-    "body": [
-      "import index from 'ynw/index'"
-    ]
-  },
-  "ynw.mobile_touch": {
-    "prefix": "yymobile_touch",
-    "body": [
-      "import touch from 'ynw/mobile/touch'"
-    ]
-  },
-  "ynw.number_fillZero": {
-    "prefix": "yynumber_fillZero",
-    "body": [
-      "import fillZero from 'ynw/number/fillZero'"
-    ]
-  },
-  "ynw.object_copyValue": {
-    "prefix": "yyobject_copyValue",
-    "body": [
-      "import copyValue from 'ynw/object/copyValue'"
-    ]
-  },
-  "ynw.object_mergeValid": {
-    "prefix": "yyobject_mergeValid",
-    "body": [
-      "import mergeValid from 'ynw/object/mergeValid'"
-    ]
-  },
-  "ynw.object_toKeyedArray": {
-    "prefix": "yyobject_toKeyedArray",
-    "body": [
-      "import toKeyedArray from 'ynw/object/toKeyedArray'"
-    ]
-  },
-  "ynw.other_chineseNumber": {
-    "prefix": "yyother_chineseNumber",
-    "body": [
-      "import chineseNumber from 'ynw/other/chineseNumber'"
-    ]
-  },
-  "ynw.other_createSocket": {
-    "prefix": "yyother_createSocket",
-    "body": [
-      "import createSocket from 'ynw/other/createSocket'"
-    ]
-  },
-  "ynw.other_getChineseMoneyUnit": {
-    "prefix": "yyother_getChineseMoneyUnit",
-    "body": [
-      "import getChineseMoneyUnit from 'ynw/other/getChineseMoneyUnit'"
-    ]
-  },
-  "ynw.other_validateIdCard": {
-    "prefix": "yyother_validateIdCard",
-    "body": [
-      "import validateIdCard from 'ynw/other/validateIdCard'"
-    ]
-  },
-  "ynw.pattern_applyMiddleware": {
-    "prefix": "yypattern_applyMiddleware",
-    "body": [
-      "import applyMiddleware from 'ynw/pattern/applyMiddleware'"
-    ]
-  },
-  "ynw.pattern_compose": {
-    "prefix": "yypattern_compose",
-    "body": [
-      "import compose from 'ynw/pattern/compose'"
-    ]
-  },
-  "ynw.pattern_composeRight": {
-    "prefix": "yypattern_composeRight",
-    "body": [
-      "import composeRight from 'ynw/pattern/composeRight'"
-    ]
-  },
-  "ynw.pattern_createEventHub": {
-    "prefix": "yypattern_createEventHub",
-    "body": [
-      "import createEventHub from 'ynw/pattern/createEventHub'"
-    ]
-  },
-  "ynw.pattern_koaChain": {
-    "prefix": "yypattern_koaChain",
-    "body": [
-      "import koaChain from 'ynw/pattern/koaChain'"
-    ]
-  },
-  "ynw.pattern_nextChain": {
-    "prefix": "yypattern_nextChain",
-    "body": [
-      "import nextChain from 'ynw/pattern/nextChain'"
-    ]
-  },
-  "ynw.pattern_promiseChain": {
-    "prefix": "yypattern_promiseChain",
-    "body": [
-      "import promiseChain from 'ynw/pattern/promiseChain'"
-    ]
-  },
-  "ynw.react_ErrorBoundary": {
-    "prefix": "yyreact_ErrorBoundary",
-    "body": [
-      "import ErrorBoundary from 'ynw/react/ErrorBoundary'"
-    ]
-  },
-  "ynw.react_IF": {
-    "prefix": "yyreact_IF",
-    "body": [
-      "import IF from 'ynw/react/IF'"
-    ]
-  },
-  "ynw.react_ZoomImg": {
-    "prefix": "yyreact_ZoomImg",
-    "body": [
-      "import ZoomImg from 'ynw/react/ZoomImg'"
-    ]
-  },
-  "ynw.react_useCachedEnum": {
-    "prefix": "yyreact_useCachedEnum",
-    "body": [
-      "import useCachedEnum from 'ynw/react/useCachedEnum'"
-    ]
-  },
-  "ynw.react_useConstant": {
-    "prefix": "yyreact_useConstant",
-    "body": [
-      "import useConstant from 'ynw/react/useConstant'"
-    ]
-  },
-  "ynw.react_useEventCallback": {
-    "prefix": "yyreact_useEventCallback",
-    "body": [
-      "import useEventCallback from 'ynw/react/useEventCallback'"
-    ]
-  },
-  "ynw.react_useKeyboardJs": {
-    "prefix": "yyreact_useKeyboardJs",
-    "body": [
-      "import useKeyboardJs from 'ynw/react/useKeyboardJs'"
-    ]
-  },
-  "ynw.react_useObservable": {
-    "prefix": "yyreact_useObservable",
-    "body": [
-      "import useObservable from 'ynw/react/useObservable'"
-    ]
-  },
-  "ynw.react_useScroll": {
-    "prefix": "yyreact_useScroll",
-    "body": [
-      "import useScroll from 'ynw/react/useScroll'"
-    ]
-  },
-  "ynw.react_useToggle": {
-    "prefix": "yyreact_useToggle",
-    "body": [
-      "import useToggle from 'ynw/react/useToggle'"
-    ]
-  },
-  "ynw.react_useWindowSize": {
-    "prefix": "yyreact_useWindowSize",
-    "body": [
-      "import useWindowSize from 'ynw/react/useWindowSize'"
-    ]
-  },
-  "ynw.script_Highcharts": {
-    "prefix": "yyscript_Highcharts",
-    "body": [
-      "import Highcharts from 'ynw/script/Highcharts'"
-    ]
-  },
-  "ynw.script_confirmer": {
-    "prefix": "yyscript_confirmer",
-    "body": [
-      "import confirmer from 'ynw/script/confirmer'"
-    ]
-  },
-  "ynw.script_createReducer": {
-    "prefix": "yyscript_createReducer",
-    "body": [
-      "import createReducer from 'ynw/script/createReducer'"
-    ]
-  },
-  "ynw.script_dayjs": {
-    "prefix": "yyscript_dayjs",
-    "body": [
-      "import dayjs from 'ynw/script/dayjs'"
-    ]
-  },
-  "ynw.script_deleter": {
-    "prefix": "yyscript_deleter",
-    "body": [
-      "import deleter from 'ynw/script/deleter'"
-    ]
-  },
-  "ynw.script_getFormValues": {
-    "prefix": "yyscript_getFormValues",
-    "body": [
-      "import getFormValues from 'ynw/script/getFormValues'"
-    ]
-  },
-  "ynw.script_getUrlParams": {
-    "prefix": "yyscript_getUrlParams",
-    "body": [
-      "import getUrlParams from 'ynw/script/getUrlParams'"
-    ]
-  },
-  "ynw.script_imageResize": {
-    "prefix": "yyscript_imageResize",
-    "body": [
-      "import imageResize from 'ynw/script/imageResize'"
-    ]
-  },
-  "ynw.script_numberArray": {
-    "prefix": "yyscript_numberArray",
-    "body": [
-      "import numberArray from 'ynw/script/numberArray'"
-    ]
-  },
-  "ynw.script_previewImage": {
-    "prefix": "yyscript_previewImage",
-    "body": [
-      "import previewImage from 'ynw/script/previewImage'"
-    ]
-  },
-  "ynw.string_compareVersion": {
-    "prefix": "yystring_compareVersion",
-    "body": [
-      "import compareVersion from 'ynw/string/compareVersion'"
-    ]
-  },
-  "ynw.string_createShortText": {
-    "prefix": "yystring_createShortText",
-    "body": [
-      "import createShortText from 'ynw/string/createShortText'"
-    ]
-  },
-  "ynw.time_fillDays": {
-    "prefix": "yytime_fillDays",
-    "body": [
-      "import fillDays from 'ynw/time/fillDays'"
-    ]
-  },
-  "ynw.time_formatDuration": {
-    "prefix": "yytime_formatDuration",
-    "body": [
-      "import formatDuration from 'ynw/time/formatDuration'"
-    ]
-  },
-  "ynw.time_formatTime": {
-    "prefix": "yytime_formatTime",
-    "body": [
-      "import formatTime from 'ynw/time/formatTime'"
-    ]
-  },
-  "ynw.time_getHumanTimes": {
-    "prefix": "yytime_getHumanTimes",
-    "body": [
-      "import getHumanTimes from 'ynw/time/getHumanTimes'"
-    ]
-  },
-  "ynw.time_overTime": {
-    "prefix": "yytime_overTime",
-    "body": [
-      "import overTime from 'ynw/time/overTime'"
-    ]
-  },
-  "ynw.tiper": {
-    "prefix": "yytiper",
-    "body": [
-      "import tiper from 'ynw/tiper'"
-    ]
-  },
-  "ynw.ui_BorderLabel": {
-    "prefix": "yyui_BorderLabel",
-    "body": [
-      "import BorderLabel from 'ynw/ui/BorderLabel'"
-    ]
-  },
-  "ynw.ui_BraftEditor": {
-    "prefix": "yyui_BraftEditor",
-    "body": [
-      "import BraftEditor from 'ynw/ui/BraftEditor'"
-    ]
-  },
-  "ynw.ui_ChooseFileOrigin": {
-    "prefix": "yyui_ChooseFileOrigin",
-    "body": [
-      "import ChooseFileOrigin from 'ynw/ui/ChooseFileOrigin'"
-    ]
-  },
-  "ynw.ui_CircleButton": {
-    "prefix": "yyui_CircleButton",
-    "body": [
-      "import CircleButton from 'ynw/ui/CircleButton'"
-    ]
-  },
-  "ynw.ui_ColorTip": {
-    "prefix": "yyui_ColorTip",
-    "body": [
-      "import ColorTip from 'ynw/ui/ColorTip'"
-    ]
-  },
-  "ynw.ui/Cropper_index": {
-    "prefix": "yyui/Cropper_index",
-    "body": [
-      "import index from 'ynw/ui/Cropper/index'"
-    ]
-  },
-  "ynw.ui_Download": {
-    "prefix": "yyui_Download",
-    "body": [
-      "import Download from 'ynw/ui/Download'"
-    ]
-  },
-  "ynw.ui_FetchMore": {
-    "prefix": "yyui_FetchMore",
-    "body": [
-      "import FetchMore from 'ynw/ui/FetchMore'"
-    ]
-  },
-  "ynw.ui_Figure": {
-    "prefix": "yyui_Figure",
-    "body": [
-      "import Figure from 'ynw/ui/Figure'"
-    ]
-  },
-  "ynw.ui/IconFiles_IconFiles": {
-    "prefix": "yyui/IconFiles_IconFiles",
-    "body": [
-      "import IconFiles from 'ynw/ui/IconFiles/IconFiles'"
-    ]
-  },
-  "ynw.ui_ImageHolder": {
-    "prefix": "yyui_ImageHolder",
-    "body": [
-      "import ImageHolder from 'ynw/ui/ImageHolder'"
-    ]
-  },
-  "ynw.ui_ImageWithPreview": {
-    "prefix": "yyui_ImageWithPreview",
-    "body": [
-      "import ImageWithPreview from 'ynw/ui/ImageWithPreview'"
-    ]
-  },
-  "ynw.ui/PayType_index": {
-    "prefix": "yyui/PayType_index",
-    "body": [
-      "import index from 'ynw/ui/PayType/index'"
-    ]
-  },
-  "ynw.ui_Spaces": {
-    "prefix": "yyui_Spaces",
-    "body": [
-      "import Spaces from 'ynw/ui/Spaces'"
-    ]
-  },
-  "ynw.ui_StatCard": {
-    "prefix": "yyui_StatCard",
-    "body": [
-      "import StatCard from 'ynw/ui/StatCard'"
-    ]
-  },
-  "ynw.ui_SuccessStatus": {
-    "prefix": "yyui_SuccessStatus",
-    "body": [
-      "import SuccessStatus from 'ynw/ui/SuccessStatus'"
-    ]
-  },
-  "ynw.ui_SumCard": {
-    "prefix": "yyui_SumCard",
-    "body": [
-      "import SumCard from 'ynw/ui/SumCard'"
-    ]
-  }
-}
+{"ynw.antd_Actionbar": {
+      "prefix": "yyantd_Actionbar",
+      "body": ["import Actionbar from 'ynw/antd/Actionbar'"]
+    },"ynw.antd_AntConfig": {
+      "prefix": "yyantd_AntConfig",
+      "body": ["import AntConfig from 'ynw/antd/AntConfig'"]
+    },"ynw.antd_Buttons": {
+      "prefix": "yyantd_Buttons",
+      "body": ["import Buttons from 'ynw/antd/Buttons'"]
+    },"ynw.antd_DayPicker": {
+      "prefix": "yyantd_DayPicker",
+      "body": ["import DayPicker from 'ynw/antd/DayPicker'"]
+    },"ynw.antd_DayRangePicker": {
+      "prefix": "yyantd_DayRangePicker",
+      "body": ["import DayRangePicker from 'ynw/antd/DayRangePicker'"]
+    },"ynw.antd_GlobalMask": {
+      "prefix": "yyantd_GlobalMask",
+      "body": ["import GlobalMask from 'ynw/antd/GlobalMask'"]
+    },"ynw.antd_InputNumber": {
+      "prefix": "yyantd_InputNumber",
+      "body": ["import InputNumber from 'ynw/antd/InputNumber'"]
+    },"ynw.antd_NullLoading": {
+      "prefix": "yyantd_NullLoading",
+      "body": ["import NullLoading from 'ynw/antd/NullLoading'"]
+    },"ynw.antd_PopArticle": {
+      "prefix": "yyantd_PopArticle",
+      "body": ["import PopArticle from 'ynw/antd/PopArticle'"]
+    },"ynw.antd_PopMulChoose": {
+      "prefix": "yyantd_PopMulChoose",
+      "body": ["import PopMulChoose from 'ynw/antd/PopMulChoose'"]
+    },"ynw.antd_ScrolledTableBox": {
+      "prefix": "yyantd_ScrolledTableBox",
+      "body": ["import ScrolledTableBox from 'ynw/antd/ScrolledTableBox'"]
+    },"ynw.antd_SearchBar": {
+      "prefix": "yyantd_SearchBar",
+      "body": ["import SearchBar from 'ynw/antd/SearchBar'"]
+    },"ynw.antd_SelectCommon": {
+      "prefix": "yyantd_SelectCommon",
+      "body": ["import SelectCommon from 'ynw/antd/SelectCommon'"]
+    },"ynw.antd_TextArea": {
+      "prefix": "yyantd_TextArea",
+      "body": ["import TextArea from 'ynw/antd/TextArea'"]
+    },"ynw.antd_TreeRadio": {
+      "prefix": "yyantd_TreeRadio",
+      "body": ["import TreeRadio from 'ynw/antd/TreeRadio'"]
+    },"ynw.antd_UploadInput": {
+      "prefix": "yyantd_UploadInput",
+      "body": ["import UploadInput from 'ynw/antd/UploadInput'"]
+    },"ynw.antd_UploadMulInput": {
+      "prefix": "yyantd_UploadMulInput",
+      "body": ["import UploadMulInput from 'ynw/antd/UploadMulInput'"]
+    },"ynw.array_array2Tree": {
+      "prefix": "yyarray_array2Tree",
+      "body": ["import array2Tree from 'ynw/array/array2Tree'"]
+    },"ynw.array_arrayById": {
+      "prefix": "yyarray_arrayById",
+      "body": ["import arrayById from 'ynw/array/arrayById'"]
+    },"ynw.array_byId": {
+      "prefix": "yyarray_byId",
+      "body": ["import byId from 'ynw/array/byId'"]
+    },"ynw.array_tree2Array": {
+      "prefix": "yyarray_tree2Array",
+      "body": ["import tree2Array from 'ynw/array/tree2Array'"]
+    },"ynw.browser_UUIDBrowser": {
+      "prefix": "yybrowser_UUIDBrowser",
+      "body": ["import UUIDBrowser from 'ynw/browser/UUIDBrowser'"]
+    },"ynw.browser_copyToClipboard": {
+      "prefix": "yybrowser_copyToClipboard",
+      "body": ["import copyToClipboard from 'ynw/browser/copyToClipboard'"]
+    },"ynw.browser_detectBrowser": {
+      "prefix": "yybrowser_detectBrowser",
+      "body": ["import detectBrowser from 'ynw/browser/detectBrowser'"]
+    },"ynw.browser_detectDeviceType": {
+      "prefix": "yybrowser_detectDeviceType",
+      "body": ["import detectDeviceType from 'ynw/browser/detectDeviceType'"]
+    },"ynw.browser_elementInViewport": {
+      "prefix": "yybrowser_elementInViewport",
+      "body": ["import elementInViewport from 'ynw/browser/elementInViewport'"]
+    },"ynw.browser_isDocumentVisible": {
+      "prefix": "yybrowser_isDocumentVisible",
+      "body": ["import isDocumentVisible from 'ynw/browser/isDocumentVisible'"]
+    },"ynw.dataStructures_BinarySearchTree": {
+      "prefix": "yydataStructures_BinarySearchTree",
+      "body": ["import BinarySearchTree from 'ynw/dataStructures/BinarySearchTree'"]
+    },"ynw.dataStructures_BinaryTree": {
+      "prefix": "yydataStructures_BinaryTree",
+      "body": ["import BinaryTree from 'ynw/dataStructures/BinaryTree'"]
+    },"ynw.dataStructures_DoublyLinkedList": {
+      "prefix": "yydataStructures_DoublyLinkedList",
+      "body": ["import DoublyLinkedList from 'ynw/dataStructures/DoublyLinkedList'"]
+    },"ynw.dataStructures_Graph": {
+      "prefix": "yydataStructures_Graph",
+      "body": ["import Graph from 'ynw/dataStructures/Graph'"]
+    },"ynw.dataStructures_HashTable": {
+      "prefix": "yydataStructures_HashTable",
+      "body": ["import HashTable from 'ynw/dataStructures/HashTable'"]
+    },"ynw.dataStructures_LinkedList": {
+      "prefix": "yydataStructures_LinkedList",
+      "body": ["import LinkedList from 'ynw/dataStructures/LinkedList'"]
+    },"ynw.dataStructures_Queue": {
+      "prefix": "yydataStructures_Queue",
+      "body": ["import Queue from 'ynw/dataStructures/Queue'"]
+    },"ynw.dataStructures_Stack": {
+      "prefix": "yydataStructures_Stack",
+      "body": ["import Stack from 'ynw/dataStructures/Stack'"]
+    },"ynw.dataStructures_Tree": {
+      "prefix": "yydataStructures_Tree",
+      "body": ["import Tree from 'ynw/dataStructures/Tree'"]
+    },"ynw.getUrlParams": {
+      "prefix": "yygetUrlParams",
+      "body": ["import getUrlParams from 'ynw/getUrlParams'"]
+    },"ynw.index": {
+      "prefix": "yyindex",
+      "body": ["import index from 'ynw/index'"]
+    },"ynw.mobile_touch": {
+      "prefix": "yymobile_touch",
+      "body": ["import touch from 'ynw/mobile/touch'"]
+    },"ynw.number_fillZero": {
+      "prefix": "yynumber_fillZero",
+      "body": ["import fillZero from 'ynw/number/fillZero'"]
+    },"ynw.object_copyValue": {
+      "prefix": "yyobject_copyValue",
+      "body": ["import copyValue from 'ynw/object/copyValue'"]
+    },"ynw.object_mergeValid": {
+      "prefix": "yyobject_mergeValid",
+      "body": ["import mergeValid from 'ynw/object/mergeValid'"]
+    },"ynw.object_toKeyedArray": {
+      "prefix": "yyobject_toKeyedArray",
+      "body": ["import toKeyedArray from 'ynw/object/toKeyedArray'"]
+    },"ynw.other_chineseNumber": {
+      "prefix": "yyother_chineseNumber",
+      "body": ["import chineseNumber from 'ynw/other/chineseNumber'"]
+    },"ynw.other_createSocket": {
+      "prefix": "yyother_createSocket",
+      "body": ["import createSocket from 'ynw/other/createSocket'"]
+    },"ynw.other_getChineseMoneyUnit": {
+      "prefix": "yyother_getChineseMoneyUnit",
+      "body": ["import getChineseMoneyUnit from 'ynw/other/getChineseMoneyUnit'"]
+    },"ynw.other_validateIdCard": {
+      "prefix": "yyother_validateIdCard",
+      "body": ["import validateIdCard from 'ynw/other/validateIdCard'"]
+    },"ynw.pattern_applyMiddleware": {
+      "prefix": "yypattern_applyMiddleware",
+      "body": ["import applyMiddleware from 'ynw/pattern/applyMiddleware'"]
+    },"ynw.pattern_compose": {
+      "prefix": "yypattern_compose",
+      "body": ["import compose from 'ynw/pattern/compose'"]
+    },"ynw.pattern_composeRight": {
+      "prefix": "yypattern_composeRight",
+      "body": ["import composeRight from 'ynw/pattern/composeRight'"]
+    },"ynw.pattern_createEventHub": {
+      "prefix": "yypattern_createEventHub",
+      "body": ["import createEventHub from 'ynw/pattern/createEventHub'"]
+    },"ynw.pattern_koaChain": {
+      "prefix": "yypattern_koaChain",
+      "body": ["import koaChain from 'ynw/pattern/koaChain'"]
+    },"ynw.pattern_nextChain": {
+      "prefix": "yypattern_nextChain",
+      "body": ["import nextChain from 'ynw/pattern/nextChain'"]
+    },"ynw.pattern_promiseChain": {
+      "prefix": "yypattern_promiseChain",
+      "body": ["import promiseChain from 'ynw/pattern/promiseChain'"]
+    },"ynw.react_ErrorBoundary": {
+      "prefix": "yyreact_ErrorBoundary",
+      "body": ["import ErrorBoundary from 'ynw/react/ErrorBoundary'"]
+    },"ynw.react_IF": {
+      "prefix": "yyreact_IF",
+      "body": ["import IF from 'ynw/react/IF'"]
+    },"ynw.react_ZoomImg": {
+      "prefix": "yyreact_ZoomImg",
+      "body": ["import ZoomImg from 'ynw/react/ZoomImg'"]
+    },"ynw.react_useCachedEnum": {
+      "prefix": "yyreact_useCachedEnum",
+      "body": ["import useCachedEnum from 'ynw/react/useCachedEnum'"]
+    },"ynw.react_useConstant": {
+      "prefix": "yyreact_useConstant",
+      "body": ["import useConstant from 'ynw/react/useConstant'"]
+    },"ynw.react_useEventCallback": {
+      "prefix": "yyreact_useEventCallback",
+      "body": ["import useEventCallback from 'ynw/react/useEventCallback'"]
+    },"ynw.react_useKeyboardJs": {
+      "prefix": "yyreact_useKeyboardJs",
+      "body": ["import useKeyboardJs from 'ynw/react/useKeyboardJs'"]
+    },"ynw.react_useObservable": {
+      "prefix": "yyreact_useObservable",
+      "body": ["import useObservable from 'ynw/react/useObservable'"]
+    },"ynw.react_useScroll": {
+      "prefix": "yyreact_useScroll",
+      "body": ["import useScroll from 'ynw/react/useScroll'"]
+    },"ynw.react_useToggle": {
+      "prefix": "yyreact_useToggle",
+      "body": ["import useToggle from 'ynw/react/useToggle'"]
+    },"ynw.react_useWindowSize": {
+      "prefix": "yyreact_useWindowSize",
+      "body": ["import useWindowSize from 'ynw/react/useWindowSize'"]
+    },"ynw.script_Highcharts": {
+      "prefix": "yyscript_Highcharts",
+      "body": ["import Highcharts from 'ynw/script/Highcharts'"]
+    },"ynw.script_confirmer": {
+      "prefix": "yyscript_confirmer",
+      "body": ["import confirmer from 'ynw/script/confirmer'"]
+    },"ynw.script_createReducer": {
+      "prefix": "yyscript_createReducer",
+      "body": ["import createReducer from 'ynw/script/createReducer'"]
+    },"ynw.script/createWord_createTable": {
+      "prefix": "yyscript/createWord_createTable",
+      "body": ["import createTable from 'ynw/script/createWord/createTable'"]
+    },"ynw.script/createWord_createWord": {
+      "prefix": "yyscript/createWord_createWord",
+      "body": ["import createWord from 'ynw/script/createWord/createWord'"]
+    },"ynw.script/createWord_wordStyles": {
+      "prefix": "yyscript/createWord_wordStyles",
+      "body": ["import wordStyles from 'ynw/script/createWord/wordStyles'"]
+    },"ynw.script/createWord_wordXML": {
+      "prefix": "yyscript/createWord_wordXML",
+      "body": ["import wordXML from 'ynw/script/createWord/wordXML'"]
+    },"ynw.script_dayjs": {
+      "prefix": "yyscript_dayjs",
+      "body": ["import dayjs from 'ynw/script/dayjs'"]
+    },"ynw.script_deleter": {
+      "prefix": "yyscript_deleter",
+      "body": ["import deleter from 'ynw/script/deleter'"]
+    },"ynw.script_getFormValues": {
+      "prefix": "yyscript_getFormValues",
+      "body": ["import getFormValues from 'ynw/script/getFormValues'"]
+    },"ynw.script_getUrlParams": {
+      "prefix": "yyscript_getUrlParams",
+      "body": ["import getUrlParams from 'ynw/script/getUrlParams'"]
+    },"ynw.script_imageResize": {
+      "prefix": "yyscript_imageResize",
+      "body": ["import imageResize from 'ynw/script/imageResize'"]
+    },"ynw.script_numberArray": {
+      "prefix": "yyscript_numberArray",
+      "body": ["import numberArray from 'ynw/script/numberArray'"]
+    },"ynw.script_previewImage": {
+      "prefix": "yyscript_previewImage",
+      "body": ["import previewImage from 'ynw/script/previewImage'"]
+    },"ynw.string_compareVersion": {
+      "prefix": "yystring_compareVersion",
+      "body": ["import compareVersion from 'ynw/string/compareVersion'"]
+    },"ynw.string_createShortText": {
+      "prefix": "yystring_createShortText",
+      "body": ["import createShortText from 'ynw/string/createShortText'"]
+    },"ynw.time_fillDays": {
+      "prefix": "yytime_fillDays",
+      "body": ["import fillDays from 'ynw/time/fillDays'"]
+    },"ynw.time_formatDuration": {
+      "prefix": "yytime_formatDuration",
+      "body": ["import formatDuration from 'ynw/time/formatDuration'"]
+    },"ynw.time_formatTime": {
+      "prefix": "yytime_formatTime",
+      "body": ["import formatTime from 'ynw/time/formatTime'"]
+    },"ynw.time_getHumanTimes": {
+      "prefix": "yytime_getHumanTimes",
+      "body": ["import getHumanTimes from 'ynw/time/getHumanTimes'"]
+    },"ynw.time_overTime": {
+      "prefix": "yytime_overTime",
+      "body": ["import overTime from 'ynw/time/overTime'"]
+    },"ynw.tiper": {
+      "prefix": "yytiper",
+      "body": ["import tiper from 'ynw/tiper'"]
+    },"ynw.ui_BorderLabel": {
+      "prefix": "yyui_BorderLabel",
+      "body": ["import BorderLabel from 'ynw/ui/BorderLabel'"]
+    },"ynw.ui_BraftEditor": {
+      "prefix": "yyui_BraftEditor",
+      "body": ["import BraftEditor from 'ynw/ui/BraftEditor'"]
+    },"ynw.ui_ChooseFileOrigin": {
+      "prefix": "yyui_ChooseFileOrigin",
+      "body": ["import ChooseFileOrigin from 'ynw/ui/ChooseFileOrigin'"]
+    },"ynw.ui_CircleButton": {
+      "prefix": "yyui_CircleButton",
+      "body": ["import CircleButton from 'ynw/ui/CircleButton'"]
+    },"ynw.ui_ColorTip": {
+      "prefix": "yyui_ColorTip",
+      "body": ["import ColorTip from 'ynw/ui/ColorTip'"]
+    },"ynw.ui/Cropper_index": {
+      "prefix": "yyui/Cropper_index",
+      "body": ["import index from 'ynw/ui/Cropper/index'"]
+    },"ynw.ui_Download": {
+      "prefix": "yyui_Download",
+      "body": ["import Download from 'ynw/ui/Download'"]
+    },"ynw.ui_FetchMore": {
+      "prefix": "yyui_FetchMore",
+      "body": ["import FetchMore from 'ynw/ui/FetchMore'"]
+    },"ynw.ui_FetchMorePage": {
+      "prefix": "yyui_FetchMorePage",
+      "body": ["import FetchMorePage from 'ynw/ui/FetchMorePage'"]
+    },"ynw.ui_Figure": {
+      "prefix": "yyui_Figure",
+      "body": ["import Figure from 'ynw/ui/Figure'"]
+    },"ynw.ui_ImageHolder": {
+      "prefix": "yyui_ImageHolder",
+      "body": ["import ImageHolder from 'ynw/ui/ImageHolder'"]
+    },"ynw.ui_ImageWithPreview": {
+      "prefix": "yyui_ImageWithPreview",
+      "body": ["import ImageWithPreview from 'ynw/ui/ImageWithPreview'"]
+    },"ynw.ui/PayType_index": {
+      "prefix": "yyui/PayType_index",
+      "body": ["import index from 'ynw/ui/PayType/index'"]
+    },"ynw.ui_Spaces": {
+      "prefix": "yyui_Spaces",
+      "body": ["import Spaces from 'ynw/ui/Spaces'"]
+    },"ynw.ui_StatCard": {
+      "prefix": "yyui_StatCard",
+      "body": ["import StatCard from 'ynw/ui/StatCard'"]
+    },"ynw.ui_SuccessStatus": {
+      "prefix": "yyui_SuccessStatus",
+      "body": ["import SuccessStatus from 'ynw/ui/SuccessStatus'"]
+    },"ynw.ui_SumCard": {
+      "prefix": "yyui_SumCard",
+      "body": ["import SumCard from 'ynw/ui/SumCard'"]
+    }}
