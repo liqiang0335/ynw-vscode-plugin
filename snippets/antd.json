@@ -271,16 +271,29 @@
     ]
   },
   "导入Taro组件": {
-    "prefix": "taro",
+    "prefix": "tacomps",
     "body": "import { View, Text } from '@tarojs/components'"
   },
   "导入Taro-UI": {
-    "prefix": "taro",
+    "prefix": "taui",
     "body": "import { AtButton } from 'taro-ui'"
   },
   "导入TaroJS": {
-    "prefix": "taro",
+    "prefix": "tajs",
     "body": "import Taro from '@tarojs/taro'"
+  },
+  "taro基础模板": {
+    "prefix": "tabase",
+    "body": [
+      "import React from 'react';",
+      "import { View, Text } from '@tarojs/components';",
+      "",
+      "function ${TM_FILENAME_BASE}() {",
+      "  return <View>${TM_FILENAME_BASE}</View>;",
+      "}",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ]
   },
   "空数据组件": {
     "prefix": "iiempty",

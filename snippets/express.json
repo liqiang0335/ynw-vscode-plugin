@@ -51,7 +51,7 @@
       "try {",
       "  $0",
       "} catch (err) {",
-      "  next(new Error(err))",
+      " return next(new Error(err))",
       "}"
     ]
   },
