@@ -282,6 +282,10 @@
     "prefix": "tajs",
     "body": "import Taro from '@tarojs/taro'"
   },
+  "ta-className": {
+    "prefix": "taclass",
+    "body": "className=\"$1\""
+  },
   "taro基础模板": {
     "prefix": "tabase",
     "body": [
