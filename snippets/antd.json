@@ -51,7 +51,7 @@
       " *  新增",
       " * ----------------------------------------",
       " */",
-      "export default function AddDialog(props) {",
+      "export default function ${TM_FILENAME_BASE}(props) {",
       "  const { state, dispatch } = props;",
       "  const [form] = useForm();",
       "  const title = state.isEdit ? '编辑' : '添加';",
@@ -111,7 +111,7 @@
       " *  列表",
       " * ----------------------------------------",
       " */",
-      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "export default function ${TM_FILENAME_BASE}() {",
       "  const props = useLogic();",
       "  const { state, dispatch } = props;",
       "",
@@ -167,7 +167,7 @@
       "  return { ...state, ...action };",
       "};",
       "",
-      "export default function useLogic() {",
+      "export default function ${TM_FILENAME_BASE}() {",
       "  const [state, dispatch] = useReducer(reducer, initState);",
       "",
       "  useEffect(() => {}, [state.version]);",
@@ -222,7 +222,7 @@
       " * 运行日志",
       " * ----------------------------------------",
       " */",
-      "function AdminLogs() {",
+      "export default function ${TM_FILENAME_BASE}() {",
       "  const [state, dispatch] = useReducer(reducer, initState);",
       "",
       "  const columns = [",
@@ -267,7 +267,7 @@
       "  );",
       "}",
       "",
-      "export default AdminLogs;"
+      ";"
     ]
   },
   "导入Taro组件": {
@@ -292,11 +292,10 @@
       "import React from 'react';",
       "import { View, Text } from '@tarojs/components';",
       "",
-      "function ${TM_FILENAME_BASE}() {",
+      "export default function ${TM_FILENAME_BASE}() {",
       "  return <View>${TM_FILENAME_BASE}</View>;",
       "}",
-      "",
-      "export default ${TM_FILENAME_BASE};"
+      ""
     ]
   },
   "空数据组件": {

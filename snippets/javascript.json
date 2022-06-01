@@ -366,14 +366,14 @@
       " * DATA HOOK",
       " * ----------------------------------------",
       " */",
-      "function ${TM_FILENAME_BASE}() {",
+      "export default function ${TM_FILENAME_BASE}() {",
       "  const [data, setData] = useState([]);",
       "",
       "  useEffect(() => {}, []);",
       "",
       "  return data;",
       "}",
-      "export default ${TM_FILENAME_BASE}"
+      ""
     ]
   }
 }
