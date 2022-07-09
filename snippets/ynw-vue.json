@@ -1,28 +1,28 @@
-{"ynw.vue_chat": {
-      "prefix": "yyvue_chat",
+{"ynw.vue.chat": {
+      "prefix": "⭕️ yy.vue.chat",
       "body": ["import chat from 'ynw/vue/chat'"]
-    },"ynw.vue_cropper": {
-      "prefix": "yyvue_cropper",
+    },"ynw.vue.cropper": {
+      "prefix": "⭕️ yy.vue.cropper",
       "body": ["import cropper from 'ynw/vue/cropper'"]
-    },"ynw.vue_fetch-page": {
-      "prefix": "yyvue_fetch-page",
+    },"ynw.vue.fetch-page": {
+      "prefix": "⭕️ yy.vue.fetch-page",
       "body": ["import fetch-page from 'ynw/vue/fetch-page'"]
-    },"ynw.vue_loading": {
-      "prefix": "yyvue_loading",
+    },"ynw.vue.loading": {
+      "prefix": "⭕️ yy.vue.loading",
       "body": ["import loading from 'ynw/vue/loading'"]
-    },"ynw.vue_nav-back": {
-      "prefix": "yyvue_nav-back",
+    },"ynw.vue.nav-back": {
+      "prefix": "⭕️ yy.vue.nav-back",
       "body": ["import nav-back from 'ynw/vue/nav-back'"]
-    },"ynw.vue_pay-type": {
-      "prefix": "yyvue_pay-type",
+    },"ynw.vue.pay-type": {
+      "prefix": "⭕️ yy.vue.pay-type",
       "body": ["import pay-type from 'ynw/vue/pay-type'"]
-    },"ynw.vue_picker": {
-      "prefix": "yyvue_picker",
+    },"ynw.vue.picker": {
+      "prefix": "⭕️ yy.vue.picker",
       "body": ["import picker from 'ynw/vue/picker'"]
-    },"ynw.vue_submit-button": {
-      "prefix": "yyvue_submit-button",
+    },"ynw.vue.submit-button": {
+      "prefix": "⭕️ yy.vue.submit-button",
       "body": ["import submit-button from 'ynw/vue/submit-button'"]
-    },"ynw.vue_vscroll": {
-      "prefix": "yyvue_vscroll",
+    },"ynw.vue.vscroll": {
+      "prefix": "⭕️ yy.vue.vscroll",
       "body": ["import vscroll from 'ynw/vue/vscroll'"]
     }}

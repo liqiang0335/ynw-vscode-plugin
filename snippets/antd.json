@@ -1,43 +1,43 @@
 {
-  "表单重置-antd": {
+  "⭕️ 表单重置-antd": {
     "prefix": "form.resetFields",
     "body": "form.resetFields"
   },
-  "表单-onValuesChange": {
+  "⭕️ 表单-onValuesChange": {
     "prefix": "form.onValuesChange",
     "body": "form.onValuesChange"
   },
-  "表单-onFieldsChange": {
+  "⭕️ 表单-onFieldsChange": {
     "prefix": "form.onFieldsChange",
     "body": "form.onFieldsChange"
   },
-  "表单设置-antd": {
+  "⭕️ 表单设置-antd": {
     "prefix": "form.setFieldsValue",
     "body": "form.setFieldsValue"
   },
-  "表单验证-antd": {
+  "⭕️ 表单验证-antd": {
     "prefix": "form.validateFields",
     "body": "form.validateFields"
   },
-  "图标-antd": {
+  "⭕️ 图标-antd": {
     "prefix": "icon1",
     "body": [
       "import { $1 } from '@ant-design/icons';"
     ]
   },
-  "图标-iconpark": {
+  "⭕️ 图标-iconpark": {
     "prefix": "icon2",
     "body": [
       "import { $1 } from '@icon-park/react';"
     ]
   },
-  "导入antd": {
+  "⭕️ 导入antd": {
     "prefix": "antd",
     "body": [
       "import { $1 } from 'antd'"
     ]
   },
-  "通用弹窗": {
+  "⭕️ 通用弹窗": {
     "prefix": "iicomdialog",
     "body": [
       "import React, { useEffect } from 'react';",
@@ -97,7 +97,7 @@
       "}"
     ]
   },
-  "通用表格-1": {
+  "⭕️ 通用表格-1": {
     "prefix": "iicomtable",
     "body": [
       "import React from 'react';",
@@ -149,7 +149,7 @@
       "}"
     ]
   },
-  "通用逻辑": {
+  "⭕️ 通用逻辑": {
     "prefix": "iicomlogic",
     "body": [
       "import { useReducer, useEffect } from 'react';",
@@ -199,7 +199,7 @@
       "}"
     ]
   },
-  "通用表格-2-单体": {
+  "⭕️ 通用表格-2-单体": {
     "prefix": "iitable",
     "body": [
       "import React, { useEffect, useReducer } from 'react';",
@@ -270,23 +270,23 @@
       ";"
     ]
   },
-  "导入Taro组件": {
+  "⭕️ 导入Taro组件": {
     "prefix": "tacomps",
     "body": "import { View, Text } from '@tarojs/components'"
   },
-  "导入Taro-UI": {
+  "⭕️ 导入Taro-UI": {
     "prefix": "taui",
     "body": "import { AtButton } from 'taro-ui'"
   },
-  "导入TaroJS": {
+  "⭕️ 导入TaroJS": {
     "prefix": "tajs",
     "body": "import Taro from '@tarojs/taro'"
   },
-  "ta-className": {
+  "⭕️ ta-className": {
     "prefix": "taclass",
     "body": "className=\"$1\""
   },
-  "taro基础模板": {
+  "⭕️ taro基础模板": {
     "prefix": "tabase",
     "body": [
       "import React from 'react';",
@@ -298,7 +298,7 @@
       ""
     ]
   },
-  "空数据组件": {
+  "⭕️ 空数据组件": {
     "prefix": "iiempty",
     "body": "<Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />"
   }

@@ -1,29 +1,29 @@
 {
-	"导入styled": {
+	"⭕️ 导入styled": {
 		"prefix": "iistyled",
 		"body": [
 			"import styled from 'styled-components';"
 		]
 	},
-	"导入router": {
+	"⭕️ 导入router": {
 		"prefix": "iirouter",
 		"body": [
 			"import { useHistory, NavLink } from 'react-router-dom'"
 		]
 	},
-	"导入useSelector ": {
+	"⭕️ 导入useSelector ": {
 		"prefix": "iiredux1",
 		"body": [
 			"import { useSelector } from 'react-redux'"
 		]
 	},
-	"导入useDispatch": {
+	"⭕️ 导入useDispatch": {
 		"prefix": "iiredux2",
 		"body": [
 			"import { useDispatch } from 'react-redux'"
 		]
 	},
-	"createSelector": {
+	"⭕️ createSelector": {
 		"prefix": "iicreateSelector",
 		"body": [
 			"import { createSelector } from 'reselect';",
@@ -35,13 +35,13 @@
 			"}"
 		]
 	},
-	"useState": {
+	"⭕️ useState": {
 		"prefix": "iiuseState",
 		"body": [
 			"const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState($2)"
 		]
 	},
-	"useEffect": {
+	"⭕️ useEffect": {
 		"prefix": "iiuseEffect",
 		"body": [
 			"useEffect(() => {",
@@ -51,23 +51,23 @@
 			")"
 		]
 	},
-	"行内样式": {
+	"⭕️ 行内样式": {
 		"prefix": "iiclassName",
 		"body": "className={styles.$1} $2"
 	},
-	"imr": {
+	"⭕️ imr": {
 		"prefix": "iir",
 		"body": [
 			"import React from 'react'"
 		]
 	},
-	"imd": {
+	"⭕️ imd": {
 		"prefix": "iid",
 		"body": [
 			"import ReactDOM from 'react-dom'"
 		]
 	},
-	"函数组件": {
+	"⭕️ 函数组件": {
 		"prefix": "iirfc",
 		"body": [
 			"import React from 'react'",
@@ -82,7 +82,7 @@
 			""
 		]
 	},
-	"逻辑组件": {
+	"⭕️ 逻辑组件": {
 		"prefix": "iiif",
 		"description": "创建逻辑组件、useHook组件",
 		"body": [
@@ -104,61 +104,61 @@
 			""
 		]
 	},
-	"useContext": {
+	"⭕️ useContext": {
 		"prefix": "iiuseContext",
 		"body": [
 			"const ${1:context} = useContext(${2:contextValue})"
 		]
 	},
-	"useReducer": {
+	"⭕️ useReducer": {
 		"prefix": "iiuseReducer",
 		"body": [
 			"const [state, dispatch] = useReducer(${1:reducer}, ${2:initState})"
 		]
 	},
-	"iiuselogic": {
+	"⭕️ iiuselogic": {
 		"prefix": "iiuselogic",
 		"body": [
 			"const props = useLogic();",
 			"const { state, dispatch } = props;"
 		]
 	},
-	"useCallback": {
+	"⭕️ useCallback": {
 		"prefix": "iiuseCallback",
 		"body": [
-			"useCallback(",
+			"const ${1:fn} = useCallback(",
 			"  () => {",
-			"    ${1:callback}",
+			"    ${0:callback}",
 			"  },",
-			"  [${2:input}],",
+			"  [],",
 			")"
 		]
 	},
-	"useMemo": {
+	"⭕️ useMemo": {
 		"prefix": "iiuseMemo",
 		"body": [
 			"useMemo(() => ${1:function}, ${2:input})"
 		]
 	},
-	"useRef": {
+	"⭕️ useRef": {
 		"prefix": "iiuseRef",
 		"body": [
 			"const ${1:ref} = useRef(${2:initialValue})"
 		]
 	},
-	"标签div": {
+	"⭕️ 标签div": {
 		"prefix": "iidiv",
 		"body": [
 			"<div className={styles.$1}>$0</div>"
 		]
 	},
-	"标签span": {
+	"⭕️ 标签span": {
 		"prefix": "iispan",
 		"body": [
 			"<span className={styles.$1}>$0</span>"
 		]
 	},
-	"imrd": {
+	"⭕️ imrd": {
 		"prefix": "iird",
 		"body": [
 			"import React from 'react'",
@@ -176,7 +176,7 @@
 			"ReactDOM.render(<App />, document.getElementById('app'))"
 		]
 	},
-	"类型注释PropTypes": {
+	"⭕️ 类型注释PropTypes": {
 		"prefix": "iiproptypes",
 		"body": [
 			"import PropTypes from 'prop-types';",
@@ -188,13 +188,13 @@
 			"};"
 		]
 	},
-	"import useSWR": {
+	"⭕️ import useSWR": {
 		"prefix": "iiswr",
 		"body": [
 			"import useSWR from 'swr';"
 		]
 	},
-	"创建styled": {
+	"⭕️ 创建styled": {
 		"prefix": "sss",
 		"body": [
 			"const S$1 = styled.div`",

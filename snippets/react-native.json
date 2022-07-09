@@ -1,5 +1,5 @@
 {
-  "RN组件(外部样式)": {
+  "⭕️ RN组件(外部样式)": {
     "prefix": "nnfunc1",
     "body": [
       "import React from 'react';",
@@ -15,7 +15,7 @@
       "}"
     ]
   },
-  "RN组件(内部样式)": {
+  "⭕️ RN组件(内部样式)": {
     "prefix": "nnfunc2",
     "body": [
       "import React from 'react';",
@@ -39,7 +39,7 @@
       "});"
     ]
   },
-  "RN函数组件": {
+  "⭕️ RN函数组件": {
     "prefix": "nnfunc3",
     "body": [
       "import React from 'react';",
@@ -55,7 +55,7 @@
       ""
     ]
   },
-  "RN创建样式": {
+  "⭕️ RN创建样式": {
     "prefix": "nnStyleCreate",
     "body": [
       "import { StyleSheet } from 'react-native';",
@@ -67,61 +67,61 @@
       "});"
     ]
   },
-  "RN(Style属性)": {
+  "⭕️ RN(Style属性)": {
     "prefix": "nnStyleProperty",
     "body": [
       "style={styles.$1}$0"
     ]
   },
-  "RN图标-导入": {
+  "⭕️ RN图标-导入": {
     "prefix": "nnicon1",
     "body": [
       "import { Entypo, AntDesign } from '@expo/vector-icons';"
     ]
   },
-  "RN图标-示例": {
+  "⭕️ RN图标-示例": {
     "prefix": "nnicon2",
     "body": [
       "<AntDesign name='closecircle' color='#ff0000' size={25}  />"
     ]
   },
-  "RNText": {
+  "⭕️ RNText": {
     "prefix": "nnText",
     "body": [
       "<Text style={styles.$2}>$1</Text>$0"
     ]
   },
-  "RNImage": {
+  "⭕️ RNImage": {
     "prefix": "nnImage",
     "body": [
       "<Image source={{uri:'$2'}} style={{width:40,height:40}}>$1</Image>"
     ]
   },
-  "RNView": {
+  "⭕️ RNView": {
     "prefix": "nnView",
     "body": [
       "<View style={styles.$2}>$1</View>"
     ]
   },
-  "导入ReactNative": {
+  "⭕️ 导入ReactNative": {
     "prefix": "nnimrn",
     "body": [
       "import { $0 } from 'react-native';"
     ]
   },
-  "导入NavNative": {
+  "⭕️ 导入NavNative": {
     "prefix": "navnative",
     "body": [
       "import { NavigationContainer } from '@react-navigation/native'"
     ]
   },
-  "导入NavStack": {
+  "⭕️ 导入NavStack": {
     "prefix": "navstack",
     "body": [
       "import { createStackNavigator } from '@react-navigation/stack'"
     ]
   },
-  "导入NavBottomTab": {
+  "⭕️ 导入NavBottomTab": {
     "prefix": "navbottom",
     "body": [
       "import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'"

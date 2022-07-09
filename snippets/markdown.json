@@ -1,11 +1,11 @@
 {
-  "((key:value))": {
+  "⭕️ ((key:value))": {
     "prefix": "::",
     "body": [
       "(($1:$0))"
     ]
   },
-  "代码块JS": {
+  "⭕️ 代码块JS": {
     "prefix": "jjj",
     "body": [
       "```js",
@@ -13,7 +13,7 @@
       "```"
     ]
   },
-  "代码块Bash": {
+  "⭕️ 代码块Bash": {
     "prefix": "bash",
     "body": [
       "```bash",
@@ -21,31 +21,31 @@
       "```"
     ]
   },
-  "蓝色小贴士": {
+  "⭕️ 蓝色小贴士": {
     "prefix": "tip",
     "body": [
       "{.tip .blue}"
     ]
   },
-  "红色小贴士": {
+  "⭕️ 红色小贴士": {
     "prefix": "tipred",
     "body": [
       "{.tip .red}"
     ]
   },
-  "橙色小贴士": {
+  "⭕️ 橙色小贴士": {
     "prefix": "tipyellow",
     "body": [
       "{.tip .yellow}"
     ]
   },
-  "列表数字": {
+  "⭕️ 列表数字": {
     "prefix": "listnumber",
     "body": [
       "{.list-number}"
     ]
   },
-  "列表": {
+  "⭕️ 列表": {
     "prefix": "list",
     "body": [
       "{.list}"

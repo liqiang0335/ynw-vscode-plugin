@@ -1,12 +1,12 @@
 {
-  "Express.响应": {
+  "⭕️ Express.响应": {
     "prefix": "eeresponse",
     "body": [
       ".then(data => res.send(req.fn.ok(data)))",
       ".catch(next);"
     ]
   },
-  "Express.Get方法": {
+  "⭕️ Express.Get": {
     "prefix": "eeget",
     "body": [
       "router.get('$1', ${2:name});",
@@ -16,7 +16,7 @@
       "}"
     ]
   },
-  "Express.Post方法": {
+  "⭕️ Express.Post": {
     "prefix": "eepost",
     "body": [
       "router.post('$1', ${2:name});",
@@ -26,7 +26,7 @@
       "}"
     ]
   },
-  "路由导出": {
+  "⭕️ 导出路由": {
     "prefix": "eerouter",
     "body": [
       "const router = require('express').Router();",
@@ -36,7 +36,7 @@
       "module.exports = router;"
     ]
   },
-  "中间件1": {
+  "⭕️ 中间件1": {
     "prefix": "eemiddleware",
     "body": [
       "const ${1:name} = (req, res, next) => {",
@@ -45,7 +45,7 @@
       "};"
     ]
   },
-  "Express.try": {
+  "⭕️ Express.try": {
     "prefix": "eetry",
     "body": [
       "try {",
@@ -55,7 +55,7 @@
       "}"
     ]
   },
-  "中间件2": {
+  "⭕️ 中间件2": {
     "prefix": "eefunction",
     "body": [
       "async function $1(req, res, next) {",
@@ -63,52 +63,40 @@
       "};"
     ]
   },
-  "发送数据": {
+  "⭕️ 发送数据": {
     "prefix": "eeok",
     "body": [
       "res.send(req.fn.ok($0))"
     ]
   },
-  "发送错误": {
+  "⭕️ 发送错误": {
     "prefix": "eefail",
     "body": [
       "res.send(req.fn.error($0))"
     ]
   },
-  "Node导入1": {
+  "⭕️ Node导入1": {
     "prefix": "eee_const",
     "body": [
       "const module = require('@const$0');"
     ]
   },
-  "Node导入2": {
+  "⭕️ Node导入2": {
     "prefix": "eee_pipes",
     "body": [
       "const module = require('@pipes$0');"
     ]
   },
-  "Node导入3": {
+  "⭕️ Node导入3": {
     "prefix": "eee_schema",
     "body": [
       "const module = require('@schema$0');"
     ]
   },
-  "Node导入4": {
+  "⭕️ Node导入4": {
     "prefix": "eee_utils",
     "body": [
       "const module = require('@utils$1');"
-    ]
-  },
-  "Node导入5": {
-    "prefix": "eee_api",
-    "body": [
-      "const module = require('@api$1');"
-    ]
-  },
-  "Node导入6": {
-    "prefix": "eee_controller",
-    "body": [
-      "const module = require('@controller$1');"
     ]
   }
 }
