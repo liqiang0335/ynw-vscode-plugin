@@ -245,14 +245,8 @@
       "},"
     ]
   },
-  "⭕️ import { mapState }": {
-    "prefix": "ii.mapstate",
-    "body": [
-      "import { mapState } from 'vuex'"
-    ]
-  },
-  "⭕️ 打印1-剪贴板": {
-    "prefix": "iilog",
+  "⭕️ 打印": {
+    "prefix": "iiconsole",
     "body": [
       "console.log('🍎', $0)"
     ]
