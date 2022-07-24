@@ -51,12 +51,6 @@
       "import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader.js';"
     ]
   },
-  "⭕️ 导入charts": {
-    "prefix": "iichart",
-    "body": [
-      "import module from '@charts/components$1';"
-    ]
-  },
   "⭕️ useCallback": {
     "prefix": "iiuseCallback",
     "body": [
@@ -167,7 +161,7 @@
     ]
   },
   "⭕️ 导入rxjs-hooks": {
-    "prefix": "iirxjs2",
+    "prefix": "iirxjs-hooks",
     "body": [
       "import { useEventCallback, useObservable } from 'rxjs-hooks'"
     ]
