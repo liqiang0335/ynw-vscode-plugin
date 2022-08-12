@@ -21,36 +21,6 @@
       "import * as T from 'three';"
     ]
   },
-  "⭕️ 导入控制器-OrbitControls": {
-    "prefix": "controls-OrbitControls",
-    "body": [
-      "import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';"
-    ]
-  },
-  "⭕️ 导入加载器-GLTFLoader": {
-    "prefix": "loader-GLTFLoader",
-    "body": [
-      "import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';"
-    ]
-  },
-  "⭕️ 导入加载器-OBJLoader": {
-    "prefix": "loader-OBJLoader",
-    "body": [
-      "import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';"
-    ]
-  },
-  "⭕️ 导入加载器-MTLLoader": {
-    "prefix": "loader-MTLLoader",
-    "body": [
-      "import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';"
-    ]
-  },
-  "⭕️ 导入加载器-SVGLoader": {
-    "prefix": "loader-SVGLoader",
-    "body": [
-      "import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader.js';"
-    ]
-  },
   "⭕️ useCallback": {
     "prefix": "iiuseCallback",
     "body": [
@@ -63,9 +33,9 @@
     ]
   },
   "⭕️ next请求时渲染": {
-    "prefix": "next_server_props",
+    "prefix": "next-server-props",
     "body": [
-      "export async function getServerSideProps({ req, res, params}) {",
+      "export async function getServerSideProps({ req, res, params, query}) {",
       "  res.setHeader('Cache-Control', 'public, s-maxage=600, stale-while-revalidate=59');",
       "",
       "  return {",
@@ -75,7 +45,7 @@
     ]
   },
   "⭕️ next构建时渲染": {
-    "prefix": "next_static_props",
+    "prefix": "next-static-props",
     "body": [
       "export async function getStaticProps({ req, res, params }) {",
       "  return {",

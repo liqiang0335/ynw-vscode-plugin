@@ -168,8 +168,7 @@
 			"  return <div>Hello</div>;",
 			"};",
 			"",
-			"const root = createRoot(document.getElementById('app'));",
-			"root.render(<App />);"
+			"createRoot(document.getElementById('app')).render(<App />);"
 		]
 	},
 	"⭕️ 类型注释PropTypes": {
