@@ -1,26 +1,4 @@
 {
-  "⭕️ 创建函数-async": {
-    "prefix": "iiasyncfunc",
-    "body": [
-      "async function $1 (){",
-      " $0",
-      "}"
-    ]
-  },
-  "⭕️ 创建函数": {
-    "prefix": "iifunc",
-    "body": [
-      "function $1 (){",
-      " $0",
-      "}"
-    ]
-  },
-  "⭕️ 导入THREE": {
-    "prefix": "hhthree",
-    "body": [
-      "import * as T from 'three';"
-    ]
-  },
   "⭕️ useCallback": {
     "prefix": "iiuseCallback",
     "body": [
@@ -58,11 +36,11 @@
     ]
   },
   "⭕️ swr-导入": {
-    "prefix": "swrim",
+    "prefix": "imswr",
     "body": "import useSWR from 'swr';"
   },
   "⭕️ swr-请求": {
-    "prefix": "swruse",
+    "prefix": "useSWR",
     "body": "const { data = [] } = useSWR('$1')"
   },
   "⭕️ antd-页码配置": {
@@ -95,7 +73,7 @@
     ]
   },
   "⭕️ 导入exec": {
-    "prefix": "iifs",
+    "prefix": "ee.re.child_process",
     "body": [
       "const util = require('util');",
       "const exec = util.promisify(require('child_process').exec);"
