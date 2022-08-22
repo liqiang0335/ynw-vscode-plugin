@@ -2,16 +2,14 @@ const fs = require("fs");
 const getFiles = require("./utils/getFiles");
 const path = require("path");
 
-/**====================================*/
-const SOURCE = "/Users/liqiang/Documents/repos/liqiang/ynw";
-/**====================================*/
+const SOURCE = "/Users/liqiang/Documents/repos/liqiang/ynw"; // !!
+console.log("🍎 SOURCE", SOURCE);
 
 main();
 function main() {
-  console.log(`引用路径: ${SOURCE}`);
   const files = getFiles(/lib|docs|assets/)(SOURCE);
 
-  //1. JS FILES
+  // js files
   const jsContent = files
     .filter(it => it.extname === ".js")
     .filter(it => !/^_/.test(it.basename))
@@ -19,7 +17,7 @@ function main() {
     .join(",");
   fs.writeFileSync(path.join(__dirname, "../snippets/ynw.json"), `{${jsContent}}`);
 
-  //2. VUE FILES
+  // vue files
   const vueContents = files
     .filter(it => it.extname === ".vue")
     .map(item => createSnipTemplate(item))

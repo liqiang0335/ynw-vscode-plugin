@@ -201,7 +201,7 @@
     ]
   },
   "scripts": {
-    "snip": "node _script/snip"
+    "snip": "node .script/snip"
   },
   "devDependencies": {
     "@types/node": "^8.10.25",
