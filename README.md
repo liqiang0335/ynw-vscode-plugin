@@ -8,5 +8,5 @@
 
 ## Snippets
 
-- fastInput: `ctrl+y ctrl+h`, `ynw-copy.txt` or `ynw-fast.js`
+- fastInput: `ctrl+y ctrl+h`, `yy-copy.txt` or `yy-fast.js`
 - createSameNameFile: `ctrl+y ctrl+s`

@@ -3,8 +3,8 @@ const getLocalFile = require("../utils/getLocalFile");
 const insertContent = require("../utils/insertContent");
 
 const getLocalFastValue = () => {
-  const CopyPath = getLocalFile("ynw-copy.txt");
-  const FastPath = getLocalFile("ynw-fast.js");
+  const CopyPath = getLocalFile("yy-copy.txt");
+  const FastPath = getLocalFile("yy-fast.js");
 
   // copy
   if (fs.existsSync(CopyPath)) {

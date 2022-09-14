@@ -158,7 +158,7 @@
 			"<span className={styles.$1}>$0</span>"
 		]
 	},
-	"⭕️ imrd": {
+	"⭕️ iird": {
 		"prefix": "iird",
 		"body": [
 			"import React from 'react';",
@@ -169,6 +169,24 @@
 			"};",
 			"",
 			"createRoot(document.getElementById('app')).render(<App />);"
+		]
+	},
+	"⭕️ iird-17": {
+		"prefix": "iird-17",
+		"body": [
+			"import React from 'react'",
+			"import ReactDOM from 'react-dom'",
+			"",
+			"",
+			"const App = () => {",
+			"  return (",
+			"    <div>",
+			"      <div>Hello</div>",
+			"    </div>",
+			"  )",
+			"}",
+			"",
+			"ReactDOM.render(<App />, document.getElementById('app'))"
 		]
 	},
 	"⭕️ 类型注释PropTypes": {
