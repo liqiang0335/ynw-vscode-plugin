@@ -93,7 +93,7 @@
   },
   "⭕️ 当前文件名": {
     "prefix": "iifile",
-    "body": " ${TM_FILENAME_BASE} "
+    "body": "${TM_FILENAME_BASE}"
   },
   "⭕️ prettier-ignore": {
     "prefix": "ignore",
@@ -319,7 +319,7 @@
     ]
   },
   "⭕️ 注册V组件": {
-    "prefix": "iivregister",
+    "prefix": "vvregister",
     "body": [
       "import Vue from 'vue';",
       "const comps = require.context('../comps', true, /\\.vue$/);",
@@ -332,7 +332,7 @@
       "  const name = p.match(/([\\w\\-]+)\\.vue$/)[1];",
       "  const folder = getCompPathName(p).toLowerCase();",
       "  const option = comps(p).default;",
-      "  const final = 'yn-' + folder + name;",
+      "  const final = 'yy-' + folder + name;",
       "  Vue.component(final, option);",
       "});"
     ]

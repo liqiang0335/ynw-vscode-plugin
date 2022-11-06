@@ -1,7 +1,4 @@
-{"ynw.vue.chat": {
-      "prefix": "⭕️ yy.vue.chat",
-      "body": ["import chat from 'ynw/vue/chat'"]
-    },"ynw.vue.cropper": {
+{"ynw.vue.cropper": {
       "prefix": "⭕️ yy.vue.cropper",
       "body": ["import cropper from 'ynw/vue/cropper'"]
     },"ynw.vue.fetch-page": {

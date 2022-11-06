@@ -229,9 +229,6 @@
     },"ynw.script.dayjs": {
       "prefix": "⭕️ yy.script.dayjs",
       "body": ["import dayjs from 'ynw/script/dayjs'"]
-    },"ynw.script.deleter": {
-      "prefix": "⭕️ yy.script.deleter",
-      "body": ["import deleter from 'ynw/script/deleter'"]
     },"ynw.script.exportCSV": {
       "prefix": "⭕️ yy.script.exportCSV",
       "body": ["import exportCSV from 'ynw/script/exportCSV'"]
@@ -247,9 +244,15 @@
     },"ynw.script.previewImage": {
       "prefix": "⭕️ yy.script.previewImage",
       "body": ["import previewImage from 'ynw/script/previewImage'"]
+    },"ynw.script.sleep": {
+      "prefix": "⭕️ yy.script.sleep",
+      "body": ["import sleep from 'ynw/script/sleep'"]
     },"ynw.script.srcToBase64": {
       "prefix": "⭕️ yy.script.srcToBase64",
       "body": ["import srcToBase64 from 'ynw/script/srcToBase64'"]
+    },"ynw.script.wxChooseImage": {
+      "prefix": "⭕️ yy.script.wxChooseImage",
+      "body": ["import wxChooseImage from 'ynw/script/wxChooseImage'"]
     },"ynw.string.compareVersion": {
       "prefix": "⭕️ yy.string.compareVersion",
       "body": ["import compareVersion from 'ynw/string/compareVersion'"]
@@ -286,6 +289,9 @@
     },"ynw.ui.Download": {
       "prefix": "⭕️ yy.ui.Download",
       "body": ["import Download from 'ynw/ui/Download'"]
+    },"ynw.ui.EchartsBox": {
+      "prefix": "⭕️ yy.ui.EchartsBox",
+      "body": ["import EchartsBox from 'ynw/ui/EchartsBox'"]
     },"ynw.ui.FetchMore": {
       "prefix": "⭕️ yy.ui.FetchMore",
       "body": ["import FetchMore from 'ynw/ui/FetchMore'"]
@@ -298,6 +304,9 @@
     },"ynw.ui.ImageWithPreview": {
       "prefix": "⭕️ yy.ui.ImageWithPreview",
       "body": ["import ImageWithPreview from 'ynw/ui/ImageWithPreview'"]
+    },"ynw.ui.LoadMore": {
+      "prefix": "⭕️ yy.ui.LoadMore",
+      "body": ["import LoadMore from 'ynw/ui/LoadMore'"]
     },"ynw.ui.NoticeBar": {
       "prefix": "⭕️ yy.ui.NoticeBar",
       "body": ["import NoticeBar from 'ynw/ui/NoticeBar'"]
