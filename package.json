@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.12.2",
+  "version": "0.13.0",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -24,6 +24,9 @@
     "ynw"
   ],
   "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onCommand:ynw.log",
     "onCommand:ynw.copyName",
     "onCommand:ynw.fastInput",
     "onCommand:ynw.importModule",
@@ -36,6 +39,30 @@
   ],
   "main": "./src/extension",
   "contributes": {
+    "languages": [
+      {
+        "id": "javascript",
+        "aliases": [
+          "JavaScript",
+          "javascript",
+          "js"
+        ],
+        "extensions": [
+          ".js"
+        ]
+      },
+      {
+        "id": "typescript",
+        "aliases": [
+          "TypeScript",
+          "typescript",
+          "ts"
+        ],
+        "extensions": [
+          ".ts"
+        ]
+      }
+    ],
     "configuration": {
       "type": "object",
       "title": "ynw",
@@ -71,6 +98,10 @@
     },
     "commands": [
       {
+        "command": "ynw.log",
+        "title": "打印变量"
+      },
+      {
         "command": "ynw.importModule",
         "title": "导入文件-import"
       },
@@ -100,6 +131,10 @@
       }
     ],
     "keybindings": [
+      {
+        "command": "ynw.log",
+        "key": "ctrl+p ctrl+p"
+      },
       {
         "command": "ynw.copyName",
         "key": "ctrl+o ctrl+o"
