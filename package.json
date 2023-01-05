@@ -119,15 +119,15 @@
       },
       {
         "command": "ynw.webpackBuild.dev",
-        "title": "yy >> 开发环境"
+        "title": "yy >> Dev"
       },
       {
         "command": "ynw.webpackBuild.hot",
-        "title": "yy >> 热更新模式"
+        "title": "yy >> 热更新"
       },
       {
         "command": "ynw.webpackBuild.pro",
-        "title": "yy >> 生产环境"
+        "title": "yy >> Build"
       }
     ],
     "keybindings": [
