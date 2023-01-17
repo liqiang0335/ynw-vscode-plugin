@@ -1,88 +1,59 @@
 {
-  "⭕️ useCallback": {
-    "prefix": "iiuseCallback",
+  "⭕️ 数组:reduce": {
+    "prefix": "ii.array.reduce",
     "body": [
-      "const ${1:fn} = useCallback(",
-      "  () => {",
-      "    ${0:callback}",
-      "  },",
-      "  [],",
-      ")"
+      "data.reduce((p, c) => {",
+      "  p[c.id] = c;$0",
+      "  return p;",
+      "}, {});"
     ]
   },
-  "⭕️ next请求时渲染": {
-    "prefix": "next-server-props",
+  "⭕️ 选择内部对象": {
+    "prefix": "iiconst",
     "body": [
-      "export async function getServerSideProps({ req, res, params, query}) {",
-      "  res.setHeader('Cache-Control', 'public, s-maxage=600, stale-while-revalidate=59');",
-      "",
-      "  return {",
-      "    props: {},",
-      "  }",
-      "}"
+      "const { $0 } = ${CLIPBOARD}"
     ]
   },
-  "⭕️ next构建时渲染": {
-    "prefix": "next-static-props",
+  "⭕️ log": {
+    "prefix": "iilog",
     "body": [
-      "export async function getStaticProps({ req, res, params }) {",
-      "  return {",
-      "    props: {",
-      "      datas: [],",
-      "    },",
-      "    revalidate: 3600,",
-      "  };",
-      "}"
+      "console.log('🍎', $1);$0"
     ]
   },
-  "⭕️ swr-导入": {
-    "prefix": "imswr",
-    "body": "import useSWR from 'swr';"
-  },
-  "⭕️ swr-请求": {
-    "prefix": "useSWR",
-    "body": "const { data = [] } = useSWR('$1')"
-  },
-  "⭕️ antd-页码配置": {
-    "prefix": "antd-pagination",
+  "⭕️ 立即执行函数": {
+    "prefix": "iife",
     "body": [
-      "pagination={{",
-      "  showSizeChanger: false,",
-      "  current: state.page,",
-      "  total: state.total,",
-      "  onChange(page) {",
-      "    dispatch({ page });",
-      "  },",
-      "}}"
-    ]
-  },
-  "⭕️ express-函数": {
-    "prefix": "eemain",
-    "body": [
-      "async function main() {",
+      "let $1 = (function(){",
       "  $0",
-      "}",
-      "",
-      "module.exports = main;"
+      "})()"
     ]
   },
-  "⭕️ 堆石配置文件": {
-    "prefix": "damconfig",
+  "⭕️ 导入对象": {
+    "prefix": "const",
+    "body": "const { $0 } = $1;"
+  },
+  "⭕️ 注释": {
+    "prefix": "ooo",
     "body": [
-      "const damconfig = require('@dam/config');"
+      "/**",
+      "* $0",
+      "*/"
     ]
   },
-  "⭕️ 导入exec": {
-    "prefix": "ee.re.child_process",
+  "⭕️ 创建函数-async": {
+    "prefix": "iiasyncfunc",
     "body": [
-      "const util = require('util');",
-      "const exec = util.promisify(require('child_process').exec);"
+      "async function $1 (){",
+      " $0",
+      "}"
     ]
   },
-  "⭕️ 导入fs": {
-    "prefix": "exec",
+  "⭕️ 创建函数": {
+    "prefix": "iifunc",
     "body": [
-      "const fs = require('fs/promises');"
+      "function $1 (){",
+      " $0",
+      "}"
     ]
   },
   "< comp />": {
@@ -99,19 +70,6 @@
     "prefix": "ignore",
     "body": [
       "// prettier-ignore"
-    ]
-  },
-  "⭕️ 导入rxjx": {
-    "prefix": "iirxjs1",
-    "body": [
-      "import { Subject } from 'rxjs';",
-      "import { map } from 'rxjs/operators'"
-    ]
-  },
-  "⭕️ 导入rxjs-hooks": {
-    "prefix": "iirxjs-hooks",
-    "body": [
-      "import { useEventCallback, useObservable } from 'rxjs-hooks'"
     ]
   },
   "⭕️ try-throw": {
@@ -144,30 +102,6 @@
       " */"
     ]
   },
-  "⭕️ 公共脚本": {
-    "prefix": "iiiscript",
-    "body": [
-      "import module from '@script$1';"
-    ]
-  },
-  "⭕️ 公共Hooks": {
-    "prefix": "iiihook",
-    "body": [
-      "import module  from '@hook$1';"
-    ]
-  },
-  "⭕️ 公共组件": {
-    "prefix": "iiicomps",
-    "body": [
-      "import module from '@comps$1';"
-    ]
-  },
-  "⭕️ 公共常量": {
-    "prefix": "iiiconst",
-    "body": [
-      "import module from '@const$1';"
-    ]
-  },
   "⭕️ reducer: initState": {
     "prefix": "initState",
     "body": [
@@ -191,12 +125,6 @@
       "console.log('🍎', $0)"
     ]
   },
-  "⭕️ import dayjs": {
-    "prefix": "iidayjs1",
-    "body": [
-      "import dayjs from 'dayjs';"
-    ]
-  },
   "⭕️ dayjs(time).format": {
     "prefix": "iidayjs2",
     "body": [
@@ -218,61 +146,6 @@
   "⭕️ 环境:生产": {
     "prefix": "iienvpro",
     "body": "process.env.NODE_ENV ==\"production\""
-  },
-  "⭕️ import xxx from xxx": {
-    "prefix": "iim1",
-    "body": "import ${1} from '${1:name}'"
-  },
-  "⭕️ import { xxx } from xxx": {
-    "prefix": "iim2",
-    "body": "import { $2 } from '${1:module}'$0"
-  },
-  "⭕️ import * as xxx": {
-    "prefix": "iim3",
-    "body": "import * as $1 from '$2';$0"
-  },
-  "⭕️ xxx = require('xxx')": {
-    "prefix": "iire1",
-    "body": "const ${1} = require('${1:name}');$0"
-  },
-  "⭕️ { xxx } = require('xxx')": {
-    "prefix": "iire2",
-    "body": "const { $2 } = require('$1');$0"
-  },
-  "⭕️ 导入变量模块": {
-    "prefix": "iire3",
-    "body": "const { $2 } = $1;$0"
-  },
-  "⭕️ 导入Rxjs": {
-    "prefix": "iirxcmd",
-    "body": [
-      "const { Subject } = require('rxjs');",
-      "const { map } = require('rxjs/operators');"
-    ]
-  },
-  "⭕️ 导入相关样式": {
-    "prefix": "iims",
-    "body": [
-      "import ${1:styles} from './${TM_FILENAME_BASE}.scss';$0"
-    ]
-  },
-  "⭕️ ES导入: import { $0 } from 'lodash-es'": {
-    "prefix": "iilodash1",
-    "body": [
-      "import { $0 } from 'lodash-es';"
-    ]
-  },
-  "⭕️ CMD全部: _ = require('lodash')": {
-    "prefix": "iilodash2",
-    "body": [
-      "const _ = require('lodash');"
-    ]
-  },
-  "⭕️ CMD按需: xxx = require('lodash/xxx')": {
-    "prefix": "iilodash3",
-    "body": [
-      "const ${1} = require('lodash/${1}');"
-    ]
   },
   "⭕️ 函数1": {
     "prefix": "iifuncion",
@@ -300,24 +173,6 @@
       "});"
     ]
   },
-  "⭕️ 导入API": {
-    "prefix": "iiapi",
-    "body": [
-      "import * as api from '@script/api';"
-    ]
-  },
-  "⭕️ 导入immer": {
-    "prefix": "immer",
-    "body": [
-      "import produce from 'immer';"
-    ]
-  },
-  "⭕️ 我的Hub": {
-    "prefix": "iihub",
-    "body": [
-      "import hub, { $1 } from '@store/hub';"
-    ]
-  },
   "⭕️ 注册V组件": {
     "prefix": "vvregister",
     "body": [
@@ -337,22 +192,6 @@
       "});"
     ]
   },
-  "⭕️ next-link": {
-    "prefix": "nextlink",
-    "body": "import Link from 'next/link'"
-  },
-  "⭕️ next-image": {
-    "prefix": "nextimage",
-    "body": "import Image from 'next/image'"
-  },
-  "⭕️ next-router": {
-    "prefix": "nextrouter",
-    "body": "import { useRouter } from 'next/router'"
-  },
-  "⭕️ next-header": {
-    "prefix": "nextheader",
-    "body": "import Head from 'next/head'"
-  },
   "⭕️ axios-base": {
     "prefix": "iiaxios1",
     "body": [
@@ -369,7 +208,6 @@
   "⭕️ axios-form": {
     "prefix": "iiaxios2",
     "body": [
-      "import Qs from 'querystring';",
       "import axios from 'axios';",
       "import { notification, message } from 'antd';",
       "",
@@ -380,7 +218,7 @@
       "  headers: {",
       "    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',",
       "  },",
-      "  transformRequest: params => Qs.stringify(params),",
+      "  transformRequest: params => new URLSearchParams(params).toString(),",
       "});",
       "",
       "export default http;"

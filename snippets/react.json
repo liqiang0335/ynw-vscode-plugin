@@ -1,26 +1,59 @@
 {
-	"⭕️ 导入styled": {
-		"prefix": "iistyled",
+	"⭕️ useSelector": {
+		"prefix": "iiuseSelector",
 		"body": [
-			"import styled from 'styled-components';"
+			"const ${1:user} = useSelector(s => s.${1:user});"
 		]
 	},
-	"⭕️ 导入router": {
-		"prefix": "iirouter",
+	"⭕️ iird17": {
+		"prefix": "iird17",
 		"body": [
-			"import { useHistory, NavLink } from 'react-router-dom'"
+			"import React from 'react'",
+			"import ReactDOM from 'react-dom'",
+			"",
+			"",
+			"const App = () => {",
+			"  return (",
+			"    <div>",
+			"      <div>Hello</div>",
+			"    </div>",
+			"  )",
+			"}",
+			"",
+			"ReactDOM.render(<App />, document.getElementById('app'))"
 		]
 	},
-	"⭕️ 导入useSelector ": {
-		"prefix": "iiredux1",
+	"⭕️ next请求时渲染": {
+		"prefix": "next-server-props",
 		"body": [
-			"import { useSelector } from 'react-redux'"
+			"export async function getServerSideProps({ req, res, params, query}) {",
+			"  res.setHeader('Cache-Control', 'public, s-maxage=600, stale-while-revalidate=59');",
+			"",
+			"  return {",
+			"    props: {},",
+			"  }",
+			"}"
 		]
 	},
-	"⭕️ 导入useDispatch": {
-		"prefix": "iiredux2",
+	"⭕️ next构建时渲染": {
+		"prefix": "next-static-props",
 		"body": [
-			"import { useDispatch } from 'react-redux'"
+			"export async function getStaticProps({ req, res, params }) {",
+			"  return {",
+			"    props: {",
+			"      datas: [],",
+			"    },",
+			"    revalidate: 3600,",
+			"  };",
+			"}"
+		]
+	},
+	"⭕️ useKeyPress-使用": {
+		"prefix": "useKeyPress1",
+		"body": [
+			"useKeyPress('ctrl.alt.c', () => {",
+			"  setCounter(s => s + 1);",
+			"});"
 		]
 	},
 	"⭕️ createSelector": {
@@ -54,18 +87,6 @@
 	"⭕️ 行内样式": {
 		"prefix": "iiclassName",
 		"body": "className={styles.$1} $2"
-	},
-	"⭕️ imr": {
-		"prefix": "iir",
-		"body": [
-			"import React from 'react'"
-		]
-	},
-	"⭕️ imd": {
-		"prefix": "iid",
-		"body": [
-			"import ReactDOM from 'react-dom'"
-		]
 	},
 	"⭕️ 函数组件": {
 		"prefix": "iirfc",
@@ -199,12 +220,6 @@
 			"  number: PropTypes.number.isRequired,",
 			"  customProp(props, propName, componentName) {}",
 			"};"
-		]
-	},
-	"⭕️ import useSWR": {
-		"prefix": "iiswr",
-		"body": [
-			"import useSWR from 'swr';"
 		]
 	},
 	"⭕️ 创建styled": {

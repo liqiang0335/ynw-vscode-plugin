@@ -1,4 +1,62 @@
 {
+  "⭕️ ee.mongo.lookup": {
+    "prefix": "ee.mongo.lookup",
+    "body": [
+      "{ $lookup: { from: 'xxx', localField: '_id', foreignField: '_id', as: 'docs' } }",
+      "{ $unwind: { path: '$docs', preserveNullAndEmptyArrays: true } }"
+    ]
+  },
+  "⭕️ ee.mongo.cursor": {
+    "prefix": "ee.mongo.cursor",
+    "body": [
+      "const cursor = await Model.find({}).cursor();",
+      "for (let doc = await cursor.next(); doc != null; doc = await cursor.next()) {",
+      "   $0",
+      "}"
+    ]
+  },
+  "⭕️ ee.增删改查": {
+    "prefix": "ee.api",
+    "body": [
+      "async function get${1:name}Items(req, res, next) {",
+      "  const { page = 1 } = req.query;",
+      "  ${1:name}.find()",
+      "    .byPage(page)",
+      "    .then(data => res.send(req.fn.ok(data)))",
+      "    .catch(next);",
+      "}",
+      "",
+      "async function add${1:name}(req, res, next) {",
+      "  ${1:name}.create(req.body)",
+      "    .then(data => res.send(req.fn.ok(data)))",
+      "    .catch(next);",
+      "}",
+      "",
+      "async function update${1:name}(req, res, next) {",
+      "  const { _id } = req.body;",
+      "  ${1:name}.updateOne({ _id }, req.body)",
+      "    .then(data => res.send(req.fn.ok(data)))",
+      "    .catch(next);",
+      "}",
+      "",
+      "async function delete${1:name}(req, res, next) {",
+      "  const { _id } = req.body;",
+      "  ${1:name}.deleteOne({ _id })",
+      "    .then(data => res.send(req.fn.ok(data)))",
+      "    .catch(next);",
+      "}"
+    ]
+  },
+  "⭕️ Express-函数": {
+    "prefix": "eemain",
+    "body": [
+      "async function main() {",
+      "  $0",
+      "}",
+      "",
+      "module.exports = main;"
+    ]
+  },
   "⭕️ Express.响应": {
     "prefix": "eeresponse",
     "body": [
@@ -45,6 +103,14 @@
       "};"
     ]
   },
+  "⭕️ 中间件2": {
+    "prefix": "eefunction",
+    "body": [
+      "async function $1(req, res, next) {",
+      "  $0",
+      "};"
+    ]
+  },
   "⭕️ Express.try": {
     "prefix": "eetry",
     "body": [
@@ -53,14 +119,6 @@
       "} catch (err) {",
       " return next(new Error(err))",
       "}"
-    ]
-  },
-  "⭕️ 中间件2": {
-    "prefix": "eefunction",
-    "body": [
-      "async function $1(req, res, next) {",
-      "  $0",
-      "};"
     ]
   },
   "⭕️ 发送数据": {
@@ -73,30 +131,6 @@
     "prefix": "eefail",
     "body": [
       "res.send(req.fn.error($0))"
-    ]
-  },
-  "⭕️ Node导入1": {
-    "prefix": "eee_const",
-    "body": [
-      "const module = require('@const$0');"
-    ]
-  },
-  "⭕️ Node导入2": {
-    "prefix": "eee_pipes",
-    "body": [
-      "const module = require('@pipes$0');"
-    ]
-  },
-  "⭕️ Node导入3": {
-    "prefix": "eee_schema",
-    "body": [
-      "const module = require('@schema$0');"
-    ]
-  },
-  "⭕️ Node导入4": {
-    "prefix": "eee_utils",
-    "body": [
-      "const module = require('@utils$1');"
     ]
   }
 }

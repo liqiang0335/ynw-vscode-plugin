@@ -73,12 +73,6 @@
       "style={styles.$1}$0"
     ]
   },
-  "⭕️ RN图标-导入": {
-    "prefix": "nnicon1",
-    "body": [
-      "import { Entypo, AntDesign } from '@expo/vector-icons';"
-    ]
-  },
   "⭕️ RN图标-示例": {
     "prefix": "nnicon2",
     "body": [
@@ -101,30 +95,6 @@
     "prefix": "nnView",
     "body": [
       "<View style={styles.$2}>$1</View>"
-    ]
-  },
-  "⭕️ 导入ReactNative": {
-    "prefix": "nnimrn",
-    "body": [
-      "import { $0 } from 'react-native';"
-    ]
-  },
-  "⭕️ 导入NavNative": {
-    "prefix": "navnative",
-    "body": [
-      "import { NavigationContainer } from '@react-navigation/native'"
-    ]
-  },
-  "⭕️ 导入NavStack": {
-    "prefix": "navstack",
-    "body": [
-      "import { createStackNavigator } from '@react-navigation/stack'"
-    ]
-  },
-  "⭕️ 导入NavBottomTab": {
-    "prefix": "navbottom",
-    "body": [
-      "import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'"
     ]
   }
 }

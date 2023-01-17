@@ -1,11 +1,20 @@
 {
-  "⭕️ 表单重置-antd": {
+  "⭕️ antd-页码配置": {
+    "prefix": "antd-pagination",
+    "body": [
+      "pagination={{",
+      "  showSizeChanger: false,",
+      "  current: state.page,",
+      "  total: state.total,",
+      "  onChange(page) {",
+      "    dispatch({ page });",
+      "  },",
+      "}}"
+    ]
+  },
+  "⭕️ antd-表单重置": {
     "prefix": "form.resetFields",
     "body": "form.resetFields"
-  },
-  "⭕️ 表单-onValuesChange": {
-    "prefix": "form.onValuesChange",
-    "body": "form.onValuesChange"
   },
   "⭕️ 表单-onFieldsChange": {
     "prefix": "form.onFieldsChange",
@@ -15,27 +24,9 @@
     "prefix": "form.setFieldsValue",
     "body": "form.setFieldsValue"
   },
-  "⭕️ 表单验证-antd": {
+  "⭕️ antd表单验证": {
     "prefix": "form.validateFields",
     "body": "form.validateFields"
-  },
-  "⭕️ 图标-antd": {
-    "prefix": "icon1",
-    "body": [
-      "import { $1 } from '@ant-design/icons';"
-    ]
-  },
-  "⭕️ 图标-iconpark": {
-    "prefix": "icon2",
-    "body": [
-      "import { $1 } from '@icon-park/react';"
-    ]
-  },
-  "⭕️ 导入antd": {
-    "prefix": "antd",
-    "body": [
-      "import { $1 } from 'antd'"
-    ]
   },
   "⭕️ 通用弹窗": {
     "prefix": "iicomdialog",
@@ -267,18 +258,6 @@
       "",
       ";"
     ]
-  },
-  "⭕️ 导入Taro组件": {
-    "prefix": "tacomps",
-    "body": "import { View, Text } from '@tarojs/components'"
-  },
-  "⭕️ 导入Taro-UI": {
-    "prefix": "taui",
-    "body": "import { AtButton } from 'taro-ui'"
-  },
-  "⭕️ 导入TaroJS": {
-    "prefix": "tajs",
-    "body": "import Taro from '@tarojs/taro'"
   },
   "⭕️ ta-className": {
     "prefix": "taclass",

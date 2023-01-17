@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.13.0",
+  "version": "0.13.1",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -119,11 +119,11 @@
       },
       {
         "command": "ynw.webpackBuild.dev",
-        "title": "yy >> Dev"
+        "title": "yy >> watch"
       },
       {
         "command": "ynw.webpackBuild.hot",
-        "title": "yy >> 热更新"
+        "title": "yy >> dev"
       },
       {
         "command": "ynw.webpackBuild.pro",
@@ -196,6 +196,10 @@
       {
         "language": "vue",
         "path": "./snippets/vue-template.json"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/import.json"
       },
       {
         "language": "javascript",

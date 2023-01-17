@@ -1,0 +1,309 @@
+{
+  "⭕️ 导入NavStack": {
+    "prefix": "mmrn.navigation.stack",
+    "body": [
+      "import { createStackNavigator } from '@react-navigation/stack'"
+    ]
+  },
+  "⭕️ 导入NavBottomTab": {
+    "prefix": "mmrn.navigation.bottom-tabs",
+    "body": [
+      "import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'"
+    ]
+  },
+  "⭕️ 导入ReactNative": {
+    "prefix": "mmrn",
+    "body": [
+      "import { $0 } from 'react-native';"
+    ]
+  },
+  "⭕️ 导入NavNative": {
+    "prefix": "mmrn-navigation-native",
+    "body": [
+      "import { NavigationContainer } from '@react-navigation/native'"
+    ]
+  },
+  "⭕️ 导入RN图标": {
+    "prefix": "mmrn-icon1",
+    "body": [
+      "import { Entypo, AntDesign } from '@expo/vector-icons';"
+    ]
+  },
+  "⭕️ 导入Taro组件": {
+    "prefix": "mmtaro-components",
+    "body": "import { View, Text } from '@tarojs/components'"
+  },
+  "⭕️ 导入Taro-UI": {
+    "prefix": "mmtaro-ui",
+    "body": "import { AtButton } from 'taro-ui'"
+  },
+  "⭕️ 导入TaroJS": {
+    "prefix": "mmtaro-js",
+    "body": "import Taro from '@tarojs/taro'"
+  },
+  "⭕️ 导入antd图标": {
+    "prefix": "mmant-icon1",
+    "body": [
+      "import { $1 } from '@ant-design/icons';"
+    ]
+  },
+  "⭕️ 导入iconpark图标": {
+    "prefix": "mmant-icon2",
+    "body": [
+      "import { $1 } from '@icon-park/react';"
+    ]
+  },
+  "⭕️ 导入antd": {
+    "prefix": "mmant",
+    "body": [
+      "import { $1 } from 'antd'"
+    ]
+  },
+  "⭕️ xxx = require('xxx')": {
+    "prefix": "mmre-1",
+    "body": "const ${1} = require('${1:name}');$0"
+  },
+  "⭕️ { xxx } = require('xxx')": {
+    "prefix": "mmre-2",
+    "body": "const { $2 } = require('$1');$0"
+  },
+  "⭕️ 导入fs": {
+    "prefix": "mmre-fs",
+    "body": [
+      "const fs = require('fs/promises');"
+    ]
+  },
+  "⭕️ 导入Controller": {
+    "prefix": "mmre-controller",
+    "body": [
+      "const module = require('@controller$1');"
+    ]
+  },
+  "⭕️ 导入Const": {
+    "prefix": "mmre-const",
+    "body": [
+      "const module = require('@const$1');"
+    ]
+  },
+  "⭕️ 导入pipes": {
+    "prefix": "mmre-pipes",
+    "body": [
+      "const module = require('@pipes$1');"
+    ]
+  },
+  "⭕️ 导入Schema": {
+    "prefix": "mmre-schema",
+    "body": [
+      "const module = require('@schema$1');"
+    ]
+  },
+  "⭕️ 导入utils": {
+    "prefix": "mmre-utils",
+    "body": [
+      "const module = require('@utils$1');"
+    ]
+  },
+  "⭕️ 导入api": {
+    "prefix": "mmre-api",
+    "body": [
+      "const module = require('@api$1');"
+    ]
+  },
+  "⭕️ 导入script": {
+    "prefix": "mmre-script",
+    "body": [
+      "const module = require('@script$1');"
+    ]
+  },
+  "⭕️ 导入child_process": {
+    "prefix": "mmre-child_process",
+    "body": [
+      "const util = require('util');",
+      "const exec = util.promisify(require('child_process').exec);"
+    ]
+  },
+  "⭕️ 导入lodash: _ = require('lodash')": {
+    "prefix": "mmre-lodash",
+    "body": [
+      "const _ = require('lodash');"
+    ]
+  },
+  "⭕️ 导入Rxjs": {
+    "prefix": "mmre-rxjs",
+    "body": [
+      "const { Subject } = require('rxjs');",
+      "const { map } = require('rxjs/operators');"
+    ]
+  },
+  "⭕️ 导入lodash-es": {
+    "prefix": "mmm-lodash-es",
+    "body": [
+      "import { $0 } from 'lodash-es';"
+    ]
+  },
+  "⭕️ 导入dayjs": {
+    "prefix": "mmm-dayjs",
+    "body": [
+      "import dayjs from 'dayjs';"
+    ]
+  },
+  "⭕️ 导入rxjs-hooks": {
+    "prefix": "mmm-rxjs-hooks",
+    "body": [
+      "import { useEventCallback, useObservable } from 'rxjs-hooks'"
+    ]
+  },
+  "⭕️ 导入rxjx": {
+    "prefix": "mmm-rxjx",
+    "body": [
+      "import { Subject } from 'rxjs';",
+      "import { map } from 'rxjs/operators'"
+    ]
+  },
+  "⭕️ 导入React": {
+    "prefix": "mmm-react",
+    "body": [
+      "import React from 'react'"
+    ]
+  },
+  "⭕️ 导入react-dom": {
+    "prefix": "mmm-react-dom",
+    "body": [
+      "import ReactDOM from 'react-dom'"
+    ]
+  },
+  "⭕️ 导入ahooks-useKeyPress": {
+    "prefix": "mmm-ahooks-useKeyPress",
+    "body": [
+      "import { useKeyPress } from 'ahooks'"
+    ]
+  },
+  "⭕️ 导入router": {
+    "prefix": "mmm-router",
+    "body": [
+      "import { useHistory, NavLink } from 'react-router-dom'"
+    ]
+  },
+  "⭕️ 导入useSelector ": {
+    "prefix": "mmm-redux-useSelector",
+    "body": [
+      "import { useSelector } from 'react-redux'"
+    ]
+  },
+  "⭕️ 导入useDispatch": {
+    "prefix": "mmm-redux-useDispatch",
+    "body": [
+      "import { useDispatch } from 'react-redux'"
+    ]
+  },
+  "⭕️ 导入vant": {
+    "prefix": "mmvant",
+    "body": [
+      "import { $0 } from 'react-vant';"
+    ]
+  },
+  "⭕️ 导入vant-icons": {
+    "prefix": "mmvant-icons",
+    "body": [
+      "import { ${CLIPBOARD} } from '@react-vant/icons';"
+    ]
+  },
+  "⭕️ 导入classnames": {
+    "prefix": "mmm-classnames",
+    "body": [
+      "import c from 'classnames'"
+    ]
+  },
+  "⭕️ 导入styled-components": {
+    "prefix": "mmm-styled",
+    "body": [
+      "import styled from 'styled-components'"
+    ]
+  },
+  "⭕️ 导入useSWR": {
+    "prefix": "mmm-swr",
+    "body": [
+      "import useSWR from 'swr';"
+    ]
+  },
+  "⭕️ import xxx from xxx": {
+    "prefix": "mmm-1",
+    "body": "import ${1} from '${1:name}'"
+  },
+  "⭕️ import { xxx } from xxx": {
+    "prefix": "mmm-2",
+    "body": "import { $2 } from '${1:module}'$0"
+  },
+  "⭕️ import * as xxx": {
+    "prefix": "mmm-3",
+    "body": "import * as $1 from '$2';$0"
+  },
+  "⭕️ const { xxx } = xxx": {
+    "prefix": "mmm-4",
+    "body": "const { $2 } = $1;$0"
+  },
+  "⭕️ 导入immer": {
+    "prefix": "mmm-immer",
+    "body": [
+      "import produce from 'immer';"
+    ]
+  },
+  "⭕️ next-link": {
+    "prefix": "mmnext-link",
+    "body": "import Link from 'next/link'"
+  },
+  "⭕️ next-image": {
+    "prefix": "mmnext-image",
+    "body": "import Image from 'next/image'"
+  },
+  "⭕️ next-router": {
+    "prefix": "mmnext-router",
+    "body": "import { useRouter } from 'next/router'"
+  },
+  "⭕️ next-header": {
+    "prefix": "mmnext-header",
+    "body": "import Head from 'next/head'"
+  },
+  "⭕️ 导入next_script": {
+    "prefix": "mmnext-script",
+    "body": [
+      "import Script from 'next/script'"
+    ]
+  },
+  "⭕️ 导入next-dynamic": {
+    "prefix": "mmnext-dynamic",
+    "body": [
+      "import dynamic from 'next/dynamic'"
+    ]
+  },
+  "⭕️ 公共脚本": {
+    "prefix": "iiiscript",
+    "body": [
+      "import module from '@script$1';"
+    ]
+  },
+  "⭕️ 公共Hooks": {
+    "prefix": "iiihook",
+    "body": [
+      "import module  from '@hook$1';"
+    ]
+  },
+  "⭕️ 公共组件": {
+    "prefix": "iiicomps",
+    "body": [
+      "import module from '@comps$1';"
+    ]
+  },
+  "⭕️ 公共常量": {
+    "prefix": "iiiconst",
+    "body": [
+      "import module from '@const$1';"
+    ]
+  },
+  "⭕️ 导入API": {
+    "prefix": "iiiapi",
+    "body": [
+      "import * as api from '@script/api';"
+    ]
+  }
+}
