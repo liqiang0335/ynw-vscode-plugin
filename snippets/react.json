@@ -1,12 +1,12 @@
 {
 	"⭕️ useSelector": {
-		"prefix": "yy.useSelector",
+		"prefix": "yyuseSelector",
 		"body": [
 			"const ${1:user} = useSelector(s => s.${1:user});"
 		]
 	},
 	"⭕️ iird17": {
-		"prefix": "yy.rd17",
+		"prefix": "yyrd17",
 		"body": [
 			"import React from 'react'",
 			"import ReactDOM from 'react-dom'",
@@ -24,7 +24,7 @@
 		]
 	},
 	"⭕️ next请求时渲染": {
-		"prefix": "yy.next-server-props",
+		"prefix": "yynext-server-props",
 		"body": [
 			"export async function getServerSideProps({ req, res, params, query}) {",
 			"  res.setHeader('Cache-Control', 'public, s-maxage=600, stale-while-revalidate=59');",
@@ -36,7 +36,7 @@
 		]
 	},
 	"⭕️ next构建时渲染": {
-		"prefix": "yy.next-static-props",
+		"prefix": "yynext-static-props",
 		"body": [
 			"export async function getStaticProps({ req, res, params }) {",
 			"  return {",
@@ -49,7 +49,7 @@
 		]
 	},
 	"⭕️ useKeyPress-使用": {
-		"prefix": "yy.useKeyPress1",
+		"prefix": "yyuseKeyPress1",
 		"body": [
 			"useKeyPress('ctrl.alt.c', () => {",
 			"  setCounter(s => s + 1);",
@@ -57,7 +57,7 @@
 		]
 	},
 	"⭕️ createSelector": {
-		"prefix": "yy.createSelector",
+		"prefix": "yycreateSelector",
 		"body": [
 			"import { createSelector } from 'reselect';",
 			"",
@@ -69,13 +69,13 @@
 		]
 	},
 	"⭕️ useState": {
-		"prefix": "yy.useState",
+		"prefix": "yyuseState",
 		"body": [
 			"const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState($2)"
 		]
 	},
 	"⭕️ useEffect": {
-		"prefix": "yy.useEffect",
+		"prefix": "yyuseEffect",
 		"body": [
 			"useEffect(() => {",
 			" $1",
@@ -85,11 +85,11 @@
 		]
 	},
 	"⭕️ 行内样式": {
-		"prefix": "yy.className",
+		"prefix": "yyclassName",
 		"body": "className={styles.$1} $2"
 	},
 	"⭕️ 函数组件": {
-		"prefix": "yy.rfc",
+		"prefix": "yyrfc",
 		"body": [
 			"import React from 'react'",
 			"",
@@ -104,7 +104,7 @@
 		]
 	},
 	"⭕️ 逻辑组件": {
-		"prefix": "yy.rfc-logic",
+		"prefix": "yyrfc-logic",
 		"description": "创建逻辑组件、useHook组件",
 		"body": [
 			"import React, { useReducer, useEffect } from 'react';",
@@ -126,26 +126,26 @@
 		]
 	},
 	"⭕️ useContext": {
-		"prefix": "yy.useContext",
+		"prefix": "yyuseContext",
 		"body": [
 			"const ${1:context} = useContext(${2:contextValue})"
 		]
 	},
 	"⭕️ useReducer": {
-		"prefix": "yy.useReducer",
+		"prefix": "yyuseReducer",
 		"body": [
 			"const [state, dispatch] = useReducer(${1:reducer}, ${2:initState})"
 		]
 	},
 	"⭕️ iiuselogic": {
-		"prefix": "yy.uselogic",
+		"prefix": "yyuselogic",
 		"body": [
 			"const props = useLogic();",
 			"const { state, dispatch } = props;"
 		]
 	},
 	"⭕️ useCallback": {
-		"prefix": "yy.useCallback",
+		"prefix": "yyuseCallback",
 		"body": [
 			"const ${1:fn} = useCallback(",
 			"  () => {",
@@ -156,31 +156,31 @@
 		]
 	},
 	"⭕️ useMemo": {
-		"prefix": "yy.useMemo",
+		"prefix": "yyuseMemo",
 		"body": [
 			"useMemo(() => ${1:function}, ${2:input})"
 		]
 	},
 	"⭕️ useRef": {
-		"prefix": "yy.useRef",
+		"prefix": "yyuseRef",
 		"body": [
 			"const ${1:ref} = useRef(${2:initialValue})"
 		]
 	},
 	"⭕️ 标签div": {
-		"prefix": "yy.div",
+		"prefix": "yydiv",
 		"body": [
 			"<div className={styles.$1}>$0</div>"
 		]
 	},
 	"⭕️ 标签span": {
-		"prefix": "yy.span",
+		"prefix": "yyspan",
 		"body": [
 			"<span className={styles.$1}>$0</span>"
 		]
 	},
 	"⭕️ iird": {
-		"prefix": "yy.rd",
+		"prefix": "yyrd",
 		"body": [
 			"import React from 'react';",
 			"import { createRoot } from 'react-dom/client';",
@@ -192,26 +192,8 @@
 			"createRoot(document.getElementById('app')).render(<App />);"
 		]
 	},
-	"⭕️ iird-17": {
-		"prefix": "yy.iird-17",
-		"body": [
-			"import React from 'react'",
-			"import ReactDOM from 'react-dom'",
-			"",
-			"",
-			"const App = () => {",
-			"  return (",
-			"    <div>",
-			"      <div>Hello</div>",
-			"    </div>",
-			"  )",
-			"}",
-			"",
-			"ReactDOM.render(<App />, document.getElementById('app'))"
-		]
-	},
 	"⭕️ 类型注释PropTypes": {
-		"prefix": "yy.proptypes",
+		"prefix": "yyproptypes",
 		"body": [
 			"import PropTypes from 'prop-types';",
 			"",

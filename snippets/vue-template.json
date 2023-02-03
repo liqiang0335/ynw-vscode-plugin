@@ -1,6 +1,6 @@
 {
   "⭕️ ==ynw.base==": {
-    "prefix": "yy.vue.base",
+    "prefix": "yyvue.base",
     "body": [
       "<template>",
       "  <div class='${TM_FILENAME_BASE}'>",

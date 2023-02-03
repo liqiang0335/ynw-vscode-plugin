@@ -1,277 +1,277 @@
 {
   "⭕️ 导入NavStack": {
-    "prefix": "yy.rn.navigation.stack",
+    "prefix": "yyrn.navigation.stack",
     "body": [
       "import { createStackNavigator } from '@react-navigation/stack'"
     ]
   },
   "⭕️ 导入NavBottomTab": {
-    "prefix": "yy.rn.navigation.bottom-tabs",
+    "prefix": "yyrn.navigation.bottom-tabs",
     "body": [
       "import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'"
     ]
   },
   "⭕️ 导入ReactNative": {
-    "prefix": "yy.rn",
+    "prefix": "yyrn",
     "body": [
       "import { $0 } from 'react-native';"
     ]
   },
   "⭕️ 导入NavNative": {
-    "prefix": "yy.rn-navigation-native",
+    "prefix": "yyrn-navigation-native",
     "body": [
       "import { NavigationContainer } from '@react-navigation/native'"
     ]
   },
   "⭕️ 导入RN图标": {
-    "prefix": "yy.rn-icon1",
+    "prefix": "yyrn-icon1",
     "body": [
       "import { Entypo, AntDesign } from '@expo/vector-icons';"
     ]
   },
   "⭕️ 导入Taro组件": {
-    "prefix": "yy.taro-components",
+    "prefix": "yytaro-components",
     "body": "import { View, Text } from '@tarojs/components'"
   },
   "⭕️ 导入Taro-UI": {
-    "prefix": "yy.taro-ui",
+    "prefix": "yytaro-ui",
     "body": "import { AtButton } from 'taro-ui'"
   },
   "⭕️ 导入TaroJS": {
-    "prefix": "yy.taro-js",
+    "prefix": "yytaro-js",
     "body": "import Taro from '@tarojs/taro'"
   },
   "⭕️ 导入antd图标": {
-    "prefix": "yy.ant-icon1",
+    "prefix": "yyant-icon1",
     "body": [
       "import { $1 } from '@ant-design/icons';"
     ]
   },
   "⭕️ 导入iconpark图标": {
-    "prefix": "yy.ant-icon2",
+    "prefix": "yyant-icon2",
     "body": [
       "import { $1 } from '@icon-park/react';"
     ]
   },
   "⭕️ 导入antd": {
-    "prefix": "yy.ant",
+    "prefix": "yyant",
     "body": [
       "import { $1 } from 'antd'"
     ]
   },
   "⭕️ xxx = require('xxx')": {
-    "prefix": "yy.re-1",
+    "prefix": "yyre-1",
     "body": "const ${1} = require('${1:name}');$0"
   },
   "⭕️ { xxx } = require('xxx')": {
-    "prefix": "yy.re-2",
+    "prefix": "yyre-2",
     "body": "const { $2 } = require('$1');$0"
   },
   "⭕️ 导入fs": {
-    "prefix": "yy.re-fs",
+    "prefix": "yyre-fs",
     "body": [
       "const fs = require('fs/promises');"
     ]
   },
   "⭕️ 导入Controller": {
-    "prefix": "yy.re-controller",
+    "prefix": "yyre-controller",
     "body": [
       "const module = require('@controller$1');"
     ]
   },
   "⭕️ 导入Const": {
-    "prefix": "yy.re-const",
+    "prefix": "yyre-const",
     "body": [
       "const module = require('@const$1');"
     ]
   },
   "⭕️ 导入pipes": {
-    "prefix": "yy.re-pipes",
+    "prefix": "yyre-pipes",
     "body": [
       "const module = require('@pipes$1');"
     ]
   },
   "⭕️ 导入Schema": {
-    "prefix": "yy.re-schema",
+    "prefix": "yyre-schema",
     "body": [
       "const module = require('@schema$1');"
     ]
   },
   "⭕️ 导入utils": {
-    "prefix": "yy.re-utils",
+    "prefix": "yyre-utils",
     "body": [
       "const module = require('@utils$1');"
     ]
   },
   "⭕️ 导入api": {
-    "prefix": "yy.re-api",
+    "prefix": "yyre-api",
     "body": [
       "const module = require('@api$1');"
     ]
   },
   "⭕️ 导入script": {
-    "prefix": "yy.re-script",
+    "prefix": "yyre-script",
     "body": [
       "const module = require('@script$1');"
     ]
   },
   "⭕️ 导入child_process": {
-    "prefix": "yy.re-child_process",
+    "prefix": "yyre-child_process",
     "body": [
       "const util = require('util');",
       "const exec = util.promisify(require('child_process').exec);"
     ]
   },
   "⭕️ 导入lodash: _ = require('lodash')": {
-    "prefix": "yy.re-lodash",
+    "prefix": "yyre-lodash",
     "body": [
       "const _ = require('lodash');"
     ]
   },
   "⭕️ 导入Rxjs": {
-    "prefix": "yy.re-rxjs",
+    "prefix": "yyre-rxjs",
     "body": [
       "const { Subject } = require('rxjs');",
       "const { map } = require('rxjs/operators');"
     ]
   },
   "⭕️ 导入lodash-es": {
-    "prefix": "yy.m-lodash-es",
+    "prefix": "yym-lodash-es",
     "body": [
       "import { $0 } from 'lodash-es';"
     ]
   },
   "⭕️ 导入dayjs": {
-    "prefix": "yy.m-dayjs",
+    "prefix": "yym-dayjs",
     "body": [
       "import dayjs from 'dayjs';"
     ]
   },
   "⭕️ 导入rxjs-hooks": {
-    "prefix": "yy.m-rxjs-hooks",
+    "prefix": "yym-rxjs-hooks",
     "body": [
       "import { useEventCallback, useObservable } from 'rxjs-hooks'"
     ]
   },
   "⭕️ 导入rxjx": {
-    "prefix": "yy.m-rxjx",
+    "prefix": "yym-rxjx",
     "body": [
       "import { Subject } from 'rxjs';",
       "import { map } from 'rxjs/operators'"
     ]
   },
   "⭕️ 导入React": {
-    "prefix": "yy.m-react",
+    "prefix": "yym-react",
     "body": [
       "import React from 'react'"
     ]
   },
   "⭕️ 导入react-dom": {
-    "prefix": "yy.m-react-dom",
+    "prefix": "yym-react-dom",
     "body": [
       "import ReactDOM from 'react-dom'"
     ]
   },
   "⭕️ 导入ahooks-useKeyPress": {
-    "prefix": "yy.m-ahooks-useKeyPress",
+    "prefix": "yym-ahooks-useKeyPress",
     "body": [
       "import { useKeyPress } from 'ahooks'"
     ]
   },
   "⭕️ 导入router": {
-    "prefix": "yy.m-router",
+    "prefix": "yym-router",
     "body": [
       "import { useHistory, NavLink } from 'react-router-dom'"
     ]
   },
   "⭕️ 导入useSelector ": {
-    "prefix": "yy.m-redux-useSelector",
+    "prefix": "yym-redux-useSelector",
     "body": [
       "import { useSelector } from 'react-redux'"
     ]
   },
   "⭕️ 导入useDispatch": {
-    "prefix": "yy.m-redux-useDispatch",
+    "prefix": "yym-redux-useDispatch",
     "body": [
       "import { useDispatch } from 'react-redux'"
     ]
   },
   "⭕️ 导入vant": {
-    "prefix": "yy.vant",
+    "prefix": "yyvant",
     "body": [
       "import { $0 } from 'react-vant';"
     ]
   },
   "⭕️ 导入vant-icons": {
-    "prefix": "yy.vant-icons",
+    "prefix": "yyvant-icons",
     "body": [
       "import { ${CLIPBOARD} } from '@react-vant/icons';"
     ]
   },
   "⭕️ 导入classnames": {
-    "prefix": "yy.m-classnames",
+    "prefix": "yym-classnames",
     "body": [
       "import c from 'classnames'"
     ]
   },
   "⭕️ 导入styled-components": {
-    "prefix": "yy.m-styled",
+    "prefix": "yym-styled",
     "body": [
       "import styled from 'styled-components'"
     ]
   },
   "⭕️ 导入useSWR": {
-    "prefix": "yy.m-swr",
+    "prefix": "yym-swr",
     "body": [
       "import useSWR from 'swr';"
     ]
   },
   "⭕️ import xxx from xxx": {
-    "prefix": "yy.m-1",
+    "prefix": "yym-1",
     "body": "import ${1} from '${1:name}'"
   },
   "⭕️ import { xxx } from xxx": {
-    "prefix": "yy.m-2",
+    "prefix": "yym-2",
     "body": "import { $2 } from '${1:module}'$0"
   },
   "⭕️ import * as xxx": {
-    "prefix": "yy.m-3",
+    "prefix": "yym-3",
     "body": "import * as $1 from '$2';$0"
   },
   "⭕️ const { xxx } = xxx": {
-    "prefix": "yy.m-4",
+    "prefix": "yym-4",
     "body": "const { $2 } = $1;$0"
   },
   "⭕️ 导入immer": {
-    "prefix": "yy.m-immer",
+    "prefix": "yym-immer",
     "body": [
       "import produce from 'immer';"
     ]
   },
   "⭕️ next-link": {
-    "prefix": "yy.next-link",
+    "prefix": "yynext-link",
     "body": "import Link from 'next/link'"
   },
   "⭕️ next-image": {
-    "prefix": "yy.next-image",
+    "prefix": "yynext-image",
     "body": "import Image from 'next/image'"
   },
   "⭕️ next-router": {
-    "prefix": "yy.next-router",
+    "prefix": "yynext-router",
     "body": "import { useRouter } from 'next/router'"
   },
   "⭕️ next-header": {
-    "prefix": "yy.next-header",
+    "prefix": "yynext-header",
     "body": "import Head from 'next/head'"
   },
   "⭕️ 导入next_script": {
-    "prefix": "yy.next-script",
+    "prefix": "yynext-script",
     "body": [
       "import Script from 'next/script'"
     ]
   },
   "⭕️ 导入next-dynamic": {
-    "prefix": "yy.next-dynamic",
+    "prefix": "yynext-dynamic",
     "body": [
       "import dynamic from 'next/dynamic'"
     ]

@@ -1,6 +1,6 @@
 {
   "⭕️ antd-页码配置": {
-    "prefix": "yy.antd.pagination",
+    "prefix": "yyantd.pagination",
     "body": [
       "pagination={{",
       "  showSizeChanger: false,",
@@ -13,23 +13,23 @@
     ]
   },
   "⭕️ antd-表单重置": {
-    "prefix": "yy.form.resetFields",
+    "prefix": "yyform.resetFields",
     "body": "form.resetFields"
   },
   "⭕️ 表单-onFieldsChange": {
-    "prefix": "yy.form.onFieldsChange",
+    "prefix": "yyform.onFieldsChange",
     "body": "form.onFieldsChange"
   },
   "⭕️ 表单设置-antd": {
-    "prefix": "yy.form.setFieldsValue",
+    "prefix": "yyform.setFieldsValue",
     "body": "form.setFieldsValue"
   },
   "⭕️ antd表单验证": {
-    "prefix": "yy.form.validateFields",
+    "prefix": "yyform.validateFields",
     "body": "form.validateFields"
   },
   "⭕️ 通用弹窗": {
-    "prefix": "yy.com.dialog",
+    "prefix": "yycom.dialog",
     "body": [
       "import React, { useEffect } from 'react';",
       "import { Modal, Form, Input, message } from 'antd';",
@@ -89,7 +89,7 @@
     ]
   },
   "⭕️ 通用表格-1": {
-    "prefix": "yy.com.table",
+    "prefix": "yycom.table",
     "body": [
       "import React from 'react';",
       "import Table from '@comps/Table';",
@@ -140,7 +140,7 @@
     ]
   },
   "⭕️ 通用逻辑": {
-    "prefix": "yy.com.logic",
+    "prefix": "yycom.logic",
     "body": [
       "import { useReducer, useEffect } from 'react';",
       "import { message } from 'antd';",
@@ -191,7 +191,7 @@
     ]
   },
   "⭕️ 通用表格-2-单体": {
-    "prefix": "yy.com.table",
+    "prefix": "yycom.table",
     "body": [
       "import React, { useEffect, useReducer } from 'react';",
       "import http from '@script/http';",
@@ -260,7 +260,7 @@
     ]
   },
   "⭕️ taro基础模板": {
-    "prefix": "yy.taro.base",
+    "prefix": "yytaro.base",
     "body": [
       "import React from 'react';",
       "import { View, Text } from '@tarojs/components';",
@@ -272,7 +272,7 @@
     ]
   },
   "⭕️ 空数据组件": {
-    "prefix": "yy.ant.empty",
+    "prefix": "yyant.empty",
     "body": "<Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />"
   }
 }

@@ -1,6 +1,6 @@
 {
   "⭕️ 数组:reduce": {
-    "prefix": "yy.array.reduce",
+    "prefix": "yyarray.reduce",
     "body": [
       "data.reduce((p, c) => {",
       "  p[c.id] = c;$0",
@@ -9,13 +9,13 @@
     ]
   },
   "⭕️ 选择内部对象": {
-    "prefix": "yy.const",
+    "prefix": "yyconst",
     "body": [
       "const { $0 } = ${CLIPBOARD}"
     ]
   },
   "⭕️ log": {
-    "prefix": "yy.log",
+    "prefix": "yylog",
     "body": [
       "console.log('🍎', $1);$0"
     ]
@@ -33,7 +33,7 @@
     "body": "const { $0 } = $1;"
   },
   "⭕️ 注释": {
-    "prefix": "yy.comment",
+    "prefix": "yycomment",
     "body": [
       "/**",
       "* $0",
@@ -41,7 +41,7 @@
     ]
   },
   "⭕️ 创建函数-async": {
-    "prefix": "yy.func.async",
+    "prefix": "yyfunc.async",
     "body": [
       "async function $1 (){",
       " $0",
@@ -49,7 +49,7 @@
     ]
   },
   "⭕️ 创建函数": {
-    "prefix": "yy.func",
+    "prefix": "yyfunc",
     "body": [
       "function $1 (){",
       " $0",
@@ -63,17 +63,17 @@
     ]
   },
   "⭕️ 当前文件名": {
-    "prefix": "yy.file",
+    "prefix": "yyfile",
     "body": "${TM_FILENAME_BASE}"
   },
   "⭕️ prettier-ignore": {
-    "prefix": "yy.ignore",
+    "prefix": "yyignore",
     "body": [
       "// prettier-ignore"
     ]
   },
   "⭕️ try-throw": {
-    "prefix": "yy.try",
+    "prefix": "yytry",
     "body": [
       "try {",
       "  $1",
@@ -83,7 +83,7 @@
     ]
   },
   "⭕️ 函数参数说明": {
-    "prefix": "yy.comment.params",
+    "prefix": "yycomment.params",
     "body": [
       "/**",
       " * $0",
@@ -93,7 +93,7 @@
     ]
   },
   "⭕️ 代码注释": {
-    "prefix": "yy.comment",
+    "prefix": "yycomment",
     "body": [
       "/**",
       " * ----------------------------------------",
@@ -103,7 +103,7 @@
     ]
   },
   "⭕️ reducer: initState": {
-    "prefix": "yy.initState",
+    "prefix": "yyinitState",
     "body": [
       "const initState = {};",
       "const reducer = (state, action) => {",
@@ -112,7 +112,7 @@
     ]
   },
   "⭕️ Vue函数": {
-    "prefix": "yy.func.property",
+    "prefix": "yyfunc.property",
     "body": [
       "$1() {",
       "  $2",
@@ -120,19 +120,19 @@
     ]
   },
   "⭕️ 打印": {
-    "prefix": "yy.console",
+    "prefix": "yyconsole",
     "body": [
       "console.log('🍎', $0)"
     ]
   },
   "⭕️ dayjs(time).format": {
-    "prefix": "yy.dayjs.format",
+    "prefix": "yydayjs.format",
     "body": [
       "dayjs(time).format('YYYY-MM-DD HH:mm:ss')"
     ]
   },
   "⭕️ 防抖节流": {
-    "prefix": "yy.debounce",
+    "prefix": "yydebounce",
     "body": [
       "debounce(function() {",
       "\t\t$1",
@@ -140,15 +140,15 @@
     ]
   },
   "⭕️ 环境:开发": {
-    "prefix": "yy.envdev",
+    "prefix": "yyenvdev",
     "body": "process.env.NODE_ENV ==\"development\""
   },
   "⭕️ 环境:生产": {
-    "prefix": "yy.envpro",
+    "prefix": "yyenvpro",
     "body": "process.env.NODE_ENV ==\"production\""
   },
   "⭕️ 函数1": {
-    "prefix": "yy.func.arrow",
+    "prefix": "yyfunc.arrow",
     "body": [
       "const $1 = ($2) => {",
       " $0",
@@ -156,7 +156,7 @@
     ]
   },
   "⭕️ http.get": {
-    "prefix": "yy.http.get",
+    "prefix": "yyhttp.get",
     "body": [
       "const params = {};",
       "http.get('$1',{ params }).then(res => {",
@@ -174,7 +174,7 @@
     ]
   },
   "⭕️ 注册V组件": {
-    "prefix": "yy.vue.register",
+    "prefix": "yyvue.register",
     "body": [
       "import Vue from 'vue';",
       "const comps = require.context('../comps', true, /\\.vue$/);",
@@ -193,7 +193,7 @@
     ]
   },
   "⭕️ axios-base": {
-    "prefix": "yy.axios.1",
+    "prefix": "yyaxios.1",
     "body": [
       "import axios from 'axios';",
       "import { notification, message } from 'antd';",
@@ -206,7 +206,7 @@
     ]
   },
   "⭕️ axios-form": {
-    "prefix": "yy.axios.2",
+    "prefix": "yyaxios.2",
     "body": [
       "import axios from 'axios';",
       "import { notification, message } from 'antd';",
@@ -225,7 +225,7 @@
     ]
   },
   "⭕️ axios-use": {
-    "prefix": "yy.axios.use",
+    "prefix": "yyaxios.use",
     "body": [
       "http.interceptors.request.use(onRequest);",
       "http.interceptors.response.use(onResponseSuccess, onResponseError);",
@@ -273,7 +273,7 @@
     ]
   },
   "⭕️ HOOK数据": {
-    "prefix": "yy.hook.data",
+    "prefix": "yyhook.data",
     "body": [
       "import React, { useState, useEffect } from 'react';",
       "import http from '@script/http';",
