@@ -1,6 +1,6 @@
 {
   "⭕️ antd-页码配置": {
-    "prefix": "antd-pagination",
+    "prefix": "yy.antd.pagination",
     "body": [
       "pagination={{",
       "  showSizeChanger: false,",
@@ -13,23 +13,23 @@
     ]
   },
   "⭕️ antd-表单重置": {
-    "prefix": "form.resetFields",
+    "prefix": "yy.form.resetFields",
     "body": "form.resetFields"
   },
   "⭕️ 表单-onFieldsChange": {
-    "prefix": "form.onFieldsChange",
+    "prefix": "yy.form.onFieldsChange",
     "body": "form.onFieldsChange"
   },
   "⭕️ 表单设置-antd": {
-    "prefix": "form.setFieldsValue",
+    "prefix": "yy.form.setFieldsValue",
     "body": "form.setFieldsValue"
   },
   "⭕️ antd表单验证": {
-    "prefix": "form.validateFields",
+    "prefix": "yy.form.validateFields",
     "body": "form.validateFields"
   },
   "⭕️ 通用弹窗": {
-    "prefix": "iicomdialog",
+    "prefix": "yy.com.dialog",
     "body": [
       "import React, { useEffect } from 'react';",
       "import { Modal, Form, Input, message } from 'antd';",
@@ -89,7 +89,7 @@
     ]
   },
   "⭕️ 通用表格-1": {
-    "prefix": "iicomtable",
+    "prefix": "yy.com.table",
     "body": [
       "import React from 'react';",
       "import Table from '@comps/Table';",
@@ -140,7 +140,7 @@
     ]
   },
   "⭕️ 通用逻辑": {
-    "prefix": "iicomlogic",
+    "prefix": "yy.com.logic",
     "body": [
       "import { useReducer, useEffect } from 'react';",
       "import { message } from 'antd';",
@@ -191,7 +191,7 @@
     ]
   },
   "⭕️ 通用表格-2-单体": {
-    "prefix": "iitable",
+    "prefix": "yy.com.table",
     "body": [
       "import React, { useEffect, useReducer } from 'react';",
       "import http from '@script/http';",
@@ -259,12 +259,8 @@
       ";"
     ]
   },
-  "⭕️ ta-className": {
-    "prefix": "taclass",
-    "body": "className=\"$1\""
-  },
   "⭕️ taro基础模板": {
-    "prefix": "tabase",
+    "prefix": "yy.taro.base",
     "body": [
       "import React from 'react';",
       "import { View, Text } from '@tarojs/components';",
@@ -276,7 +272,7 @@
     ]
   },
   "⭕️ 空数据组件": {
-    "prefix": "iiempty",
+    "prefix": "yy.ant.empty",
     "body": "<Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />"
   }
 }

@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.13.3",
+  "version": "0.14.0",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -118,16 +118,16 @@
         "title": "创建同名文件"
       },
       {
-        "command": "ynw.webpackBuild.dev",
-        "title": "yy >> watch"
-      },
-      {
         "command": "ynw.webpackBuild.hot",
         "title": "yy >> dev"
       },
       {
         "command": "ynw.webpackBuild.pro",
         "title": "yy >> Build"
+      },
+      {
+        "command": "ynw.webpackBuild.dev",
+        "title": "yy >> watch"
       }
     ],
     "keybindings": [

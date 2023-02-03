@@ -1,6 +1,6 @@
 {
   "⭕️ 数组:reduce": {
-    "prefix": "ii.array.reduce",
+    "prefix": "yy.array.reduce",
     "body": [
       "data.reduce((p, c) => {",
       "  p[c.id] = c;$0",
@@ -9,19 +9,19 @@
     ]
   },
   "⭕️ 选择内部对象": {
-    "prefix": "iiconst",
+    "prefix": "yy.const",
     "body": [
       "const { $0 } = ${CLIPBOARD}"
     ]
   },
   "⭕️ log": {
-    "prefix": "iilog",
+    "prefix": "yy.log",
     "body": [
       "console.log('🍎', $1);$0"
     ]
   },
   "⭕️ 立即执行函数": {
-    "prefix": "iife",
+    "prefix": "yyfe",
     "body": [
       "let $1 = (function(){",
       "  $0",
@@ -33,7 +33,7 @@
     "body": "const { $0 } = $1;"
   },
   "⭕️ 注释": {
-    "prefix": "ooo",
+    "prefix": "yy.comment",
     "body": [
       "/**",
       "* $0",
@@ -41,7 +41,7 @@
     ]
   },
   "⭕️ 创建函数-async": {
-    "prefix": "iiasyncfunc",
+    "prefix": "yy.func.async",
     "body": [
       "async function $1 (){",
       " $0",
@@ -49,7 +49,7 @@
     ]
   },
   "⭕️ 创建函数": {
-    "prefix": "iifunc",
+    "prefix": "yy.func",
     "body": [
       "function $1 (){",
       " $0",
@@ -63,17 +63,17 @@
     ]
   },
   "⭕️ 当前文件名": {
-    "prefix": "iifile",
+    "prefix": "yy.file",
     "body": "${TM_FILENAME_BASE}"
   },
   "⭕️ prettier-ignore": {
-    "prefix": "ignore",
+    "prefix": "yy.ignore",
     "body": [
       "// prettier-ignore"
     ]
   },
   "⭕️ try-throw": {
-    "prefix": "iitry",
+    "prefix": "yy.try",
     "body": [
       "try {",
       "  $1",
@@ -83,7 +83,7 @@
     ]
   },
   "⭕️ 函数参数说明": {
-    "prefix": "iiio",
+    "prefix": "yy.comment.params",
     "body": [
       "/**",
       " * $0",
@@ -93,7 +93,7 @@
     ]
   },
   "⭕️ 代码注释": {
-    "prefix": "iiii",
+    "prefix": "yy.comment",
     "body": [
       "/**",
       " * ----------------------------------------",
@@ -103,7 +103,7 @@
     ]
   },
   "⭕️ reducer: initState": {
-    "prefix": "initState",
+    "prefix": "yy.initState",
     "body": [
       "const initState = {};",
       "const reducer = (state, action) => {",
@@ -112,7 +112,7 @@
     ]
   },
   "⭕️ Vue函数": {
-    "prefix": "ii.function.property",
+    "prefix": "yy.func.property",
     "body": [
       "$1() {",
       "  $2",
@@ -120,19 +120,19 @@
     ]
   },
   "⭕️ 打印": {
-    "prefix": "iiconsole",
+    "prefix": "yy.console",
     "body": [
       "console.log('🍎', $0)"
     ]
   },
   "⭕️ dayjs(time).format": {
-    "prefix": "iidayjs2",
+    "prefix": "yy.dayjs.format",
     "body": [
       "dayjs(time).format('YYYY-MM-DD HH:mm:ss')"
     ]
   },
   "⭕️ 防抖节流": {
-    "prefix": "iidebounce",
+    "prefix": "yy.debounce",
     "body": [
       "debounce(function() {",
       "\t\t$1",
@@ -140,15 +140,15 @@
     ]
   },
   "⭕️ 环境:开发": {
-    "prefix": "iienvdev",
+    "prefix": "yy.envdev",
     "body": "process.env.NODE_ENV ==\"development\""
   },
   "⭕️ 环境:生产": {
-    "prefix": "iienvpro",
+    "prefix": "yy.envpro",
     "body": "process.env.NODE_ENV ==\"production\""
   },
   "⭕️ 函数1": {
-    "prefix": "iifuncion",
+    "prefix": "yy.func.arrow",
     "body": [
       "const $1 = ($2) => {",
       " $0",
@@ -156,7 +156,7 @@
     ]
   },
   "⭕️ http.get": {
-    "prefix": "httpget",
+    "prefix": "yy.http.get",
     "body": [
       "const params = {};",
       "http.get('$1',{ params }).then(res => {",
@@ -174,7 +174,7 @@
     ]
   },
   "⭕️ 注册V组件": {
-    "prefix": "vvregister",
+    "prefix": "yy.vue.register",
     "body": [
       "import Vue from 'vue';",
       "const comps = require.context('../comps', true, /\\.vue$/);",
@@ -193,7 +193,7 @@
     ]
   },
   "⭕️ axios-base": {
-    "prefix": "iiaxios1",
+    "prefix": "yy.axios.1",
     "body": [
       "import axios from 'axios';",
       "import { notification, message } from 'antd';",
@@ -206,7 +206,7 @@
     ]
   },
   "⭕️ axios-form": {
-    "prefix": "iiaxios2",
+    "prefix": "yy.axios.2",
     "body": [
       "import axios from 'axios';",
       "import { notification, message } from 'antd';",
@@ -225,7 +225,7 @@
     ]
   },
   "⭕️ axios-use": {
-    "prefix": "iiaxios_use",
+    "prefix": "yy.axios.use",
     "body": [
       "http.interceptors.request.use(onRequest);",
       "http.interceptors.response.use(onResponseSuccess, onResponseError);",
@@ -273,7 +273,7 @@
     ]
   },
   "⭕️ HOOK数据": {
-    "prefix": "iihookdata",
+    "prefix": "yy.hook.data",
     "body": [
       "import React, { useState, useEffect } from 'react';",
       "import http from '@script/http';",
