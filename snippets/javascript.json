@@ -165,7 +165,7 @@
     ]
   },
   "http.POST调用": {
-    "prefix": "httppost",
+    "prefix": "⭕️ yy.http.post",
     "body": [
       "const params = {};",
       "http.post('$1',params).then(res => {",
