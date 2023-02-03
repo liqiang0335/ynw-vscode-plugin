@@ -14,5 +14,9 @@ module.exports = function (URI, env) {
   const entry = relative.replace(/\\+/g, "/").replace(/\.[a-z]+$/, "");
   const key = dirname[0];
   const cmdName = getConfigValue("cmdName") || "yy";
-  exec(`${cmdName} build=${key} entry=./${entry} env=${env}`, key);
+  try {
+    exec(`${cmdName} build=${key} entry=./${entry} env=${env}`, key);
+  } catch (err) {
+    vscode.window.showErrorMessage(err.message);
+  }
 };
