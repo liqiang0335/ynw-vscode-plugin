@@ -1,6 +1,6 @@
 {
-  "⭕️ RN组件(外部样式)": {
-    "prefix": "yyrn.func1",
+  "RN组件(外部样式)": {
+    "prefix": "⭕️ yyrn.func1",
     "body": [
       "import React from 'react';",
       "import { View, Text } from 'react-native';",
@@ -15,8 +15,8 @@
       "}"
     ]
   },
-  "⭕️ RN组件(内部样式)": {
-    "prefix": "yyrn.func2",
+  "RN组件(内部样式)": {
+    "prefix": "⭕️ yyrn.func2",
     "body": [
       "import React from 'react';",
       "import { View, Text, StyleSheet } from 'react-native';",
@@ -39,8 +39,8 @@
       "});"
     ]
   },
-  "⭕️ RN函数组件": {
-    "prefix": "yyrn.func3",
+  "RN函数组件": {
+    "prefix": "⭕️ yyrn.func3",
     "body": [
       "import React from 'react';",
       "import { View, Text } from 'react-native';",
@@ -55,8 +55,8 @@
       ""
     ]
   },
-  "⭕️ RN创建样式": {
-    "prefix": "yyrn.StyleCreate",
+  "RN创建样式": {
+    "prefix": "⭕️ yyrn.StyleCreate",
     "body": [
       "import { StyleSheet } from 'react-native';",
       "",
@@ -67,32 +67,32 @@
       "});"
     ]
   },
-  "⭕️ RN(Style属性)": {
-    "prefix": "yyrn.StyleProperty",
+  "RN(Style属性)": {
+    "prefix": "⭕️ yyrn.StyleProperty",
     "body": [
       "style={styles.$1}$0"
     ]
   },
-  "⭕️ RN图标-示例": {
-    "prefix": "yyrn.icon2",
+  "RN图标-示例": {
+    "prefix": "⭕️ yyrn.icon2",
     "body": [
       "<AntDesign name='closecircle' color='#ff0000' size={25}  />"
     ]
   },
-  "⭕️ RNText": {
-    "prefix": "yyrn.Text",
+  "RN-文本组件": {
+    "prefix": "⭕️ yyrn.Text",
     "body": [
       "<Text style={styles.$2}>$1</Text>$0"
     ]
   },
-  "⭕️ RNImage": {
-    "prefix": "yyrn.Image",
+  "RN-图片组件": {
+    "prefix": "⭕️ yyrn.Image",
     "body": [
       "<Image source={{uri:'$2'}} style={{width:40,height:40}}>$1</Image>"
     ]
   },
-  "⭕️ RNView": {
-    "prefix": "yyrn.View",
+  "RN-视图组件": {
+    "prefix": "⭕️ yyrn.View",
     "body": [
       "<View style={styles.$2}>$1</View>"
     ]

@@ -1,11 +1,11 @@
 {
-  "⭕️ 移动端禁止缩放": {
+  "移动端禁止缩放": {
     "prefix": "meta",
     "body": [
       "<meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no' />"
     ]
   },
-  "⭕️ vue-htmt结构": {
+  "vue-htmt结构": {
     "prefix": "iihtmlbase",
     "body": [
       "<!DOCTYPE html>",
@@ -27,7 +27,7 @@
       "</html>"
     ]
   },
-  "⭕️ 等待加载": {
+  "等待加载": {
     "prefix": "iiloading",
     "body": [
       "<!DOCTYPE html>",

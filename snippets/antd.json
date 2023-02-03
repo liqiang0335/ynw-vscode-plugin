@@ -1,6 +1,6 @@
 {
-  "⭕️ antd-页码配置": {
-    "prefix": "yyantd.pagination",
+  "antd-页码配置": {
+    "prefix": "⭕️ yyantd.pagination",
     "body": [
       "pagination={{",
       "  showSizeChanger: false,",
@@ -12,24 +12,24 @@
       "}}"
     ]
   },
-  "⭕️ antd-表单重置": {
-    "prefix": "yyform.resetFields",
+  "antd-表单重置": {
+    "prefix": "⭕️ yyform.resetFields",
     "body": "form.resetFields"
   },
-  "⭕️ 表单-onFieldsChange": {
-    "prefix": "yyform.onFieldsChange",
+  "表单-onFieldsChange": {
+    "prefix": "⭕️ yyform.onFieldsChange",
     "body": "form.onFieldsChange"
   },
-  "⭕️ 表单设置-antd": {
-    "prefix": "yyform.setFieldsValue",
+  "表单设置-antd": {
+    "prefix": "⭕️ yyform.setFieldsValue",
     "body": "form.setFieldsValue"
   },
-  "⭕️ antd表单验证": {
-    "prefix": "yyform.validateFields",
+  "antd表单验证": {
+    "prefix": "⭕️ yyform.validateFields",
     "body": "form.validateFields"
   },
-  "⭕️ 通用弹窗": {
-    "prefix": "yycom.dialog",
+  "通用弹窗": {
+    "prefix": "⭕️ yycom.dialog",
     "body": [
       "import React, { useEffect } from 'react';",
       "import { Modal, Form, Input, message } from 'antd';",
@@ -88,8 +88,8 @@
       "}"
     ]
   },
-  "⭕️ 通用表格-1": {
-    "prefix": "yycom.table",
+  "通用表格-1": {
+    "prefix": "⭕️ yycom.table",
     "body": [
       "import React from 'react';",
       "import Table from '@comps/Table';",
@@ -139,8 +139,8 @@
       "}"
     ]
   },
-  "⭕️ 通用逻辑": {
-    "prefix": "yycom.logic",
+  "通用逻辑": {
+    "prefix": "⭕️ yycom.logic",
     "body": [
       "import { useReducer, useEffect } from 'react';",
       "import { message } from 'antd';",
@@ -190,8 +190,8 @@
       "}"
     ]
   },
-  "⭕️ 通用表格-2-单体": {
-    "prefix": "yycom.table",
+  "通用表格-2-单体": {
+    "prefix": "⭕️ yycom.table",
     "body": [
       "import React, { useEffect, useReducer } from 'react';",
       "import http from '@script/http';",
@@ -259,8 +259,8 @@
       ";"
     ]
   },
-  "⭕️ taro基础模板": {
-    "prefix": "yytaro.base",
+  "taro基础模板": {
+    "prefix": "⭕️ yytaro.base",
     "body": [
       "import React from 'react';",
       "import { View, Text } from '@tarojs/components';",
@@ -271,8 +271,8 @@
       ""
     ]
   },
-  "⭕️ 空数据组件": {
-    "prefix": "yyant.empty",
+  "空数据组件": {
+    "prefix": "⭕️ yyant.empty",
     "body": "<Empty image={Empty.PRESENTED_IMAGE_SIMPLE} />"
   }
 }

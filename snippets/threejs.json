@@ -1,14 +1,14 @@
 {
-  "⭕️ BEGIN": {
-    "prefix": "yythree.userData",
+  "注册调试标记": {
+    "prefix": "⭕️ yythree.userData",
     "body": [
       "${CLIPBOARD}.userData.name = '${CLIPBOARD}';",
       "// BEGIN:${CLIPBOARD}",
       "// END:${CLIPBOARD}"
     ]
   },
-  "⭕️ 渲染结构": {
-    "prefix": "yythree.base",
+  "渲染结构": {
+    "prefix": "⭕️ yythree.base",
     "body": [
       "import * as T from 'three';",
       "import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';",
@@ -83,112 +83,112 @@
       "}"
     ]
   },
-  "⭕️ datgui": {
-    "prefix": "yythree.datgui",
+  "参数调整": {
+    "prefix": "⭕️ yythree.datgui",
     "body": [
       "import * as dat from 'dat.gui';",
       "const gui = new dat.GUI();"
     ]
   },
-  "⭕️ jsm-libs-tween": {
-    "prefix": "yythree.jsm-libs-tween",
+  "jsm-libs-tween": {
+    "prefix": "⭕️ yythree.jsm-libs-tween",
     "body": [
       "import { TWEEN } from 'three/examples/jsm/libs/tween.module.min.js';"
     ]
   },
-  "⭕️ jsm-libs-stats": {
-    "prefix": "yythree.jsm-libs-stats",
+  "jsm-libs-stats": {
+    "prefix": "⭕️ yythree.jsm-libs-stats",
     "body": [
       "import Stats from 'three/examples/jsm/libs/stats.module.js'"
     ]
   },
-  "⭕️ jsm-controls-TrackballControls": {
-    "prefix": "yythree.jsm-controls-TrackballControls",
+  "jsm-controls-TrackballControls": {
+    "prefix": "⭕️ yythree.jsm-controls-TrackballControls",
     "body": [
       "import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls.js';"
     ]
   },
-  "⭕️ jsm-lights-LightProbeGenerator": {
-    "prefix": "yythree.jsm-lights-LightProbeGenerator",
+  "jsm-lights-LightProbeGenerator": {
+    "prefix": "⭕️ yythree.jsm-lights-LightProbeGenerator",
     "body": [
       "import { LightProbeGenerator } from 'three/examples/jsm/lights/LightProbeGenerator.js';"
     ]
   },
-  "⭕️ jsm-lights-RectAreaLightUniformsLib": {
-    "prefix": "yythree.jsm-lights-RectAreaLightUniformsLib",
+  "jsm-lights-RectAreaLightUniformsLib": {
+    "prefix": "⭕️ yythree.jsm-lights-RectAreaLightUniformsLib",
     "body": [
       "import { RectAreaLightUniformsLib } from 'three/examples/jsm/lights/RectAreaLightUniformsLib.js';",
       "RectAreaLightUniformsLib.init();"
     ]
   },
-  "⭕️ 控制器-OrbitControls": {
-    "prefix": "yythree.jsm-controls-OrbitControls",
+  "控制器-OrbitControls": {
+    "prefix": "⭕️ yythree.jsm-controls-OrbitControls",
     "body": [
       "import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';"
     ]
   },
-  "⭕️ 加载器-GLTFLoader": {
-    "prefix": "yythree.jsm-loader-GLTFLoader",
+  "加载器-GLTFLoader": {
+    "prefix": "⭕️ yythree.jsm-loader-GLTFLoader",
     "body": [
       "import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';"
     ]
   },
-  "⭕️ 加载器-OBJLoader": {
-    "prefix": "yythree.jsm-loader-OBJLoader",
+  "加载器-OBJLoader": {
+    "prefix": "⭕️ yythree.jsm-loader-OBJLoader",
     "body": [
       "import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';"
     ]
   },
-  "⭕️ 加载器-MTLLoader": {
-    "prefix": "yythree.jsm-loader-MTLLoader",
+  "加载器-MTLLoader": {
+    "prefix": "⭕️ yythree.jsm-loader-MTLLoader",
     "body": [
       "import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';"
     ]
   },
-  "⭕️ 加载器-SVGLoader": {
-    "prefix": "yythree.jsm-loader-SVGLoader",
+  "加载器-SVGLoader": {
+    "prefix": "⭕️ yythree.jsm-loader-SVGLoader",
     "body": [
       "import { SVGLoader } from 'three/examples/jsm/loaders/SVGLoader.js';"
     ]
   },
-  "⭕️ 导入THREE import * as T": {
-    "prefix": "yythree.1",
+  "导入THREE import * as T": {
+    "prefix": "⭕️ yythree.1",
     "body": [
       "import * as T from 'three';"
     ]
   },
-  "⭕️ import moudle from '@three": {
-    "prefix": "yythree.2",
+  "import moudle from '@three": {
+    "prefix": "⭕️ yythree.2",
     "body": [
       "import moudle from '@three$1';"
     ]
   },
-  "⭕️ import { $0 } from '@three": {
-    "prefix": "yythree.3",
+  "import { $0 } from '@three": {
+    "prefix": "⭕️ yythree.3",
     "body": [
       "import { $0 } from '@three$1';"
     ]
   },
-  "⭕️ jsm-renderer-css2d": {
-    "prefix": "yythree.jsm-renderer-css2d",
+  "jsm-renderer-css2d": {
+    "prefix": "⭕️ yythree.jsm-renderer-css2d",
     "body": [
       "import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer.js';"
     ]
   },
-  "⭕️ jsm-renderer-css3d": {
-    "prefix": "yythree.jsm-renderer-css3d",
+  "jsm-renderer-css3d": {
+    "prefix": "⭕️ yythree.jsm-renderer-css3d",
     "body": [
       "import { CSS3DRenderer, CSS3DObject, CSS3DSprite } from 'three/examples/jsm/renderers/CSS3DRenderer.js'"
     ]
   },
-  "⭕️ jsm-renderer-SVGRenderer": {
-    "prefix": "yythree.jsm-renderer-SVGRenderer",
+  "jsm-renderer-SVGRenderer": {
+    "prefix": "⭕️ yythree.jsm-renderer-SVGRenderer",
     "body": [
       "import { SVGRenderer } from 'three/examples/jsm/renderers/SVGRenderer.js'"
     ]
   },
-  "⭕️ jsm-libs-gui": {
-    "prefix": "yythree.jsm-libs-gui",
+  "jsm-libs-gui": {
+    "prefix": "⭕️ yythree.jsm-libs-gui",
     "body": [
       "import { GUI } from 'three/examples/jsm/libs/lil-gui.module.min.js';"
     ]

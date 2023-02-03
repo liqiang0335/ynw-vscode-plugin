@@ -1,52 +1,52 @@
 {
-  "⭕️ ((key:value))": {
-    "prefix": "::",
+  "((key:value))": {
+    "prefix": "⭕️ yy.desc",
     "body": [
       "(($1:$0))"
     ]
   },
-  "⭕️ 代码块JS": {
-    "prefix": "jjj",
+  "代码块JS": {
+    "prefix": "⭕️ yy.js",
     "body": [
       "```js",
       " $0",
       "```"
     ]
   },
-  "⭕️ 代码块Bash": {
-    "prefix": "bash",
+  "代码块Bash": {
+    "prefix": "⭕️ yy.bash",
     "body": [
       "```bash",
       " $0",
       "```"
     ]
   },
-  "⭕️ 蓝色小贴士": {
-    "prefix": "tip",
+  "蓝色小贴士": {
+    "prefix": "⭕️ yy.tip.blue",
     "body": [
       "{.tip .blue}"
     ]
   },
-  "⭕️ 红色小贴士": {
-    "prefix": "tipred",
+  "红色小贴士": {
+    "prefix": "⭕️ yy.tip.pred",
     "body": [
       "{.tip .red}"
     ]
   },
-  "⭕️ 橙色小贴士": {
-    "prefix": "tipyellow",
+  "橙色小贴士": {
+    "prefix": "⭕️ yy.tip.yellow",
     "body": [
       "{.tip .yellow}"
     ]
   },
-  "⭕️ 列表数字": {
-    "prefix": "listnumber",
+  "列表数字": {
+    "prefix": "⭕️ yy.list.number",
     "body": [
       "{.list-number}"
     ]
   },
-  "⭕️ 列表": {
-    "prefix": "list",
+  "列表": {
+    "prefix": "⭕️ yy.list",
     "body": [
       "{.list}"
     ]

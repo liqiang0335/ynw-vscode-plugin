@@ -1,13 +1,13 @@
 {
-  "⭕️ ee.mongo.lookup": {
-    "prefix": "ee.mongo.lookup",
+  "mongo关联查询": {
+    "prefix": "⭕️ yy.mongo.lookup",
     "body": [
       "{ $lookup: { from: 'xxx', localField: '_id', foreignField: '_id', as: 'docs' } }",
       "{ $unwind: { path: '$docs', preserveNullAndEmptyArrays: true } }"
     ]
   },
-  "⭕️ ee.mongo.cursor": {
-    "prefix": "ee.mongo.cursor",
+  "mongo游标查询": {
+    "prefix": "⭕️ yy.mongo.cursor",
     "body": [
       "const cursor = await Model.find({}).cursor();",
       "for (let doc = await cursor.next(); doc != null; doc = await cursor.next()) {",
@@ -15,8 +15,8 @@
       "}"
     ]
   },
-  "⭕️ ee.增删改查": {
-    "prefix": "ee.api",
+  "express增删改查": {
+    "prefix": "⭕️ yy.express.api",
     "body": [
       "async function get${1:name}Items(req, res, next) {",
       "  const { page = 1 } = req.query;",
@@ -47,7 +47,7 @@
       "}"
     ]
   },
-  "⭕️ Express-函数": {
+  "Express函数": {
     "prefix": "eemain",
     "body": [
       "async function main() {",
@@ -57,14 +57,14 @@
       "module.exports = main;"
     ]
   },
-  "⭕️ Express.响应": {
+  "Express响应": {
     "prefix": "eeresponse",
     "body": [
       ".then(data => res.send(req.fn.ok(data)))",
       ".catch(next);"
     ]
   },
-  "⭕️ Express.Get": {
+  "Express.GET": {
     "prefix": "eeget",
     "body": [
       "router.get('$1', ${2:name});",
@@ -74,7 +74,7 @@
       "}"
     ]
   },
-  "⭕️ Express.Post": {
+  "Express.POST": {
     "prefix": "eepost",
     "body": [
       "router.post('$1', ${2:name});",
@@ -84,7 +84,7 @@
       "}"
     ]
   },
-  "⭕️ 导出路由": {
+  "导出路由": {
     "prefix": "eerouter",
     "body": [
       "const router = require('express').Router();",
@@ -94,7 +94,7 @@
       "module.exports = router;"
     ]
   },
-  "⭕️ 中间件1": {
+  "中间件-2箭头函数": {
     "prefix": "eemiddleware",
     "body": [
       "const ${1:name} = (req, res, next) => {",
@@ -103,7 +103,7 @@
       "};"
     ]
   },
-  "⭕️ 中间件2": {
+  "中间件-1": {
     "prefix": "eefunction",
     "body": [
       "async function $1(req, res, next) {",
@@ -111,7 +111,7 @@
       "};"
     ]
   },
-  "⭕️ Express.try": {
+  "Express.捕获错误": {
     "prefix": "eetry",
     "body": [
       "try {",
@@ -121,13 +121,13 @@
       "}"
     ]
   },
-  "⭕️ 发送数据": {
+  "Express发送成功": {
     "prefix": "eeok",
     "body": [
       "res.send(req.fn.ok($0))"
     ]
   },
-  "⭕️ 发送错误": {
+  "Express发送失败": {
     "prefix": "eefail",
     "body": [
       "res.send(req.fn.error($0))"

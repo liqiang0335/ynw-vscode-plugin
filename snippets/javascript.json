@@ -1,6 +1,6 @@
 {
-  "⭕️ 数组:reduce": {
-    "prefix": "yyarray.reduce",
+  "数组:reduce": {
+    "prefix": "⭕️ yyarray.reduce",
     "body": [
       "data.reduce((p, c) => {",
       "  p[c.id] = c;$0",
@@ -8,48 +8,48 @@
       "}, {});"
     ]
   },
-  "⭕️ 选择内部对象": {
-    "prefix": "yyconst",
+  "选择内部对象": {
+    "prefix": "⭕️ yyconst",
     "body": [
       "const { $0 } = ${CLIPBOARD}"
     ]
   },
-  "⭕️ log": {
-    "prefix": "yylog",
+  "log": {
+    "prefix": "⭕️ yylog",
     "body": [
       "console.log('🍎', $1);$0"
     ]
   },
-  "⭕️ 立即执行函数": {
-    "prefix": "yyfe",
+  "立即执行函数": {
+    "prefix": "⭕️ yyfe",
     "body": [
       "let $1 = (function(){",
       "  $0",
       "})()"
     ]
   },
-  "⭕️ 导入对象": {
+  "导入对象": {
     "prefix": "const",
     "body": "const { $0 } = $1;"
   },
-  "⭕️ 注释": {
-    "prefix": "yycomment",
+  "注释": {
+    "prefix": "⭕️ yycomment",
     "body": [
       "/**",
       "* $0",
       "*/"
     ]
   },
-  "⭕️ 创建函数-async": {
-    "prefix": "yyfunc.async",
+  "创建函数-async": {
+    "prefix": "⭕️ yyfunc.async",
     "body": [
       "async function $1 (){",
       " $0",
       "}"
     ]
   },
-  "⭕️ 创建函数": {
-    "prefix": "yyfunc",
+  "创建函数": {
+    "prefix": "⭕️ yyfunc",
     "body": [
       "function $1 (){",
       " $0",
@@ -62,18 +62,18 @@
       "<$1 />"
     ]
   },
-  "⭕️ 当前文件名": {
-    "prefix": "yyfile",
+  "当前文件名": {
+    "prefix": "⭕️ yyfile",
     "body": "${TM_FILENAME_BASE}"
   },
-  "⭕️ prettier-ignore": {
-    "prefix": "yyignore",
+  "忽略格式化": {
+    "prefix": "⭕️ yyignore",
     "body": [
       "// prettier-ignore"
     ]
   },
-  "⭕️ try-throw": {
-    "prefix": "yytry",
+  "抛出异常": {
+    "prefix": "⭕️ yytry",
     "body": [
       "try {",
       "  $1",
@@ -82,8 +82,8 @@
       "}"
     ]
   },
-  "⭕️ 函数参数说明": {
-    "prefix": "yycomment.params",
+  "注释-带参数": {
+    "prefix": "⭕️ yycomment.params",
     "body": [
       "/**",
       " * $0",
@@ -92,8 +92,8 @@
       " */"
     ]
   },
-  "⭕️ 代码注释": {
-    "prefix": "yycomment",
+  "代码注释": {
+    "prefix": "⭕️ yycomment",
     "body": [
       "/**",
       " * ----------------------------------------",
@@ -102,8 +102,8 @@
       " */"
     ]
   },
-  "⭕️ reducer: initState": {
-    "prefix": "yyinitState",
+  "reducer: initState": {
+    "prefix": "⭕️ yyinitState",
     "body": [
       "const initState = {};",
       "const reducer = (state, action) => {",
@@ -111,52 +111,52 @@
       "}"
     ]
   },
-  "⭕️ Vue函数": {
-    "prefix": "yyfunc.property",
+  "函数-Vue2": {
+    "prefix": "⭕️ yyfunc.vue2",
     "body": [
       "$1() {",
       "  $2",
       "},"
     ]
   },
-  "⭕️ 打印": {
-    "prefix": "yyconsole",
+  "打印普通": {
+    "prefix": "⭕️ yyconsole",
     "body": [
       "console.log('🍎', $0)"
     ]
   },
-  "⭕️ dayjs(time).format": {
-    "prefix": "yydayjs.format",
+  "时间格式化": {
+    "prefix": "⭕️ yydayjs.format",
     "body": [
       "dayjs(time).format('YYYY-MM-DD HH:mm:ss')"
     ]
   },
-  "⭕️ 防抖节流": {
-    "prefix": "yydebounce",
+  "防抖节流": {
+    "prefix": "⭕️ yydebounce",
     "body": [
       "debounce(function() {",
       "\t\t$1",
       "}, 1000, { leading: true, trailing: false })"
     ]
   },
-  "⭕️ 环境:开发": {
-    "prefix": "yyenvdev",
+  "环境:开发": {
+    "prefix": "⭕️ yyenvdev",
     "body": "process.env.NODE_ENV ==\"development\""
   },
-  "⭕️ 环境:生产": {
-    "prefix": "yyenvpro",
+  "环境:生产": {
+    "prefix": "⭕️ yyenvpro",
     "body": "process.env.NODE_ENV ==\"production\""
   },
-  "⭕️ 函数1": {
-    "prefix": "yyfunc.arrow",
+  "函数-箭头": {
+    "prefix": "⭕️ yyfunc.arrow",
     "body": [
       "const $1 = ($2) => {",
       " $0",
       "};"
     ]
   },
-  "⭕️ http.get": {
-    "prefix": "yyhttp.get",
+  "http.GET调用": {
+    "prefix": "⭕️ yyhttp.get",
     "body": [
       "const params = {};",
       "http.get('$1',{ params }).then(res => {",
@@ -164,7 +164,7 @@
       "});"
     ]
   },
-  "⭕️ http.post": {
+  "http.POST调用": {
     "prefix": "httppost",
     "body": [
       "const params = {};",
@@ -173,8 +173,8 @@
       "});"
     ]
   },
-  "⭕️ 注册V组件": {
-    "prefix": "yyvue.register",
+  "注册Vue组件": {
+    "prefix": "⭕️ yyvue.register",
     "body": [
       "import Vue from 'vue';",
       "const comps = require.context('../comps', true, /\\.vue$/);",
@@ -192,8 +192,8 @@
       "});"
     ]
   },
-  "⭕️ axios-base": {
-    "prefix": "yyaxios.1",
+  "axios基本设置": {
+    "prefix": "⭕️ yyaxios.1",
     "body": [
       "import axios from 'axios';",
       "import { notification, message } from 'antd';",
@@ -205,8 +205,8 @@
       "export default http;"
     ]
   },
-  "⭕️ axios-form": {
-    "prefix": "yyaxios.2",
+  "axios-表单设置": {
+    "prefix": "⭕️ yyaxios.2",
     "body": [
       "import axios from 'axios';",
       "import { notification, message } from 'antd';",
@@ -224,8 +224,8 @@
       "export default http;"
     ]
   },
-  "⭕️ axios-use": {
-    "prefix": "yyaxios.use",
+  "axios拦截设置": {
+    "prefix": "⭕️ yyaxios.use",
     "body": [
       "http.interceptors.request.use(onRequest);",
       "http.interceptors.response.use(onResponseSuccess, onResponseError);",
@@ -272,8 +272,8 @@
       "}"
     ]
   },
-  "⭕️ HOOK数据": {
-    "prefix": "yyhook.data",
+  "hook状态组件": {
+    "prefix": "⭕️ yyrfc.hook",
     "body": [
       "import React, { useState, useEffect } from 'react';",
       "import http from '@script/http';",
