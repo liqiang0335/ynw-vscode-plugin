@@ -64,7 +64,7 @@
     "body": "const ${1} = require('${1:name}');$0"
   },
   "{ xxx } = require('xxx')": {
-    "prefix": "⭕️ yyre-2",
+    "prefix": "⭕️ yyre-{}",
     "body": "const { $2 } = require('$1');$0"
   },
   "导入fs": {
@@ -181,7 +181,7 @@
   "导入router": {
     "prefix": "⭕️ yym-router",
     "body": [
-      "import { useHistory, NavLink } from 'react-router-dom'"
+      "import { useNavigate } from 'react-router-dom'"
     ]
   },
   "导入useSelector ": {

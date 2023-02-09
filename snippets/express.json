@@ -48,24 +48,24 @@
     ]
   },
   "Express函数": {
-    "prefix": "eemain",
+    "prefix": "⭕️ yy.express.func",
     "body": [
-      "async function main() {",
+      "async function ${TM_FILENAME}() {",
       "  $0",
       "}",
       "",
-      "module.exports = main;"
+      "module.exports = ${TM_FILENAME};"
     ]
   },
-  "Express响应": {
-    "prefix": "eeresponse",
+  "Express 响应": {
+    "prefix": "⭕️ yy.express.response",
     "body": [
       ".then(data => res.send(req.fn.ok(data)))",
       ".catch(next);"
     ]
   },
   "Express.GET": {
-    "prefix": "eeget",
+    "prefix": "⭕️ yy.express.get",
     "body": [
       "router.get('$1', ${2:name});",
       "",
@@ -75,7 +75,7 @@
     ]
   },
   "Express.POST": {
-    "prefix": "eepost",
+    "prefix": "⭕️ yy.express.post",
     "body": [
       "router.post('$1', ${2:name});",
       "",
@@ -84,8 +84,8 @@
       "}"
     ]
   },
-  "导出路由": {
-    "prefix": "eerouter",
+  "Express 导出路由": {
+    "prefix": "⭕️ yy.express.router",
     "body": [
       "const router = require('express').Router();",
       "",
@@ -94,8 +94,8 @@
       "module.exports = router;"
     ]
   },
-  "中间件-2箭头函数": {
-    "prefix": "eemiddleware",
+  "Express中间件-2箭头函数": {
+    "prefix": "⭕️ yy.express.middleware",
     "body": [
       "const ${1:name} = (req, res, next) => {",
       "  $0",
@@ -103,8 +103,8 @@
       "};"
     ]
   },
-  "中间件-1": {
-    "prefix": "eefunction",
+  "中间件-行内": {
+    "prefix": "⭕️ yy.express.middleware",
     "body": [
       "async function $1(req, res, next) {",
       "  $0",
@@ -112,7 +112,7 @@
     ]
   },
   "Express.捕获错误": {
-    "prefix": "eetry",
+    "prefix": "⭕️ yy.express.next.error",
     "body": [
       "try {",
       "  $0",
@@ -122,13 +122,13 @@
     ]
   },
   "Express发送成功": {
-    "prefix": "eeok",
+    "prefix": "⭕️ yy.express.ok",
     "body": [
       "res.send(req.fn.ok($0))"
     ]
   },
   "Express发送失败": {
-    "prefix": "eefail",
+    "prefix": "⭕️ yy.express.fail",
     "body": [
       "res.send(req.fn.error($0))"
     ]
