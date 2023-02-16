@@ -24,18 +24,8 @@
     "ynw"
   ],
   "activationEvents": [
-    "onLanguage:javascript",
-    "onLanguage:typescript",
-    "onCommand:ynw.log",
     "onCommand:ynw.copyName",
-    "onCommand:ynw.fastInput",
-    "onCommand:ynw.importModule",
-    "onCommand:ynw.requireModule",
-    "onCommand:ynw.relavePath",
-    "onCommand:ynw.createSameNameFile",
-    "onCommand:ynw.webpackBuild.dev",
-    "onCommand:ynw.webpackBuild.hot",
-    "onCommand:ynw.webpackBuild.pro"
+    "onCommand:ynw.fastInput"
   ],
   "main": "./src/extension",
   "contributes": {

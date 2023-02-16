@@ -16,7 +16,7 @@
     ]
   },
   "express增删改查": {
-    "prefix": "⭕️ yy.express.api",
+    "prefix": "⭕️ yy.exp.api",
     "body": [
       "async function get${1:name}Items(req, res, next) {",
       "  const { page = 1 } = req.query;",
@@ -48,7 +48,7 @@
     ]
   },
   "Express函数": {
-    "prefix": "⭕️ yy.express.func",
+    "prefix": "⭕️ yy.exp.func",
     "body": [
       "async function ${TM_FILENAME}() {",
       "  $0",
@@ -58,14 +58,14 @@
     ]
   },
   "Express 响应": {
-    "prefix": "⭕️ yy.express.response",
+    "prefix": "⭕️ yy.exp.response",
     "body": [
       ".then(data => res.send(req.fn.ok(data)))",
       ".catch(next);"
     ]
   },
   "Express.GET": {
-    "prefix": "⭕️ yy.express.get",
+    "prefix": "⭕️ yy.exp.get",
     "body": [
       "router.get('$1', ${2:name});",
       "",
@@ -75,7 +75,7 @@
     ]
   },
   "Express.POST": {
-    "prefix": "⭕️ yy.express.post",
+    "prefix": "⭕️ yy.exp.post",
     "body": [
       "router.post('$1', ${2:name});",
       "",
@@ -85,7 +85,7 @@
     ]
   },
   "Express 导出路由": {
-    "prefix": "⭕️ yy.express.router",
+    "prefix": "⭕️ yy.exp.router",
     "body": [
       "const router = require('express').Router();",
       "",
@@ -95,7 +95,7 @@
     ]
   },
   "Express中间件-2箭头函数": {
-    "prefix": "⭕️ yy.express.middleware",
+    "prefix": "⭕️ yy.exp.middleware",
     "body": [
       "const ${1:name} = (req, res, next) => {",
       "  $0",
@@ -104,7 +104,7 @@
     ]
   },
   "中间件-行内": {
-    "prefix": "⭕️ yy.express.middleware",
+    "prefix": "⭕️ yy.exp.middleware",
     "body": [
       "async function $1(req, res, next) {",
       "  $0",
@@ -112,7 +112,7 @@
     ]
   },
   "Express.捕获错误": {
-    "prefix": "⭕️ yy.express.next.error",
+    "prefix": "⭕️ yy.exp.next.error",
     "body": [
       "try {",
       "  $0",
@@ -122,13 +122,13 @@
     ]
   },
   "Express发送成功": {
-    "prefix": "⭕️ yy.express.ok",
+    "prefix": "⭕️ yy.exp.ok",
     "body": [
       "res.send(req.fn.ok($0))"
     ]
   },
   "Express发送失败": {
-    "prefix": "⭕️ yy.express.fail",
+    "prefix": "⭕️ yy.exp.fail",
     "body": [
       "res.send(req.fn.error($0))"
     ]
