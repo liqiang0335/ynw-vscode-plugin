@@ -3,7 +3,7 @@ const getFiles = require("./utils/getFiles");
 const path = require("path");
 
 const SOURCE = "/Users/liqiang/Documents/repos/liqiang/ynw"; // !!
-console.log("🍎 SOURCE", SOURCE);
+console.log("⭕️ SOURCE", SOURCE);
 
 main();
 function main() {

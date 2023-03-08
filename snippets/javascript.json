@@ -11,13 +11,13 @@
   "选择内部对象": {
     "prefix": "⭕️ yyconst",
     "body": [
-      "const { $0 } = ${CLIPBOARD}"
+      "const { $0 } = $1"
     ]
   },
   "log": {
     "prefix": "⭕️ yylog",
     "body": [
-      "console.log('🍎', $1);$0"
+      "console.log('⭕️', $1);$0"
     ]
   },
   "立即执行函数": {
@@ -122,7 +122,7 @@
   "打印普通": {
     "prefix": "⭕️ yyconsole",
     "body": [
-      "console.log('🍎', $0)"
+      "console.log('⭕️', $0)"
     ]
   },
   "时间格式化": {
