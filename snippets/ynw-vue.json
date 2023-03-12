@@ -1,24 +1,15 @@
-{"ynw.vue.cropper": {
+{"ynw.vue.btn-import": {
+      "prefix": "⭕️ yy.vue.btn-import",
+      "body": ["import btn-import from 'ynw/vue/btn-import'"]
+    },"ynw.vue.cropper": {
       "prefix": "⭕️ yy.vue.cropper",
       "body": ["import cropper from 'ynw/vue/cropper'"]
     },"ynw.vue.fetch-page": {
       "prefix": "⭕️ yy.vue.fetch-page",
       "body": ["import fetch-page from 'ynw/vue/fetch-page'"]
-    },"ynw.vue.loading": {
-      "prefix": "⭕️ yy.vue.loading",
-      "body": ["import loading from 'ynw/vue/loading'"]
-    },"ynw.vue.nav-back": {
-      "prefix": "⭕️ yy.vue.nav-back",
-      "body": ["import nav-back from 'ynw/vue/nav-back'"]
     },"ynw.vue.pay-type": {
       "prefix": "⭕️ yy.vue.pay-type",
       "body": ["import pay-type from 'ynw/vue/pay-type'"]
-    },"ynw.vue.picker": {
-      "prefix": "⭕️ yy.vue.picker",
-      "body": ["import picker from 'ynw/vue/picker'"]
-    },"ynw.vue.submit-button": {
-      "prefix": "⭕️ yy.vue.submit-button",
-      "body": ["import submit-button from 'ynw/vue/submit-button'"]
     },"ynw.vue.vscroll": {
       "prefix": "⭕️ yy.vue.vscroll",
       "body": ["import vscroll from 'ynw/vue/vscroll'"]

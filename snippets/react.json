@@ -109,14 +109,10 @@
 		"body": [
 			"import React, { useReducer, useEffect } from 'react';",
 			"import http from '@script/http';",
-			"",
-			"const initState = {};",
-			"const reducer = (state, action) => {",
-			"  return { ...state, ...action };",
-			"};",
+			"import reducer from 'ynw/script/reducer';",
 			"",
 			"export default function ${TM_FILENAME_BASE}() {",
-			"  const [state, dispatch] = useReducer(reducer, initState);",
+			"  const [state, dispatch] = useReducer(reducer, {});",
 			"",
 			"  useEffect(() => {}, []);",
 			"",
@@ -134,7 +130,7 @@
 	"⭕️ useReducer": {
 		"prefix": "⭕️ yyuseReducer",
 		"body": [
-			"const [state, dispatch] = useReducer(${1:reducer}, ${2:initState})"
+			"const [state, dispatch] = useReducer(reducer, {})"
 		]
 	},
 	"⭕️ 导入hook逻辑": {
