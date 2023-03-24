@@ -11,16 +11,16 @@ function main() {
 
   // js files
   const jsContent = files
-    .filter(it => it.extname === ".js")
-    .filter(it => !/^_/.test(it.basename))
-    .map(item => createSnipTemplate(item))
+    .filter((it) => it.extname === ".js")
+    .filter((it) => !/^_/.test(it.basename))
+    .map((item) => createSnipTemplate(item))
     .join(",");
   fs.writeFileSync(path.join(__dirname, "../snippets/ynw.json"), `{${jsContent}}`);
 
   // vue files
   const vueContents = files
-    .filter(it => it.extname === ".vue")
-    .map(item => createSnipTemplate(item))
+    .filter((it) => it.extname === ".vue")
+    .map((item) => createSnipTemplate(item))
     .join(",");
   fs.writeFileSync(path.join(__dirname, "../snippets/ynw-vue.json"), `{${vueContents}}`);
 }
@@ -31,7 +31,7 @@ function createSnipTemplate(item) {
   const prefix = forlder ? forlder + "." : "";
   const dir = forlder ? forlder + "/" : "";
   return `"ynw.${prefix}${name}": {
-      "prefix": "⭕️ yy.${prefix}${name}",
+      "prefix": "⭕️ yyw.${prefix}${name}",
       "body": ["import ${name} from 'ynw/${dir}${name}'"]
     }`;
 }

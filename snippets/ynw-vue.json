@@ -1,16 +1,16 @@
 {"ynw.vue.btn-import": {
-      "prefix": "⭕️ yy.vue.btn-import",
+      "prefix": "⭕️ yyw.vue.btn-import",
       "body": ["import btn-import from 'ynw/vue/btn-import'"]
     },"ynw.vue.cropper": {
-      "prefix": "⭕️ yy.vue.cropper",
+      "prefix": "⭕️ yyw.vue.cropper",
       "body": ["import cropper from 'ynw/vue/cropper'"]
     },"ynw.vue.fetch-page": {
-      "prefix": "⭕️ yy.vue.fetch-page",
+      "prefix": "⭕️ yyw.vue.fetch-page",
       "body": ["import fetch-page from 'ynw/vue/fetch-page'"]
     },"ynw.vue.pay-type": {
-      "prefix": "⭕️ yy.vue.pay-type",
+      "prefix": "⭕️ yyw.vue.pay-type",
       "body": ["import pay-type from 'ynw/vue/pay-type'"]
     },"ynw.vue.vscroll": {
-      "prefix": "⭕️ yy.vue.vscroll",
+      "prefix": "⭕️ yyw.vue.vscroll",
       "body": ["import vscroll from 'ynw/vue/vscroll'"]
     }}

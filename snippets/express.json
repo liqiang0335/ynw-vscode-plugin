@@ -1,13 +1,89 @@
 {
+  "xxx = require('xxx')": {
+    "prefix": "⭕️ yyexp-re",
+    "body": "const ${1} = require('${1:name}');$0"
+  },
+  "{ xxx } = require('xxx')": {
+    "prefix": "⭕️ yyexp-re{}",
+    "body": "const { $2 } = require('$1');$0"
+  },
+  "导入fs": {
+    "prefix": "⭕️ yyexp-fs",
+    "body": [
+      "const fs = require('fs/promises');"
+    ]
+  },
+  "导入Controller": {
+    "prefix": "⭕️ yyexp-controller",
+    "body": [
+      "const module = require('@controller$1');"
+    ]
+  },
+  "导入Const": {
+    "prefix": "⭕️ yyexp-const",
+    "body": [
+      "const module = require('@const$1');"
+    ]
+  },
+  "导入pipes": {
+    "prefix": "⭕️ yyexp-pipes",
+    "body": [
+      "const module = require('@pipes$1');"
+    ]
+  },
+  "导入Schema": {
+    "prefix": "⭕️ yyexp-schema",
+    "body": [
+      "const module = require('@schema$1');"
+    ]
+  },
+  "导入utils": {
+    "prefix": "⭕️ yyexp-utils",
+    "body": [
+      "const module = require('@utils$1');"
+    ]
+  },
+  "导入api": {
+    "prefix": "⭕️ yyexp-api",
+    "body": [
+      "const module = require('@api$1');"
+    ]
+  },
+  "导入script": {
+    "prefix": "⭕️ yyexp-script",
+    "body": [
+      "const module = require('@script$1');"
+    ]
+  },
+  "导入child_process": {
+    "prefix": "⭕️ yyexp-child_process",
+    "body": [
+      "const util = require('util');",
+      "const exec = util.promisify(require('child_process').exec);"
+    ]
+  },
+  "导入lodash: _ = require('lodash')": {
+    "prefix": "⭕️ yyexp-lodash",
+    "body": [
+      "const _ = require('lodash');"
+    ]
+  },
+  "导入Rxjs": {
+    "prefix": "⭕️ yyexp-rxjs",
+    "body": [
+      "const { Subject } = require('rxjs');",
+      "const { map } = require('rxjs/operators');"
+    ]
+  },
   "mongo关联查询": {
-    "prefix": "⭕️ yy.mongo.lookup",
+    "prefix": "⭕️ yymongo.lookup",
     "body": [
       "{ $lookup: { from: 'xxx', localField: '_id', foreignField: '_id', as: 'docs' } }",
       "{ $unwind: { path: '$docs', preserveNullAndEmptyArrays: true } }"
     ]
   },
   "mongo游标查询": {
-    "prefix": "⭕️ yy.mongo.cursor",
+    "prefix": "⭕️ yymongo.cursor",
     "body": [
       "const cursor = await Model.find({}).cursor();",
       "for (let doc = await cursor.next(); doc != null; doc = await cursor.next()) {",
@@ -16,7 +92,7 @@
     ]
   },
   "express增删改查": {
-    "prefix": "⭕️ yy.exp.api",
+    "prefix": "⭕️ yyexp.curd",
     "body": [
       "async function get${1:name}Items(req, res, next) {",
       "  const { page = 1 } = req.query;",
@@ -48,44 +124,44 @@
     ]
   },
   "Express函数": {
-    "prefix": "⭕️ yy.exp.func",
+    "prefix": "⭕️ yyexp.module",
     "body": [
-      "async function ${TM_FILENAME}() {",
+      "async function ${TM_FILENAME_BASE}() {",
       "  $0",
       "}",
       "",
-      "module.exports = ${TM_FILENAME};"
+      "module.exports = ${TM_FILENAME_BASE};"
     ]
   },
   "Express 响应": {
-    "prefix": "⭕️ yy.exp.response",
+    "prefix": "⭕️ yyexp.response",
     "body": [
       ".then(data => res.send(req.fn.ok(data)))",
       ".catch(next);"
     ]
   },
-  "Express.GET": {
-    "prefix": "⭕️ yy.exp.get",
+  "Express.路由处理函数": {
+    "prefix": "⭕️ yyexp.func",
     "body": [
-      "router.get('$1', ${2:name});",
-      "",
-      "async function ${2}(req, res, next) {",
+      "async function ${1}(req, res, next) {",
       "   $0",
       "}"
     ]
   },
-  "Express.POST": {
-    "prefix": "⭕️ yy.exp.post",
+  "Express.路由": {
+    "prefix": "⭕️ yyexp.get",
     "body": [
-      "router.post('$1', ${2:name});",
-      "",
-      "async function ${2}(req, res, next) {",
-      "   $0",
-      "}"
+      "router.get('/${TM_FILENAME_BASE}/$1', ${2:name});"
+    ]
+  },
+  "Express.路由post": {
+    "prefix": "⭕️ yyexp.post",
+    "body": [
+      "router.post('/${TM_FILENAME_BASE}/$1', ${2:name});"
     ]
   },
   "Express 导出路由": {
-    "prefix": "⭕️ yy.exp.router",
+    "prefix": "⭕️ yyexp.router",
     "body": [
       "const router = require('express').Router();",
       "",
@@ -95,7 +171,7 @@
     ]
   },
   "Express中间件-2箭头函数": {
-    "prefix": "⭕️ yy.exp.middleware",
+    "prefix": "⭕️ yyexp.middleware",
     "body": [
       "const ${1:name} = (req, res, next) => {",
       "  $0",
@@ -103,16 +179,8 @@
       "};"
     ]
   },
-  "中间件-行内": {
-    "prefix": "⭕️ yy.exp.middleware",
-    "body": [
-      "async function $1(req, res, next) {",
-      "  $0",
-      "};"
-    ]
-  },
   "Express.捕获错误": {
-    "prefix": "⭕️ yy.exp.next.error",
+    "prefix": "⭕️ yyexp.next.error",
     "body": [
       "try {",
       "  $0",
@@ -122,13 +190,13 @@
     ]
   },
   "Express发送成功": {
-    "prefix": "⭕️ yy.exp.ok",
+    "prefix": "⭕️ yyexp.ok",
     "body": [
       "res.send(req.fn.ok($0))"
     ]
   },
   "Express发送失败": {
-    "prefix": "⭕️ yy.exp.fail",
+    "prefix": "⭕️ yyexp.fail",
     "body": [
       "res.send(req.fn.error($0))"
     ]

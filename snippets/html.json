@@ -1,12 +1,12 @@
 {
   "移动端禁止缩放": {
-    "prefix": "meta",
+    "prefix": "⭕️ yymeta",
     "body": [
       "<meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no' />"
     ]
   },
   "vue-htmt结构": {
-    "prefix": "iihtmlbase",
+    "prefix": "⭕️ basehtml",
     "body": [
       "<!DOCTYPE html>",
       "<html lang='en'>",

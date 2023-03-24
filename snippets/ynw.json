@@ -1,346 +1,349 @@
 {"ynw.antd.AntConfig": {
-      "prefix": "⭕️ yy.antd.AntConfig",
+      "prefix": "⭕️ yyw.antd.AntConfig",
       "body": ["import AntConfig from 'ynw/antd/AntConfig'"]
+    },"ynw.antd.AutoComplete": {
+      "prefix": "⭕️ yyw.antd.AutoComplete",
+      "body": ["import AutoComplete from 'ynw/antd/AutoComplete'"]
     },"ynw.antd.Buttons": {
-      "prefix": "⭕️ yy.antd.Buttons",
+      "prefix": "⭕️ yyw.antd.Buttons",
       "body": ["import Buttons from 'ynw/antd/Buttons'"]
     },"ynw.antd.DayPicker": {
-      "prefix": "⭕️ yy.antd.DayPicker",
+      "prefix": "⭕️ yyw.antd.DayPicker",
       "body": ["import DayPicker from 'ynw/antd/DayPicker'"]
     },"ynw.antd.DayRangePicker": {
-      "prefix": "⭕️ yy.antd.DayRangePicker",
+      "prefix": "⭕️ yyw.antd.DayRangePicker",
       "body": ["import DayRangePicker from 'ynw/antd/DayRangePicker'"]
     },"ynw.antd.EmptyBox": {
-      "prefix": "⭕️ yy.antd.EmptyBox",
+      "prefix": "⭕️ yyw.antd.EmptyBox",
       "body": ["import EmptyBox from 'ynw/antd/EmptyBox'"]
     },"ynw.antd.GlobalMask": {
-      "prefix": "⭕️ yy.antd.GlobalMask",
+      "prefix": "⭕️ yyw.antd.GlobalMask",
       "body": ["import GlobalMask from 'ynw/antd/GlobalMask'"]
     },"ynw.antd.InputNumber": {
-      "prefix": "⭕️ yy.antd.InputNumber",
+      "prefix": "⭕️ yyw.antd.InputNumber",
       "body": ["import InputNumber from 'ynw/antd/InputNumber'"]
     },"ynw.antd.NullLoading": {
-      "prefix": "⭕️ yy.antd.NullLoading",
+      "prefix": "⭕️ yyw.antd.NullLoading",
       "body": ["import NullLoading from 'ynw/antd/NullLoading'"]
     },"ynw.antd.PopArticle": {
-      "prefix": "⭕️ yy.antd.PopArticle",
+      "prefix": "⭕️ yyw.antd.PopArticle",
       "body": ["import PopArticle from 'ynw/antd/PopArticle'"]
     },"ynw.antd.PopMulChoose": {
-      "prefix": "⭕️ yy.antd.PopMulChoose",
+      "prefix": "⭕️ yyw.antd.PopMulChoose",
       "body": ["import PopMulChoose from 'ynw/antd/PopMulChoose'"]
     },"ynw.antd.ScrolledTableBox": {
-      "prefix": "⭕️ yy.antd.ScrolledTableBox",
+      "prefix": "⭕️ yyw.antd.ScrolledTableBox",
       "body": ["import ScrolledTableBox from 'ynw/antd/ScrolledTableBox'"]
     },"ynw.antd.SearchBar": {
-      "prefix": "⭕️ yy.antd.SearchBar",
+      "prefix": "⭕️ yyw.antd.SearchBar",
       "body": ["import SearchBar from 'ynw/antd/SearchBar'"]
     },"ynw.antd.SelectCommon": {
-      "prefix": "⭕️ yy.antd.SelectCommon",
+      "prefix": "⭕️ yyw.antd.SelectCommon",
       "body": ["import SelectCommon from 'ynw/antd/SelectCommon'"]
     },"ynw.antd.TextArea": {
-      "prefix": "⭕️ yy.antd.TextArea",
+      "prefix": "⭕️ yyw.antd.TextArea",
       "body": ["import TextArea from 'ynw/antd/TextArea'"]
     },"ynw.antd.TreeRadio": {
-      "prefix": "⭕️ yy.antd.TreeRadio",
+      "prefix": "⭕️ yyw.antd.TreeRadio",
       "body": ["import TreeRadio from 'ynw/antd/TreeRadio'"]
     },"ynw.antd.UploadInput": {
-      "prefix": "⭕️ yy.antd.UploadInput",
+      "prefix": "⭕️ yyw.antd.UploadInput",
       "body": ["import UploadInput from 'ynw/antd/UploadInput'"]
     },"ynw.antd.UploadMulInput": {
-      "prefix": "⭕️ yy.antd.UploadMulInput",
+      "prefix": "⭕️ yyw.antd.UploadMulInput",
       "body": ["import UploadMulInput from 'ynw/antd/UploadMulInput'"]
     },"ynw.array.array2Tree": {
-      "prefix": "⭕️ yy.array.array2Tree",
+      "prefix": "⭕️ yyw.array.array2Tree",
       "body": ["import array2Tree from 'ynw/array/array2Tree'"]
     },"ynw.array.arrayById": {
-      "prefix": "⭕️ yy.array.arrayById",
+      "prefix": "⭕️ yyw.array.arrayById",
       "body": ["import arrayById from 'ynw/array/arrayById'"]
     },"ynw.array.byId": {
-      "prefix": "⭕️ yy.array.byId",
+      "prefix": "⭕️ yyw.array.byId",
       "body": ["import byId from 'ynw/array/byId'"]
     },"ynw.array.tree2Array": {
-      "prefix": "⭕️ yy.array.tree2Array",
+      "prefix": "⭕️ yyw.array.tree2Array",
       "body": ["import tree2Array from 'ynw/array/tree2Array'"]
     },"ynw.browser.UUIDBrowser": {
-      "prefix": "⭕️ yy.browser.UUIDBrowser",
+      "prefix": "⭕️ yyw.browser.UUIDBrowser",
       "body": ["import UUIDBrowser from 'ynw/browser/UUIDBrowser'"]
     },"ynw.browser.copyToClipboard": {
-      "prefix": "⭕️ yy.browser.copyToClipboard",
+      "prefix": "⭕️ yyw.browser.copyToClipboard",
       "body": ["import copyToClipboard from 'ynw/browser/copyToClipboard'"]
     },"ynw.browser.detectBrowser": {
-      "prefix": "⭕️ yy.browser.detectBrowser",
+      "prefix": "⭕️ yyw.browser.detectBrowser",
       "body": ["import detectBrowser from 'ynw/browser/detectBrowser'"]
     },"ynw.browser.detectDeviceType": {
-      "prefix": "⭕️ yy.browser.detectDeviceType",
+      "prefix": "⭕️ yyw.browser.detectDeviceType",
       "body": ["import detectDeviceType from 'ynw/browser/detectDeviceType'"]
     },"ynw.browser.elementInViewport": {
-      "prefix": "⭕️ yy.browser.elementInViewport",
+      "prefix": "⭕️ yyw.browser.elementInViewport",
       "body": ["import elementInViewport from 'ynw/browser/elementInViewport'"]
     },"ynw.browser.isDocumentVisible": {
-      "prefix": "⭕️ yy.browser.isDocumentVisible",
+      "prefix": "⭕️ yyw.browser.isDocumentVisible",
       "body": ["import isDocumentVisible from 'ynw/browser/isDocumentVisible'"]
     },"ynw.constant.Regs": {
-      "prefix": "⭕️ yy.constant.Regs",
+      "prefix": "⭕️ yyw.constant.Regs",
       "body": ["import Regs from 'ynw/constant/Regs'"]
     },"ynw.constant.Rules": {
-      "prefix": "⭕️ yy.constant.Rules",
+      "prefix": "⭕️ yyw.constant.Rules",
       "body": ["import Rules from 'ynw/constant/Rules'"]
     },"ynw.dataStructures.BinarySearchTree": {
-      "prefix": "⭕️ yy.dataStructures.BinarySearchTree",
+      "prefix": "⭕️ yyw.dataStructures.BinarySearchTree",
       "body": ["import BinarySearchTree from 'ynw/dataStructures/BinarySearchTree'"]
     },"ynw.dataStructures.BinaryTree": {
-      "prefix": "⭕️ yy.dataStructures.BinaryTree",
+      "prefix": "⭕️ yyw.dataStructures.BinaryTree",
       "body": ["import BinaryTree from 'ynw/dataStructures/BinaryTree'"]
     },"ynw.dataStructures.DoublyLinkedList": {
-      "prefix": "⭕️ yy.dataStructures.DoublyLinkedList",
+      "prefix": "⭕️ yyw.dataStructures.DoublyLinkedList",
       "body": ["import DoublyLinkedList from 'ynw/dataStructures/DoublyLinkedList'"]
     },"ynw.dataStructures.Graph": {
-      "prefix": "⭕️ yy.dataStructures.Graph",
+      "prefix": "⭕️ yyw.dataStructures.Graph",
       "body": ["import Graph from 'ynw/dataStructures/Graph'"]
     },"ynw.dataStructures.HashTable": {
-      "prefix": "⭕️ yy.dataStructures.HashTable",
+      "prefix": "⭕️ yyw.dataStructures.HashTable",
       "body": ["import HashTable from 'ynw/dataStructures/HashTable'"]
     },"ynw.dataStructures.LinkedList": {
-      "prefix": "⭕️ yy.dataStructures.LinkedList",
+      "prefix": "⭕️ yyw.dataStructures.LinkedList",
       "body": ["import LinkedList from 'ynw/dataStructures/LinkedList'"]
     },"ynw.dataStructures.Queue": {
-      "prefix": "⭕️ yy.dataStructures.Queue",
+      "prefix": "⭕️ yyw.dataStructures.Queue",
       "body": ["import Queue from 'ynw/dataStructures/Queue'"]
     },"ynw.dataStructures.Stack": {
-      "prefix": "⭕️ yy.dataStructures.Stack",
+      "prefix": "⭕️ yyw.dataStructures.Stack",
       "body": ["import Stack from 'ynw/dataStructures/Stack'"]
     },"ynw.dataStructures.Tree": {
-      "prefix": "⭕️ yy.dataStructures.Tree",
+      "prefix": "⭕️ yyw.dataStructures.Tree",
       "body": ["import Tree from 'ynw/dataStructures/Tree'"]
     },"ynw.getUrlParams": {
-      "prefix": "⭕️ yy.getUrlParams",
+      "prefix": "⭕️ yyw.getUrlParams",
       "body": ["import getUrlParams from 'ynw/getUrlParams'"]
     },"ynw.index": {
-      "prefix": "⭕️ yy.index",
+      "prefix": "⭕️ yyw.index",
       "body": ["import index from 'ynw/index'"]
     },"ynw.mobile.touch": {
-      "prefix": "⭕️ yy.mobile.touch",
+      "prefix": "⭕️ yyw.mobile.touch",
       "body": ["import touch from 'ynw/mobile/touch'"]
     },"ynw.next.Pagination": {
-      "prefix": "⭕️ yy.next.Pagination",
+      "prefix": "⭕️ yyw.next.Pagination",
       "body": ["import Pagination from 'ynw/next/Pagination'"]
     },"ynw.number.fillZero": {
-      "prefix": "⭕️ yy.number.fillZero",
+      "prefix": "⭕️ yyw.number.fillZero",
       "body": ["import fillZero from 'ynw/number/fillZero'"]
     },"ynw.object.copyValue": {
-      "prefix": "⭕️ yy.object.copyValue",
+      "prefix": "⭕️ yyw.object.copyValue",
       "body": ["import copyValue from 'ynw/object/copyValue'"]
     },"ynw.object.mergeValid": {
-      "prefix": "⭕️ yy.object.mergeValid",
+      "prefix": "⭕️ yyw.object.mergeValid",
       "body": ["import mergeValid from 'ynw/object/mergeValid'"]
     },"ynw.object.toKeyedArray": {
-      "prefix": "⭕️ yy.object.toKeyedArray",
+      "prefix": "⭕️ yyw.object.toKeyedArray",
       "body": ["import toKeyedArray from 'ynw/object/toKeyedArray'"]
     },"ynw.other.chineseNumber": {
-      "prefix": "⭕️ yy.other.chineseNumber",
+      "prefix": "⭕️ yyw.other.chineseNumber",
       "body": ["import chineseNumber from 'ynw/other/chineseNumber'"]
     },"ynw.other.createSocket": {
-      "prefix": "⭕️ yy.other.createSocket",
+      "prefix": "⭕️ yyw.other.createSocket",
       "body": ["import createSocket from 'ynw/other/createSocket'"]
     },"ynw.other.getChineseMoneyUnit": {
-      "prefix": "⭕️ yy.other.getChineseMoneyUnit",
+      "prefix": "⭕️ yyw.other.getChineseMoneyUnit",
       "body": ["import getChineseMoneyUnit from 'ynw/other/getChineseMoneyUnit'"]
     },"ynw.other.validateIdCard": {
-      "prefix": "⭕️ yy.other.validateIdCard",
+      "prefix": "⭕️ yyw.other.validateIdCard",
       "body": ["import validateIdCard from 'ynw/other/validateIdCard'"]
     },"ynw.pattern.applyMiddleware": {
-      "prefix": "⭕️ yy.pattern.applyMiddleware",
+      "prefix": "⭕️ yyw.pattern.applyMiddleware",
       "body": ["import applyMiddleware from 'ynw/pattern/applyMiddleware'"]
     },"ynw.pattern.compose": {
-      "prefix": "⭕️ yy.pattern.compose",
+      "prefix": "⭕️ yyw.pattern.compose",
       "body": ["import compose from 'ynw/pattern/compose'"]
     },"ynw.pattern.composeRight": {
-      "prefix": "⭕️ yy.pattern.composeRight",
+      "prefix": "⭕️ yyw.pattern.composeRight",
       "body": ["import composeRight from 'ynw/pattern/composeRight'"]
     },"ynw.pattern.createEventHub": {
-      "prefix": "⭕️ yy.pattern.createEventHub",
+      "prefix": "⭕️ yyw.pattern.createEventHub",
       "body": ["import createEventHub from 'ynw/pattern/createEventHub'"]
     },"ynw.pattern.koaChain": {
-      "prefix": "⭕️ yy.pattern.koaChain",
+      "prefix": "⭕️ yyw.pattern.koaChain",
       "body": ["import koaChain from 'ynw/pattern/koaChain'"]
     },"ynw.pattern.nextChain": {
-      "prefix": "⭕️ yy.pattern.nextChain",
+      "prefix": "⭕️ yyw.pattern.nextChain",
       "body": ["import nextChain from 'ynw/pattern/nextChain'"]
     },"ynw.pattern.promiseChain": {
-      "prefix": "⭕️ yy.pattern.promiseChain",
+      "prefix": "⭕️ yyw.pattern.promiseChain",
       "body": ["import promiseChain from 'ynw/pattern/promiseChain'"]
     },"ynw.react.ErrorBoundary": {
-      "prefix": "⭕️ yy.react.ErrorBoundary",
+      "prefix": "⭕️ yyw.react.ErrorBoundary",
       "body": ["import ErrorBoundary from 'ynw/react/ErrorBoundary'"]
     },"ynw.react.IF": {
-      "prefix": "⭕️ yy.react.IF",
+      "prefix": "⭕️ yyw.react.IF",
       "body": ["import IF from 'ynw/react/IF'"]
     },"ynw.react.IFShow": {
-      "prefix": "⭕️ yy.react.IFShow",
+      "prefix": "⭕️ yyw.react.IFShow",
       "body": ["import IFShow from 'ynw/react/IFShow'"]
     },"ynw.react.ZoomImg": {
-      "prefix": "⭕️ yy.react.ZoomImg",
+      "prefix": "⭕️ yyw.react.ZoomImg",
       "body": ["import ZoomImg from 'ynw/react/ZoomImg'"]
     },"ynw.react.useCachedEnum": {
-      "prefix": "⭕️ yy.react.useCachedEnum",
+      "prefix": "⭕️ yyw.react.useCachedEnum",
       "body": ["import useCachedEnum from 'ynw/react/useCachedEnum'"]
     },"ynw.react.useConstant": {
-      "prefix": "⭕️ yy.react.useConstant",
+      "prefix": "⭕️ yyw.react.useConstant",
       "body": ["import useConstant from 'ynw/react/useConstant'"]
     },"ynw.react.useEventCallback": {
-      "prefix": "⭕️ yy.react.useEventCallback",
+      "prefix": "⭕️ yyw.react.useEventCallback",
       "body": ["import useEventCallback from 'ynw/react/useEventCallback'"]
     },"ynw.react.useKeyboardJs": {
-      "prefix": "⭕️ yy.react.useKeyboardJs",
+      "prefix": "⭕️ yyw.react.useKeyboardJs",
       "body": ["import useKeyboardJs from 'ynw/react/useKeyboardJs'"]
     },"ynw.react.useObservable": {
-      "prefix": "⭕️ yy.react.useObservable",
+      "prefix": "⭕️ yyw.react.useObservable",
       "body": ["import useObservable from 'ynw/react/useObservable'"]
     },"ynw.react.useScroll": {
-      "prefix": "⭕️ yy.react.useScroll",
+      "prefix": "⭕️ yyw.react.useScroll",
       "body": ["import useScroll from 'ynw/react/useScroll'"]
     },"ynw.react.useToggle": {
-      "prefix": "⭕️ yy.react.useToggle",
+      "prefix": "⭕️ yyw.react.useToggle",
       "body": ["import useToggle from 'ynw/react/useToggle'"]
     },"ynw.react.useWindowSize": {
-      "prefix": "⭕️ yy.react.useWindowSize",
+      "prefix": "⭕️ yyw.react.useWindowSize",
       "body": ["import useWindowSize from 'ynw/react/useWindowSize'"]
     },"ynw.script.Highcharts": {
-      "prefix": "⭕️ yy.script.Highcharts",
+      "prefix": "⭕️ yyw.script.Highcharts",
       "body": ["import Highcharts from 'ynw/script/Highcharts'"]
     },"ynw.script.ImgToBase64": {
-      "prefix": "⭕️ yy.script.ImgToBase64",
+      "prefix": "⭕️ yyw.script.ImgToBase64",
       "body": ["import ImgToBase64 from 'ynw/script/ImgToBase64'"]
     },"ynw.script.UrlParams": {
-      "prefix": "⭕️ yy.script.UrlParams",
+      "prefix": "⭕️ yyw.script.UrlParams",
       "body": ["import UrlParams from 'ynw/script/UrlParams'"]
     },"ynw.script.checkCell": {
-      "prefix": "⭕️ yy.script.checkCell",
+      "prefix": "⭕️ yyw.script.checkCell",
       "body": ["import checkCell from 'ynw/script/checkCell'"]
     },"ynw.script.confirmer": {
-      "prefix": "⭕️ yy.script.confirmer",
+      "prefix": "⭕️ yyw.script.confirmer",
       "body": ["import confirmer from 'ynw/script/confirmer'"]
     },"ynw.script.createReducer": {
-      "prefix": "⭕️ yy.script.createReducer",
+      "prefix": "⭕️ yyw.script.createReducer",
       "body": ["import createReducer from 'ynw/script/createReducer'"]
     },"ynw.script/createWord.createTable": {
-      "prefix": "⭕️ yy.script/createWord.createTable",
+      "prefix": "⭕️ yyw.script/createWord.createTable",
       "body": ["import createTable from 'ynw/script/createWord/createTable'"]
     },"ynw.script/createWord.createWord": {
-      "prefix": "⭕️ yy.script/createWord.createWord",
+      "prefix": "⭕️ yyw.script/createWord.createWord",
       "body": ["import createWord from 'ynw/script/createWord/createWord'"]
     },"ynw.script/createWord.wordStyles": {
-      "prefix": "⭕️ yy.script/createWord.wordStyles",
+      "prefix": "⭕️ yyw.script/createWord.wordStyles",
       "body": ["import wordStyles from 'ynw/script/createWord/wordStyles'"]
     },"ynw.script/createWord.wordXML": {
-      "prefix": "⭕️ yy.script/createWord.wordXML",
+      "prefix": "⭕️ yyw.script/createWord.wordXML",
       "body": ["import wordXML from 'ynw/script/createWord/wordXML'"]
     },"ynw.script.exportCSV": {
-      "prefix": "⭕️ yy.script.exportCSV",
+      "prefix": "⭕️ yyw.script.exportCSV",
       "body": ["import exportCSV from 'ynw/script/exportCSV'"]
     },"ynw.script.getFormValues": {
-      "prefix": "⭕️ yy.script.getFormValues",
+      "prefix": "⭕️ yyw.script.getFormValues",
       "body": ["import getFormValues from 'ynw/script/getFormValues'"]
     },"ynw.script.getUrlParams": {
-      "prefix": "⭕️ yy.script.getUrlParams",
+      "prefix": "⭕️ yyw.script.getUrlParams",
       "body": ["import getUrlParams from 'ynw/script/getUrlParams'"]
     },"ynw.script.imageResize": {
-      "prefix": "⭕️ yy.script.imageResize",
+      "prefix": "⭕️ yyw.script.imageResize",
       "body": ["import imageResize from 'ynw/script/imageResize'"]
     },"ynw.script.previewImage": {
-      "prefix": "⭕️ yy.script.previewImage",
+      "prefix": "⭕️ yyw.script.previewImage",
       "body": ["import previewImage from 'ynw/script/previewImage'"]
     },"ynw.script.readXLSX": {
-      "prefix": "⭕️ yy.script.readXLSX",
+      "prefix": "⭕️ yyw.script.readXLSX",
       "body": ["import readXLSX from 'ynw/script/readXLSX'"]
     },"ynw.script.reducer": {
-      "prefix": "⭕️ yy.script.reducer",
+      "prefix": "⭕️ yyw.script.reducer",
       "body": ["import reducer from 'ynw/script/reducer'"]
     },"ynw.script.removeNullProps": {
-      "prefix": "⭕️ yy.script.removeNullProps",
+      "prefix": "⭕️ yyw.script.removeNullProps",
       "body": ["import removeNullProps from 'ynw/script/removeNullProps'"]
     },"ynw.script.sleep": {
-      "prefix": "⭕️ yy.script.sleep",
+      "prefix": "⭕️ yyw.script.sleep",
       "body": ["import sleep from 'ynw/script/sleep'"]
     },"ynw.script.srcToBase64": {
-      "prefix": "⭕️ yy.script.srcToBase64",
+      "prefix": "⭕️ yyw.script.srcToBase64",
       "body": ["import srcToBase64 from 'ynw/script/srcToBase64'"]
     },"ynw.script.viz": {
-      "prefix": "⭕️ yy.script.viz",
+      "prefix": "⭕️ yyw.script.viz",
       "body": ["import viz from 'ynw/script/viz'"]
     },"ynw.script.weixin": {
-      "prefix": "⭕️ yy.script.weixin",
+      "prefix": "⭕️ yyw.script.weixin",
       "body": ["import weixin from 'ynw/script/weixin'"]
     },"ynw.script.wxChooseImage": {
-      "prefix": "⭕️ yy.script.wxChooseImage",
+      "prefix": "⭕️ yyw.script.wxChooseImage",
       "body": ["import wxChooseImage from 'ynw/script/wxChooseImage'"]
     },"ynw.string.compareVersion": {
-      "prefix": "⭕️ yy.string.compareVersion",
+      "prefix": "⭕️ yyw.string.compareVersion",
       "body": ["import compareVersion from 'ynw/string/compareVersion'"]
     },"ynw.string.createShortText": {
-      "prefix": "⭕️ yy.string.createShortText",
+      "prefix": "⭕️ yyw.string.createShortText",
       "body": ["import createShortText from 'ynw/string/createShortText'"]
     },"ynw.time.dayjs": {
-      "prefix": "⭕️ yy.time.dayjs",
+      "prefix": "⭕️ yyw.time.dayjs",
       "body": ["import dayjs from 'ynw/time/dayjs'"]
     },"ynw.time.fillDays": {
-      "prefix": "⭕️ yy.time.fillDays",
+      "prefix": "⭕️ yyw.time.fillDays",
       "body": ["import fillDays from 'ynw/time/fillDays'"]
     },"ynw.time.formatDuration": {
-      "prefix": "⭕️ yy.time.formatDuration",
+      "prefix": "⭕️ yyw.time.formatDuration",
       "body": ["import formatDuration from 'ynw/time/formatDuration'"]
     },"ynw.time.formatTime": {
-      "prefix": "⭕️ yy.time.formatTime",
+      "prefix": "⭕️ yyw.time.formatTime",
       "body": ["import formatTime from 'ynw/time/formatTime'"]
     },"ynw.time.getHumanTimes": {
-      "prefix": "⭕️ yy.time.getHumanTimes",
+      "prefix": "⭕️ yyw.time.getHumanTimes",
       "body": ["import getHumanTimes from 'ynw/time/getHumanTimes'"]
     },"ynw.time.overTime": {
-      "prefix": "⭕️ yy.time.overTime",
+      "prefix": "⭕️ yyw.time.overTime",
       "body": ["import overTime from 'ynw/time/overTime'"]
     },"ynw.tiper": {
-      "prefix": "⭕️ yy.tiper",
+      "prefix": "⭕️ yyw.tiper",
       "body": ["import tiper from 'ynw/tiper'"]
     },"ynw.ui.ChooseFileOrigin": {
-      "prefix": "⭕️ yy.ui.ChooseFileOrigin",
+      "prefix": "⭕️ yyw.ui.ChooseFileOrigin",
       "body": ["import ChooseFileOrigin from 'ynw/ui/ChooseFileOrigin'"]
     },"ynw.ui.ColorTip": {
-      "prefix": "⭕️ yy.ui.ColorTip",
+      "prefix": "⭕️ yyw.ui.ColorTip",
       "body": ["import ColorTip from 'ynw/ui/ColorTip'"]
     },"ynw.ui/Cropper.index": {
-      "prefix": "⭕️ yy.ui/Cropper.index",
+      "prefix": "⭕️ yyw.ui/Cropper.index",
       "body": ["import index from 'ynw/ui/Cropper/index'"]
     },"ynw.ui.Download": {
-      "prefix": "⭕️ yy.ui.Download",
+      "prefix": "⭕️ yyw.ui.Download",
       "body": ["import Download from 'ynw/ui/Download'"]
     },"ynw.ui.EchartsBox": {
-      "prefix": "⭕️ yy.ui.EchartsBox",
+      "prefix": "⭕️ yyw.ui.EchartsBox",
       "body": ["import EchartsBox from 'ynw/ui/EchartsBox'"]
     },"ynw.ui.FetchMore": {
-      "prefix": "⭕️ yy.ui.FetchMore",
+      "prefix": "⭕️ yyw.ui.FetchMore",
       "body": ["import FetchMore from 'ynw/ui/FetchMore'"]
     },"ynw.ui.FetchMorePage": {
-      "prefix": "⭕️ yy.ui.FetchMorePage",
+      "prefix": "⭕️ yyw.ui.FetchMorePage",
       "body": ["import FetchMorePage from 'ynw/ui/FetchMorePage'"]
     },"ynw.ui.ImageHolder": {
-      "prefix": "⭕️ yy.ui.ImageHolder",
+      "prefix": "⭕️ yyw.ui.ImageHolder",
       "body": ["import ImageHolder from 'ynw/ui/ImageHolder'"]
     },"ynw.ui.ImageWithPreview": {
-      "prefix": "⭕️ yy.ui.ImageWithPreview",
+      "prefix": "⭕️ yyw.ui.ImageWithPreview",
       "body": ["import ImageWithPreview from 'ynw/ui/ImageWithPreview'"]
     },"ynw.ui.LoadMore": {
-      "prefix": "⭕️ yy.ui.LoadMore",
+      "prefix": "⭕️ yyw.ui.LoadMore",
       "body": ["import LoadMore from 'ynw/ui/LoadMore'"]
     },"ynw.ui.NoticeBar": {
-      "prefix": "⭕️ yy.ui.NoticeBar",
+      "prefix": "⭕️ yyw.ui.NoticeBar",
       "body": ["import NoticeBar from 'ynw/ui/NoticeBar'"]
     },"ynw.ui/PayType.index": {
-      "prefix": "⭕️ yy.ui/PayType.index",
+      "prefix": "⭕️ yyw.ui/PayType.index",
       "body": ["import index from 'ynw/ui/PayType/index'"]
     },"ynw.ui.SuccessStatus": {
-      "prefix": "⭕️ yy.ui.SuccessStatus",
+      "prefix": "⭕️ yyw.ui.SuccessStatus",
       "body": ["import SuccessStatus from 'ynw/ui/SuccessStatus'"]
     },"ynw.ui.TextScroll": {
-      "prefix": "⭕️ yy.ui.TextScroll",
+      "prefix": "⭕️ yyw.ui.TextScroll",
       "body": ["import TextScroll from 'ynw/ui/TextScroll'"]
     }}
