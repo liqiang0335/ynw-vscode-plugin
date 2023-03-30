@@ -1,5 +1,6 @@
 const path = require("path");
 const activeDocument = require("./activeDocument");
+
 /**
  * 右键选中的文档-相对-当前文档路径
  * @param {String} selectFilePath
@@ -17,8 +18,8 @@ const getRelativeInfo = function (selectFilePath) {
   const ext = path.extname(relativePath);
   let result = relativePath;
 
-  // remove extension for some file type
-  if (/\.(jsx?|vue)$/.test(relativePath)) {
+  // 去掉拓展名
+  if (/\.(jsx?)$/.test(relativePath)) {
     result = relativePath.replace(/\.[a-z]+$/, "");
   }
   if (!result.startsWith(".")) {

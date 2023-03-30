@@ -18,11 +18,9 @@ module.exports = function (URI) {
   if (!info) return;
 
   const { fullName, baseName, relativePath } = info;
-  const regMatch = RegExpTable.find(item => item.reg.test(fullName));
+  const regMatch = RegExpTable.find((item) => item.reg.test(fullName));
 
-  const content = regMatch
-    ? regMatch.handler(info) + ";\n"
-    : `import ${baseName} from "${relativePath}";\n`;
+  const content = regMatch ? regMatch.handler(info) + ";\n" : `import ${baseName} from "${relativePath}";\n`;
 
   insertContent(content);
 };
