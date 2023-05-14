@@ -19,7 +19,7 @@ const getRelativeInfo = function (selectFilePath) {
   let result = relativePath;
 
   // 去掉拓展名
-  if (/\.(jsx?)$/.test(relativePath)) {
+  if (/\.([jt]sx?)$/.test(relativePath)) {
     result = relativePath.replace(/\.[a-z]+$/, "");
   }
   if (!result.startsWith(".")) {
