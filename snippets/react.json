@@ -91,7 +91,7 @@
 	"⭕️ 函数组件": {
 		"prefix": "⭕️ yyrfc",
 		"body": [
-			"import React from 'react'",
+			"import React, { useEffect, useReducer } from 'react'",
 			"",
 			"export default function ${TM_FILENAME_BASE}() {",
 			"  return (",
@@ -114,7 +114,11 @@
 			"export default function ${TM_FILENAME_BASE}() {",
 			"  const [state, dispatch] = useReducer(reducer, {});",
 			"",
-			"  useEffect(() => {}, []);",
+			"useEffect(() => {",
+			"    http.get('/api/xxx').then((res) => {",
+			"      dispatch({ res });",
+			"    });",
+			"  }, []);",
 			"",
 			"  return { state, dispatch }",
 			"}",
