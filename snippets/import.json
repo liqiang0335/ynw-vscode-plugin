@@ -80,8 +80,7 @@
   "导入rxjx": {
     "prefix": "⭕️ yym-rxjx",
     "body": [
-      "import { Subject } from 'rxjs';",
-      "import { map } from 'rxjs/operators'"
+      "import { Subject } from 'rxjs';"
     ]
   },
   "导入React": {
