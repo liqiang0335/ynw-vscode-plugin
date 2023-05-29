@@ -12,8 +12,8 @@ const getRelativeInfo = function (selectFilePath) {
 
   let relativePath = path
     .relative(active, selectFilePath)
-    .replace(/\\+/g, "/") //replace sep
-    .replace(/^\.\.\//, "");
+    .replace(/\\+/g, "/") // 转换为正斜杠
+    .replace(/^\.\.\//, ""); // 去掉开头的 ../
 
   const ext = path.extname(relativePath);
   let result = relativePath;
@@ -27,7 +27,7 @@ const getRelativeInfo = function (selectFilePath) {
   }
 
   const baseName = path.basename(relativePath).match(/^[\w\-_]+/)[0];
-  const fullName = baseName + ext;
+  const fullName = result.match(/[^/]+$/)[0];
 
   return { relativePath: result, ext, baseName, fullName };
 };
