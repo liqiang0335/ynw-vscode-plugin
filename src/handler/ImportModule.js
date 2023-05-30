@@ -9,10 +9,10 @@ const _ = require("lodash");
  */
 const RegExpTable = [
   {
-    reg: /\w+\.(service|controller|module|schema)/,
+    reg: /\w+\.(service|controller|module|schema|middleware|exception|decorator|filter|pipe)/,
     handler: ({ baseName, relativePath, fullName }) => {
       const name = _.capitalize(baseName);
-      const type = _.capitalize(fullName.match(/(service|controller|module|schema)/)[0]);
+      const type = _.capitalize(fullName.match(/\w+$/)[0]);
       return `import { ${name}${type} } from "${relativePath}"`;
     },
   },
