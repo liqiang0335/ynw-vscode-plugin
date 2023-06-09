@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.15.12",
+  "version": "0.15.13",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -109,11 +109,11 @@
       },
       {
         "command": "ynw.webpackBuild.hot",
-        "title": "yy >> dev"
+        "title": "yy >> 开发模式"
       },
       {
         "command": "ynw.webpackBuild.pro",
-        "title": "yy >> Build"
+        "title": "yy >> 生产模式"
       },
       {
         "command": "ynw.webpackBuild.dev",
