@@ -27,7 +27,8 @@ const getRelativeInfo = function (selectFilePath) {
   }
 
   const baseName = path.basename(relativePath).match(/^[\w\-_]+/)[0];
-  const fullName = result.match(/[^/]+$/)[0];
+  const fullName = result.match(/[^/]+$/)[0] + ext;
+  console.log("⭕️ fullName: ", fullName);
 
   return { relativePath: result, ext, baseName, fullName };
 };
