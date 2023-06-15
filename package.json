@@ -93,31 +93,31 @@
       },
       {
         "command": "ynw.importModule",
-        "title": "导入文件-import"
+        "title": "🚩 import 导入"
       },
       {
         "command": "ynw.requireModule",
-        "title": "导入文件-require"
+        "title": "🚩 require 导入"
       },
       {
         "command": "ynw.relavePath",
-        "title": "复制相对路径"
+        "title": "🚩 复制相对路径"
       },
       {
         "command": "ynw.createSameNameFile",
-        "title": "创建同名文件"
+        "title": "🚩 创建同名文件"
       },
       {
         "command": "ynw.webpackBuild.hot",
-        "title": "yy >> 开发模式"
+        "title": "🚩 YY开发模式"
       },
       {
         "command": "ynw.webpackBuild.pro",
-        "title": "yy >> 生产模式"
+        "title": "🚩 YY生产模式"
       },
       {
         "command": "ynw.webpackBuild.dev",
-        "title": "yy >> watch"
+        "title": "🚩 yywatch"
       }
     ],
     "keybindings": [
