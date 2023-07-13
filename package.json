@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.15.14",
+  "version": "0.15.15",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -93,11 +93,11 @@
       },
       {
         "command": "ynw.importModule",
-        "title": "🚩 import 导入"
+        "title": "🚩 import 导入文件"
       },
       {
         "command": "ynw.requireModule",
-        "title": "🚩 require 导入"
+        "title": "🚩 require 导入文件"
       },
       {
         "command": "ynw.relavePath",
@@ -114,28 +114,12 @@
       {
         "command": "ynw.webpackBuild.pro",
         "title": "🚩 YY生产模式"
-      },
-      {
-        "command": "ynw.webpackBuild.dev",
-        "title": "🚩 yywatch"
       }
     ],
     "keybindings": [
       {
         "command": "ynw.log",
         "key": "ctrl+p ctrl+p"
-      },
-      {
-        "command": "ynw.copyName",
-        "key": "ctrl+o ctrl+o"
-      },
-      {
-        "command": "ynw.fastInput",
-        "key": "ctrl+y ctrl+h"
-      },
-      {
-        "command": "ynw.createSameNameFile",
-        "key": "ctrl+y ctrl+s"
       }
     ],
     "menus": {
@@ -158,11 +142,6 @@
           "group": "a1@3"
         },
         {
-          "command": "ynw.webpackBuild.dev",
-          "when": "resourceExtname =~ /jsx?/",
-          "group": "ynw-c@1"
-        },
-        {
           "command": "ynw.webpackBuild.hot",
           "when": "resourceExtname =~ /jsx?/",
           "group": "ynw-c@2"
@@ -171,6 +150,11 @@
           "command": "ynw.webpackBuild.pro",
           "when": "resourceExtname =~ /jsx?/",
           "group": "ynw-c@3"
+        },
+        {
+          "command": "ynw.webpackBuild.dev",
+          "when": "resourceExtname =~ /jsx?/",
+          "group": "ynw-c@4"
         }
       ]
     },
