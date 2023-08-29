@@ -197,7 +197,7 @@
   "Express发送失败": {
     "prefix": "⭕️ yyex.fail",
     "body": [
-      "res.send(req.fn.error($0))"
+      "res.status(400).send(req.fn.error($0))"
     ]
   }
 }

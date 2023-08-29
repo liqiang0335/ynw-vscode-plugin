@@ -64,7 +64,7 @@
   },
   "当前文件名": {
     "prefix": "⭕️ yyfile",
-    "body": "${TM_FILENAME_BASE}"
+    "body": " ${TM_FILENAME_BASE}"
   },
   "忽略格式化": {
     "prefix": "⭕️ yyignore",
