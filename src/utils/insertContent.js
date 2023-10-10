@@ -5,10 +5,10 @@ const vscode = require("vscode");
 module.exports = function (content) {
   const editor = vscode.window.activeTextEditor;
   if (!editor) {
-    vscode.window.showErrorMessage("consoleLog:fail");
+    vscode.window.showErrorMessage("activeTextEditor: Not Found");
     return;
   }
-  editor.edit(editBuilder => {
+  editor.edit((editBuilder) => {
     let position = editor.selection.end;
     editBuilder.insert(position, content);
   });

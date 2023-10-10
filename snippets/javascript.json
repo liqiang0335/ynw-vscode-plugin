@@ -8,38 +8,6 @@
       "}, {});"
     ]
   },
-  "选择内部对象": {
-    "prefix": "⭕️ yyconst",
-    "body": [
-      "const { $0 } = $1"
-    ]
-  },
-  "log": {
-    "prefix": "⭕️ yylog",
-    "body": [
-      "console.log('⭕️', $1);$0"
-    ]
-  },
-  "立即执行函数": {
-    "prefix": "⭕️ yyfe",
-    "body": [
-      "let $1 = (function(){",
-      "  $0",
-      "})()"
-    ]
-  },
-  "导入对象": {
-    "prefix": "const",
-    "body": "const { $0 } = $1;"
-  },
-  "注释": {
-    "prefix": "⭕️ yycomment",
-    "body": [
-      "/**",
-      "* $0",
-      "*/"
-    ]
-  },
   "创建函数-async": {
     "prefix": "⭕️ yyfunc.async",
     "body": [
@@ -82,16 +50,6 @@
       "}"
     ]
   },
-  "注释-带参数": {
-    "prefix": "⭕️ yycomment.params",
-    "body": [
-      "/**",
-      " * $0",
-      " * @param {String}",
-      " * @returns {String}",
-      " */"
-    ]
-  },
   "代码注释": {
     "prefix": "⭕️ yycomment",
     "body": [
@@ -102,33 +60,12 @@
       " */"
     ]
   },
-  "reducer: initState": {
-    "prefix": "⭕️ yyinitState",
-    "body": [
-      "const initState = {};",
-      "const reducer = (state, action) => {",
-      "  return {...state, ...action};",
-      "}"
-    ]
-  },
   "函数-Vue2": {
     "prefix": "⭕️ yyfunc.vue2",
     "body": [
       "$1() {",
       "  $2",
       "},"
-    ]
-  },
-  "打印普通": {
-    "prefix": "⭕️ yyconsole",
-    "body": [
-      "console.log('⭕️', $0)"
-    ]
-  },
-  "时间格式化": {
-    "prefix": "⭕️ yydayjs.format",
-    "body": [
-      "dayjs(time).format('YYYY-MM-DD HH:mm:ss')"
     ]
   },
   "防抖节流": {
