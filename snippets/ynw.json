@@ -127,6 +127,9 @@
     },"ynw.next.Pagination": {
       "prefix": "⭕️ yyw.next.Pagination",
       "body": ["import Pagination from 'ynw/next/Pagination'"]
+    },"ynw.node/cmd.runConfirm": {
+      "prefix": "⭕️ yyw.node/cmd.runConfirm",
+      "body": ["import runConfirm from 'ynw/node/cmd/runConfirm'"]
     },"ynw.number.fillZero": {
       "prefix": "⭕️ yyw.number.fillZero",
       "body": ["import fillZero from 'ynw/number/fillZero'"]
@@ -346,4 +349,10 @@
     },"ynw.ui.TextScroll": {
       "prefix": "⭕️ yyw.ui.TextScroll",
       "body": ["import TextScroll from 'ynw/ui/TextScroll'"]
+    },"ynw.ui.WangEditor": {
+      "prefix": "⭕️ yyw.ui.WangEditor",
+      "body": ["import WangEditor from 'ynw/ui/WangEditor'"]
+    },"ynw.window": {
+      "prefix": "⭕️ yyw.window",
+      "body": ["import window from 'ynw/window'"]
     }}
