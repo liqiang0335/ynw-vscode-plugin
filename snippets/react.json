@@ -5,49 +5,6 @@
 			"const ${1:user} = useSelector(s => s.${1:user});"
 		]
 	},
-	"⭕️ rd17模版": {
-		"prefix": "⭕️ yyrd17",
-		"body": [
-			"import React from 'react'",
-			"import ReactDOM from 'react-dom'",
-			"",
-			"",
-			"const App = () => {",
-			"  return (",
-			"    <div>",
-			"      <div>Hello</div>",
-			"    </div>",
-			"  )",
-			"}",
-			"",
-			"ReactDOM.render(<App />, document.getElementById('app'))"
-		]
-	},
-	"⭕️ next请求时渲染": {
-		"prefix": "⭕️ yynext-server-props",
-		"body": [
-			"export async function getServerSideProps({ req, res, params, query}) {",
-			"  res.setHeader('Cache-Control', 'public, s-maxage=600, stale-while-revalidate=59');",
-			"",
-			"  return {",
-			"    props: {},",
-			"  }",
-			"}"
-		]
-	},
-	"⭕️ next构建时渲染": {
-		"prefix": "⭕️ yynext-static-props",
-		"body": [
-			"export async function getStaticProps({ req, res, params }) {",
-			"  return {",
-			"    props: {",
-			"      datas: [],",
-			"    },",
-			"    revalidate: 3600,",
-			"  };",
-			"}"
-		]
-	},
 	"⭕️ 监听键盘快捷键": {
 		"prefix": "⭕️ yyuseKeyPress1",
 		"body": [
@@ -84,14 +41,10 @@
 			")"
 		]
 	},
-	"⭕️ 行内样式": {
-		"prefix": "⭕️ yyclassName",
-		"body": "className={styles.$1} $2"
-	},
 	"⭕️ 函数组件": {
 		"prefix": "⭕️ yyrfc",
 		"body": [
-			"import React, { useEffect, useReducer } from 'react'",
+			"import React, { useEffect, useReducer, useContext } from 'react'",
 			"",
 			"export default function ${TM_FILENAME_BASE}() {",
 			"  return (",
@@ -103,45 +56,16 @@
 			""
 		]
 	},
-	"⭕️ 逻辑组件": {
-		"prefix": "⭕️ yyrfc-logic",
-		"description": "创建逻辑组件、useHook组件",
-		"body": [
-			"import React, { useReducer, useEffect } from 'react';",
-			"import http from '@script/http';",
-			"import reducer from 'ynw/script/reducer';",
-			"",
-			"export default function ${TM_FILENAME_BASE}() {",
-			"  const [state, dispatch] = useReducer(reducer, {});",
-			"",
-			"useEffect(() => {",
-			"    http.get('/api/xxx').then((res) => {",
-			"      dispatch({ res });",
-			"    });",
-			"  }, []);",
-			"",
-			"  return { state, dispatch }",
-			"}",
-			""
-		]
-	},
 	"⭕️ useContext": {
 		"prefix": "⭕️ yyuseContext",
 		"body": [
-			"const ${1:context} = useContext(${2:contextValue})"
+			"const { state, dispatch } = useContext(Context)"
 		]
 	},
 	"⭕️ useReducer": {
 		"prefix": "⭕️ yyuseReducer",
 		"body": [
 			"const [state, dispatch] = useReducer(reducer, {})"
-		]
-	},
-	"⭕️ 导入hook逻辑": {
-		"prefix": "⭕️ yyuselogic",
-		"body": [
-			"const props = useLogic();",
-			"const { state, dispatch } = props;"
 		]
 	},
 	"⭕️ useCallback": {
@@ -165,18 +89,6 @@
 		"prefix": "⭕️ yyuseRef",
 		"body": [
 			"const ${1:ref} = useRef(${2:initialValue})"
-		]
-	},
-	"⭕️ 标签div": {
-		"prefix": "⭕️ yydiv",
-		"body": [
-			"<div className={styles.$1}>$0</div>"
-		]
-	},
-	"⭕️ 标签span": {
-		"prefix": "⭕️ yyspan",
-		"body": [
-			"<span className={styles.$1}>$0</span>"
 		]
 	},
 	"⭕️ iird": {
