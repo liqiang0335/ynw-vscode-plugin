@@ -71,12 +71,6 @@
       "import dayjs from 'dayjs';"
     ]
   },
-  "导入rxjs-hooks": {
-    "prefix": "⭕️ yym-rxjs-hooks",
-    "body": [
-      "import { useEventCallback, useObservable } from 'rxjs-hooks'"
-    ]
-  },
   "导入rxjx": {
     "prefix": "⭕️ yym-rxjx",
     "body": [

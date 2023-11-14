@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.15.18",
+  "version": "0.16.0",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "bugs": {
@@ -90,6 +90,10 @@
       {
         "command": "ynw.log",
         "title": "打印变量"
+      },
+      {
+        "command": "ynw.replaceLine",
+        "title": "替换行内容"
       },
       {
         "command": "ynw.importModule",
