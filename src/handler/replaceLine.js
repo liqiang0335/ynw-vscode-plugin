@@ -8,18 +8,28 @@ module.exports = function () {
     const { document } = editor;
     const currentLine = editor.selection.active.line;
     editor.edit((editBuilder) => {
-      const range = document.lineAt(currentLine).range;
-      const currentLineContent = document.getText(range);
-      editBuilder.delete(range);
+      let range = document.lineAt(currentLine).range;
+      let currentLineContent = document.getText(range);
 
-      let newText = "";
-      const isCloseTag = currentLineContent.match(/><\//);
-      if (isCloseTag) {
-        newText = currentLineContent.replace(/<(\w+)><\/\1>/g, "<$1 />");
-      } else {
-        newText = currentLineContent.replace(/<(\w+)\s*\/>/g, "<$1></$1>");
+      let regs = [
+        { match: /><\//, find: /<(\w+)><\/\1>/, replace: "<$1 />" },
+        { match: /<(\w+)\s+\/>/, find: /<(\w+)\s+\/>/, replace: "<$1></$1>" },
+      ];
+      let matched = false;
+      for (let i = 0; i < regs.length; i++) {
+        const reg = regs[i];
+        if (reg.match.test(currentLineContent)) {
+          matched = true;
+          const newText = currentLineContent.replace(reg.find, reg.replace);
+          editBuilder.delete(range);
+          editBuilder.insert(range.start, newText);
+          return;
+        }
       }
-      editBuilder.insert(range.start, newText);
+
+      if (!matched) {
+        vscode.window.showInformationMessage("没有匹配的替换");
+      }
     });
   }
 };
