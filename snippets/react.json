@@ -59,7 +59,7 @@
 	"⭕️ useContext": {
 		"prefix": "⭕️ yyuseContext",
 		"body": [
-			"const { state, dispatch } = useContext(Context)"
+			"const ctx = useContext(Context)"
 		]
 	},
 	"⭕️ useReducer": {

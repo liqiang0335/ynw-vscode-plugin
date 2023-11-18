@@ -70,38 +70,6 @@
       "}"
     ]
   },
-  "express增删改查": {
-    "prefix": "⭕️ yyex.curd",
-    "body": [
-      "async function get${1:name}Items(req, res, next) {",
-      "  const { page = 1 } = req.query;",
-      "  ${1:name}.find()",
-      "    .byPage(page)",
-      "    .then(data => res.send(req.fn.ok(data)))",
-      "    .catch(next);",
-      "}",
-      "",
-      "async function add${1:name}(req, res, next) {",
-      "  ${1:name}.create(req.body)",
-      "    .then(data => res.send(req.fn.ok(data)))",
-      "    .catch(next);",
-      "}",
-      "",
-      "async function update${1:name}(req, res, next) {",
-      "  const { _id } = req.body;",
-      "  ${1:name}.updateOne({ _id }, req.body)",
-      "    .then(data => res.send(req.fn.ok(data)))",
-      "    .catch(next);",
-      "}",
-      "",
-      "async function delete${1:name}(req, res, next) {",
-      "  const { _id } = req.body;",
-      "  ${1:name}.deleteOne({ _id })",
-      "    .then(data => res.send(req.fn.ok(data)))",
-      "    .catch(next);",
-      "}"
-    ]
-  },
   "Express 响应": {
     "prefix": "⭕️ yyex.response",
     "body": [
