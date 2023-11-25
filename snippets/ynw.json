@@ -79,6 +79,9 @@
     },"ynw.browser.elementInViewport": {
       "prefix": "⭕️ yyw.browser.elementInViewport",
       "body": ["import elementInViewport from 'ynw/browser/elementInViewport'"]
+    },"ynw.browser.getParentElements": {
+      "prefix": "⭕️ yyw.browser.getParentElements",
+      "body": ["import getParentElements from 'ynw/browser/getParentElements'"]
     },"ynw.browser.isDocumentVisible": {
       "prefix": "⭕️ yyw.browser.isDocumentVisible",
       "body": ["import isDocumentVisible from 'ynw/browser/isDocumentVisible'"]
@@ -175,6 +178,9 @@
     },"ynw.pattern.promiseChain": {
       "prefix": "⭕️ yyw.pattern.promiseChain",
       "body": ["import promiseChain from 'ynw/pattern/promiseChain'"]
+    },"ynw.react.DelayCreatePortal": {
+      "prefix": "⭕️ yyw.react.DelayCreatePortal",
+      "body": ["import DelayCreatePortal from 'ynw/react/DelayCreatePortal'"]
     },"ynw.react.ErrorBoundary": {
       "prefix": "⭕️ yyw.react.ErrorBoundary",
       "body": ["import ErrorBoundary from 'ynw/react/ErrorBoundary'"]
@@ -187,6 +193,9 @@
     },"ynw.react.ZoomImg": {
       "prefix": "⭕️ yyw.react.ZoomImg",
       "body": ["import ZoomImg from 'ynw/react/ZoomImg'"]
+    },"ynw.react/hook.useReucer": {
+      "prefix": "⭕️ yyw.react/hook.useReucer",
+      "body": ["import useReucer from 'ynw/react/hook/useReucer'"]
     },"ynw.react.useCachedEnum": {
       "prefix": "⭕️ yyw.react.useCachedEnum",
       "body": ["import useCachedEnum from 'ynw/react/useCachedEnum'"]

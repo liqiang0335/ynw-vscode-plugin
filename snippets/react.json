@@ -65,7 +65,7 @@
 	"⭕️ useReducer": {
 		"prefix": "⭕️ yyuseReducer",
 		"body": [
-			"const [state, dispatch] = useReducer(reducer, {})"
+			"const [state, dispatch] = useReducer({})"
 		]
 	},
 	"⭕️ useCallback": {

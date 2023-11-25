@@ -2,9 +2,12 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.16.2",
+  "version": "0.16.3",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
+  "scripts": {
+    "snip": "node .script/snip"
+  },
   "bugs": {
     "url": "https://github.com/liqiang0335/ynw-vscode-plugin/issues",
     "email": "liqiang0335@gmail.com"
@@ -236,9 +239,6 @@
         "path": "./snippets/express.json"
       }
     ]
-  },
-  "scripts": {
-    "snip": "node .script/snip"
   },
   "devDependencies": {
     "@types/node": "^8.10.25",
