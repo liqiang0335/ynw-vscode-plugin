@@ -44,7 +44,7 @@
 	"⭕️ 函数组件": {
 		"prefix": "⭕️ yyrfc",
 		"body": [
-			"import React, { useEffect, useReducer, useContext } from 'react'",
+			"import React, { useEffect, useContext } from 'react'",
 			"",
 			"export default function ${TM_FILENAME_BASE}() {",
 			"  return (",
