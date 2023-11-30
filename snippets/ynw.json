@@ -193,9 +193,6 @@
     },"ynw.react.ZoomImg": {
       "prefix": "⭕️ yyw.react.ZoomImg",
       "body": ["import ZoomImg from 'ynw/react/ZoomImg'"]
-    },"ynw.react/hook.useReucer": {
-      "prefix": "⭕️ yyw.react/hook.useReucer",
-      "body": ["import useReucer from 'ynw/react/hook/useReucer'"]
     },"ynw.react.useCachedEnum": {
       "prefix": "⭕️ yyw.react.useCachedEnum",
       "body": ["import useCachedEnum from 'ynw/react/useCachedEnum'"]
@@ -211,6 +208,9 @@
     },"ynw.react.useObservable": {
       "prefix": "⭕️ yyw.react.useObservable",
       "body": ["import useObservable from 'ynw/react/useObservable'"]
+    },"ynw.react.useReucer": {
+      "prefix": "⭕️ yyw.react.useReucer",
+      "body": ["import useReucer from 'ynw/react/useReucer'"]
     },"ynw.react.useScroll": {
       "prefix": "⭕️ yyw.react.useScroll",
       "body": ["import useScroll from 'ynw/react/useScroll'"]
