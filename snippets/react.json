@@ -1,4 +1,10 @@
 {
+	"< comp />": {
+		"prefix": "<<",
+		"body": [
+			"<$1 />"
+		]
+	},
 	"⭕️ 从Redux中读取数据": {
 		"prefix": "⭕️ yyuseSelector",
 		"body": [

@@ -1,13 +1,4 @@
 {
-  "数组:reduce": {
-    "prefix": "⭕️ yyarray.reduce",
-    "body": [
-      "data.reduce((p, c) => {",
-      "  p[c.id] = c;$0",
-      "  return p;",
-      "}, {});"
-    ]
-  },
   "创建函数-async": {
     "prefix": "⭕️ yyfunc.async",
     "body": [
@@ -22,12 +13,6 @@
       "function $1 (){",
       " $0",
       "}"
-    ]
-  },
-  "< comp />": {
-    "prefix": "<<",
-    "body": [
-      "<$1 />"
     ]
   },
   "当前文件名": {
@@ -50,32 +35,6 @@
       "}"
     ]
   },
-  "代码注释": {
-    "prefix": "⭕️ yycomment",
-    "body": [
-      "/**",
-      " * ----------------------------------------",
-      " * $0",
-      " * ----------------------------------------",
-      " */"
-    ]
-  },
-  "函数-Vue2": {
-    "prefix": "⭕️ yyfunc.vue2",
-    "body": [
-      "$1() {",
-      "  $2",
-      "},"
-    ]
-  },
-  "防抖节流": {
-    "prefix": "⭕️ yydebounce",
-    "body": [
-      "debounce(function() {",
-      "\t\t$1",
-      "}, 1000, { leading: true, trailing: false })"
-    ]
-  },
   "环境:开发": {
     "prefix": "⭕️ yyenvdev",
     "body": "process.env.NODE_ENV ==\"development\""
@@ -84,69 +43,10 @@
     "prefix": "⭕️ yyenvpro",
     "body": "process.env.NODE_ENV ==\"production\""
   },
-  "函数-箭头": {
-    "prefix": "⭕️ yyfunc.arrow",
-    "body": [
-      "const $1 = ($2) => {",
-      " $0",
-      "};"
-    ]
-  },
-  "http.GET调用": {
-    "prefix": "⭕️ yyhttp.get",
-    "body": [
-      "const params = {};",
-      "http.get('$1',{ params }).then(res => {",
-      "  console.log('返回数据', res);",
-      "});"
-    ]
-  },
-  "http.POST调用": {
-    "prefix": "⭕️ yy.http.post",
-    "body": [
-      "const params = {};",
-      "http.post('$1',params).then(res => {",
-      "  console.log('返回数据', res);",
-      "});"
-    ]
-  },
-  "注册Vue组件": {
-    "prefix": "⭕️ yyvue.register",
-    "body": [
-      "import Vue from 'vue';",
-      "const comps = require.context('../comps', true, /\\.vue$/);",
-      "const getCompPathName = path => {",
-      "  const match = path.match(/\\w+?(?=\\/)/g);",
-      "  if (!match) return '';",
-      "  return match.map(item => item.replace(/\\//g, '')).join('-') + '-';",
-      "};",
-      "comps.keys().forEach(p => {",
-      "  const name = p.match(/([\\w\\-]+)\\.vue$/)[1];",
-      "  const folder = getCompPathName(p).toLowerCase();",
-      "  const option = comps(p).default;",
-      "  const final = 'yy-' + folder + name;",
-      "  Vue.component(final, option);",
-      "});"
-    ]
-  },
-  "axios基本设置": {
-    "prefix": "⭕️ yyaxios.1",
+  "axios-基本": {
+    "prefix": "⭕️ yyaxios",
     "body": [
       "import axios from 'axios';",
-      "import { notification, message } from 'antd';",
-      "",
-      "const http = axios.create({",
-      "  baseURL: 'http://localhost:5000/api',",
-      "  timeout: 60000,",
-      "});",
-      "export default http;"
-    ]
-  },
-  "axios-表单设置": {
-    "prefix": "⭕️ yyaxios.2",
-    "body": [
-      "import axios from 'axios';",
-      "import { notification, message } from 'antd';",
       "",
       "const http = axios.create({",
       "  baseURL: '/api',",
@@ -161,7 +61,7 @@
       "export default http;"
     ]
   },
-  "axios拦截设置": {
+  "axios-拦截设置": {
     "prefix": "⭕️ yyaxios.use",
     "body": [
       "http.interceptors.request.use(onRequest);",
@@ -175,58 +75,15 @@
       "",
       "function onResponseSuccess(res) {",
       "  const body = res.data;",
-      "  if (body.code !== 1) {",
-      "    notification.error({",
-      "      placement: 'topRight',",
-      "      duration: 5,",
-      "      message: '出现错误',",
-      "      description: body.message,",
-      "    });",
-      "    return Promise.reject(body.code);",
-      "  }",
       "  return body.data;",
       "}",
       "",
       "function onResponseError(err) {",
       "  if (err.response) {",
       "    const { config, status } = err.response;",
-      "    notification.error({",
-      "      placement: 'topRight',",
-      "      duration: 5,",
-      "      message: `服务错误: ${status}`,",
-      "      description: `${config.url}`,",
-      "    });",
-      "  }",
-      "  if (err.code === 'ECONNABORTED') {",
-      "    notification.error({",
-      "      placement: 'bottomLeft',",
-      "      duration: 5,",
-      "      message: '请求超时',",
-      "      description: `请确认网略连接是否正常`,",
-      "    });",
       "  }",
       "  return Promise.reject(err);",
       "}"
-    ]
-  },
-  "hook状态组件": {
-    "prefix": "⭕️ yyrfc.hook",
-    "body": [
-      "import React, { useState, useEffect } from 'react';",
-      "import http from '@script/http';",
-      "/**",
-      " * ----------------------------------------",
-      " * DATA HOOK",
-      " * ----------------------------------------",
-      " */",
-      "export default function ${TM_FILENAME_BASE}() {",
-      "  const [data, setData] = useState([]);",
-      "",
-      "  useEffect(() => {}, []);",
-      "",
-      "  return data;",
-      "}",
-      ""
     ]
   }
 }
