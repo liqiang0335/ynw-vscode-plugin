@@ -22,7 +22,7 @@ module.exports = function () {
 
   if (text) {
     vscode.commands.executeCommand("editor.action.insertLineAfter").then(() => {
-      const value = `console.log("⭕️ [${currentFileName}] [${time}] ${text}: ", ${text});`;
+      const value = `console.log("⭕️ [${currentFileName}] ${text}: ", ${text});`;
       replaceText(value);
     });
   } else {
