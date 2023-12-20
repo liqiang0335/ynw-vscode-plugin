@@ -17,15 +17,12 @@ module.exports = function () {
   const text = editor.document.getText(selection);
   const time = dayjs().format("YYYY-MM-DD HH:mm:ss");
 
-  // 当前文件名
-  const currentFileName = editor.document.fileName.split("/").pop();
-
   if (text) {
     vscode.commands.executeCommand("editor.action.insertLineAfter").then(() => {
-      const value = `console.log("⭕️ [${currentFileName}] ${text}: ", ${text});`;
+      const value = `console.log("⭕️ ${text}: ", ${text});`;
       replaceText(value);
     });
   } else {
-    replaceText(`console.log("⭕️ [${currentFileName}] [${time}]","");`);
+    replaceText(`console.log("⭕️ [${time}]","");`);
   }
 };

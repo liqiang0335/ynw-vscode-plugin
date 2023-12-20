@@ -37,10 +37,7 @@ exports.activate = function (context) {
 
   context.subscriptions.push(vscode.commands.registerCommand("ynw.fastInput", fastInput));
 
-  ////////////////////// END ///////////////////////
+  // END ACTIVATE FUNCTION BODY //  DO NOT DELETE THIS LINE
 };
 
-/**
- * deactivate
- */
 exports.deactivate = function () {};
