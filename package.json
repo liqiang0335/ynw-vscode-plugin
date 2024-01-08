@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.16.7",
+  "version": "0.16.8",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "scripts": {
@@ -42,17 +42,6 @@
         ],
         "extensions": [
           ".js"
-        ]
-      },
-      {
-        "id": "typescript",
-        "aliases": [
-          "TypeScript",
-          "typescript",
-          "ts"
-        ],
-        "extensions": [
-          ".ts"
         ]
       }
     ],
@@ -180,14 +169,6 @@
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/threejs.json"
-      },
-      {
-        "language": "typescriptreact",
-        "path": "./snippets/import.json"
-      },
-      {
-        "language": "javascriptreact",
         "path": "./snippets/import.json"
       },
       {
@@ -196,14 +177,6 @@
       },
       {
         "language": "javascript",
-        "path": "./snippets/ynw.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/ynw-vue.json"
-      },
-      {
-        "language": "typescriptreact",
         "path": "./snippets/ynw.json"
       },
       {
@@ -228,14 +201,6 @@
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/antd.json"
-      },
-      {
-        "language": "typescriptreact",
-        "path": "./snippets/javascript.json"
-      },
-      {
-        "language": "typescriptreact",
         "path": "./snippets/antd.json"
       },
       {
