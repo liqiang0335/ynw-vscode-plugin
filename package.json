@@ -2,7 +2,7 @@
   "name": "ynw",
   "displayName": "ynw",
   "description": "Some Tool for YNW",
-  "version": "0.16.8",
+  "version": "0.16.9",
   "publisher": "liqiang0335",
   "author": "liqiang0335 <liqiang0335@gmail.com>",
   "scripts": {
@@ -112,12 +112,7 @@
         "title": "🚩 YY生产模式"
       }
     ],
-    "keybindings": [
-      {
-        "command": "ynw.log",
-        "key": "ctrl+p ctrl+p"
-      }
-    ],
+    "keybindings": [],
     "menus": {
       "editor/context": [],
       "explorer/context": [
